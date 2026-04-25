@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local path to the authoring folder for sync (see .cursor/skills/sync-viewer-content)
+**/.rpg-renderer/viewer-link.json

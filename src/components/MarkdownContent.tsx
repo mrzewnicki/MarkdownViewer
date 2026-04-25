@@ -12,14 +12,22 @@ function normalizeLookup(value: string): string {
   return value.trim().toLocaleLowerCase('pl')
 }
 
+function wipToggleStem(stem: string): string {
+  if (/\.wip$/i.test(stem)) return stem.replace(/\.wip$/i, '')
+  return `${stem}.wip`
+}
+
 function resolveWikiFile(project: ProjectContent, title: string, currentFilePath: string): ContentFile | null {
   const requested = title.trim()
   const withoutHash = requested.split('#')[0] ?? requested
   const directPath = withoutMarkdownExtension(withoutHash)
+  const directPathAlt = wipToggleStem(directPath)
 
   const direct =
     project.routeMap.get(directPath) ??
+    project.routeMap.get(directPathAlt) ??
     project.routeMap.get(`wiki/${directPath}`) ??
+    project.routeMap.get(`wiki/${directPathAlt}`) ??
     project.fileMap.get(withoutHash) ??
     project.fileMap.get(`${withoutHash}.md`)
   if (direct) return direct
@@ -27,14 +35,23 @@ function resolveWikiFile(project: ProjectContent, title: string, currentFilePath
   const relative = resolveRelativePath(withoutHash, currentFilePath)
   if (relative) {
     const relativeRoute = withoutMarkdownExtension(relative)
-    const relativeFile = project.routeMap.get(relativeRoute) ?? project.fileMap.get(relative)
+    const relativeRouteAlt = wipToggleStem(relativeRoute)
+    const relativeFile =
+      project.routeMap.get(relativeRoute) ??
+      project.routeMap.get(relativeRouteAlt) ??
+      project.fileMap.get(relative)
     if (relativeFile) return relativeFile
   }
 
   const target = normalizeLookup(withoutHash)
+  const targetNoWip = target.replace(/\.wip$/i, '')
   return (
     project.files.find((file) => normalizeLookup(file.title) === target) ??
-    project.files.find((file) => normalizeLookup(withoutMarkdownExtension(file.path).split('/').at(-1) ?? '') === target) ??
+    project.files.find((file) => {
+      const stem = normalizeLookup(withoutMarkdownExtension(file.path).split('/').at(-1) ?? '')
+      const stemNoWip = stem.replace(/\.wip$/i, '')
+      return stem === target || stemNoWip === target || stem === targetNoWip
+    }) ??
     null
   )
 }

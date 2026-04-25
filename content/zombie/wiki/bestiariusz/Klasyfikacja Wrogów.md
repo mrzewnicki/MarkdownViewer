@@ -1,4 +1,4 @@
-# 
+# Klasyfikacja worgów
 
 
 | Numer | Przykład |

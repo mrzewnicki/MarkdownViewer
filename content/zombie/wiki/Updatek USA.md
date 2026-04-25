@@ -1,18 +1,3 @@
-# Plan
-- Wycofanie wojsk ekspedycyjnych
-- Przejęcie zatoki Meksykańskiej i pobliskich akwenów
-- Zestrzeliwanie samolotów
-- Pogłębienie kanału Panamskiego
-- Użycie bomby atomowej na meksyk i kanadę
-
-Kraje:
-
-- Meksyk
-- Kanada
-- Ameryka południowa
-- Wyspy dookoła USA
-
-
 # Updatek USA
 
 ## Pierwsza wojna o kontynent
@@ -30,6 +15,8 @@ Wysłane wojska w drugiej grupie do południowego przesmyku łączącego ameryki
 Trzecia grupa bojowa w której zgromadzono największą siłę ognia ruszyła by bronić Meksyku. Nie z dobroci serca, ale z zimnej kalkulacji. Odcięcie kanału Panamskiego zmniejszy napływ z południowej ameryki, ale jeśli w Meksyku wybuchnie epidemia, przy ich populacji jedyną możliwością będzie przeistoczenie go w strefę popromienną. Nie da się prowadzić wojny na wszystkie strony mając bunty we własnym kraju. Dlatego Meksyk został otoczony flotą od wschodu i zachodu, ogromnymi siłami lądowymi od północy na granicy USA i drobniejszymi stacjonującymi w Panamie z grupy drugiej. Ponownie każda łajba i samolot była zestrzeliwana. Szybko doprowadziło to do wojny domowej w której kartele powstały z siłą większą od państwa Meksyk, a dołączyli do niej zbuntowani panamczycy, którzy mimo, że uratowani, chcieli zemsty na żołnierzach, którzy oddzielili ich od rodzin.
 
 Mimo wszelkich konwencjonalnych środków motywowanych strachem przed dotarciem plagi i tak dotarła ona do USA. I winowajcą tego faktu nie była pełna napięć między żołnierzami Kanada, pożarta na południu Panama, ani zbuntowany Meksyk.
+
+---
 
 ## Boston
 
@@ -102,10 +89,6 @@ Mimo wszelkich konwencjonalnych środków motywowanych strachem przed dotarciem 
 - energia
 - hotele jako fortyfikacje
 - pustynia jako naturalna bariera
-
-## Boston
-
-alfa w labie DeathNetu
 
 
 

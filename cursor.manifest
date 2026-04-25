@@ -22,7 +22,8 @@
     "scanedExtensions": ["md", "markdown", "mdx"],
     "assetExtensions": ["png", "jpg", "jpeg", "gif", "webp", "svg", "bmp", "ico"],
     "ignoredFolders": [".git", "node_modules", ".rpg-renderer"],
-    "note": "Images referenced as relative paths in markdown are resolved via project.assets Map (Vite ?url import). Images outside content/ are not available."
+    "note": "Images referenced as relative paths in markdown are resolved via project.assets Map (Vite ?url import). Images outside content/ are not available.",
+    "viewerLink": "Optional per-project file content/<projectId>/.rpg-renderer/viewer-link.json (gitignored) with { version, sourcePath } pointing to the local authoring folder; .cursor/skills/sync-viewer-content/SKILL.md describes robocopy mirroring from sourcePath into that content folder."
   },
 
   "routing": {

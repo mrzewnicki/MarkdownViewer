@@ -23,6 +23,14 @@ const assetModules = import.meta.glob<string>('/content/**/*.{png,jpg,jpeg,gif,w
   eager: true,
 })
 
+function isWipPath(path: string): boolean {
+  const segments = path.split('/')
+  const filename = segments[segments.length - 1] ?? ''
+  if (/\.wip\.[^.]+$/i.test(filename)) return true
+  const dirs = segments.slice(0, -1)
+  return dirs.some((segment) => /\.wip$/i.test(segment))
+}
+
 function parseContentPath(path: string): { projectId: string; relativePath: string } | null {
   const normalized = normalizePath(path).replace(/^content\//, '').replace(/^\/content\//, '')
   const [projectId, ...rest] = normalized.split('/')
@@ -153,6 +161,7 @@ function buildProjects(): ProjectContent[] {
   }
 
   for (const [path, content] of Object.entries(markdownModules)) {
+    if (isWipPath(path)) continue
     const parsed = parseContentPath(path)
     if (!parsed) continue
     const relativePath = normalizePath(parsed.relativePath)
@@ -168,6 +177,7 @@ function buildProjects(): ProjectContent[] {
   }
 
   for (const [path, url] of Object.entries(assetModules)) {
+    if (isWipPath(path)) continue
     const parsed = parseContentPath(path)
     if (!parsed) continue
     const assets = projectAssets.get(parsed.projectId) ?? new Map<string, string>()
