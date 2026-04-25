@@ -52,7 +52,6 @@ export function DocumentPage() {
           <div className="breadcrumb">{project.title}</div>
           <h1 className="document-title">{file.title}</h1>
         </div>
-        <div className="document-path">{file.path}</div>
       </header>
       <MarkdownContent project={project} file={file} />
     </>

@@ -143,12 +143,20 @@ button {
 }
 
 .tree-folder-name {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 6px;
   padding: 5px 8px;
   color: var(--muted);
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.02em;
+}
+
+.tree-folder-icon {
+  flex-shrink: 0;
+  color: var(--muted);
+  opacity: 0.9;
 }
 
 .content {
@@ -176,12 +184,6 @@ button {
   color: var(--text-strong);
   font-size: 22px;
   line-height: 1.2;
-}
-
-.document-path {
-  color: var(--muted);
-  font-family: var(--mono);
-  font-size: 12px;
 }
 
 .home,
