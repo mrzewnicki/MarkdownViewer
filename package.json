@@ -21,7 +21,6 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@rolldown/binding-win32-x64-msvc": "^1.0.0-rc.17",
     "@types/markdown-it": "^14.1.2",
     "@types/markdown-it-container": "^4.0.0",
     "@types/node": "^24.12.2",
