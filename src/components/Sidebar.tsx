@@ -7,14 +7,24 @@ import { FileTree } from './FileTree'
 interface SidebarProps {
   activeProject?: ProjectContent | null
   onOpenSearch: () => void
+  onCloseSidebar: () => void
 }
 
-export function Sidebar({ activeProject, onOpenSearch }: SidebarProps) {
+export function Sidebar({ activeProject, onOpenSearch, onCloseSidebar }: SidebarProps) {
 
   return (
     <aside className="sidebar">
       <div className="brand">
         <span className="brand-title">MarkdownViewer</span>
+        <button
+          type="button"
+          className="sidebar-collapse"
+          onClick={onCloseSidebar}
+          title="Zwiń panel boczny (Ctrl+B)"
+          aria-label="Zwiń panel boczny"
+        >
+          <ChevronLeftIcon />
+        </button>
       </div>
 
       <div className="sidebar-search-row">
@@ -49,10 +59,24 @@ export function Sidebar({ activeProject, onOpenSearch }: SidebarProps) {
       {activeProject ? (
         <>
           <div className="section-label">Pliki</div>
-          <FileTree projectId={activeProject.id} nodes={activeProject.tree} />
+          <FileTree key={activeProject.id} projectId={activeProject.id} nodes={activeProject.tree} />
         </>
       ) : null}
     </aside>
+  )
+}
+
+function ChevronLeftIcon() {
+  return (
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+      <path
+        d="m15 18-6-6 6-6"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
   )
 }
 

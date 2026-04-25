@@ -15,10 +15,27 @@ const ZOOM_MAX = 3.0
 export function AppLayout({ activeProject, children }: AppLayoutProps) {
   const [zoom, setZoom] = useState(1)
   const [searchOpen, setSearchOpen] = useState(false)
+  const [sidebarOpen, setSidebarOpen] = useState(true)
   const mainRef = useRef<HTMLElement>(null)
 
   const openSearch = useCallback(() => setSearchOpen(true), [])
   const closeSearch = useCallback(() => setSearchOpen(false), [])
+
+  const toggleSidebar = useCallback(() => {
+    setSidebarOpen((o) => !o)
+  }, [])
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (!e.ctrlKey && !e.metaKey) return
+      if (e.key.toLowerCase() !== 'b') return
+      if (e.shiftKey || e.altKey) return
+      e.preventDefault()
+      toggleSidebar()
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [toggleSidebar])
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -48,14 +65,39 @@ export function AppLayout({ activeProject, children }: AppLayoutProps) {
   }, [])
 
   return (
-    <div className="app-shell">
-      <Sidebar activeProject={activeProject} onOpenSearch={openSearch} />
+    <div className={sidebarOpen ? 'app-shell' : 'app-shell app-shell--sidebar-collapsed'}>
+      <Sidebar activeProject={activeProject} onOpenSearch={openSearch} onCloseSidebar={() => setSidebarOpen(false)} />
+      <button
+        type="button"
+        className={sidebarOpen ? 'sidebar-reopen sidebar-reopen--dormant' : 'sidebar-reopen'}
+        onClick={() => setSidebarOpen(true)}
+        title="Pokaż panel boczny (Ctrl+B)"
+        aria-label="Pokaż panel boczny"
+        aria-hidden={sidebarOpen}
+        tabIndex={sidebarOpen ? -1 : 0}
+      >
+        <ChevronRightIcon />
+      </button>
       <div className="app-content-area">
         <main ref={mainRef} className="content" style={{ zoom }}>
           {children}
         </main>
-        {activeProject ? <SearchDialog project={activeProject} open={searchOpen} onClose={closeSearch} /> : null}
       </div>
+      {activeProject ? <SearchDialog project={activeProject} open={searchOpen} onClose={closeSearch} /> : null}
     </div>
+  )
+}
+
+function ChevronRightIcon() {
+  return (
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+      <path
+        d="m9 18 6-6-6-6"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
   )
 }

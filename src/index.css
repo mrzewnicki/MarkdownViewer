@@ -41,6 +41,21 @@ body {
     linear-gradient(180deg, #111827 0%, #0f1117 38rem);
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .app-shell {
+    transition: none;
+  }
+
+  .sidebar {
+    transition: none;
+  }
+
+  .sidebar-reopen,
+  .sidebar-reopen--dormant {
+    transition: none;
+  }
+}
+
 a {
   color: inherit;
 }
@@ -52,8 +67,66 @@ button {
 .app-shell {
   --sidebar-width: 320px;
   display: grid;
-  grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
+  grid-template-columns: 320px minmax(0, 1fr);
   min-height: 100vh;
+  transition: grid-template-columns 0.42s cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+.app-shell--sidebar-collapsed {
+  --sidebar-width: 0px;
+  grid-template-columns: 0px minmax(0, 1fr);
+}
+
+.app-shell--sidebar-collapsed .sidebar {
+  min-width: 0;
+  padding: 0;
+  border-right-width: 0;
+  border-right-color: transparent;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.sidebar-reopen {
+  position: fixed;
+  z-index: 8;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) translateX(0);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  min-height: 64px;
+  margin: 0;
+  padding: 0 4px 0 0;
+  border: 1px solid var(--border);
+  border-left: 0;
+  border-radius: 0 10px 10px 0;
+  background: rgba(15, 17, 23, 0.96);
+  backdrop-filter: blur(10px);
+  color: var(--text);
+  cursor: pointer;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  pointer-events: auto;
+  transition:
+    opacity 0.3s ease,
+    transform 0.38s cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+.sidebar-reopen--dormant {
+  opacity: 0;
+  transform: translateY(-50%) translateX(-20px);
+  pointer-events: none;
+  transition:
+    opacity 0.25s ease,
+    transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sidebar-reopen:hover:not(.sidebar-reopen--dormant) {
+  border-color: rgba(124, 58, 237, 0.5);
+  background: var(--accent-soft);
+  color: var(--text-strong);
 }
 
 .app-content-area {
@@ -73,13 +146,26 @@ button {
   background: rgba(15, 17, 23, 0.82);
   backdrop-filter: blur(16px);
   padding: 20px 16px;
+  min-width: 0;
+  transition:
+    padding 0.42s cubic-bezier(0.32, 0.72, 0, 1),
+    border-right-width 0.36s ease,
+    border-right-color 0.28s ease;
 }
 
 .brand {
   display: flex;
-  flex-direction: column;
-  gap: 4px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
   margin-bottom: 22px;
+  min-width: 0;
+}
+
+.brand .brand-title {
+  min-width: 0;
+  flex: 1;
 }
 
 .brand-title {
@@ -87,6 +173,27 @@ button {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.01em;
+}
+
+.sidebar-collapse {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: rgba(17, 22, 35, 0.9);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.sidebar-collapse:hover {
+  border-color: rgba(124, 58, 237, 0.5);
+  background: var(--accent-soft);
+  color: var(--text-strong);
 }
 
 .brand-subtitle {
@@ -147,25 +254,104 @@ button {
   border-left: 1px solid var(--border);
 }
 
+/* Smooth expand/collapse: keep subtree mounted, animate row height */
+.tree-folder-collapse {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.38s cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+.tree-folder-collapse[data-expanded='true'] {
+  grid-template-rows: 1fr;
+}
+
+.tree-folder-collapse-inner {
+  min-height: 0;
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tree-folder-collapse {
+    transition: grid-template-rows 0.1s ease;
+  }
+
+  .tree-directory-icon {
+    transition: none;
+  }
+}
+
 .tree-folder {
   margin-top: 8px;
 }
 
-.tree-folder-name {
+.tree-folder-header {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
+  width: 100%;
+  margin: 0;
   padding: 5px 8px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
   color: var(--muted);
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.02em;
+  text-align: left;
+  cursor: pointer;
+  font-family: inherit;
 }
 
-.tree-folder-icon {
-  flex-shrink: 0;
+.tree-folder-header:hover {
+  background: var(--accent-soft);
+  color: var(--text-strong);
+}
+
+.tree-folder-header--empty {
+  cursor: default;
+}
+
+.tree-folder-header--empty:hover {
+  background: transparent;
+  color: var(--muted);
+}
+
+.tree-folder-header--empty:hover .tree-directory-icon {
   color: var(--muted);
   opacity: 0.9;
+}
+
+.tree-folder-directory {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  color: var(--muted);
+}
+
+.tree-directory-icon {
+  flex-shrink: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tree-directory-icon[data-open='true'] {
+  opacity: 0.95;
+}
+
+.tree-directory-icon[data-open='false'] {
+  opacity: 0.9;
+}
+
+.tree-folder-name-text {
+  min-width: 0;
+}
+
+.tree-folder-header:hover .tree-directory-icon {
+  color: var(--text-strong);
+  opacity: 1;
 }
 
 .content {
@@ -516,17 +702,16 @@ button {
 
 .search-dialog-backdrop {
   position: fixed;
-  z-index: 1000;
-  top: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   left: var(--sidebar-width);
+  z-index: 5000;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  padding: 8vh 16px 24px;
+  padding: 16px;
   background: rgba(6, 8, 12, 0.72);
   backdrop-filter: blur(8px);
+  isolation: isolate;
 }
 
 .search-dialog {
@@ -721,6 +906,13 @@ button {
     grid-template-columns: 1fr;
   }
 
+  .app-shell--sidebar-collapsed .sidebar {
+    max-height: 0;
+    min-height: 0;
+    border-bottom-width: 0;
+    overflow: hidden;
+  }
+
   .search-dialog-backdrop {
     left: 0;
   }
@@ -747,6 +939,10 @@ button {
     max-height: 45vh;
     border-right: 0;
     border-bottom: 1px solid var(--border);
+    transition:
+      max-height 0.42s cubic-bezier(0.32, 0.72, 0, 1),
+      padding 0.42s cubic-bezier(0.32, 0.72, 0, 1),
+      border-bottom-width 0.32s ease;
   }
 
   .content-header {
