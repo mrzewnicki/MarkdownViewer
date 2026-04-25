@@ -287,6 +287,7 @@ button {
   padding: 34px;
   font-size: 16px;
   line-height: 1.68;
+  text-align: justify;
 }
 
 .preview-body h1,
@@ -320,6 +321,7 @@ button {
 }
 
 .preview-body pre {
+  text-align: left;
   overflow: auto;
   padding: 12px 14px;
   border: 1px solid var(--border);
@@ -388,6 +390,7 @@ button {
 }
 
 .preview-body .markdown-frontmatter pre {
+  text-align: left;
   margin: 0;
   border: 0;
   background: transparent;
