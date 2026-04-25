@@ -25,3 +25,10 @@ dist-ssr
 
 # Local path to the authoring folder for sync (see .cursor/skills/sync-viewer-content)
 **/.rpg-renderer/viewer-link.json
+
+# Firebase env (copy .env.local.example → .env.local and fill in values)
+.env.local
+
+# Firebase deployment artifacts
+.firebase/
+firebase-debug.log

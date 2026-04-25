@@ -47,9 +47,9 @@ export function Sidebar({ activeProject, onOpenSearch, onOpenCommentsOverview, o
           className="comments-overview-button"
           onClick={onOpenCommentsOverview}
           title="Wszystkie komentarze"
-          aria-label="Wszystkie komentarze"
         >
           <CommentsIcon />
+          <span className="comments-overview-button-label">Wszystkie komentarze</span>
         </button>
       </div>
 

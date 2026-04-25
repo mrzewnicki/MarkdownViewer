@@ -1,73 +1,86 @@
+import {
+  collection,
+  onSnapshot,
+  setDoc,
+  updateDoc,
+  deleteDoc,
+  doc,
+  query,
+  orderBy,
+  writeBatch,
+} from 'firebase/firestore'
+import { db } from './firebase'
 import type { Comment } from '../types'
 
-const COMMENTS_KEY = 'md-viewer-comments'
 const listeners = new Set<() => void>()
+let cache: Comment[] = []
 
 function isComment(value: unknown): value is Comment {
   if (!value || typeof value !== 'object') return false
-  const candidate = value as Partial<Comment>
-
+  const c = value as Partial<Comment>
   return (
-    typeof candidate.id === 'string' &&
-    typeof candidate.projectId === 'string' &&
-    typeof candidate.fileId === 'string' &&
-    typeof candidate.quote === 'string' &&
-    typeof candidate.anchor === 'string' &&
-    typeof candidate.text === 'string' &&
-    typeof candidate.createdAt === 'string' &&
-    typeof candidate.resolved === 'boolean'
+    typeof c.id === 'string' &&
+    typeof c.projectId === 'string' &&
+    typeof c.fileId === 'string' &&
+    typeof c.quote === 'string' &&
+    typeof c.anchor === 'string' &&
+    typeof c.text === 'string' &&
+    typeof c.createdAt === 'string' &&
+    typeof c.resolved === 'boolean'
   )
 }
 
-function notifyListeners() {
+function notifyListeners(): void {
   listeners.forEach((listener) => listener())
 }
 
-export function loadComments(): Comment[] {
-  if (typeof window === 'undefined') return []
+const commentsRef = collection(db, 'comments')
 
-  try {
-    const raw = window.localStorage.getItem(COMMENTS_KEY)
-    if (!raw) return []
-
-    const parsed: unknown = JSON.parse(raw)
-    return Array.isArray(parsed) ? parsed.filter(isComment) : []
-  } catch {
-    return []
-  }
-}
-
-export function saveComments(comments: Comment[]) {
-  window.localStorage.setItem(COMMENTS_KEY, JSON.stringify(comments))
+onSnapshot(query(commentsRef, orderBy('createdAt')), (snapshot) => {
+  cache = snapshot.docs
+    .map((d) => ({ id: d.id, ...d.data() }))
+    .filter(isComment)
   notifyListeners()
+})
+
+export function loadComments(): Comment[] {
+  return cache
 }
 
-export function saveComment(comment: Comment) {
-  saveComments([...loadComments(), comment])
+export function saveComment(comment: Comment): void {
+  const { id, ...data } = comment
+  setDoc(doc(db, 'comments', id), data).catch(() => {})
 }
 
-export function resolveComment(commentId: string) {
-  saveComments(loadComments().map((comment) => (comment.id === commentId ? { ...comment, resolved: true } : comment)))
+export function resolveComment(commentId: string): void {
+  cache = cache.map((c) => (c.id === commentId ? { ...c, resolved: true } : c))
+  notifyListeners()
+  updateDoc(doc(db, 'comments', commentId), { resolved: true }).catch(() => {})
 }
 
-export function deleteComment(commentId: string) {
-  saveComments(loadComments().filter((comment) => comment.id !== commentId))
+export function deleteComment(commentId: string): void {
+  cache = cache.filter((c) => c.id !== commentId)
+  notifyListeners()
+  deleteDoc(doc(db, 'comments', commentId)).catch(() => {})
 }
 
-export function subscribeToComments(listener: () => void) {
+export function subscribeToComments(listener: () => void): () => void {
   listeners.add(listener)
   return () => listeners.delete(listener)
 }
 
 export function importComments(incoming: unknown[]): { imported: number; skipped: number } {
-  const existing = loadComments()
-  const existingIds = new Set(existing.map((c) => c.id))
-
+  const existingIds = new Set(cache.map((c) => c.id))
   const valid = incoming.filter(isComment)
   const fresh = valid.filter((c) => !existingIds.has(c.id))
 
   if (fresh.length > 0) {
-    saveComments([...existing, ...fresh])
+    const batch = writeBatch(db)
+    for (const comment of fresh) {
+      const { id, ...data } = comment
+      batch.set(doc(db, 'comments', id), data)
+    }
+    batch.commit().catch(() => {})
   }
 
   return { imported: fresh.length, skipped: valid.length - fresh.length }
