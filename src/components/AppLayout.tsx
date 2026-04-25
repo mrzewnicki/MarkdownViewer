@@ -1,5 +1,6 @@
-import { type ReactNode, useState, useRef, useEffect } from 'react'
+import { type ReactNode, useState, useRef, useEffect, useCallback } from 'react'
 import { Sidebar } from './Sidebar'
+import { SearchDialog } from './SearchDialog'
 import type { ProjectContent } from '../types'
 
 interface AppLayoutProps {
@@ -13,7 +14,23 @@ const ZOOM_MAX = 3.0
 
 export function AppLayout({ activeProject, children }: AppLayoutProps) {
   const [zoom, setZoom] = useState(1)
+  const [searchOpen, setSearchOpen] = useState(false)
   const mainRef = useRef<HTMLElement>(null)
+
+  const openSearch = useCallback(() => setSearchOpen(true), [])
+  const closeSearch = useCallback(() => setSearchOpen(false), [])
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (!e.shiftKey || e.ctrlKey || e.metaKey || e.altKey) return
+      if (e.key.toLowerCase() !== 'f') return
+      if (!activeProject) return
+      e.preventDefault()
+      setSearchOpen(true)
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [activeProject])
 
   useEffect(() => {
     const el = mainRef.current
@@ -32,10 +49,13 @@ export function AppLayout({ activeProject, children }: AppLayoutProps) {
 
   return (
     <div className="app-shell">
-      <Sidebar activeProject={activeProject} />
-      <main ref={mainRef} className="content" style={{ zoom }}>
-        {children}
-      </main>
+      <Sidebar activeProject={activeProject} onOpenSearch={openSearch} />
+      <div className="app-content-area">
+        <main ref={mainRef} className="content" style={{ zoom }}>
+          {children}
+        </main>
+        {activeProject ? <SearchDialog project={activeProject} open={searchOpen} onClose={closeSearch} /> : null}
+      </div>
     </div>
   )
 }

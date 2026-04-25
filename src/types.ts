@@ -44,11 +44,11 @@ export const DEFAULT_RPG_CONFIG: RpgRendererConfig = {
   version: 1,
   entityTypes: {
     npc: { label: 'NPC', color: '#6366f1', icon: 'user' },
-    location: { label: 'Location', color: '#0ea5e9', icon: 'map-pin' },
-    faction: { label: 'Faction', color: '#a855f7', icon: 'shield' },
-    item: { label: 'Item', color: '#22c55e', icon: 'package' },
-    beast: { label: 'Beast', color: '#f97316', icon: 'skull' },
-    rule: { label: 'Rule', color: '#eab308', icon: 'scroll' },
+    location: { label: 'Lokacja', color: '#0ea5e9', icon: 'map-pin' },
+    faction: { label: 'Frakcja', color: '#a855f7', icon: 'shield' },
+    item: { label: 'Przedmiot', color: '#22c55e', icon: 'package' },
+    beast: { label: 'Bestia', color: '#f97316', icon: 'skull' },
+    rule: { label: 'Zasada', color: '#eab308', icon: 'scroll' },
     zombie: { label: 'Zombie', color: '#84cc16', icon: 'biohazard' },
     mutant: { label: 'Mutant', color: '#ec4899', icon: 'atom' },
   },
@@ -68,15 +68,15 @@ export const DEFAULT_RPG_CONFIG: RpgRendererConfig = {
     flag: '🏁',
   },
   calloutTypes: {
-    info: { label: 'Info', color: '#3b82f6', icon: 'info' },
-    warning: { label: 'Warning', color: '#f59e0b', icon: 'alert' },
-    danger: { label: 'Danger', color: '#ef4444', icon: 'flame' },
-    lore: { label: 'Lore', color: '#8b5cf6', icon: 'book' },
-    rule: { label: 'Rule', color: '#eab308', icon: 'scroll' },
+    info: { label: 'Informacja', color: '#3b82f6', icon: 'info' },
+    warning: { label: 'Ostrzeżenie', color: '#f59e0b', icon: 'alert' },
+    danger: { label: 'Zagrożenie', color: '#ef4444', icon: 'flame' },
+    lore: { label: 'Kanon', color: '#8b5cf6', icon: 'book' },
+    rule: { label: 'Zasada', color: '#eab308', icon: 'scroll' },
     npc: { label: 'NPC', color: '#6366f1', icon: 'user' },
-    location: { label: 'Location', color: '#0ea5e9', icon: 'map-pin' },
-    faction: { label: 'Faction', color: '#a855f7', icon: 'shield' },
-    quest: { label: 'Quest', color: '#14b8a6', icon: 'flag' },
+    location: { label: 'Lokacja', color: '#0ea5e9', icon: 'map-pin' },
+    faction: { label: 'Frakcja', color: '#a855f7', icon: 'shield' },
+    quest: { label: 'Zadanie', color: '#14b8a6', icon: 'flag' },
   },
   paths: {
     configDir: '.rpg-renderer',
@@ -104,6 +104,7 @@ export interface ContentFile {
   routePath: string
   title: string
   content: string
+  tags: string[]
 }
 
 export interface FileTreeNode {

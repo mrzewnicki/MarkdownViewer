@@ -10,8 +10,8 @@ export function DocumentPage() {
   if (!project) {
     return (
       <section className="not-found">
-        <h1>Project not found</h1>
-        <p>The requested project is not available in the generated content index.</p>
+        <h1>Nie znaleziono projektu</h1>
+        <p>Żądany projekt nie występuje w wygenerowanym indeksie treści.</p>
       </section>
     )
   }
@@ -28,8 +28,8 @@ export function DocumentPage() {
   if (!file) {
     return (
       <section className="not-found">
-        <h1>No markdown files</h1>
-        <p>This project has a config entry, but no markdown files were found.</p>
+        <h1>Brak plików markdown</h1>
+        <p>Ten projekt ma wpis w konfiguracji, ale nie znaleziono plików markdown.</p>
       </section>
     )
   }
@@ -37,9 +37,9 @@ export function DocumentPage() {
   if (routePath && file.routePath !== routePath) {
     return (
       <section className="not-found">
-        <h1>Document not found</h1>
+        <h1>Nie znaleziono dokumentu</h1>
         <p>
-          The document <code>{routePath}</code> does not exist in <code>{project.id}</code>.
+          Dokument <code>{routePath}</code> nie istnieje w projekcie <code>{project.id}</code>.
         </p>
       </section>
     )

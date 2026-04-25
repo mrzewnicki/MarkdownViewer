@@ -59,7 +59,7 @@ function FileTreeItem({ projectId, node }: { projectId: string; node: FileTreeNo
 
 export function FileTree({ projectId, nodes }: FileTreeProps) {
   if (nodes.length === 0) {
-    return <p className="brand-subtitle">No markdown files found.</p>
+    return <p className="brand-subtitle">Nie znaleziono plików markdown.</p>
   }
 
   return (

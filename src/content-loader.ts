@@ -85,6 +85,46 @@ function readHeadingTitle(content: string): string | null {
   return match?.[1]?.trim() || null
 }
 
+const LEADING_FRONTMATTER_BLOCK = /^---\r?\n([\s\S]*?)\r?\n---/
+
+function readFrontmatterTags(content: string): string[] {
+  const blockMatch = content.match(LEADING_FRONTMATTER_BLOCK)
+  if (!blockMatch) return []
+  const block = blockMatch[1] ?? ''
+
+  const oneLine = block.match(/^tags:\s*(.+)$/m)
+  if (oneLine) {
+    const raw = oneLine[1]!.trim()
+    if (raw.startsWith('[')) {
+      return raw
+        .slice(1, -1)
+        .split(/,/)
+        .map((s) => s.trim().replace(/^['"]|['"]$/g, ''))
+        .filter(Boolean)
+    }
+    if (raw.includes(',')) {
+      return raw
+        .split(/,/)
+        .map((s) => s.trim().replace(/^['"]|['"]$/g, ''))
+        .filter(Boolean)
+    }
+    return raw ? [raw.replace(/^['"]|['"]$/g, '')] : []
+  }
+
+  const listBlock = block.match(/^tags:\s*\n((?:[ \t]*-\s*[^\n]+\n?)+)/m)
+  if (listBlock) {
+    const lines = listBlock[1]!.split('\n')
+    const out: string[] = []
+    for (const line of lines) {
+      const t = line.match(/^\s*-\s*(.+)$/)
+      if (t) out.push(t[1]!.trim().replace(/^['"]|['"]$/g, ''))
+    }
+    return out
+  }
+
+  return []
+}
+
 function titleFromPath(path: string): string {
   return basename(withoutMarkdownExtension(path)).replace(/[-_]+/g, ' ').trim()
 }
@@ -172,6 +212,7 @@ function buildProjects(): ProjectContent[] {
       routePath: withoutMarkdownExtension(relativePath),
       title: titleForFile(relativePath, content),
       content,
+      tags: readFrontmatterTags(content),
     }
     const files = projectFiles.get(parsed.projectId) ?? []
     files.push(file)

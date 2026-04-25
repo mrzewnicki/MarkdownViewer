@@ -42,7 +42,7 @@
     "types": {
       "RpgRendererConfig": "Full renderer config — entityTypes, calloutTypes, icons, paths, scan, preview, renderer. Mirrors rpg-knowledge-editor shared/types.ts.",
       "DEFAULT_RPG_CONFIG": "Baseline config exported from src/types.ts; project configs are merged on top.",
-      "ContentFile": "{ path, routePath, title, content } — single resolved markdown file",
+      "ContentFile": "{ path, routePath, title, content, tags } — single resolved markdown file; tags from YAML frontmatter",
       "FileTreeNode": "{ name, path, kind ('file'|'dir'), title?, children? } — recursive sidebar tree node",
       "ProjectContent": "{ id, title, config, files, fileMap, routeMap, tree, assets } — all data for one project"
     }
