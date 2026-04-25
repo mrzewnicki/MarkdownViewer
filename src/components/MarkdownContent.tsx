@@ -2,6 +2,7 @@ import { useMemo } from 'react'
 import { renderRpgMarkdown } from '../lib/rpgMarkdown'
 import { resolveRelativePath, toProjectHref, withoutMarkdownExtension } from '../lib/paths'
 import type { ContentFile, ProjectContent } from '../types'
+import { CommentLayer } from './CommentLayer'
 
 interface MarkdownContentProps {
   project: ProjectContent
@@ -90,5 +91,9 @@ export function MarkdownContent({ project, file }: MarkdownContentProps) {
     [file, project],
   )
 
-  return <article className="preview-body" dangerouslySetInnerHTML={{ __html: html }} />
+  return (
+    <CommentLayer projectId={project.id} fileId={file.routePath}>
+      <article className="preview-body" dangerouslySetInnerHTML={{ __html: html }} />
+    </CommentLayer>
+  )
 }

@@ -1,6 +1,7 @@
-import { useCallback, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import type { FileTreeNode } from '../types'
+import { loadComments, subscribeToComments } from '../lib/commentStore'
 import { toProjectRoute, withoutMarkdownExtension } from '../lib/paths'
 
 const FOLDER_PATH =
@@ -44,11 +45,13 @@ function FileTreeItem({
   projectId,
   node,
   collapsedPaths,
+  commentCounts,
   onToggleFolder,
 }: {
   projectId: string
   node: FileTreeNode
   collapsedPaths: ReadonlySet<string>
+  commentCounts: ReadonlyMap<string, number>
   onToggleFolder: (path: string) => void
 }) {
   if (node.kind === 'dir') {
@@ -91,6 +94,7 @@ function FileTreeItem({
                     projectId={projectId}
                     node={child}
                     collapsedPaths={collapsedPaths}
+                    commentCounts={commentCounts}
                     onToggleFolder={onToggleFolder}
                   />
                 ))}
@@ -102,10 +106,18 @@ function FileTreeItem({
     )
   }
 
+  const routePath = withoutMarkdownExtension(node.path)
+  const commentCount = commentCounts.get(routePath) ?? 0
+
   return (
     <li>
-      <NavLink className="file-link" to={toProjectRoute(projectId, withoutMarkdownExtension(node.path))}>
-        {node.title ?? node.name}
+      <NavLink className="file-link" to={toProjectRoute(projectId, routePath)}>
+        <span className="file-link__label">{node.title ?? node.name}</span>
+        {commentCount > 0 ? (
+          <span className="file-link__comment-count" aria-label={`Aktywne komentarze: ${commentCount}`}>
+            {commentCount}
+          </span>
+        ) : null}
       </NavLink>
     </li>
   )
@@ -113,6 +125,7 @@ function FileTreeItem({
 
 export function FileTree({ projectId, nodes }: FileTreeProps) {
   const [collapsedPaths, setCollapsedPaths] = useState<Set<string>>(() => new Set())
+  const [comments, setComments] = useState(() => loadComments())
 
   const onToggleFolder = useCallback((path: string) => {
     setCollapsedPaths((prev) => {
@@ -122,6 +135,31 @@ export function FileTree({ projectId, nodes }: FileTreeProps) {
       return next
     })
   }, [])
+
+  const refreshComments = useCallback(() => {
+    setComments(loadComments())
+  }, [])
+
+  useEffect(() => {
+    const unsubscribe = subscribeToComments(refreshComments)
+    window.addEventListener('storage', refreshComments)
+
+    return () => {
+      unsubscribe()
+      window.removeEventListener('storage', refreshComments)
+    }
+  }, [refreshComments])
+
+  const commentCounts = useMemo(() => {
+    const counts = new Map<string, number>()
+
+    comments.forEach((comment) => {
+      if (comment.projectId !== projectId || comment.resolved) return
+      counts.set(comment.fileId, (counts.get(comment.fileId) ?? 0) + 1)
+    })
+
+    return counts
+  }, [comments, projectId])
 
   if (nodes.length === 0) {
     return <p className="brand-subtitle">Nie znaleziono plików markdown.</p>
@@ -135,6 +173,7 @@ export function FileTree({ projectId, nodes }: FileTreeProps) {
           projectId={projectId}
           node={node}
           collapsedPaths={collapsedPaths}
+          commentCounts={commentCounts}
           onToggleFolder={onToggleFolder}
         />
       ))}

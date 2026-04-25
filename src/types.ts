@@ -107,6 +107,17 @@ export interface ContentFile {
   tags: string[]
 }
 
+export interface Comment {
+  id: string
+  projectId: string
+  fileId: string
+  quote: string
+  anchor: string
+  text: string
+  createdAt: string
+  resolved: boolean
+}
+
 export interface FileTreeNode {
   name: string
   path: string

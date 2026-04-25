@@ -2,6 +2,7 @@ import { type ReactNode, useState, useRef, useEffect, useCallback } from 'react'
 import { useLocation } from 'react-router-dom'
 import { Sidebar } from './Sidebar'
 import { SearchDialog } from './SearchDialog'
+import { CommentsOverview } from './CommentsOverview'
 import type { ProjectContent } from '../types'
 
 interface AppLayoutProps {
@@ -17,11 +18,14 @@ export function AppLayout({ activeProject, children }: AppLayoutProps) {
   const location = useLocation()
   const [zoom, setZoom] = useState(1)
   const [searchOpen, setSearchOpen] = useState(false)
+  const [commentsOverviewOpen, setCommentsOverviewOpen] = useState(false)
   const [sidebarOpen, setSidebarOpen] = useState(true)
   const mainRef = useRef<HTMLElement>(null)
 
   const openSearch = useCallback(() => setSearchOpen(true), [])
   const closeSearch = useCallback(() => setSearchOpen(false), [])
+  const openCommentsOverview = useCallback(() => setCommentsOverviewOpen(true), [])
+  const closeCommentsOverview = useCallback(() => setCommentsOverviewOpen(false), [])
 
   const toggleSidebar = useCallback(() => {
     setSidebarOpen((o) => !o)
@@ -79,7 +83,7 @@ export function AppLayout({ activeProject, children }: AppLayoutProps) {
 
   return (
     <div className={sidebarOpen ? 'app-shell' : 'app-shell app-shell--sidebar-collapsed'}>
-      <Sidebar activeProject={activeProject} onOpenSearch={openSearch} onCloseSidebar={() => setSidebarOpen(false)} />
+      <Sidebar activeProject={activeProject} onOpenSearch={openSearch} onOpenCommentsOverview={openCommentsOverview} onCloseSidebar={() => setSidebarOpen(false)} />
       <button
         type="button"
         className={sidebarOpen ? 'sidebar-reopen sidebar-reopen--dormant' : 'sidebar-reopen'}
@@ -99,6 +103,7 @@ export function AppLayout({ activeProject, children }: AppLayoutProps) {
         </main>
       </div>
       {activeProject ? <SearchDialog project={activeProject} open={searchOpen} onClose={closeSearch} /> : null}
+      <CommentsOverview open={commentsOverviewOpen} onClose={closeCommentsOverview} />
     </div>
   )
 }
