@@ -7,7 +7,6 @@ import {
   doc,
   query,
   orderBy,
-  writeBatch,
 } from 'firebase/firestore'
 import { db } from './firebase'
 import type { Comment } from '../types'
@@ -67,21 +66,4 @@ export function deleteComment(commentId: string): void {
 export function subscribeToComments(listener: () => void): () => void {
   listeners.add(listener)
   return () => listeners.delete(listener)
-}
-
-export function importComments(incoming: unknown[]): { imported: number; skipped: number } {
-  const existingIds = new Set(cache.map((c) => c.id))
-  const valid = incoming.filter(isComment)
-  const fresh = valid.filter((c) => !existingIds.has(c.id))
-
-  if (fresh.length > 0) {
-    const batch = writeBatch(db)
-    for (const comment of fresh) {
-      const { id, ...data } = comment
-      batch.set(doc(db, 'comments', id), data)
-    }
-    batch.commit().catch(() => {})
-  }
-
-  return { imported: fresh.length, skipped: valid.length - fresh.length }
 }
