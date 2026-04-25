@@ -3,4 +3,4 @@ title: LiveCore
 tags: [lore]
 ---
 
-Treść
+`ToDo: ....`
