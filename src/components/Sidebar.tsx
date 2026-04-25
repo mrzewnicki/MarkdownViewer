@@ -13,7 +13,6 @@ export function Sidebar({ activeProject }: SidebarProps) {
     <aside className="sidebar">
       <div className="brand">
         <span className="brand-title">MarkdownViewer</span>
-        <span className="brand-subtitle">Static RPG markdown publishing</span>
       </div>
 
       <div className="section-label">Projects</div>

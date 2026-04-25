@@ -44,6 +44,7 @@ function appendHash(href: string, raw: string): string {
   return hash ? `${href}#${encodeURIComponent(hash)}` : href
 }
 
+
 export function MarkdownContent({ project, file }: MarkdownContentProps) {
   const html = useMemo(
     () =>
