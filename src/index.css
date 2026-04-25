@@ -879,15 +879,26 @@ button {
 .search-icon-button {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  padding: 0;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 100%;
+  min-height: 40px;
+  padding: 8px 12px;
   border: 1px solid var(--border);
   border-radius: 8px;
   background: rgba(17, 22, 35, 0.9);
   color: var(--text);
+  font-size: 14px;
+  font-weight: 500;
   cursor: pointer;
+}
+
+.search-icon-button svg {
+  flex-shrink: 0;
+}
+
+.search-icon-button-label {
+  line-height: 1.2;
 }
 
 .search-icon-button:hover:not(:disabled) {

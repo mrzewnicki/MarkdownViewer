@@ -68,7 +68,7 @@ export function SearchDialog({ project, open, onClose }: SearchDialogProps) {
             Szukaj
           </h2>
           <p id={descId} className="search-dialog-hint">
-            Filtruj po nazwie pliku, tagach w frontmatterze lub treści strony. Wyniki uaktualniają się w trakcie
+            Filtruj po nazwie pliku, tagach lub treści strony.
             wpisywania.
           </p>
           <input

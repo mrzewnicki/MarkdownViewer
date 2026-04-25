@@ -34,9 +34,12 @@ export function Sidebar({ activeProject, onOpenSearch, onCloseSidebar }: Sidebar
           onClick={onOpenSearch}
           disabled={!activeProject}
           title={activeProject ? 'Szukaj (Shift+F)' : 'Wybierz projekt, aby włączyć wyszukiwanie'}
-          aria-label="Szukaj"
+          aria-label={
+            activeProject ? 'Wyszukaj' : 'Wybierz projekt, aby włączyć wyszukiwanie'
+          }
         >
           <SearchIcon />
+          <span className="search-icon-button-label">Wyszukaj</span>
         </button>
       </div>
 
