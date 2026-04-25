@@ -1422,6 +1422,16 @@ button {
   padding: 16px 20px;
 }
 
+.co-import-status {
+  margin: 8px 0 0;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12.5px;
+  color: var(--text);
+  background: var(--accent-soft);
+  border: 1px solid rgba(124, 58, 237, 0.25);
+}
+
 .co-empty {
   color: var(--muted);
   line-height: 1.6;

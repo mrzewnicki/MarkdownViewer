@@ -1,7 +1,7 @@
-import { useCallback, useEffect, useMemo, useState, type KeyboardEvent } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState, type KeyboardEvent } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { projects } from '../content-loader'
-import { deleteComment, loadComments, resolveComment, subscribeToComments } from '../lib/commentStore'
+import { deleteComment, importComments, loadComments, resolveComment, subscribeToComments } from '../lib/commentStore'
 import { toProjectRoute } from '../lib/paths'
 import type { Comment } from '../types'
 
@@ -119,6 +119,8 @@ function CommentRow({ comment, onNavigate }: CommentRowProps) {
 export function CommentsOverview({ open, onClose }: CommentsOverviewProps) {
   const [comments, setComments] = useState<Comment[]>(() => loadComments())
   const [tab, setTab] = useState<Tab>('open')
+  const [importStatus, setImportStatus] = useState<string | null>(null)
+  const fileInputRef = useRef<HTMLInputElement>(null)
   const navigate = useNavigate()
 
   const refreshComments = useCallback(() => setComments(loadComments()), [])
@@ -154,6 +156,40 @@ export function CommentsOverview({ open, onClose }: CommentsOverviewProps) {
     [onClose],
   )
 
+  const handleUploadClick = useCallback(() => {
+    setImportStatus(null)
+    fileInputRef.current?.click()
+  }, [])
+
+  const handleFileChange = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      const file = e.target.files?.[0]
+      if (!file) return
+
+      const reader = new FileReader()
+      reader.onload = (event) => {
+        try {
+          const parsed: unknown = JSON.parse(event.target?.result as string)
+          const incoming = Array.isArray(parsed) ? parsed : [parsed]
+          const { imported, skipped } = importComments(incoming)
+
+          if (imported === 0 && skipped === 0) {
+            setImportStatus('Nie znaleziono poprawnych komentarzy w pliku.')
+          } else if (imported === 0) {
+            setImportStatus(`Wszystkie komentarze już istnieją (pominięto ${skipped}).`)
+          } else {
+            setImportStatus(`Zaimportowano ${imported} komentarz${imported === 1 ? '' : imported < 5 ? 'e' : 'y'}${skipped > 0 ? `, pominięto ${skipped}` : ''}.`)
+          }
+        } catch {
+          setImportStatus('Błąd: nieprawidłowy plik JSON.')
+        }
+        e.target.value = ''
+      }
+      reader.readAsText(file)
+    },
+    [],
+  )
+
   if (!open) return null
 
   return (
@@ -177,6 +213,22 @@ export function CommentsOverview({ open, onClose }: CommentsOverviewProps) {
               <button
                 type="button"
                 className="co-download-btn"
+                onClick={handleUploadClick}
+                title="Importuj komentarze z pliku JSON"
+              >
+                <UploadIcon />
+                Importuj
+              </button>
+              <input
+                ref={fileInputRef}
+                type="file"
+                accept=".json,application/json"
+                style={{ display: 'none' }}
+                onChange={handleFileChange}
+              />
+              <button
+                type="button"
+                className="co-download-btn"
                 onClick={() => downloadComments(comments)}
                 title="Pobierz komentarze jako plik Markdown"
                 disabled={comments.length === 0}
@@ -189,6 +241,9 @@ export function CommentsOverview({ open, onClose }: CommentsOverviewProps) {
               </button>
             </div>
           </div>
+          {importStatus && (
+            <p className="co-import-status">{importStatus}</p>
+          )}
           <div className="co-tabs" role="tablist">
             <button
               role="tab"
@@ -228,6 +283,37 @@ export function CommentsOverview({ open, onClose }: CommentsOverviewProps) {
         </div>
       </div>
     </div>
+  )
+}
+
+function UploadIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+      <path
+        d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <polyline
+        points="17 8 12 3 7 8"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <line
+        x1="12"
+        y1="3"
+        x2="12"
+        y2="15"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
   )
 }
 

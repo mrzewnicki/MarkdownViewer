@@ -58,3 +58,17 @@ export function subscribeToComments(listener: () => void) {
   listeners.add(listener)
   return () => listeners.delete(listener)
 }
+
+export function importComments(incoming: unknown[]): { imported: number; skipped: number } {
+  const existing = loadComments()
+  const existingIds = new Set(existing.map((c) => c.id))
+
+  const valid = incoming.filter(isComment)
+  const fresh = valid.filter((c) => !existingIds.has(c.id))
+
+  if (fresh.length > 0) {
+    saveComments([...existing, ...fresh])
+  }
+
+  return { imported: fresh.length, skipped: valid.length - fresh.length }
+}
