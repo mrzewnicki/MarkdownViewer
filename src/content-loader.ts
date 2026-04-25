@@ -17,7 +17,9 @@ const configModules = import.meta.glob<{ default: unknown }>('/content/**/.rpg-r
   eager: true,
 })
 
-const assetModules = import.meta.glob<string>('/content/**/*.{png,jpg,jpeg,gif,webp,svg,bmp,ico}', {
+const assetModules = import.meta.glob<string>(
+  '/content/**/*.{png,jpg,jpeg,jfif,gif,webp,avif,svg,bmp,ico,tif,tiff}',
+  {
   query: '?url',
   import: 'default',
   eager: true,

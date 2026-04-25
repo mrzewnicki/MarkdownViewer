@@ -20,7 +20,7 @@
     "projectId": "The folder name directly under content/ becomes the project identifier and drives all hash routes",
     "configFile": ".rpg-renderer/config.json — merged on top of DEFAULT_RPG_CONFIG from src/types.ts; missing fields fall back to defaults",
     "scanedExtensions": ["md", "markdown", "mdx"],
-    "assetExtensions": ["png", "jpg", "jpeg", "gif", "webp", "svg", "bmp", "ico"],
+    "assetExtensions": ["png", "jpg", "jpeg", "jfif", "gif", "webp", "avif", "svg", "bmp", "ico", "tif", "tiff"],
     "ignoredFolders": [".git", "node_modules", ".rpg-renderer"],
     "note": "Images referenced as relative paths in markdown are resolved via project.assets Map (Vite ?url import). Images outside content/ are not available.",
     "viewerLink": "Optional per-project file content/<projectId>/.rpg-renderer/viewer-link.json (gitignored) with { version, sourcePath } pointing to the local authoring folder; .cursor/skills/sync-viewer-content/SKILL.md describes robocopy mirroring from sourcePath into that content folder."
