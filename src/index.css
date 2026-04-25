@@ -316,8 +316,11 @@ button {
 }
 
 .preview-body img {
+  display: block;
   max-width: 100%;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: var(--radius);
   border: 1px solid var(--border);
 }
