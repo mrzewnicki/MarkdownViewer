@@ -1,0 +1,172 @@
+{
+  "name": "rpg-markdown-viewer",
+  "description": "Vite + React + TypeScript static-site SPA that publishes RPG markdown sources created by rpg-knowledge-editor. Drop source folders into content/, run npm run build, deploy dist/ anywhere.",
+  "entry": "src/main.tsx",
+  "renderer": "index.html",
+
+  "stack": {
+    "framework": "React 19 + Vite 8",
+    "language": "TypeScript",
+    "routing": "react-router-dom v7, HashRouter — hash URLs (#/project/path) work on any static host",
+    "markdown": "markdown-it + markdown-it-container + markdown-it-anchor + github-slugger",
+    "sanitization": "DOMPurify",
+    "styling": "plain CSS (src/index.css), no CSS-in-JS, no Tailwind",
+    "buildOutput": "dist/ — fully static, no server required"
+  },
+
+  "contentConventions": {
+    "root": "content/",
+    "layout": "content/<projectId>/<...files>.md and content/<projectId>/.rpg-renderer/config.json",
+    "projectId": "The folder name directly under content/ becomes the project identifier and drives all hash routes",
+    "configFile": ".rpg-renderer/config.json — merged on top of DEFAULT_RPG_CONFIG from src/types.ts; missing fields fall back to defaults",
+    "scanedExtensions": ["md", "markdown", "mdx"],
+    "assetExtensions": ["png", "jpg", "jpeg", "gif", "webp", "svg", "bmp", "ico"],
+    "ignoredFolders": [".git", "node_modules", ".rpg-renderer"],
+    "note": "Images referenced as relative paths in markdown are resolved via project.assets Map (Vite ?url import). Images outside content/ are not available."
+  },
+
+  "routing": {
+    "type": "HashRouter",
+    "routes": [
+      { "hash": "#/",              "component": "src/pages/HomePage.tsx",     "desc": "Project list landing page" },
+      { "hash": "#/:project",      "component": "src/pages/DocumentPage.tsx", "desc": "Redirects to first file of the project" },
+      { "hash": "#/:project/*",    "component": "src/pages/DocumentPage.tsx", "desc": "Specific markdown document; * = URL-encoded routePath" }
+    ],
+    "routePath": "File path relative to the project root, without markdown extension and with URL-encoded segments",
+    "helpers": "src/lib/paths.ts — toProjectRoute(), toProjectHref(), decodeRoutePath()"
+  },
+
+  "dataModel": {
+    "source": "src/types.ts",
+    "types": {
+      "RpgRendererConfig": "Full renderer config — entityTypes, calloutTypes, icons, paths, scan, preview, renderer. Mirrors rpg-knowledge-editor shared/types.ts.",
+      "DEFAULT_RPG_CONFIG": "Baseline config exported from src/types.ts; project configs are merged on top.",
+      "ContentFile": "{ path, routePath, title, content } — single resolved markdown file",
+      "FileTreeNode": "{ name, path, kind ('file'|'dir'), title?, children? } — recursive sidebar tree node",
+      "ProjectContent": "{ id, title, config, files, fileMap, routeMap, tree, assets } — all data for one project"
+    }
+  },
+
+  "modules": {
+    "src/types.ts": {
+      "role": "Shared TypeScript types and DEFAULT_RPG_CONFIG constant",
+      "exports": ["RpgRendererConfig", "DEFAULT_RPG_CONFIG", "ContentFile", "FileTreeNode", "ProjectContent", "ScanOptions"]
+    },
+    "src/content-loader.ts": {
+      "role": "Build-time static content index. Uses import.meta.glob to load all .md files and .rpg-renderer/config.json files from content/. Builds ProjectContent[] at module load time (eager).",
+      "exports": ["projects", "getProject(projectId)", "getFirstFile(project)"],
+      "globs": [
+        "/content/**/*.{md,markdown,mdx}  → raw string",
+        "/content/**/.rpg-renderer/config.json → JSON module",
+        "/content/**/*.{png,jpg,...}       → ?url string"
+      ],
+      "note": "Adding a new project = drop a folder under content/ and rebuild. No code changes needed."
+    },
+    "src/lib/rpgMarkdown.ts": {
+      "role": "Self-contained markdown rendering pipeline — identical behavior to rpg-knowledge-editor minus Electron IPC. Stateless except for a markdown-it instance cache keyed by JSON(config).",
+      "exports": [
+        "renderRpgMarkdown(source, cfg, options?) → HTML string",
+        "extractHeadingsForLinkPicker(source, cfg) → {text,slug}[]",
+        "RenderRpgMarkdownOptions interface"
+      ],
+      "pipeline": [
+        "1. Strip YAML front matter → render as .markdown-frontmatter aside",
+        "2. preprocessCallouts: > [!kind] blockquotes → ::: callout-kind containers",
+        "3. preprocessInline: @type:id → .rpg-inline-ref spans; [[wiki]] → <a class='rpg-wikilink'> or <span class='is-missing'>",
+        "4. fixMarkdownParenDestinationsWithWhitespace: wraps spaced link destinations in <>",
+        "5. markdown-it render: one container plugin per entityType and calloutType",
+        "6. rewriteLocalRefs: calls options.resolveAssetSrc and options.resolveDocumentHref on img/a",
+        "7. DOMPurify sanitize"
+      ],
+      "options": {
+        "currentFilePath": "Relative path of the file being rendered (for relative link resolution)",
+        "resolveWikiHref": "(title, currentFilePath) => hash href | null — called for every [[wiki link]]",
+        "resolveAssetSrc": "(src, currentFilePath) => resolved URL | null — called for every img[src]",
+        "resolveDocumentHref": "(href, currentFilePath) => hash href | null — called for every a[href] that isn't external"
+      }
+    },
+    "src/lib/entityMeta.ts": {
+      "role": "Resolves display label and emoji icon for entity types and callout types from RpgRendererConfig",
+      "exports": ["resolveEntityLabel", "resolveEntityIcon", "resolveCalloutLabel", "resolveCalloutIcon"]
+    },
+    "src/lib/paths.ts": {
+      "role": "All path/URL helpers — normalization, route encoding/decoding, relative path resolution",
+      "exports": [
+        "normalizePath(path) → forward-slash, no leading slash",
+        "withoutMarkdownExtension(path) → strips .md/.markdown/.mdx",
+        "toProjectRoute(projectId, routePath?) → /projectId/encoded/path",
+        "toProjectHref(projectId, routePath?) → #/projectId/encoded/path",
+        "decodeRoutePath(path) → decoded segments joined with /",
+        "resolveRelativePath(target, fromFilePath) → absolute relative path within project",
+        "basename(path) → last path segment"
+      ]
+    },
+    "src/App.tsx": {
+      "role": "Root component. HashRouter wraps RoutedLayout which reads location.pathname to resolve activeProject for the Sidebar.",
+      "note": "Routes: / → HomePage, /:project/* → DocumentPage. Both wrapped in AppLayout."
+    },
+    "src/components/AppLayout.tsx": {
+      "role": "Two-column grid: sticky Sidebar on the left, <main> on the right",
+      "props": ["activeProject?: ProjectContent | null", "children: ReactNode"]
+    },
+    "src/components/Sidebar.tsx": {
+      "role": "Renders project list (top) and FileTree for the active project (bottom). Always reads from the top-level `projects` array.",
+      "props": ["activeProject?: ProjectContent | null"]
+    },
+    "src/components/FileTree.tsx": {
+      "role": "Recursive tree of FileTreeNode[]. Directories show as labels; files render as NavLink to their hash route.",
+      "props": ["projectId: string", "nodes: FileTreeNode[]"]
+    },
+    "src/components/MarkdownContent.tsx": {
+      "role": "Calls renderRpgMarkdown with all three resolver callbacks wired to the project's fileMap/routeMap/assets, then outputs dangerouslySetInnerHTML. The wiki link resolver does fuzzy title matching.",
+      "props": ["project: ProjectContent", "file: ContentFile"]
+    },
+    "src/pages/HomePage.tsx": {
+      "role": "Landing page. Shows project cards (title + file count). Redirects to first file of each project on click."
+    },
+    "src/pages/DocumentPage.tsx": {
+      "role": "Reads :project and * params, resolves ContentFile from routeMap, renders DocumentPage header + MarkdownContent. Shows not-found states for unknown projects or paths."
+    },
+    "src/index.css": {
+      "role": "All styles. No external CSS framework. Sections: CSS variables (dark theme), app chrome (.app-shell, .sidebar, .brand, .content, .content-header), RPG preview (.preview-body, .rpg-block*, .rpg-callout*, .rpg-inline-ref, .rpg-wikilink), responsive breakpoint at 860px."
+    }
+  },
+
+  "cssClasses": {
+    "layout": [".app-shell", ".sidebar", ".brand", ".content", ".content-header", ".home", ".empty-state", ".not-found"],
+    "navigation": [".nav-link", ".file-link", ".project-list", ".file-tree", ".file-tree-children", ".tree-folder", ".tree-folder-name", ".section-label"],
+    "projectCards": [".project-cards", ".project-card", ".project-card-title", ".project-card-meta"],
+    "preview": [".preview-body", ".markdown-frontmatter"],
+    "rpgBlocks": [".rpg-block", ".rpg-block-{type}", ".rpg-block-head", ".rpg-block-icon", ".rpg-block-title", ".rpg-block-body"],
+    "rpgCallouts": [".rpg-callout", ".rpg-callout-{kind}", ".rpg-callout-bar", ".rpg-callout-inner", ".rpg-callout-head", ".rpg-callout-icon", ".rpg-callout-label", ".rpg-callout-content"],
+    "rpgInline": [".rpg-inline", ".rpg-inline-ref", ".rpg-inline-icon", ".rpg-inline-label", ".rpg-inline-id"],
+    "rpgWikilinks": [".rpg-wikilink", ".rpg-wikilink.is-missing"]
+  },
+
+  "extensionPoints": {
+    "addProject": "Drop a new folder under content/. It is auto-discovered by import.meta.glob at build time. No code changes.",
+    "newPageOrRoute": "Add a <Route> in src/App.tsx and create the page component in src/pages/. Wrap in AppLayout if it needs the sidebar.",
+    "newSidebarSection": "Add JSX to src/components/Sidebar.tsx. ProjectContent and projects array are already imported.",
+    "newMarkdownSyntax": "Extend renderRpgMarkdown options (src/lib/rpgMarkdown.ts) or add a new preprocessor step in the pipeline.",
+    "newEntityOrCalloutType": "Add to entityTypes / calloutTypes in the project's .rpg-renderer/config.json. Fallback defaults live in src/types.ts DEFAULT_RPG_CONFIG.",
+    "globalStyle": "Edit src/index.css. CSS variables are defined in :root.",
+    "newContentFileField": "Extend ContentFile in src/types.ts, update titleForFile / buildProjects in src/content-loader.ts.",
+    "search": "All file content is available at build time in project.files[].content — a full-text index can be built as an additional export from src/content-loader.ts.",
+    "tableOfContents": "extractHeadingsForLinkPicker(file.content, project.config) from src/lib/rpgMarkdown.ts returns {text, slug}[] — ready to render as a TOC."
+  },
+
+  "buildAndDeploy": {
+    "dev": "npm run dev  (Vite HMR, content changes require restart to re-index globs)",
+    "build": "npm run build  → dist/",
+    "preview": "npm run preview  → serves dist/ locally",
+    "deploy": "Upload dist/ to any static host (Netlify, Vercel, GitHub Pages, S3). No server-side config needed because hash routing is fully client-side.",
+    "knownIssue": "rolldown optional binding (@rolldown/binding-win32-x64-msvc) must be installed explicitly on Windows with Node 20.13.x. Already in devDependencies."
+  },
+
+  "relatedProject": {
+    "name": "rpg-knowledge-editor",
+    "path": "P:/MarkdownTool/MarkdownEditor",
+    "manifest": "P:/MarkdownTool/MarkdownEditor/cursor.manifest",
+    "note": "The Viewer must never modify Editor source files. Shared logic (rpgMarkdown, entityMeta, types) is ported, not imported."
+  }
+}
