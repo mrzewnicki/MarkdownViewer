@@ -1,4 +1,5 @@
 import { type ReactNode, useState, useRef, useEffect, useCallback } from 'react'
+import { useLocation } from 'react-router-dom'
 import { Sidebar } from './Sidebar'
 import { SearchDialog } from './SearchDialog'
 import type { ProjectContent } from '../types'
@@ -13,6 +14,7 @@ const ZOOM_MIN = 0.3
 const ZOOM_MAX = 3.0
 
 export function AppLayout({ activeProject, children }: AppLayoutProps) {
+  const location = useLocation()
   const [zoom, setZoom] = useState(1)
   const [searchOpen, setSearchOpen] = useState(false)
   const [sidebarOpen, setSidebarOpen] = useState(true)
@@ -64,6 +66,17 @@ export function AppLayout({ activeProject, children }: AppLayoutProps) {
     return () => el.removeEventListener('wheel', handleWheel)
   }, [])
 
+  useEffect(() => {
+    const el = mainRef.current
+    if (!el) return
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    if (prefersReducedMotion) {
+      el.scrollTo({ top: 0 })
+      return
+    }
+    el.scrollTo({ top: 0, behavior: 'smooth' })
+  }, [location.pathname])
+
   return (
     <div className={sidebarOpen ? 'app-shell' : 'app-shell app-shell--sidebar-collapsed'}>
       <Sidebar activeProject={activeProject} onOpenSearch={openSearch} onCloseSidebar={() => setSidebarOpen(false)} />
@@ -80,7 +93,9 @@ export function AppLayout({ activeProject, children }: AppLayoutProps) {
       </button>
       <div className="app-content-area">
         <main ref={mainRef} className="content" style={{ zoom }}>
-          {children}
+          <div key={location.pathname} className="route-transition">
+            {children}
+          </div>
         </main>
       </div>
       {activeProject ? <SearchDialog project={activeProject} open={searchOpen} onClose={closeSearch} /> : null}
