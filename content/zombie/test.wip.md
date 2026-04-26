@@ -5,7 +5,7 @@ tags: [npc, strefa-zero, combat]
 
 # Sandbox konfiguracji RPG
 
-Krótki akapit z inline: @npc:test-npc, @location:ruiny, @faction:iron-crows, @item:stimpak, @beast:kruker, @rule:cover, @zombie:shambler, @mutant:phase-rat oraz wiki [[Strefa Zero]].
+Krótki akapit z inline: @npc:test-npc, @location:ruiny, @faction:iron-crows, @item:stimpak, @beast:kruker, @rule:cover, @zombie:shambler, @mutant:phase-rat oraz wiki [[Strefa Zero]]
 
 ---
 

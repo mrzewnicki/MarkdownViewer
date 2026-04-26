@@ -1,4 +1,4 @@
-# Klasyfikacja worgów
+# Klasyfikacja wrogów
 
 
 | Numer | Przykład |
