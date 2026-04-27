@@ -22,6 +22,29 @@ Mimo wszelkich konwencjonalnych środków motywowanych strachem przed dotarciem 
 
 ## Boston
 
+### Badanie Zombie
+
+Boston był jednym z filarów amerykańskiej siatki badawczej DeathNetu. Miasto wybrano nieprzypadkowo — bliskość uczelni, laboratoriów biomedycznych, portu i infrastruktury wojskowej czyniła je idealnym centrum analiz nad plagą. W podziemiach jednej z zamkniętych placówek prowadzono projekt o kryptonimie Cerebus, którego celem było zrozumienie procesu przemiany człowieka w zakażonego.
+
+Do kompleksu dostarczono schwytanego osobnika. Został pojmany podczas czyszczenia strefy kwarantanny na obrzeżach miast w Europie. Był nienaturalnie spokojny. Podczas badań nie reagował na światło, dźwięk ani bodźce bólowe, zupełnie jakby się wyłączył. Przez pierwsze godziny badacze uznali go za uszkodzony neurologicznie egzemplarz. Rozpoczęto jednak standardową serię testów. Analiza tkanek, badanie reakcji nerwowych, ekspozycja na feromony innych zakażonych, próby wywołania agresji. Czas się kurczył, a tysiące ginęły na wojnie. Zdecydowano, że trzeba sprawdzić w jaki sposób przebiega proces zarażania.
+
+Początkowo chciano poświęcić jednego z więźniów skazanego na karę śmierci, ale zgłosił się ochotnik. Jeden z asystentów lekarzy i naukowców przekonywał, że ściągnięcie więźnia to formalności prawne, konsekwencje po wojnie, a najgorsze, że czas, którego nie mieli. On sam też jest śmiertelnie chory. Dla naukowców to był prezent, którego nie oczekiwali ale i sprawdzian na człowieczeństwo, którego nie zdali. Natychmiast przeprowadzili wszystkie potrzebne badania na młodym i co najgorsze zdrowym chłopaku. Wtedy porwadzący zespół naukowców stanęli nad dylematem czy dopuszczać chłopaka do eksperymentu, którego badania nie wykazały żadnych chorób. Wyniki były wzorcowe. Po tragicznie krótkiej naradzie prowadzący zrzucili na ten fakt kurtynę milczenia decydując się na zignorowanie tego faktu i przeprowadzenie eksperymentu.
+
+Wrzucili chłopaka do szklanej komory z zarażonym i patrzyli jak ten w chwilę z wadliwego osobnika zmienia się w zwierzę dociskające ochotnika do szklanej ściany. Pozbawione sensu podrygi ciała w celu uwolnienia się z uścisku rozsmarowały krew bo przezroczystych ścianach. Wtedy łańcuch odciągnął zarażonego w tył z fragmentem ciała w pysku. Naturalnie zarażenie można było spróbować uzyskać bardziej klinicznie ale naukowcy musieli się ostatecznie przekonać czy osobnik jest wadliwy czy nie.
+
+Samuel Reed bo tak nazywał się ochotnik, natychmiast został ustabilizowany i podpięty pod wszelką dostępną aparaturę. Mimo jego krzyku nie podano mu leków innych niż w celu ratowania życia. Każda maszyna, naukowiec i ochroniarz w sali skupili się w pełni na tym by wyłapać każdą chwilę tego procesu. By każdy odczyt był perfekcyjny i by nikt zarażony nie opuścił miejsca eksperymentu zakażenia. Być może właśnie dlatego nikt nie zauważył tego co stało się po drugiej stronie sali.
+
+Przy celi w której umieszczony był pochwycony zombie podszedł do drzwi ochroniarz. Doświadczony żołnierz o wieloletnim stażu w armii USA, a potem na usługach DeathNet'u. Wcyiągnął z kieszeni kartę i przyłożył do czujnika otwierającego drzwi do celi. Początkowo oniemiały drugi ochroniarz aż zastygł w szoku. Spodziewał się, że jego doświadczony kolega będzie chciał wejść do środka i zabić bestię, ale na pewno nie spodziewał się, że jak tylko pojawiła się przestrzeń między drzwiami to bestia natychmiast  wybiegła z klatki i rzuciła się do ataku. W tym czasie jego kolega mierzył do niego z pistoletu z tempym zabarwionym czerwienią wzrokiem. Pierwszym celem był zdrowy przy zmysłach ochroniarz, potem badacze, którzy zaczęli unikać w panice. Bestia natomiast nie żywiła się długo na jednej ofierze jak zwykły zombie. Starała się zranić jak najwięcej personelu.
+
+Wzbudzona panika zaalarmowałą panikę. Natychmiast jeden z oficerów wycelował w zmieniającego się Samuela, ale droge zastąpił mu jeden z badaczy błagając by dał im dokończyć obserwację. Jej wyniki i tak się zapiszą w chmurze danych firmy. W tym czasie dowódca tego żołnierza z oddziałem natychmiast ruszyli do drugiego pomieszczenia. Jeszcze przed chwilą pracownicy laboratoryjni wyskakiwali w szale pragnienia ludzkiego mięsa. Szybko doszło do krwawej jatki między udoskonalonymi żołnierzami DeathNet'em i zombie. Być może żołnierze opanowaliby incydent gdyby podobnie schwytany pierwotnie zombie nie zareagował. 
+
+Organizmy przestały słuchać żołnierzy. Drgały w spięciu wytrenowanych mięśni jakby same one krępowały ruchy żołnierzy. Ten który to wywołał kroczył spokojnie wśród wywołanej masakry jego wolą. Spojrzał prosto w kamerę jakby czuł, że ktoś go obserwuje i na jego twarzy wykwitł grymas przypominający uśmiech. 
+
+Jego poplecznicy zabili już ochronę i badaczy rozpoczęły wspólny szturm przez sale, które nie zdążyły odciąć systemy bezpieczeństwa. Forsując kolejne wrota i zwiększając swoją liczebność zaczęły przejmowac tą placówkę DeathNet'u. W tym czasie Alfa popatrzyła spokojnie na zmienionego Samuela uwięzionego w komorze. Przekręciła łbem i odwróciła się na pięcie zostawiając go w tubie.
+
+Tak plaga sforsowała wszystkie próby utrzymania ich poza kontynentem i wylała się na ulice Bostonu.
+
+
 
 ## Washington, D.C
 
