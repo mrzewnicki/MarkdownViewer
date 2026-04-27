@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+import { useEffect, useMemo, useRef } from 'react'
 import { renderRpgMarkdown } from '../lib/rpgMarkdown'
 import { resolveRelativePath, toProjectHref, withoutMarkdownExtension } from '../lib/paths'
 import type { ContentFile, ProjectContent } from '../types'
@@ -63,7 +63,10 @@ function appendHash(href: string, raw: string): string {
 }
 
 
+const LINK_ICON_SVG = `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>`
+
 export function MarkdownContent({ project, file }: MarkdownContentProps) {
+  const articleRef = useRef<HTMLElement>(null)
   const html = useMemo(
     () =>
       renderRpgMarkdown(file.content, project.config, {
@@ -91,9 +94,45 @@ export function MarkdownContent({ project, file }: MarkdownContentProps) {
     [file, project],
   )
 
+  useEffect(() => {
+    const article = articleRef.current
+    if (!article) return
+
+    const headings = article.querySelectorAll<HTMLElement>('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]')
+    const handlers: Array<{ btn: HTMLButtonElement; handler: () => void }> = []
+
+    for (const heading of headings) {
+      const id = heading.getAttribute('id') ?? ''
+      const btn = document.createElement('button')
+      btn.className = 'heading-copy-link'
+      btn.setAttribute('aria-label', 'Copy link to heading')
+      btn.setAttribute('type', 'button')
+      btn.innerHTML = LINK_ICON_SVG
+
+      const handler = () => {
+        const url = new URL(window.location.href)
+        url.hash = id
+        navigator.clipboard.writeText(url.toString()).catch(() => {})
+        btn.classList.add('heading-copy-link--copied')
+        setTimeout(() => btn.classList.remove('heading-copy-link--copied'), 1500)
+      }
+
+      btn.addEventListener('click', handler)
+      heading.prepend(btn)
+      handlers.push({ btn, handler })
+    }
+
+    return () => {
+      for (const { btn, handler } of handlers) {
+        btn.removeEventListener('click', handler)
+        btn.remove()
+      }
+    }
+  }, [html])
+
   return (
     <CommentLayer projectId={project.id} fileId={file.routePath}>
-      <article className="preview-body" dangerouslySetInnerHTML={{ __html: html }} />
+      <article ref={articleRef} className="preview-body" dangerouslySetInnerHTML={{ __html: html }} />
     </CommentLayer>
   )
 }
