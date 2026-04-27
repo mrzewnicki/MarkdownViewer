@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { Navigate, useParams } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { Navigate, useLocation, useParams } from 'react-router-dom'
 import { CommentPanel } from '../components/CommentPanel'
 import { getFirstFile, getProject } from '../content-loader'
 import { MarkdownContent } from '../components/MarkdownContent'
@@ -7,8 +7,18 @@ import { decodeRoutePath, toProjectRoute } from '../lib/paths'
 
 export function DocumentPage() {
   const params = useParams()
+  const location = useLocation()
   const [commentsOpen, setCommentsOpen] = useState(true)
   const project = getProject(params.project)
+
+  useEffect(() => {
+    const section = new URLSearchParams(location.search).get('s')
+    if (!section) return
+    const timer = setTimeout(() => {
+      document.getElementById(section)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }, 80)
+    return () => clearTimeout(timer)
+  }, [location.search])
 
   if (!project) {
     return (

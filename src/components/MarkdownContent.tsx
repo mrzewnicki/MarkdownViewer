@@ -110,9 +110,9 @@ export function MarkdownContent({ project, file }: MarkdownContentProps) {
       btn.innerHTML = LINK_ICON_SVG
 
       const handler = () => {
-        const url = new URL(window.location.href)
-        url.hash = id
-        navigator.clipboard.writeText(url.toString()).catch(() => {})
+        const currentHash = window.location.hash.split('?')[0] ?? ''
+        const url = window.location.origin + window.location.pathname + currentHash + '?s=' + encodeURIComponent(id)
+        navigator.clipboard.writeText(url).catch(() => {})
         btn.classList.add('heading-copy-link--copied')
         setTimeout(() => btn.classList.remove('heading-copy-link--copied'), 1500)
       }
