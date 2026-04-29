@@ -45,7 +45,7 @@ Tak plaga sforsowała wszystkie próby utrzymania ich poza kontynentem i wylała
 
 ---
 
-`ToDo: ....`
+`ToDo: Opisać kolejne miasta`
 
 ## Washington, D.C
 

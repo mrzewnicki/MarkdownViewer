@@ -5,4 +5,4 @@ tags: [lore]
 
 ![LiveCoreLogo.png](../images/LiveCoreLogo.png)
 
-`ToDo: ....`
+`ToDo: Opisać LiveCore`
