@@ -16,15 +16,11 @@ Trzecia grupa bojowa w której zgromadzono największą siłę ognia ruszyła by
 
 Mimo wszelkich konwencjonalnych środków motywowanych strachem przed dotarciem plagi i tak dotarła ona do USA. I winowajcą tego faktu nie była pełna napięć między żołnierzami Kanada, pożarta na południu Panama, ani zbuntowany Meksyk.
 
----
-
-`ToDo: ....`
-
 ## Boston
 
-### Badanie Zombie
-
 Boston był jednym z filarów amerykańskiej siatki badawczej DeathNetu. Miasto wybrano nieprzypadkowo — bliskość uczelni, laboratoriów biomedycznych, portu i infrastruktury wojskowej czyniła je idealnym centrum analiz nad plagą. W podziemiach jednej z zamkniętych placówek prowadzono projekt o kryptonimie Cerebus, którego celem było zrozumienie procesu przemiany człowieka w zakażonego.
+
+### Badanie Zombies 
 
 Do kompleksu dostarczono schwytanego osobnika. Został pojmany podczas czyszczenia strefy kwarantanny na obrzeżach miast w Europie. Był nienaturalnie spokojny. Podczas badań nie reagował na światło, dźwięk ani bodźce bólowe, zupełnie jakby się wyłączył. Przez pierwsze godziny badacze uznali go za uszkodzony neurologicznie egzemplarz. Rozpoczęto jednak standardową serię testów. Analiza tkanek, badanie reakcji nerwowych, ekspozycja na feromony innych zakażonych, próby wywołania agresji. Czas się kurczył, a tysiące ginęły na wojnie. Zdecydowano, że trzeba sprawdzić w jaki sposób przebiega proces zarażania.
 
@@ -33,6 +29,9 @@ Początkowo chciano poświęcić jednego z więźniów skazanego na karę śmier
 Wrzucili chłopaka do szklanej komory z zarażonym i patrzyli jak ten w chwilę z wadliwego osobnika zmienia się w zwierzę dociskające ochotnika do szklanej ściany. Pozbawione sensu podrygi ciała w celu uwolnienia się z uścisku rozsmarowały krew bo przezroczystych ścianach. Wtedy łańcuch odciągnął zarażonego w tył z fragmentem ciała w pysku. Naturalnie zarażenie można było spróbować uzyskać bardziej klinicznie ale naukowcy musieli się ostatecznie przekonać czy osobnik jest wadliwy czy nie.
 
 Samuel Reed bo tak nazywał się ochotnik, natychmiast został ustabilizowany i podpięty pod wszelką dostępną aparaturę. Mimo jego krzyku nie podano mu leków innych niż w celu ratowania życia. Każda maszyna, naukowiec i ochroniarz w sali skupili się w pełni na tym by wyłapać każdą chwilę tego procesu. By każdy odczyt był perfekcyjny i by nikt zarażony nie opuścił miejsca eksperymentu zakażenia. Być może właśnie dlatego nikt nie zauważył tego co stało się po drugiej stronie sali.
+
+![SamuelReed.jpg](../images/SamuelReed.jpg)
+Samuel Reed
 
 Przy celi w której umieszczony był pochwycony zombie podszedł do drzwi ochroniarz. Doświadczony żołnierz o wieloletnim stażu w armii USA, a potem na usługach DeathNet'u. Wcyiągnął z kieszeni kartę i przyłożył do czujnika otwierającego drzwi do celi. Początkowo oniemiały drugi ochroniarz aż zastygł w szoku. Spodziewał się, że jego doświadczony kolega będzie chciał wejść do środka i zabić bestię, ale na pewno nie spodziewał się, że jak tylko pojawiła się przestrzeń między drzwiami to bestia natychmiast  wybiegła z klatki i rzuciła się do ataku. W tym czasie jego kolega mierzył do niego z pistoletu z tempym zabarwionym czerwienią wzrokiem. Pierwszym celem był zdrowy przy zmysłach ochroniarz, potem badacze, którzy zaczęli unikać w panice. Bestia natomiast nie żywiła się długo na jednej ofierze jak zwykły zombie. Starała się zranić jak najwięcej personelu.
 
@@ -44,7 +43,9 @@ Jego poplecznicy zabili już ochronę i badaczy rozpoczęły wspólny szturm prz
 
 Tak plaga sforsowała wszystkie próby utrzymania ich poza kontynentem i wylała się na ulice Bostonu.
 
+---
 
+`ToDo: ....`
 
 ## Washington, D.C
 
