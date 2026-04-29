@@ -12,7 +12,7 @@ export function TableOfContents({ headings, activeSlug: activeSlugProp }: TableO
   const urlSlug = new URLSearchParams(location.search).get('s')
   const activeSlug = activeSlugProp ?? urlSlug
   const minLevel = useMemo(() => Math.min(...headings.map((heading) => heading.level)), [headings])
-  const currentHash = typeof window === 'undefined' ? '' : (window.location.hash.split('?')[0] ?? '')
+  const currentHash = typeof window === 'undefined' ? '' : window.location.hash.split('?')[0].split('#').slice(0, 2).join('#')
   const activeRef = useRef<HTMLAnchorElement>(null)
 
   useEffect(() => {

@@ -59,7 +59,7 @@ function resolveWikiFile(project: ProjectContent, title: string, currentFilePath
 
 function appendHash(href: string, raw: string): string {
   const hash = raw.includes('#') ? raw.slice(raw.indexOf('#') + 1) : ''
-  return hash ? `${href}#${encodeURIComponent(hash)}` : href
+  return hash ? `${href}?s=${encodeURIComponent(hash)}` : href
 }
 
 
@@ -88,7 +88,7 @@ export function MarkdownContent({ project, file }: MarkdownContentProps) {
           const target = project.routeMap.get(routePath)
           if (!target) return null
           const base = toProjectHref(project.id, target.routePath)
-          return hashPart ? `${base}#${encodeURIComponent(hashPart)}` : base
+          return hashPart ? `${base}?s=${encodeURIComponent(hashPart)}` : base
         },
       }),
     [file, project],
@@ -110,7 +110,7 @@ export function MarkdownContent({ project, file }: MarkdownContentProps) {
       btn.innerHTML = LINK_ICON_SVG
 
       const handler = () => {
-        const currentHash = window.location.hash.split('?')[0] ?? ''
+        const currentHash = window.location.hash.split('?')[0].split('#').slice(0, 2).join('#')
         const url = window.location.origin + window.location.pathname + currentHash + '?s=' + encodeURIComponent(id)
         navigator.clipboard.writeText(url).catch(() => {})
         btn.classList.add('heading-copy-link--copied')

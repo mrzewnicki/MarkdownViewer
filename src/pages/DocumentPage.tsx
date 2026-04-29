@@ -25,6 +25,15 @@ export function DocumentPage() {
     return () => clearTimeout(timer)
   }, [location.search])
 
+  useEffect(() => {
+    const fragment = location.hash ? location.hash.slice(1) : ''
+    if (!fragment) return
+    const timer = setTimeout(() => {
+      document.getElementById(fragment)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }, 80)
+    return () => clearTimeout(timer)
+  }, [location.hash])
+
   const routePath = decodeRoutePath(params['*'])
   const firstFile = project ? getFirstFile(project) : null
   const file = project ? (project.routeMap.get(routePath) ?? firstFile) : null
