@@ -506,7 +506,7 @@ button {
 
 .toc-link:hover,
 .toc-link--active {
-  background: rgba(250, 204, 21, 0.12);
+  background: var(--accent-soft);
   color: var(--text-strong);
 }
 
