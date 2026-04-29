@@ -14,24 +14,37 @@ export function DocumentPage() {
   const [commentsOpen, setCommentsOpen] = useState(false)
   const [scrollActiveSlug, setScrollActiveSlug] = useState<string | null>(null)
   const userToggledRef = useRef(false)
+  const isProgrammaticScrollRef = useRef(false)
   const project = getProject(params.project)
+
+  const scrollToId = (id: string) => {
+    setScrollActiveSlug(id)
+    isProgrammaticScrollRef.current = true
+    const scrollTimer = setTimeout(() => {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }, 80)
+    const clearTimer = setTimeout(() => {
+      isProgrammaticScrollRef.current = false
+    }, 80 + 600)
+    return () => {
+      clearTimeout(scrollTimer)
+      clearTimeout(clearTimer)
+      isProgrammaticScrollRef.current = false
+    }
+  }
 
   useEffect(() => {
     const section = new URLSearchParams(location.search).get('s')
     if (!section) return
-    const timer = setTimeout(() => {
-      document.getElementById(section)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    }, 80)
-    return () => clearTimeout(timer)
+    return scrollToId(section)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location.search])
 
   useEffect(() => {
     const fragment = location.hash ? location.hash.slice(1) : ''
     if (!fragment) return
-    const timer = setTimeout(() => {
-      document.getElementById(fragment)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    }, 80)
-    return () => clearTimeout(timer)
+    return scrollToId(fragment)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location.hash])
 
   const routePath = decodeRoutePath(params['*'])
@@ -43,6 +56,7 @@ export function DocumentPage() {
     if (headings.length === 0) return
 
     const getActive = () => {
+      if (isProgrammaticScrollRef.current) return
       const threshold = window.innerHeight * 0.25
       let active: string | null = null
       for (const h of headings) {
