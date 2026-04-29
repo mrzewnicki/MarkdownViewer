@@ -58,6 +58,14 @@ body {
   .route-transition {
     animation: none;
   }
+
+  .document-layout {
+    transition: none;
+  }
+
+  .comment-panel {
+    transition: none;
+  }
 }
 
 a {
@@ -428,14 +436,78 @@ button {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 340px;
   min-height: 100vh;
+  transition: grid-template-columns 0.42s cubic-bezier(0.32, 0.72, 0, 1);
 }
 
-.document-layout:not(:has(.comment-panel)) {
-  grid-template-columns: minmax(0, 1fr);
+.document-layout--comments-closed {
+  grid-template-columns: minmax(0, 1fr) 0px;
 }
 
 .document-main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  align-items: start;
   min-width: 0;
+}
+
+.document-main:not(:has(.toc)) {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.content-header,
+.comment-layer {
+  grid-column: 1;
+}
+
+.toc {
+  position: sticky;
+  top: 24px;
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  max-height: calc(100vh - 48px);
+  margin: 24px 24px 24px 0;
+  padding: 16px;
+  overflow: auto;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: rgba(17, 22, 33, 0.68);
+}
+
+.toc-title {
+  margin-bottom: 10px;
+  color: var(--text-strong);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.toc-list {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.toc-item {
+  min-width: 0;
+}
+
+.toc-link {
+  display: block;
+  padding: 5px 8px;
+  border-radius: 10px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+.toc-link:hover,
+.toc-link--active {
+  background: rgba(250, 204, 21, 0.12);
+  color: var(--text-strong);
 }
 
 .comment-panel-toggle,
@@ -567,6 +639,19 @@ button {
   background: rgba(15, 17, 23, 0.88);
   backdrop-filter: blur(16px);
   padding: 20px 16px;
+  min-width: 0;
+  transition:
+    padding 0.42s cubic-bezier(0.32, 0.72, 0, 1),
+    border-left-width 0.36s ease,
+    border-left-color 0.28s ease;
+}
+
+.document-layout--comments-closed .comment-panel {
+  padding: 0;
+  border-left-width: 0;
+  border-left-color: transparent;
+  overflow: hidden;
+  pointer-events: none;
 }
 
 .comment-panel__header {
@@ -1266,15 +1351,39 @@ button {
     padding: 16px 22px;
   }
 
-  .document-layout {
+  .document-layout,
+  .document-layout--comments-closed {
     grid-template-columns: 1fr;
+    transition: none;
+  }
+
+  .document-main {
+    grid-template-columns: 1fr;
+  }
+
+  .toc {
+    display: none;
   }
 
   .comment-panel {
     position: static;
     height: auto;
+    max-height: 1200px;
     border-left: 0;
     border-top: 1px solid var(--border);
+    transition:
+      max-height 0.42s cubic-bezier(0.32, 0.72, 0, 1),
+      padding 0.42s cubic-bezier(0.32, 0.72, 0, 1),
+      border-top-width 0.36s ease,
+      border-top-color 0.28s ease;
+  }
+
+  .document-layout--comments-closed .comment-panel {
+    max-height: 0;
+    padding: 0;
+    border-left-width: revert;
+    border-top-width: 0;
+    border-top-color: transparent;
   }
 
   .comment-form {

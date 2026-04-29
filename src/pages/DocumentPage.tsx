@@ -1,14 +1,18 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Navigate, useLocation, useParams } from 'react-router-dom'
 import { CommentPanel } from '../components/CommentPanel'
 import { getFirstFile, getProject } from '../content-loader'
 import { MarkdownContent } from '../components/MarkdownContent'
+import { TableOfContents } from '../components/TableOfContents'
+import { extractHeadingsForToc } from '../lib/rpgMarkdown'
+import { loadComments, subscribeToComments } from '../lib/commentStore'
 import { decodeRoutePath, toProjectRoute } from '../lib/paths'
 
 export function DocumentPage() {
   const params = useParams()
   const location = useLocation()
-  const [commentsOpen, setCommentsOpen] = useState(true)
+  const [commentsOpen, setCommentsOpen] = useState(false)
+  const userToggledRef = useRef(false)
   const project = getProject(params.project)
 
   useEffect(() => {
@@ -20,6 +24,34 @@ export function DocumentPage() {
     return () => clearTimeout(timer)
   }, [location.search])
 
+  const routePath = decodeRoutePath(params['*'])
+  const firstFile = project ? getFirstFile(project) : null
+  const file = project ? (project.routeMap.get(routePath) ?? firstFile) : null
+  const headings = useMemo(() => (project && file ? extractHeadingsForToc(file.content, project.config) : []), [file, project])
+
+  const projectId = project?.id
+  const fileId = file?.routePath
+
+  useEffect(() => {
+    userToggledRef.current = false
+
+    const check = () => {
+      if (userToggledRef.current) return
+      const hasComments = loadComments().some(
+        (c) => c.projectId === projectId && c.fileId === fileId && !c.resolved,
+      )
+      setCommentsOpen(hasComments)
+    }
+
+    check()
+    const unsubscribe = subscribeToComments(check)
+    window.addEventListener('storage', check)
+    return () => {
+      unsubscribe()
+      window.removeEventListener('storage', check)
+    }
+  }, [projectId, fileId])
+
   if (!project) {
     return (
       <section className="not-found">
@@ -29,14 +61,9 @@ export function DocumentPage() {
     )
   }
 
-  const routePath = decodeRoutePath(params['*'])
-  const firstFile = getFirstFile(project)
-
   if (!routePath && firstFile) {
     return <Navigate to={toProjectRoute(project.id, firstFile.routePath)} replace />
   }
-
-  const file = project.routeMap.get(routePath) ?? firstFile
 
   if (!file) {
     return (
@@ -59,7 +86,7 @@ export function DocumentPage() {
   }
 
   return (
-    <div className="document-layout">
+    <div className={commentsOpen ? 'document-layout' : 'document-layout document-layout--comments-closed'}>
       <div className="document-main">
         <header className="content-header">
           <div>
@@ -70,7 +97,7 @@ export function DocumentPage() {
             type="button"
             className="comment-panel-toggle"
             aria-pressed={commentsOpen}
-            onClick={() => setCommentsOpen((open) => !open)}
+            onClick={() => { userToggledRef.current = true; setCommentsOpen((open) => !open) }}
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
               <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
@@ -78,6 +105,7 @@ export function DocumentPage() {
           </button>
         </header>
         <MarkdownContent project={project} file={file} />
+        {headings.length > 0 ? <TableOfContents headings={headings} /> : null}
       </div>
       <CommentPanel projectId={project.id} fileId={file.routePath} isOpen={commentsOpen} />
     </div>

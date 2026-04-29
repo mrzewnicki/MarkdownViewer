@@ -32,10 +32,8 @@ export function CommentPanel({ projectId, fileId, isOpen }: CommentPanelProps) {
     [comments, fileId, projectId],
   )
 
-  if (!isOpen) return null
-
   return (
-    <aside className="comment-panel" aria-label="Komentarze">
+    <aside className="comment-panel" aria-label="Komentarze" aria-hidden={!isOpen}>
       <div className="comment-panel__header">
         <h2>Komentarze</h2>
         <span>{activeComments.length}</span>

@@ -12,6 +12,12 @@ import {
   resolveEntityLabel,
 } from './entityMeta'
 
+export interface MarkdownHeading {
+  text: string
+  slug: string
+  level: number
+}
+
 function sortedKeys(record: Record<string, unknown>): string[] {
   return Object.keys(record).sort()
 }
@@ -248,13 +254,17 @@ function anchorStyleInlinePlainText(inline: Token): string {
 }
 
 export function extractHeadingsForLinkPicker(source: string, cfg: RpgRendererConfig): { text: string; slug: string }[] {
+  return extractHeadingsForToc(source, cfg).map(({ text, slug }) => ({ text, slug }))
+}
+
+export function extractHeadingsForToc(source: string, cfg: RpgRendererConfig): MarkdownHeading[] {
   const frontmatter = splitLeadingFrontmatter(source)
   const markdownBody = frontmatter ? frontmatter.body : source
   const withCallouts = preprocessCallouts(markdownBody, cfg)
   const withInline = preprocessInline(withCallouts, cfg)
   const md = getMd(cfg)
   const tokens = md.parse(fixMarkdownParenDestinationsWithWhitespace(withInline), {})
-  const out: { text: string; slug: string }[] = []
+  const out: MarkdownHeading[] = []
 
   for (let i = 0; i < tokens.length; i += 1) {
     const token = tokens[i]
@@ -263,7 +273,8 @@ export function extractHeadingsForLinkPicker(source: string, cfg: RpgRendererCon
       if (inline?.type === 'inline') {
         const text = anchorStyleInlinePlainText(inline)
         const slug = tokenAttrGet(token, 'id') ?? ''
-        if (text && slug) out.push({ text, slug })
+        const level = Number.parseInt(token.tag.slice(1), 10)
+        if (text && slug && Number.isInteger(level)) out.push({ text, slug, level })
       }
     }
   }
