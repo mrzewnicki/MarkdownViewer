@@ -12,6 +12,7 @@ export function DocumentPage() {
   const params = useParams()
   const location = useLocation()
   const [commentsOpen, setCommentsOpen] = useState(false)
+  const [scrollActiveSlug, setScrollActiveSlug] = useState<string | null>(null)
   const userToggledRef = useRef(false)
   const project = getProject(params.project)
 
@@ -28,6 +29,27 @@ export function DocumentPage() {
   const firstFile = project ? getFirstFile(project) : null
   const file = project ? (project.routeMap.get(routePath) ?? firstFile) : null
   const headings = useMemo(() => (project && file ? extractHeadingsForToc(file.content, project.config) : []), [file, project])
+
+  useEffect(() => {
+    if (headings.length === 0) return
+
+    const getActive = () => {
+      const threshold = window.innerHeight * 0.25
+      let active: string | null = null
+      for (const h of headings) {
+        const el = document.getElementById(h.slug)
+        if (!el) continue
+        if (el.getBoundingClientRect().top <= threshold) {
+          active = h.slug
+        }
+      }
+      setScrollActiveSlug(active)
+    }
+
+    getActive()
+    window.addEventListener('scroll', getActive, { passive: true })
+    return () => window.removeEventListener('scroll', getActive)
+  }, [headings])
 
   const projectId = project?.id
   const fileId = file?.routePath
@@ -105,7 +127,7 @@ export function DocumentPage() {
           </button>
         </header>
         <MarkdownContent project={project} file={file} />
-        {headings.length > 0 ? <TableOfContents headings={headings} /> : null}
+        {headings.length > 0 ? <TableOfContents headings={headings} activeSlug={scrollActiveSlug} /> : null}
       </div>
       <CommentPanel projectId={project.id} fileId={file.routePath} isOpen={commentsOpen} />
     </div>

@@ -1,16 +1,23 @@
-import { useMemo } from 'react'
+import { useEffect, useMemo, useRef } from 'react'
 import { useLocation } from 'react-router-dom'
 import type { MarkdownHeading } from '../lib/rpgMarkdown'
 
 interface TableOfContentsProps {
   headings: MarkdownHeading[]
+  activeSlug?: string | null
 }
 
-export function TableOfContents({ headings }: TableOfContentsProps) {
+export function TableOfContents({ headings, activeSlug: activeSlugProp }: TableOfContentsProps) {
   const location = useLocation()
-  const activeSlug = new URLSearchParams(location.search).get('s')
+  const urlSlug = new URLSearchParams(location.search).get('s')
+  const activeSlug = activeSlugProp ?? urlSlug
   const minLevel = useMemo(() => Math.min(...headings.map((heading) => heading.level)), [headings])
   const currentHash = typeof window === 'undefined' ? '' : (window.location.hash.split('?')[0] ?? '')
+  const activeRef = useRef<HTMLAnchorElement>(null)
+
+  useEffect(() => {
+    activeRef.current?.scrollIntoView({ block: 'nearest' })
+  }, [activeSlug])
 
   if (headings.length === 0) return null
 
@@ -22,7 +29,11 @@ export function TableOfContents({ headings }: TableOfContentsProps) {
           const isActive = activeSlug === heading.slug
           return (
             <li key={heading.slug} className="toc-item" style={{ paddingLeft: `${(heading.level - minLevel) * 12}px` }}>
-              <a className={isActive ? 'toc-link toc-link--active' : 'toc-link'} href={`${currentHash}?s=${encodeURIComponent(heading.slug)}`}>
+              <a
+                ref={isActive ? activeRef : null}
+                className={isActive ? 'toc-link toc-link--active' : 'toc-link'}
+                href={`${currentHash}?s=${encodeURIComponent(heading.slug)}`}
+              >
                 {heading.text}
               </a>
             </li>
