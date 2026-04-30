@@ -36,8 +36,20 @@ Mimo, że ludzkość w rozumieniu państw upadła, to pojedyncze osobniki z tej 
 
 Bez względu na to gdzie leży prawda o tym co się z nimi stało ludzkość zawdzięcza im życie. Pokazali oni również, że w genotypie ludzkości za sprawą DeathNet'u pojawiło się coś co zaczyna ich wszystkich łączyć na zupełnie innym niż dotychczas poziomie. To jak to zostanie wykorzystane zależy już tylko od samych ludzi.
 
+### Podziały i filozofie
 
-### Sławni Phantomi
+W trakcie wojny pośród Phantomów zaczęły kreować się 3 główne nuerty filozoficzne co doprowadziło do utworzenia wewnętrznych frakcji. Było też wielu Phantomów, którzy nie byli zainteresowani dołączaniem do którejkolwiek z nich, mieli oni własne, bardziej relatywne zasady.
+
+| Nazwa | Skrót filozofii |  Przywódca |
+|----------|----------|----------|
+| Tragarze | Nie elitaryzują życia Phantomów nad innych. Wielu z nich uważa, że wygranie wojny i uratowanie ludzkości jest ważniejsze niż ich pozycja w społeczeństwie. Często jednak różnie definiują to zwycięstwo. Ich nazwe przypięli im Wzniesieni sugerując, że targają na swoich plecach zbędny balast w postaci zbytniego przejmowania się zwykłymi ludźmi. | [Vessel](DeathNet.md#vessel) |
+| Etapiści | Wychodzą z założenia, że ludzkość była etapem tego świata, a oni są kolejnym. Ludzkość może być beneficjentami świata o który walczą, ale nie są już w nim najważniejsi. Cenią natomiast ludzi, którzy mają potencjał stać się Phantomami i ludzi, którzy mają w sobie DeathNet. | |
+| Wzniesieni | Uważają się za tych którzy powinni wyznaczać kierunek. Ludzkość powinna zrozumieć, że oni już przegrali swoją wojnę, mieli swoją szansę. Teraz powinni słuchać Wzniesionych, którzy zbudują lepszy świat dla wszystkich, świat w którym oczywiście oni będą rządzili. A jeśli ludzie nie będą kooperowali po dobroci to po wojnie z Zombie przyjdzie kolej na nich. | |
+| Niesprzymierzeni | Phantomy pozbawione określenia przynależności. Czasami współpracują ze wszystkimi, czasami są samotnikami, a czasem tworzą własne grupy 2-3 osobowe. Mają indywidualny pogląd na świat i moc by go bronić. | Brak |
+
+Wszystkie te stronnictwa były tak na prawdę poza kontrolą DeathNet'u. Ich filozofie wybrzmiewały w strategii, ale ostatecznie wszyscy realizowali bazowy cel, zniszczyć zombie.
+
+### Sławne Phantomy
 
 #### Traitor
 
@@ -62,7 +74,7 @@ Zdecydowanie Phantomem o przełomowych zdolnościach był `Vessel`, którego pse
 
 Inni z elitarnego oddziału Phantomów polubili go za to, że potrafił czasowo ukoić ich nerw, ułożyć te wspomnienia tak by mogli spokojnie spać, czasem nawet odkrywali w sobie nowe umiejętności. Przez swoje zdolności był niepoprawnym mentorem bo nie szanowali jego starań w walce. Zdecydowanie był najsłabszym z nich w bezpośrednim starciu. Układanie jednak takich wspomnień przyprawiało go o traumy z którymi musiał sam sobie radzić.
 
-Uważał on, że jest szansą ludzkości na faktyczne zrozumienie wroga. Kiedy jednak powiedział swoim braciom i siostrom, że widzi możliwość koegzystencji to już zaczęli podchodzić do niego z większą podejrzliwością. Vessel stał się jednym z niewielu Phantomów, których osobniki Alpha zaczęły aktywnie poszukiwać, ale przy nim zawsze kręcili się jego stronnicy. Obie strony wiedziały, że jeśli dobiorą się na wzajem do siebie przy użyciu swoich zdolności to mogą zyskać wielką przewagę. Gdyby Vessel miał okoliczności by przebadać osobnika Alpha to mogliby dotrzeć do ich prawdziwych zamiarów, a gdyby Alpha była świadoma słabych stron zdolności Phantom'ów to mogłyby ich zdeklasować. Mimo wysiłków obu stron nigdy do tego nie doszło.
+Uważał on, że jest szansą ludzkości na faktyczne zrozumienie wroga. Kiedy jednak powiedział swoim braciom i siostrom, że widzi możliwość koegzystencji z Zombie jeśli będą na innym kontynencie, to już zaczęli podchodzić do niego z większą podejrzliwością. Vessel stał się jednym z niewielu Phantomów, których osobniki Alpha zaczęły aktywnie poszukiwać, ale przy nim zawsze kręcili się jego stronnicy. Obie strony wiedziały, że jeśli dobiorą się na wzajem do siebie przy użyciu swoich zdolności to mogą zyskać wielką przewagę. Gdyby Vessel miał okoliczności by przebadać osobnika Alpha to mogliby dotrzeć do ich prawdziwych zamiarów, a gdyby Alpha była świadoma słabych stron zdolności Phantom'ów to mogłyby ich zdeklasować. Mimo wysiłków obu stron nigdy do tego nie doszło.
 
 Vessel odkrył jedną z tajemnic Haron'a i jako pierwszy wpadł na trop jego działań poza pierwotnym przeznaczeniem. Podróżując po swoich wspomnieniach zorientował się, że Haron w każdym z Phantomów umieścił również autorskie myśli. Jedną z nich było zaszczepienie w pamięci Phantomów bardzo bliskiego przyjaciela, choć imiona były różne to konstrukt podobny. Vessel podejrzewał, że w ten sposób Haron będzie chciał miekko wpływać na działanie Phantomów. Próbował ostrzec przed tym innych ale większość z nich odrzucała to doszukując się konfabulacji pod wpływem własnych problemów Vessel'a.
 
