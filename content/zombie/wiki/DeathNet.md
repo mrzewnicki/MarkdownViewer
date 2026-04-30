@@ -28,6 +28,7 @@ Robili one ogromne wrażenie na wszystkich, którzy widzieli ich w akcji i z cza
 
 Sławni Phantomi:
 - [Traitor](DeathNet.md#traitor)
+- [Vessel](DeathNet.md#vessel)
 
 `ToDo: Opisać więcej sławnych Phantomów i ich wpływ na wojnę.`
 
@@ -50,6 +51,26 @@ Gdy tylko w pobliżu była Alpha nie było nawet mowy o próbie takiego oszukani
 
 W swoich obowiązkach podróżował bez oddziału i stale ryzykował życie w poszukiwaniu najdrobniejszego śladu Alpha. Podczas podróży stale nawiedziały go koszmary palących się ludzi, którzy za każdym razem wydają mu się jego bliskimi, ale już nie potrafi przypomnieć sobie jak wyglądają. Coś każe mu ich poszukwiać przekonując, że żyją. Na apelach wojskowych zdarzało mu sie kraść zdjęcia rodzin innych żołnierzy by myśleć, że może tak wygląda jego rodzina. Nosi przy sobie album zdjęć przypadkowych ludzi.
 
+#### Vessel
+
+- Imię: Daniel Koenig
+- Pochodzenie:
+- Wspomnienia Phantomowe: duchowni, psychoanalitycy, matki
+
+Zdecydowanie Phantomem o przełomowych zdolnościach był `Vessel`, którego pseudonim nadali pozostali Phantomi. Podczas gdy wszyscy oni czerpali ze swej wiedzy i zdolności bardziej w charakterze intuicji, Vessel był jedynym, który scalił się z nimi jakby od zawsze do niego należały. Był jedynym Phantomem, którego nie trawiły jego własne wspomnienia. Posiadł umiejętność chodzenia po wspomnieniach swoich, innych Phantomów, innych ludzi, a nawet Zombie. Problem tkwił jednak w tym, że każde cudze, nowe wspomnienie, kóre przyjmował do siebie było traktowane jak intruz i to one stawały się jego koszmarami. Sam Vessel wielokrotnie rozmawiał na ten temat z innymi Phantomami opowiadając im, że zanim stał się Phantomem większość swojego życia spędził w izolatce medycznej. Cierpiał na białaczkę obniżająca odporność i zaawansowaną łuszczycę przez którą otwierały się rany. Przebywanie poza sterylnym otoczeniem mogło go zabić. Był bardzo ciekawy świata i poznawał go przez wspomnienia innych. Ciało przez choroby pokryte było bliznami, a jego znakiem rozpoznawczem były bandaże jak u trendowatego.
+![Vessel.jpg](../images/Vessel.jpg)
+
+Inni z elitarnego oddziału Phantomów polubili go za to, że potrafił czasowo ukoić ich nerw, ułożyć te wspomnienia tak by mogli spokojnie spać, czasem nawet odkrywali w sobie nowe umiejętności. Przez swoje zdolności był niepoprawnym mentorem bo nie szanowali jego starań w walce. Zdecydowanie był najsłabszym z nich w bezpośrednim starciu. Układanie jednak takich wspomnień przyprawiało go o traumy z którymi musiał sam sobie radzić.
+
+Uważał on, że jest szansą ludzkości na faktyczne zrozumienie wroga. Kiedy jednak powiedział swoim braciom i siostrom, że widzi możliwość koegzystencji to już zaczęli podchodzić do niego z większą podejrzliwością. Vessel stał się jednym z niewielu Phantomów, których osobniki Alpha zaczęły aktywnie poszukiwać, ale przy nim zawsze kręcili się jego stronnicy. Obie strony wiedziały, że jeśli dobiorą się na wzajem do siebie przy użyciu swoich zdolności to mogą zyskać wielką przewagę. Gdyby Vessel miał okoliczności by przebadać osobnika Alpha to mogliby dotrzeć do ich prawdziwych zamiarów, a gdyby Alpha była świadoma słabych stron zdolności Phantom'ów to mogłyby ich zdeklasować. Mimo wysiłków obu stron nigdy do tego nie doszło.
+
+Vessel odkrył jedną z tajemnic Haron'a i jako pierwszy wpadł na trop jego działań poza pierwotnym przeznaczeniem. Podróżując po swoich wspomnieniach zorientował się, że Haron w każdym z Phantomów umieścił również autorskie myśli. Jedną z nich było zaszczepienie w pamięci Phantomów bardzo bliskiego przyjaciela, choć imiona były różne to konstrukt podobny. Vessel podejrzewał, że w ten sposób Haron będzie chciał miekko wpływać na działanie Phantomów. Próbował ostrzec przed tym innych ale większość z nich odrzucała to doszukując się konfabulacji pod wpływem własnych problemów Vessel'a.
+
+Nie elitaryzował pozycji Phantomów na tyle jakby sobie tego życzyli Chciał organizować pułapki na Alphy sam będąc przynętą. Wciągał tym samym Phantomów w bardzo trudne walki. Wielu z nich ginęło, ale i efekty działań były duże. Im dłużej działał tym bardziej tracił oddanie innych Phantomów. Gdy udało się im wytropić Alphe, która doprowadziła do upadku Bostonu czyli jedną z najbardziej tajemniczych pod kątem swoich zdolności. Wtedy Vessel sprzeciwił się DeathNet'owi i Phantomom. Wykorzystując swoja wiedzę o tym co zostawił w nich wszystkich Haron, zaczął manipulować każdym Phantomem, którym mógł by zwabić go w miejsce organizowanej pułapki na Alphe z Bostonu. Podawał się za bliskie im osoby by chcieli go bronić. W ten sposób doprowadził do największego zgrupowania i kooperacji elit, które starły się z Alhpami przygotowanymi do porwania Vessela.
+
+Według oficjalnej wersji DeathNet'u Vessel wraz z kilkodziesięcioma innymi Phantomami zginęli podczas tej bitwy eliminując się nawzajem z Alphami. W rzeczywistości wiele ciał nie zostało odnalezionych.
+
+`ToDo: wskazać miejsce bitwy`
 
 ## System Haron
 
