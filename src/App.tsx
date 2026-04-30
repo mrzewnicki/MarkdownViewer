@@ -1,5 +1,6 @@
 import { HashRouter, Route, Routes, useLocation } from 'react-router-dom'
 import { AppLayout } from './components/AppLayout'
+import { UpdateBanner } from './components/UpdateBanner'
 import { getProject } from './content-loader'
 import { DocumentPage } from './pages/DocumentPage'
 import { HomePage } from './pages/HomePage'
@@ -21,11 +22,14 @@ function RoutedLayout() {
 
 function App() {
   return (
-    <HashRouter>
-      <Routes>
-        <Route path="/*" element={<RoutedLayout />} />
-      </Routes>
-    </HashRouter>
+    <>
+      <UpdateBanner />
+      <HashRouter>
+        <Routes>
+          <Route path="/*" element={<RoutedLayout />} />
+        </Routes>
+      </HashRouter>
+    </>
   )
 }
 
