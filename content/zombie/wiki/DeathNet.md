@@ -38,7 +38,7 @@ Bez względu na to gdzie leży prawda o tym co się z nimi stało ludzkość zaw
 
 ### Podziały i filozofie
 
-W trakcie wojny pośród Phantomów zaczęły kreować się 3 główne nuerty filozoficzne co doprowadziło do utworzenia wewnętrznych frakcji. Było też wielu Phantomów, którzy nie byli zainteresowani dołączaniem do którejkolwiek z nich, mieli oni własne, bardziej relatywne zasady.
+W trakcie wojny pośród Phantomów zaczęły kreować się 3 główne nurty filozoficzne co doprowadziło do utworzenia wewnętrznych frakcji. Było też wielu Phantomów, którzy nie byli zainteresowani dołączaniem do którejkolwiek z nich, mieli oni własne, bardziej relatywne zasady.
 
 | Nazwa | Skrót filozofii |  Przywódca |
 |----------|----------|----------|
