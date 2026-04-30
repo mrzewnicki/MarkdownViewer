@@ -54,18 +54,18 @@ jobs:
 
       # Repo named <owner>.github.io → served at https://<owner>.github.io/ (base /).
       # Any other repo    → served at https://<owner>.github.io/<repo>/  (base /<repo>/).
-      - name: Resolve Vite base path
+      # Set VITE_PAGES_BASE in the same shell as vite build so it cannot be dropped between steps.
+      - name: Build
         run: |
           repo="${GITHUB_REPOSITORY##*/}"
           owner="${GITHUB_REPOSITORY%%/*}"
           if [ "${repo}" = "${owner}.github.io" ]; then
-            echo "VITE_PAGES_BASE=/" >> "$GITHUB_ENV"
+            export VITE_PAGES_BASE="/"
           else
-            echo "VITE_PAGES_BASE=/${repo}/" >> "$GITHUB_ENV"
+            export VITE_PAGES_BASE="/${repo}/"
           fi
-
-      - name: Build
-        run: npm run build
+          echo "VITE_PAGES_BASE=${VITE_PAGES_BASE}"
+          npm run build
         env:
           VITE_FIREBASE_API_KEY: ${{ vars.VITE_FIREBASE_API_KEY }}
           VITE_FIREBASE_AUTH_DOMAIN: ${{ vars.VITE_FIREBASE_AUTH_DOMAIN }}
