@@ -1,0 +1,88 @@
+# Publishes the Vite build to GitHub Pages on every push to the default branch.
+#
+# One-time repo setup (optional): from repo root run  npm run pages:setup
+#   (scripts/setup-github-pages.ps1) after `gh auth login` — enables Pages (workflow) and
+#   pushes VITE_FIREBASE_* from .env.local to repo Actions variables.
+#
+# One-time repo setup (manual):
+#   - Settings → Pages → Build and deployment → Source: GitHub Actions
+#   - Settings → Environments → github-pages (created on first deploy) — adjust protection rules if needed
+#
+# Configure Firebase (Firestore) for the static build — add these as Repository variables
+# (Settings → Secrets and variables → Actions → Variables tab). Values are bundled into the
+# client JS at build time (same as .env.local in development).
+#
+#   VITE_FIREBASE_API_KEY
+#   VITE_FIREBASE_AUTH_DOMAIN
+#   VITE_FIREBASE_PROJECT_ID
+#   VITE_FIREBASE_APP_ID
+#
+# Optional: duplicate the same names under Secrets instead of Variables if you prefer;
+# substitute secrets.* for vars.* in the env block below.
+
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches: [master, main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Repo named <owner>.github.io is published at https://<owner>.github.io/ (base /).
+      # Any other repo is published at https://<owner>.github.io/<repo>/ .
+      - name: Resolve Vite base path for GitHub Pages
+        run: |
+          repo="${GITHUB_REPOSITORY##*/}"
+          owner="${GITHUB_REPOSITORY%%/*}"
+          if [ "${repo}" = "${owner}.github.io" ]; then
+            echo "VITE_PAGES_BASE=/" >> "$GITHUB_ENV"
+          else
+            echo "VITE_PAGES_BASE=/${repo}/" >> "$GITHUB_ENV"
+          fi
+
+      - name: Build
+        run: npm run build -- --base="${VITE_PAGES_BASE}"
+        env:
+          VITE_FIREBASE_API_KEY: ${{ vars.VITE_FIREBASE_API_KEY }}
+          VITE_FIREBASE_AUTH_DOMAIN: ${{ vars.VITE_FIREBASE_AUTH_DOMAIN }}
+          VITE_FIREBASE_PROJECT_ID: ${{ vars.VITE_FIREBASE_PROJECT_ID }}
+          VITE_FIREBASE_APP_ID: ${{ vars.VITE_FIREBASE_APP_ID }}
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
