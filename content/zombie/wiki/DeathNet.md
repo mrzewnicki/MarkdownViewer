@@ -29,7 +29,7 @@ Robili one ogromne wrażenie na wszystkich, którzy widzieli ich w akcji i z cza
 Sławni Phantomi:
 - [Traitor](DeathNet.md#traitor)
 - [Vessel](DeathNet.md#vessel)
-- Nocturna
+- [Nocturna](DeathNet.md#nocturna)
 
 `ToDo: Opisać więcej sławnych Phantomów i ich wpływ na wojnę.`
 
@@ -85,7 +85,7 @@ Według oficjalnej wersji DeathNet'u Vessel wraz z kilkodziesięcioma innymi Pha
 
 `ToDo: wskazać miejsce bitwy`
 
-### Nocturna
+#### Nocturna
 
 - Imię: Amara Okoye
 - Pochodzenie: 
