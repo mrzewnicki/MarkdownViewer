@@ -40,9 +40,6 @@
 
 ## Przeszłość
 
-> [!info]
-> Wybrany wiek + 15 lat daje obecny wiek postaci w punkcie startowym.
-
 ### Czas Rozpadu
 W trakcie wojny postać miała `minimum 20 lat`. Postać ma pełne wykształcenie w rozumieniu czasów przed wojną sięgające nawet najwyższych stopni naukowych. Oprócz tego ma bogate doświadczenie zawodowe i życiowe. Nalezy jednak pamiętać, że doświadczenie ze starych czasów nie musi się przekładać zawsze korzystnie na nowe czasy. Postać z pewnością brała czynny udział w wydarzeniach podczas wojny. Musiała ratować siebie, rodzinę, przyjaciół, a może nawet walczyć.
 

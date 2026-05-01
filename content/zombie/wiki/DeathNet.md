@@ -29,6 +29,7 @@ Robili one ogromne wrażenie na wszystkich, którzy widzieli ich w akcji i z cza
 Sławni Phantomi:
 - [Traitor](DeathNet.md#traitor)
 - [Vessel](DeathNet.md#vessel)
+- Nocturna
 
 `ToDo: Opisać więcej sławnych Phantomów i ich wpływ na wojnę.`
 
@@ -43,7 +44,7 @@ W trakcie wojny pośród Phantomów zaczęły kreować się 3 główne nurty fil
 | Nazwa | Skrót filozofii |  Przywódca |
 |----------|----------|----------|
 | Tragarze | Nie elitaryzują życia Phantomów nad innych. Wielu z nich uważa, że wygranie wojny i uratowanie ludzkości jest ważniejsze niż ich pozycja w społeczeństwie. Często jednak różnie definiują to zwycięstwo. Ich nazwe przypięli im Wzniesieni sugerując, że targają na swoich plecach zbędny balast w postaci zbytniego przejmowania się zwykłymi ludźmi. | [Vessel](DeathNet.md#vessel) |
-| Etapiści | Wychodzą z założenia, że ludzkość była etapem tego świata, a oni są kolejnym. Ludzkość może być beneficjentami świata o który walczą, ale nie są już w nim najważniejsi. Cenią natomiast ludzi, którzy mają potencjał stać się Phantomami i ludzi, którzy mają w sobie DeathNet. | |
+| Etapiści | Wychodzą z założenia, że ludzkość była etapem tego świata, a oni są kolejnym. Ludzkość może być beneficjentami świata o który walczą, ale nie są już w nim najważniejsi. Cenią natomiast ludzi, którzy mają potencjał stać się Phantomami i ludzi, którzy mają w sobie DeathNet. | Nocturna |
 | Wzniesieni | Uważają się za tych którzy powinni wyznaczać kierunek. Ludzkość powinna zrozumieć, że oni już przegrali swoją wojnę, mieli swoją szansę. Teraz powinni słuchać Wzniesionych, którzy zbudują lepszy świat dla wszystkich, świat w którym oczywiście oni będą rządzili. A jeśli ludzie nie będą kooperowali po dobroci to po wojnie z Zombie przyjdzie kolej na nich. | |
 | Niesprzymierzeni | Phantomy pozbawione określenia przynależności. Czasami współpracują ze wszystkimi, czasami są samotnikami, a czasem tworzą własne grupy 2-3 osobowe. Mają indywidualny pogląd na świat i moc by go bronić. | Brak |
 
@@ -83,6 +84,26 @@ Nie elitaryzował pozycji Phantomów na tyle jakby sobie tego życzyli Chciał o
 Według oficjalnej wersji DeathNet'u Vessel wraz z kilkodziesięcioma innymi Phantomami zginęli podczas tej bitwy eliminując się nawzajem z Alphami. W rzeczywistości wiele ciał nie zostało odnalezionych.
 
 `ToDo: wskazać miejsce bitwy`
+
+### Nocturna
+
+- Imię: Amara Okoye
+- Pochodzenie: 
+- Wspomnienia Phantomowe: chirurdzy, przemytnicy, matematycy
+
+Zdolności każdego Phantoma były w jakiś sposób unikalne między nimi i przesuwające granice rzeczywistości nieco dalej dla ludzkości. W czołówce Phantomów, których moce to robiła jest Noturna. Piękna młoda dziewczyna o onyksowej skórze, która przed przemianą uczyła się w szkole muzycznej, marzyła o teatrze i broadwayu. Po przemianie rozwinęła w sobie zdolność do manipulowania ferrofluidem, nazywanym przez ludźmi żywym metalem. Gdy pragnęła użyć swoich mocy jej skóra połyskiwała jak nocne niebo gwiazdami. Następnie ciecz przenikająca przez skórę zaczyna spełniać jej wolę tworząc geometryczne wzory.
+
+![Nocturna.jpg](../images/Nocturna.jpg)
+
+W starym świecie ferrofluid tłumił nieporządane wibracje w głośnikach i studził termperature, uszczelniał maszyny w próźni kosmou, był kontrastem w diagnostyce, odbijał fale radarowe w wojskowych technologiach a nawet był w ograniczony dla ludzi sposób programowalną materią. Nocturna jeszcze rozwinęła te możliwości tworząc bariere zwiększające swoją gęstość w miarę ruchu. Zasieki pełne kolców, płynne koce chroniące przed gazami.
+
+Jak każdy naukowiec była oportunistką, która musi wypatrywać swojej szansy, by nie przegapić tego co najważniejsze. Była przez to bardzo cierpliwa ale i wścibska co rzutowało na relacje ze wszystkimi Phantomami. Nie zgadzała się ze strategiami wzniesionych, którzy w swoich wypadach byli bardzo agresywni. Ona wychodziła z założenia, że zombie nie trzeba koniecznie wyrżnąć, wystarczy ich przetrzymać. Dlatego rozwijała wiele defensywnych umiejętności co także skłaniało Phantomów do walki u jej boku.
+
+Walczyła jednak tylko wtedy kiedy nie przekonywała innych, że lepiej poczekać. Zawsze była uparta i skora do długiego przerzucania się argumentami za co nie lubili jej przywódcy pozostałych frakcji. Rzeczywiście nie miała ona tylu osiągnięć w zniszczeniu wroga co oni, ale ona częściej niż inni myślała co trzeba i co warto ocalić, a nie tylko co trzeba zniszczyć. Jej sukcesy są ciche i śpiące bo jeśli coś ocalało ze starego świata jak miasto, most, elektrownia, muzeum, baza to ona miała z tym coś wspólnego. Bez niej żołnierze i Phantomi walczący na froncie nie mieliby gdzie wrócić.
+
+Kiedy już decydowała się na walkę to zawsze dawała z siebie wszystko. Stawała również do bitew, których twierdzono, że wygrać się nie da, ale ona uważała, że warto z innych względów. Potrafiła radzić sobie z falami zombie jak i stawić czoło osobnikom Alpha czego dowiodła w bitwie o most Mackinac w Michigan. Gdy rząd chciał niemal od razu go wysadzić Nocturna utrzymała go odpierając dwa szturmy i walkę z Alphą. Cokolwiek ludzkość zbudowała w starych czasach nie będzie mogła już tego wznieść przez najbliższe dziesiątki, jeśli nie setki lat - Ona to rozumiała. Doskonale też rozumiała, że bronić trzeba nie tylko życia, ale i symboli. Symboli, które opowiadały swoją legendę nawet wtedy gdy Phantomów tam nie było.
+
+Te właśnie symbole były jej obsesjami. Mimo, że jej czyny wydawały się bohaterskie to jej dążenie do paradoksalnej w jej przypadku autodestrukcji by je bronić doprowadzały do jatek. Wielokrotnie nie chciała dostrzec sytuacji do ataku, który mógłby zapobiec szturmowi. Szykowała się do oblężenia pewna swoich umiejętności, nie zważając na to czy inni sobie poradzą. Taka pewność siebie imponowała, ale przekładała się na ofiary. Większość frakcyjnych podziałów między Phantomami urosło przy jej udziale. Przy atakach swoich wspomnień potrafiła zabić człowieka, który miał neisymetryczną budowę.
 
 ## System Haron
 
