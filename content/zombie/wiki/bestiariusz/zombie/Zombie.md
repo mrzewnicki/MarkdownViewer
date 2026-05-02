@@ -10,12 +10,12 @@ threat: medium
 
 Za sprawą zmieniających się okoliczności wojny i świata po wojnie w różnych miejscach świata, a nawet w różnych regionach mogą wyglądać nieco inaczej. Wciąż jednak pozostają cechy wspólne jak żółte oczy otoczone czarnymi obwódkami od których rozchodzą się poczernione żyły. Okrwawione usta i dłonie od rozrywania ciał. Towarzyszy im odór gnijących płynów wydobywających się z organizmu i dziwne dźwięki, które wydają. Czasem to pociągłe monotonne stękanie, a czasem charczenie próbujące naśladować oddech, jakby chcieli w ten sposób udawać żyjących.
 
-Ich dłonie to szpony z kości, które przebiły skóre palców i zaostrzyły się naturalnie. Czasem kości dłoni także przebijają się przez skórę tworząc z ich dłoni świetną broń i narzędzie. Podobnie twardsze i ostrzejsze są zęby. Niektórzy podobno mają nawet więcej zębów i mięśni szczęki czyniąc jej ugryzienie jeszcze silniejszym. Zmiany fizyczne uzbrajające je w większą broń niż szpony, pojawiają się w kolejnych przemianach. Jedną z ostatnich rzeczy jakie udało się ustalić laboratoriom DeathNetu było to, że mają oni wiele przemian.
+Ich dłonie to szpony z kości, które przebiły sktóre palców i zaostrzyły się naturalnie. Czasem kości dłoni także przebijają się przez skórę tworząc z ich dłoni świetną broń i narzędzie. Podobnie twardsze i ostrzejsze są zęby. Niektórzy podobno mają nawet więcej zębów i mięśni szczęki czyniąc jej ugryzienie jeszcze silniejszym. Zmiany fizyczne uzbrajające je w większą broń niż szpony, pojawiają się w kolejnych przemianach. Jedną z ostatnich rzeczy jakie udało się ustalić laboratoriom DeathNetu było to, że mają oni wiele przemian.
 
 ## Przemiana w Zombie
 
 
-### Tabela przebiegu prozgłosiłem cesu zakażenia
+### Tabela przebiegu procesu zakażenia
 
 > [!lore]
 > Proces przemiany w zombie została przebadany przez DeathNet co po równi było początkiem ich końca i początkiem walki dla ludzkości. Jak do tego doszło? [Badanie Zombie](../../Updatek%20USA.md#badanie-zombie)
@@ -31,15 +31,15 @@ Ich dłonie to szpony z kości, które przebiły skóre palców i zaostrzyły si
 | **7. Ostateczne wymazanie** | Zostaje zakończona całkowita dominacja patogenu. Biologicznie ciało nadal funkcjonuje, ale psychicznie przestaje być człowiekiem w jakimkolwiek sensie. | Widać już tylko istotę, która porusza się jak drapieżnik, wydaje obce dźwięki, ma czarne żyły, żółte oczy, obolałe, krwawe usta i dłonie z kościanymi ostrzami. Człowieczeństwo zostało wypchnięte z ciała. | To moment, w którym ostatni ślad dawnego „ja" zanika. Świadomość nie gaśnie od razu — raczej jest powoli duszona, aż pozostaje tylko pustka. |
 
 > [!lore]
-> DeathNet'owi tylko raz udało zaobserwować przemianę na wskrośl więc istnieje możliwość by ten proces różnił się lub zmienił w czasie albo zależnie od osobnika.
+> DeathNet'owi tylko raz udało zaobserwować przemianę na wskroś więc istnieje możliwość by ten proces różnił się lub zmienił w czasie albo zależnie od osobnika.
 
 ## Kolejne transformacje
 
-Nie wiadomo od czego kolejne fatransformacje są zależne, jak wiele ich jest i co przynosi każda, ale naukowcy byli pewni co do tego, że w pewnym momencie następuje faza przemiany ich w jakiś rodzaj wojowników. Stawia to intrygujące pytanie czy wcześniej byli cywilami swojego gatunku. Jeden z naukowców DeathNet'u stwierdził, że to w jaką fazę wejdą może zależeć od dostępności pożywienia i środowiska. Inny naukowiec z LiveCore stwierdził, że mogą one zależeć od dostępności Alpha'y, który dostosowuje swoją armie pod swoje cele i metody walki rekompensując swoje słabe strony.
+Nie wiadomo od czego kolejne transformacje są zależne, jak wiele ich jest i co przynosi każda, ale naukowcy byli pewni co do tego, że w pewnym momencie następuje faza przemiany ich w jakiś rodzaj wojowników. Stawia to intrygujące pytanie czy wcześniej byli cywilami swojego gatunku. Jeden z naukowców DeathNet'u stwierdził, że to w jaką fazę wejdą może zależeć od dostępności pożywienia i środowiska. Inny naukowiec z LiveCore stwierdził, że mogą one zależeć od dostępności Alpha'y, który dostosowuje swoją armie pod swoje cele i metody walki rekompensując swoje słabe strony.
 
 ## Klasyfikacja
 
-Człowiek, który ulega procesowi przemiany został określony jako "Z-0". Każdego osobnika zombie, który wyróżniał się względem zwykłych klasyfikowano zwiększając tą liczbę i próbując szacować jak wielkie zagrożenie stanowi. Szacowano porównując to z symulacją ostrzału z karabinu automatycznego przez żołnierza, zarówno pod kątem obrażeń jak, łatwości trafienia oraz zużytej amunicji. Taka skala miała pomóc żołnierzom na polu bitwy w ocenie sytuacji i szans na zwycięstwo nawet małych starć. Tak na przykład "10 Z-1" w języku żołnierzy oznaczało 10 zwykłych zombie, a "Z-9" oznaczało jednego przeciwnika, którego karabin maszynowy nawet nie ma szans zadrapać. 
+Człowiek, który ulega procesowi przemiany został określony jako "Z-0". Każdego osobnika zombie, który wyróżniał się względem zwykłych klasyfikowano zwiększając tą liczbę i próbując szacować jak wielkie zagrożenie stanowi. Szacowano porównując to z symulacją ostrzału z karabinu automatycznego przez żołnierza, zarówno pod kątem obrażeń jak, łatwości trafienia oraz zużytej amunicji. Taka skala miała pomóc żołnierzom na polu bitwy w ocenie sytuacji i szans na zwycięstwo nawet małych starć. Tak na przykład "10 Z-1" w języku żołnierzy oznaczało 10 zwykłych zombie, a "Z-9" oznaczało jednego przeciwnika, którego karabin maszynowy nawet nie ma szans zadrapać.
 
 | Numer | Przykład |
 |----------|----------|
@@ -47,17 +47,17 @@ Człowiek, który ulega procesowi przemiany został określony jako "Z-0". Każd
 | Z-1  | Łatwo trafić ale potrzeba kilka pocisków lub jeden celny  |
 | Z-2  | Przeciwnik trudny do trafienia ze względu na swoją dynamikę jak bieg czy skoki  |
 | Z-3  | Wymagający większej ilości amunicji lub zasobów, jak np całego magazynku  |
-| Z-4  | Wymaga użycia prostych środków wybuchowych by walka bilans walki był korzystny lub ogromnej ilości zamunicji  |
+| Z-4  | Wymaga użycia prostych środków wybuchowych by walka bilans walki był korzystny lub ogromnej ilości amunicji  |
 | Z-5  | Wymagający broni dużego kalibru jak wieże samochodowe  |
-| Z-6  | Wymagający ręcznej broni przecipancernej |
-| Z-7  | Bardzo trudny do wykrycia. Wymagający świadomości pola wialki lub wywiadu. |
+| Z-6  | Wymagający ręcznej broni przeciwpancernej |
+| Z-7  | Bardzo trudny do wykrycia. Wymagający świadomości pola walki lub wywiadu. |
 | Z-8  | Wymagający ciężkich pojazdów jak czołgi |
 | Z-9  | Zbyt niebezpieczny by się zbliżyć. Wymagany ostrzał balistyczny lub artyleryjski |
 | Z-10 | Alpha. Nie ma środków nieusprawiedliwonych. Poinformuj dowództwo za wszelką cenę  |
 
-Dzięki temu żołnierze posiadający karabiny i granaty wiedzieli, że mogą podejmować walkę do `Z-4`. W innym wypadku lepiej było poinformować dowództwo i się ukryć. Prosta klasyfikacja i charakterystyczna dla wojsk USA decyzyjność na niskich szczeblach szybko przyniosła duże efekty w postaci kierowania właściwych środków przeciw właściwym wrogom i spadku ilości zabitych, wyszkolonych żołnierzy. Pomogło to także cywilom ponieważ nawet jeden szeregowy znający klasyfikację umiał pokierować cywilami na tyle by wiedzieć kiedy sprawdzi się farmerska dubeltuwka, a kiedy użyć karabinów łowieckich.
+Dzięki temu żołnierze posiadający karabiny i granaty wiedzieli, że mogą podejmować walkę do `Z-4`. W innym wypadku lepiej było poinformować dowództwo i się ukryć. Prosta klasyfikacja i charakterystyczna dla wojsk USA decyzyjność na niskich szczeblach szybko przyniosła duże efekty w postaci kierowania właściwych środków przeciw właściwym wrogom i spadku ilości zabitych, wyszkolonych żołnierzy. Pomogło to także cywilom ponieważ nawet jeden szeregowy znający klasyfikację umiał pokierować cywilami na tyle by wiedzieć kiedy sprawdzi się farmerska dubeltówka, a kiedy użyć karabinów łowieckich.
 
-Żołnierze szybko zaczęli doności, że zombie różnią się od siebie szczegółami, które mają istotny wpływ na pole walki. Środowisko w których powstały lub przebywały ich zmieniło. Rozszerzono klasyfikacje o kolejny znak. Zdecydowano się na uproszczone kolory:
+Żołnierze szybko zaczęli donosić, że zombie różnią się od siebie szczegółami, które mają istotny wpływ na pole walki. Środowisko w których powstały lub przebywały ich zmieniło. Rozszerzono klasyfikacje o kolejny znak. Zdecydowano się na uproszczone kolory:
 
 | Kolor | Typ zagrożenia |
 |----------|----------|
@@ -66,11 +66,11 @@ Dzięki temu żołnierze posiadający karabiny i granaty wiedzieli, że mogą po
 | 🟩 | Biologiczne: infekcje lub pasożyty  |
 | 🟪 | Anomalia lub zagrożenie paranormalne |
 
-W raportach żołnierzy komunikat "Z-1🟥" mógł oznaczać zombie, który na plecach ma butle gazową i zbliżanie się do niego przytłaczającą siłą walki wręcz może tak na prawdę być jeszcze większym problemem niż poświecenie jednego pocisku. W dokumentacji badacze używali także koloru białego dla czystej fizycznej siły, ale żołnierze po prostu go nie używali by skrócić komunikat. W domyśle więc każdy wróg bez koloru ma znak biały, znak czystej fizycznej siły.
+W raportach żołnierzy komunikat "Z-1🟥" mógł oznaczać zombie, który na plecach ma butlę gazową i zbliżanie się do niego przytłaczającą siłą walki wręcz może tak naprawdę być jeszcze większym problemem niż poświęcenie jednego pocisku. W dokumentacji badacze używali także koloru białego dla czystej fizycznej siły, ale żołnierze po prostu go nie używali by skrócić komunikat. W domyśle więc każdy wróg bez koloru ma znak biały, znak czystej fizycznej siły.
 
-To czego badacze nie przewidzieli to faktu jak ten system był sprawny w użyciu między żołnierzami. Dzięki liczb od 1 do 10 i kolorach można było użyć proste jezyka migowego by komunikować się między członkami oddziału w ciszy podczas zasadzki lub ukrwając się. Uzywano też kodu morsa za pomocą latarki lub ogniska. Mimo maksymalnego uproszczenia tej skali nie była ona cudownym lekiem. Żołnierze mieli problem przede wszystkim z oceną wizualną osobników. Dlatego DeathNet przygotował swoich agentów, którzy mieli wspomagać żołnierzy, tworząc w ten sposób formację `Phantom`.
+To czego badacze nie przewidzieli to faktu jak ten system był sprawny w użyciu między żołnierzami. Dzięki liczb od 1 do 10 i kolorach można było użyć prostego języka migowego by komunikować się między członkami oddziału w ciszy podczas zasadzki lub ukrywając się. Używano też kodu morsa za pomocą latarki lub ogniska. Mimo maksymalnego uproszczenia tej skali nie była ona cudownym lekiem. Żołnierze mieli problem przede wszystkim z oceną wizualną osobników. Dlatego DeathNet przygotował swoich agentów, którzy mieli wspomagać żołnierzy, tworząc w ten sposób formację `Phantom`.
 
-Kolejnym efektem był wpływ psychologiczny. Okazało się, że jeśli można było ta bestie opisać cyfrą to wróg zaczynał stawać się znany. Żołnierze wierzyli, że naukowcy zaczynają łączyć wątki tajemnicy tej zarazy. Prosta tabela mówiąca im przy zwykłym zombie "dasz radę" sprawiała, że chcieli dawać radę, chcieli próbować.
+Kolejnym efektem był wpływ psychologiczny. Okazało się, że jeśli można było tę bestię opisać cyfrą to wróg zaczynał stawać się znany. Żołnierze wierzyli, że naukowcy zaczynają łączyć wątki tajemnicy tej zarazy. Prosta tabela mówiąca im przy zwykłym zombie "dasz radę" sprawiała, że chcieli dawać radę, chcieli próbować.
 
 Jeszcze przed końcem wojny wszyscy zawodowi żołnierze zginęli.
 

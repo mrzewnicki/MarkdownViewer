@@ -3,7 +3,7 @@
 - `2027.01` - wybuch epidemii w europie
 - `2027.03` - zajęcie Kanady i kanału Panamskiego
 - `2027.04` - blokada Meksyku i wybuch wojny niedługo później
-- `2027.05` - upadek Bostonu i przekroczenie kanału panamskiego przez Alfe. Atak na siły USA od tyłu
+- `2027.05` - upadek Bostonu i przekroczenie kanału panamskiego przez Alfę. Atak na siły USA od tyłu
 
 ---
 
@@ -17,7 +17,7 @@
 
 `ToDo: Operacja "Słoneczny Deszcz"`
 
-`ToDo: Wyewoulowanie flory`
+`ToDo: Wyewoluowanie flory`
 
 `ToDo: Narodziny bestii`
 
@@ -41,10 +41,10 @@
 ## Przeszłość
 
 ### Czas Rozpadu
-W trakcie wojny postać miała `minimum 20 lat`. Postać ma pełne wykształcenie w rozumieniu czasów przed wojną sięgające nawet najwyższych stopni naukowych. Oprócz tego ma bogate doświadczenie zawodowe i życiowe. Nalezy jednak pamiętać, że doświadczenie ze starych czasów nie musi się przekładać zawsze korzystnie na nowe czasy. Postać z pewnością brała czynny udział w wydarzeniach podczas wojny. Musiała ratować siebie, rodzinę, przyjaciół, a może nawet walczyć.
+W trakcie wojny postać miała `minimum 20 lat`. Postać ma pełne wykształcenie w rozumieniu czasów przed wojną sięgające nawet najwyższych stopni naukowych. Oprócz tego ma bogate doświadczenie zawodowe i życiowe. Należy jednak pamiętać, że doświadczenie ze starych czasów nie musi się przekładać zawsze korzystnie na nowe czasy. Postać z pewnością brała czynny udział w wydarzeniach podczas wojny. Musiała ratować siebie, rodzinę, przyjaciół, a może nawet walczyć.
 
 ### Czas Ocalonych
-W trakcie wojny postać miała `1-19 lat`. Postać może mieć niepełne wykształcenie w rozumieniu czasów przed wojną. Może, ale nie musi mieć bardzo małe doświadczenie zawodowe. Zdecydowanie lepiej mogła znieść wszystkiie zmiany przyrody i zaadaptowała się do nowych warunków otoczenia niż postać z czasu Rozpadu. Podczas wojny bardzo możliwe, że ktoś zapewnił jej przetrwanie, rodzina, przyjaciele rodziny, rząd, organizacje lub po prostu ludzie dobrej woli. 
+W trakcie wojny postać miała `1-19 lat`. Postać może mieć niepełne wykształcenie w rozumieniu czasów przed wojną. Może, ale nie musi mieć bardzo małe doświadczenie zawodowe. Zdecydowanie lepiej mogła znieść wszystkie zmiany przyrody i zaadaptowała się do nowych warunków otoczenia niż postać z czasu Rozpadu. Podczas wojny bardzo możliwe, że ktoś zapewnił jej przetrwanie, rodzina, przyjaciele rodziny, rząd, organizacje lub po prostu ludzie dobrej woli.
 
 ### Czas Hord
 Postać `urodziła się po wojnie`. Nie ma wykształcenia ani doświadczenia zawodowego w rozumieniu czasów przed wojną. Świetnie radzi sobie z podstawowym przetrwaniem i pierwotnym otoczeniem. Najlepiej adaptuje się też do środowiska i ma dostęp do unikalnych możliwości mutacyjnych swojego ciała. Zna jedynie przekazy innych na temat czasu Rozpadu i Ocalonych.
