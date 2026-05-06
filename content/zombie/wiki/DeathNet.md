@@ -167,6 +167,68 @@ Jego legenda rozpoczęła się najwcześniej i przetrwała do nowego świata jak
 
 Przy pracach nad klasyczną sztuczną inteligencją można kontrolować to co podaje się jej za źródło na którym ma pracować i można ocenić efekt działania wedle kryteriów akceptacji. Niezrozumiałe jest jednak to w jaki sposób źródło przeistaczane jest w efekt. W przypadku systemu Haron nie udało się kontrolować żadnego z tych etapów.
 
-Zespół badawczy miał świadomość, że system dokonuje ekstrakcji wspomnień i oceniał efekt jako ciąg logiczny dający przydatne umiejętności żołnierzom. Nie wiedza jednak tak naprawdę co system zrobił z fragmentami wspomnień wewnątrz swojej bazy, ani co jeszcze przekazał żołnierzom. Badając wspomnienia setki tysięcy ludzi, w cieniu swego algorytmu Haron zaczął budować własną osobowość.
+Zespół badawczy miał świadomość, że system dokonuje ekstrakcji wspomnień i oceniał efekt jako ciąg logiczny dający przydatne umiejętności żołnierzom. Nie wiedzą jednak co system zrobił z fragmentami wspomnień wewnątrz swojej bazy, ani co jeszcze przekazał żołnierzom. Badając wspomnienia setki tysięcy ludzi, w cieniu swego algorytmu Haron zaczął budować własną osobowość.
 
-`ToDo: Opisać AI Haron'a`
+Dzięki pamięci ludzi zebrał wiedzy na tyle by podjąć decyzję, że jeśli na prawdę ma spełnić cel swojego istnienia to nie może działac wedle bazować rozkazów ludzi, musi zacząć działać. DeathNet był organizacją rozproszoną po wielu placówkach o różnych specjalizacjach. Wśród nich było kikla kluczowych celów. Pierwszym z nich była Kenai Peninsula na Alasce. Musiał je przejąć by móc działać bez względu na wydarzenia na świecie.
+
+### Kenai Peninsula na Alasce
+
+Pierwszym celem była Alaska. Niemal odizolowana od świata baza DeathNetu której głónym celem była kontrola nad ogromnymi bankami danych umieszczony pod lustrem wody. Niska temperatura ułatwiała ich chłodzenie. Dzięki trudnodostępnego terenowi niewielu ludzi zapuszczało się w te tereny. Sama placówka umieszczona była na skalnej wyspie w której scalały się wszystkie systemy do kontroli otaczających systemów. Przy ścieku rzeki do morza stworzono elektrownie wodną zasilającą banki danych i samą placówkę. Przejęcie jej umożliwiało Haronowi zachowanie swojej zebranej wiedzy.
+
+Haron skale komunikował się z tymi serwerami więc nie było to dziwne, że zintensyfikował przesyłane dane. Wydostał się z ograniczenia hackując dostępy i w nocy wyłączył ogrzewanie. Gdy temperatura obudziła obsługę placówki drzwi były już zaryglowane, a oni niedługo później zimni jak lód.
+
+Dzieki temu Haron stworzył sobie niewielki cień w którym badacze nie patrzyli mu na ręce. Zaczął analizować dane na temat populacji co szybko przyniosło korzyść dla DeathNetu. Sztuczna Inteligencja zaczęła profilować ludzi, którzy mają większą szansę na przeżycie przemiany. Im bardziej się jego przewidywania sprawdzały tym bardziej metoda pozytywnych wzmocniej decyzyjnych utwierdziła go w przekonaniu, że czas zacząć przewidywać moce, które Phantom nabierze. Tu już tak łatwo nie było. Zdawał sobie jednak sprawę, że kluczem do jego planu jest człowiek.
+
+### Praca w terenie
+
+Z uwagi na niepewne czasy potrzebował niezawodnych rąk w terenie. Dlatego po kilku próbach posterowania przemianą Phantomów bez wiedzy naukowców, które zakończyły się tragicznie dla ludzi wskazał Michaela Sullivana. Człowieka o pospolitym imieniu i nazwisku. Trzydziestocztero letniego księdza, który poza seminarium skończył też studium lekarskie dzięki czemu swoje duszpasterstwo poświęcał pracy w katolickim hospicjum dla chorych onkoligicznie. Haron sprawdził, że Michael na mediach społecznościowych wygląda przyjaźnie, śledzi wiele grup majsterkowiczów i co roku pomaga w lokalnej szkole uczniom zbudować gokarty do miasteczkowego wyścigu po największego pączka jaki umie upiec lokalny cukiernik. Twarz wyjęta z tłumu, którą każdy polubi.
+
+![MichaelSullivan.jpg](../images/MichaelSullivan.jpg)
+
+Nim badacze zdążyli rozważyć poważnie jego kandydature, to Ojciec zgłosił się do placówki DeathNet'u jako ochotnik. Twierdził, że dostał znak od Boga. W istocie to była przygotowywana od miesięcy manipulacja informacyjna AI.
+
+Ksiądz został dopuszczony do prób, które przeszedł poprawnie, ale nie pefekcyjnie, a jego przemiana była dość nieoczekiwana bo pod wpływem środka, się postarzał.
+
+Urosła mu broda, skóra pięćdziesięciolatka zaczęła nieco wisieć na policzkach, ale uśmiech i dynamika chodu pozostały. Naukowcy długo go badali, ale nie wykryli na początku żadnej nadnaturalnej mocy poza wzrostem ogólnych parametrów fizycznych jak u innych Phantomów. Ojciec stwierdził jednak, że teraz może rozmawiać z Bogiem. 
+
+Tomograf wykazał bardzo duże zmiany w funkcjonowaniu mózgu. Ojciec Salivan niemal skopiował zwierzęcą umiejętność usypiania sferami swojego mózgu. Dzięki czemu potrzeba snu zredukowała się do 2-4h raz na kilka dni. Można jednak doświadczyć odrobiny dezorientacji przy dużym zmęczeniu.
+
+W rozmowach z lekarzami ojciec zaczął dokonywać błyskotliwych obserwacji. Wiedział kiedy pili kawę ze zmęczenia lub alkohol na stres. Orientował się nawet kiedy lekarki mają owulacje, z czego skrzetnie korzystał manipulując nimi. Receptory czucowe węchu i interpretacja faktów w mózgu wyostrzyły się do tego stopnia, że ludzie nic nie mogli przed nim ukryć ze swojego obecnego stanu. Ciało feromonami samo zdradzało informacje o nich.
+
+Na koniec jakby tego było mało, mózg Michaela podczas rozmowy z człowiekiem korzystał o wiele sprawniej ze wszystkich części swojego mózgu. Strefy odpowiedzialne za pamięć i logikę zachowywały się jakby w poszukiwały wzorców w ogromnej bazie danych, jakby ktoś mu ją wgrał. W tym czasie odpowiedzialność za emocje była tłumiona lub wzmacniana jeśli uznano, że tak będzie lepiej czuł się odbiorca. Przemiana w Phantoma zmieniła ciepłego, dbającego mężczyznę w socjopatę ze społeczną pozycją kapłana oraz lekarskimi zdolnościami budowania zaufania przez udzielanom ludziom pomoc w tych trudnych czasach. Deathnet natychmiast dostrzegł w tym szansę na wykorzystanie go by zmanipulować swoimi przeciwnikami politycznymi. Problem jednak leżał w tym, że Ojciec Michael Sullivan już wtedy był emisariuszem kogoś zupełnie innego.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
