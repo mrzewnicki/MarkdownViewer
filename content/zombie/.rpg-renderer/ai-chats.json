@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1778595076738-lp8v951",
+    "title": "Popraw błędy w dokumencie TestAI.wip.md",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Popraw błędy w dokumencie TestAI.wip.md",
+        "timestamp": 1778595091696
+      },
+      {
+        "role": "assistant",
+        "content": "<file_edit path=\"wiki/TestAI.wip.md\" reason=\"Poprawa błędów gramatycznych i stylistycznych\">\n# Test AI\n## Wprowadzenie\nTen dokument służy do testowania możliwości asystenta AI w kontekście projektu RPG Markdown. Zawiera przykładowe zadania i oczekiwane odpowiedzi, aby zweryfikować poprawność działania systemu.\n\n## Przykładowe zadanie\n**Zadanie:** Popraw błędy w podanym tekście RPG.\n**Tekst do poprawy:** \"W tej scenie bohaterowie spotykają grupę **orków**. Są to potężne, zielonoskóre stworzenia z dużymi kłami i toporami. Ich przywódca, **Gorg**r, jest szczególnie niebezpieczny.\"\n\n**Oczekiwana odpowiedź:**\nW tej scenie bohaterowie spotykają grupę orków. Są to potężne, zielonoskóre stworzenia z dużymi kłami i toporami. Ich przywódca, Gorg, jest szczególnie niebezpieczny.\n\n## Uwagi\n- Poprawiono błędy ortograficzne (np. \"Gorg\"r\" → \"Gorg\").\n- Ujednolicono styl opisu (usunięto zbędne znaki interpunkcyjne).\n- Zachowano klimat i ton narracji.\n</file_edit>",
+        "timestamp": 1778595180034
+      }
+    ],
+    "createdAt": 1778595076738,
+    "updatedAt": 1778595180034
+  }
+]
