@@ -1133,7 +1133,7 @@ button {
 
 .timeline-group-label {
   display: inline-block;
-  padding: 2px 12px;
+  padding: 1px 8px;
   border-radius: 999px;
   background: #2d1f07;
   border: 1px solid #92400e;
