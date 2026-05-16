@@ -154,6 +154,123 @@ function preprocessInline(src: string, cfg: RpgRendererConfig, options?: RenderR
     .join('')
 }
 
+// ─── Timeline block ──────────────────────────────────────────────────────────
+
+interface TimelineSubitem {
+  date: string
+  name: string
+}
+
+interface TimelineItem {
+  date: string
+  name: string
+  subitems: TimelineSubitem[]
+}
+
+function parseTimelineContent(src: string): TimelineItem[] {
+  const lines = src.split(/\r?\n/)
+  const items: TimelineItem[] = []
+  const itemRe = /^(\s*)([-*])\s*(?:\[([^\]]*)\])?\s*(.*)$/
+
+  for (const line of lines) {
+    if (!line.trim()) continue
+    const m = line.match(itemRe)
+    if (!m) continue
+    const indent = m[1] ?? ''
+    const date = (m[3] ?? '').trim()
+    const name = (m[4] ?? '').trim()
+    const isSubitem = indent.length > 0
+
+    if (isSubitem) {
+      const parent = items[items.length - 1]
+      if (parent) parent.subitems.push({ date, name })
+    } else {
+      items.push({ date, name, subitems: [] })
+    }
+  }
+
+  return items
+}
+
+function dateGroupKey(date: string): string {
+  if (!date) return ''
+  const yMatch = date.match(/^(\d{4})/)
+  if (yMatch) return yMatch[1] ?? ''
+  return date
+}
+
+function timelineSubitemCountLabel(count: number): string {
+  return `${count} elementów`
+}
+
+function renderTimelineBlock(src: string): string {
+  const items = parseTimelineContent(src)
+  if (items.length === 0) return '<div class="timeline-block"></div>\n'
+
+  const parts: string[] = ['<div class="timeline-block">']
+  let currentGroupKey: string | null = null
+  let inGroup = false
+
+  for (const item of items) {
+    const groupKey = dateGroupKey(item.date)
+
+    if (groupKey !== currentGroupKey) {
+      if (inGroup) parts.push('</div></div>')
+      currentGroupKey = groupKey
+      inGroup = true
+      parts.push('<div class="timeline-group">')
+      if (groupKey) {
+        parts.push('<div class="timeline-group-header">')
+        parts.push('<div class="timeline-group-dot"></div>')
+        parts.push(`<div class="timeline-group-label">${escapeHtml(groupKey)}</div>`)
+        parts.push('</div>')
+      }
+      parts.push('<div class="timeline-group-items">')
+    }
+
+    const hasSubitems = item.subitems.length > 0
+    const itemClass = hasSubitems
+      ? 'timeline-item has-subitems is-expanded'
+      : 'timeline-item'
+    const dateAttr = item.date ? ` data-date="${escapeAttr(item.date)}"` : ''
+    const expandAttr = hasSubitems
+      ? ' data-timeline-expandable aria-expanded="true"'
+      : ''
+
+    parts.push(`<div class="${itemClass}"${dateAttr}${expandAttr}>`)
+    parts.push('<div class="timeline-dot"></div>')
+    parts.push('<div class="timeline-item-body">')
+    if (item.date) parts.push(`<span class="timeline-date">${escapeHtml(item.date)}</span>`)
+    parts.push(`<span class="timeline-name">${escapeHtml(item.name)}</span>`)
+
+    if (hasSubitems) {
+      parts.push(
+        `<span class="timeline-collapsed-count">${escapeHtml(timelineSubitemCountLabel(item.subitems.length))}</span>`
+      )
+      parts.push('<span class="timeline-chevron" aria-hidden="true"></span>')
+      parts.push('<div class="timeline-subitems-wrapper">')
+      parts.push('<div class="timeline-subitems">')
+      for (const sub of item.subitems) {
+        parts.push('<div class="timeline-subitem">')
+        parts.push('<div class="timeline-subitem-dot"></div>')
+        if (sub.date) parts.push(`<span class="timeline-date">${escapeHtml(sub.date)}</span>`)
+        parts.push(`<span class="timeline-name">${escapeHtml(sub.name)}</span>`)
+        parts.push('</div>')
+      }
+      parts.push('</div>')
+      parts.push('</div>')
+    }
+
+    parts.push('</div></div>')
+  }
+
+  if (inGroup) parts.push('</div></div>')
+  parts.push('</div>')
+  return parts.join('\n') + '\n'
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+
 function blockClass(type: string): string {
   return `rpg-block rpg-block-${type}`
 }
@@ -220,6 +337,14 @@ function buildMd(cfg: RpgRendererConfig): MarkdownIt {
     tabIndex: false,
     slugify: (value: string) => githubHeadingSlug(value),
   })
+
+  const origFence = md.renderer.rules.fence
+  md.renderer.rules.fence = (tokens, idx, options, env, self) => {
+    const token = tokens[idx]
+    if (token?.info.trim() === 'timeline') return renderTimelineBlock(token.content)
+    if (origFence) return origFence(tokens, idx, options, env, self)
+    return self.renderToken(tokens, idx, options)
+  }
 
   return md
 }
@@ -303,7 +428,7 @@ function rewriteLocalRefs(html: string, options?: RenderRpgMarkdownOptions): str
 }
 
 const PURIFY_PREVIEW: import('dompurify').Config = {
-  ADD_ATTR: ['data-entity', 'data-id', 'data-title', 'data-block', 'data-callout', 'id', 'tabindex', 'class'],
+  ADD_ATTR: ['data-entity', 'data-id', 'data-title', 'data-block', 'data-callout', 'data-date', 'data-timeline-expandable', 'id', 'tabindex', 'class'],
   ADD_TAGS: ['aside', 'header', 'section'],
   ALLOWED_URI_REGEXP:
     /^(?:(?:(?:f|ht)tps?|mailto|tel|callto|sms|cid|xmpp|matrix):|#|\/|\.\/|\.\.\/|[^a-z]|[a-z+.-]+(?:[^a-z+.-:]|$))/i,

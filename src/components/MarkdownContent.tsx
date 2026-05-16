@@ -97,6 +97,21 @@ export function MarkdownContent({ project, file }: MarkdownContentProps) {
   useEffect(() => {
     const article = articleRef.current
     if (!article) return
+    const onClick = (e: MouseEvent): void => {
+      const item = (e.target as HTMLElement).closest<HTMLElement>('.timeline-item[data-timeline-expandable]')
+      if (!item) return
+      item.classList.toggle('is-collapsed')
+      const collapsed = item.classList.contains('is-collapsed')
+      item.classList.toggle('is-expanded', !collapsed)
+      item.setAttribute('aria-expanded', collapsed ? 'false' : 'true')
+    }
+    article.addEventListener('click', onClick)
+    return () => article.removeEventListener('click', onClick)
+  }, [html])
+
+  useEffect(() => {
+    const article = articleRef.current
+    if (!article) return
 
     const headings = article.querySelectorAll<HTMLElement>('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]')
     const handlers: Array<{ btn: HTMLButtonElement; handler: () => void }> = []
