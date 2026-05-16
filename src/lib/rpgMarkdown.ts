@@ -203,7 +203,7 @@ function timelineSubitemCountLabel(count: number): string {
   return `${count} elementów`
 }
 
-function renderTimelineBlock(src: string): string {
+function renderTimelineBlock(src: string, renderInline: (text: string) => string): string {
   const items = parseTimelineContent(src)
   if (items.length === 0) return '<div class="timeline-block"></div>\n'
 
@@ -241,7 +241,7 @@ function renderTimelineBlock(src: string): string {
     parts.push('<div class="timeline-dot"></div>')
     parts.push('<div class="timeline-item-body">')
     if (item.date) parts.push(`<span class="timeline-date">${escapeHtml(item.date)}</span>`)
-    parts.push(`<span class="timeline-name">${escapeHtml(item.name)}</span>`)
+    parts.push(`<span class="timeline-name">${renderInline(item.name)}</span>`)
 
     if (hasSubitems) {
       parts.push(
@@ -254,7 +254,7 @@ function renderTimelineBlock(src: string): string {
         parts.push('<div class="timeline-subitem">')
         parts.push('<div class="timeline-subitem-dot"></div>')
         if (sub.date) parts.push(`<span class="timeline-date">${escapeHtml(sub.date)}</span>`)
-        parts.push(`<span class="timeline-name">${escapeHtml(sub.name)}</span>`)
+        parts.push(`<span class="timeline-name">${renderInline(sub.name)}</span>`)
         parts.push('</div>')
       }
       parts.push('</div>')
@@ -342,7 +342,11 @@ function buildMd(cfg: RpgRendererConfig): MarkdownIt {
   md.renderer.rules.fence = (tokens, idx, options, env, self) => {
     const token = tokens[idx]
     if (token?.info.trim() === 'wip') return ''
-    if (token?.info.trim() === 'timeline') return renderTimelineBlock(token.content)
+    if (token?.info.trim() === 'timeline') {
+      const renderInline = (text: string): string =>
+        md.renderInline(applyInlineRpg(text, cfg, _currentRenderOptions))
+      return renderTimelineBlock(token.content, renderInline)
+    }
     if (origFence) return origFence(tokens, idx, options, env, self)
     return self.renderToken(tokens, idx, options)
   }
@@ -352,6 +356,7 @@ function buildMd(cfg: RpgRendererConfig): MarkdownIt {
 
 let cachedKey = ''
 let cachedMd: MarkdownIt | null = null
+let _currentRenderOptions: RenderRpgMarkdownOptions | undefined
 
 function getMd(cfg: RpgRendererConfig): MarkdownIt {
   const key = JSON.stringify(cfg)
@@ -441,7 +446,9 @@ export function renderRpgMarkdown(source: string, cfg: RpgRendererConfig, option
   const md = getMd(cfg)
   const withCallouts = preprocessCallouts(markdownBody, cfg)
   const withInline = preprocessInline(withCallouts, cfg, options)
+  _currentRenderOptions = options
   const raw = md.render(fixMarkdownParenDestinationsWithWhitespace(withInline))
+  _currentRenderOptions = undefined
   const rewritten = rewriteLocalRefs(raw, options)
   const sanitized = String(DOMPurify.sanitize(rewritten, PURIFY_PREVIEW))
   return frontmatter ? renderFrontmatterPreview(frontmatter.inner) + sanitized : sanitized
