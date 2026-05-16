@@ -341,6 +341,7 @@ function buildMd(cfg: RpgRendererConfig): MarkdownIt {
   const origFence = md.renderer.rules.fence
   md.renderer.rules.fence = (tokens, idx, options, env, self) => {
     const token = tokens[idx]
+    if (token?.info.trim() === 'wip') return ''
     if (token?.info.trim() === 'timeline') return renderTimelineBlock(token.content)
     if (origFence) return origFence(tokens, idx, options, env, self)
     return self.renderToken(tokens, idx, options)
