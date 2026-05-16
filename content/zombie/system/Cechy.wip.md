@@ -1,6 +1,6 @@
 # Podstawy
 
-## Atrybuty
+## Cechy
 
 Każde drzewko cech zawiera w sobie 4 cechy. 2 z nich mają charakter defensywny i pozostałe 2, charakter sprawczy. Defensywność cech wskazuje jak istota radzi sobie z wpływem otaczającego świata i istot. Sprawczość wyraża zdolność do zmiany otaczającego świata i wpływania na istoty.
 
@@ -62,101 +62,3 @@ Zdolność rozumienia mechanizmów rządzących światem oraz wykorzystywania wi
 
 #### Kreatywność
 Zdolność odnajdywania nowych rozwiązań w sytuacjach pozornie bez wyjścia. Obejmuje improwizację, nieszablonowe myślenie oraz umiejętność wykorzystania dostępnych zasobów w nieoczywisty sposób. Kreatywność pozwala tworzyć prowizoryczne narzędzia, adaptować stare technologie do nowych zastosowań, znajdować „trzecią drogę” oraz zmieniać porażkę w okazję. W świecie po upadku cywilizacji Kreatywność często decyduje o różnicy między człowiekiem, który jedynie przetrwał, a tym, który potrafi budować coś nowego.
-
-## Umiejętności
-
-- Zawód
-
-- Walka
-    - Bijatyka
-    - Bicz
-    - Broń Obuchowa
-    - Garota
-    - Miecz
-    - Piła Łańcuchowa
-    - Topór/Siekiera
-    - Włócznia
-    - Unik
-    - Walka Wręcz (różne)
-    - Broń Palna (różne specjalizacje)
-    - Broń Krótka
-    - Broń Ciężka
-    - Karabin
-    - Karabin Maszynowy
-    - Strzelba
-    - Pistolet Maszynowy
-    - Łuk
-    - Miotacz Ognia
-    - Broń Artyleryjska
-- Nauka / wiedza ścisła i przyrodnicza
-    - Antropologia
-    - Archeologia
-    - Astronomia
-    - Biologia
-    - Botanika
-    - Chemia
-    - Farmacja
-    - Fizyka
-    - Geologia
-    - Inżynieria
-    - Kryminalistyka
-    - Kryptografia
-    - Matematyka
-    - Meteorologia
-    - Medycyna
-    - Zoologia
-    - Nauka (różne specjalizacje)
-    - Wiedza o Naturze
-- Technika i obsługa
-    - Elektronika
-    - Elektryka
-    - Mechanika
-    - Obsługa Ciężkiego Sprzętu
-    - Ślusarstwo
-    - Zręczne Palce
-    - Korzystanie z Komputerów
-    - Pilotowanie (różne specjalizacje)
-    - Prowadzenie Samochodu
-    - Nawigacja
-- Przetrwanie i teren
-    - Pływanie
-    - Skakanie
-    - Wspinaczka
-    - Tropienie
-    - Ukrywanie
-    - Nurkowanie
-    - Sztuka Przetrwania (różne specjalizacje)
-- Społeczne i kontaktowe
-    - Gadanina
-    - Perswazja
-    - Urok Osobisty
-    - Zastraszanie
-    - Psychoanaliza
-    - Psychologia
-    - Hipnoza
-- Zmysły i obserwacja
-    - Nasłuchiwanie
-    - Spostrzegawczość
-    - Czytanie z Ruchu Warg
-- Humanistyka / społeczeństwo / formalne
-    - Historia
-    - Prawo
-    - Księgowość
-    - Wycena
-    - Majętność
-    - Korzystanie z Bibliotek
-    - Język Ojczysty
-    - Język (Obcy)
-- Sztuka i rzemiosło
-    - Aktorstwo
-    - Charakteryzacja
-    - Fałszerstwo
-    - Fotografia
-    - Sztuka/Rzemiosło (różne specjalizacje)
-    - Sztuki Piękne
-- Religia / tajemnica / nadnaturalne
-    - Okultyzm
-    - Wiedza Tajemna
-- Zwierzęta i środowisko
-    - Tresura Zwierząt
-    - Jeździectwo

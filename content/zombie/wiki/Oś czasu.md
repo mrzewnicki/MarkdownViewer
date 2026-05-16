@@ -1,3 +1,15 @@
+
+```timeline
+- [2027.01] Wybuch epidemii w europie
+- [2027.03] Zajęcie Kanady i kanału Panamskiego
+- [2027.04] Blokada Meksyku i wybuch wojny niedługo później
+- [2027.05] Upadek Bostonu i przekroczenie kanału panamskiego
+- [2030.01] Świat budzi się po wojnie
+- [2045.01] Zaczyna się nowy świat.
+
+```
+```wip
+
 # Oś czasu
 
 - `2027.01` - wybuch epidemii w europie
@@ -36,7 +48,7 @@
 ---
 
 - `2045.01` - Zaczyna się nowy świat.
-
+```
 
 ## Przeszłość
 

@@ -1,0 +1,169 @@
+# Umiejętności
+
+- Zawód
+
+
+----
+
+
+
+- Atletyka
+    - Pływanie i nurkowanie
+    - Wspinaczka
+    - Bieganie i wędrówka
+    - Rzucanie
+- Eksploracja
+    - Tropienie
+    - Przeszukiwanie
+    - Spostrzegawczość
+    - Survival
+    - Skradanie się
+- Walka
+    - Walka wręcz bez broni
+    - Broń biała
+        - Noże
+        - Cięta
+        - Kłóta
+        - Obuchowa
+    - Strzelanie
+        - Krótka
+        - Strzelby
+        - Karabiny
+        - Snajperska
+- Nauka
+    - Fizyka
+    - Chemia
+    - Inżynieria
+    - Medycyna
+    - Biologia
+    - Zoologia
+    - Matematyka
+    - Genetyka
+- Rzemiosło
+    - Kartografia
+    - Kowalstwo
+    - Konstrukcje
+        - Stolarstwo
+        - Murarstwo
+        - Metalurgia
+- Sztuka
+    - Malarstwo
+    - Fotografia
+- Technika
+    - Elektronika
+    - Mechanika
+    - Ślusarstwo
+    - Motoryzacja
+    - Informatyka
+    - Pirotechnika
+    - Prowadzenie pojazdów
+    - Obsługa ciężkiego sprzętu
+- Wiedza i wykształcenie
+    - Rośliny
+    - Zwierzęta
+    - Historia
+    - Języki
+    - Korzystanie z Biblioteki
+    - Nawigacja
+- Społeczne
+    - Etykieta
+    - Wyczucie
+    - Przekonywanie
+    - Zastraszanie
+    - Występy publiczne
+- Zwierzęta
+    - Tresura
+    - Jeździectwo
+    - Rozumienie zwierząt
+
+
+- Walka
+    - Bijatyka
+    - Bicz
+    - Broń Obuchowa
+    - Garota
+    - Miecz
+    - Piła Łańcuchowa
+    - Topór/Siekiera
+    - Włócznia
+    - Unik
+    - Walka Wręcz (różne)
+    - Broń Palna (różne specjalizacje)
+    - Broń Krótka
+    - Broń Ciężka
+    - Karabin
+    - Karabin Maszynowy
+    - Strzelba
+    - Pistolet Maszynowy
+    - Łuk
+    - Miotacz Ognia
+    - Broń Artyleryjska
+- Nauka / wiedza ścisła i przyrodnicza
+    - Antropologia
+    - Archeologia
+    - Astronomia
+    - Biologia
+    - Botanika
+    - Chemia
+    - Farmacja
+    - Fizyka
+    - Geologia
+    - Inżynieria
+    - Kryminalistyka
+    - Kryptografia
+    - Matematyka
+    - Meteorologia
+    - Medycyna
+    - Zoologia
+    - Nauka (różne specjalizacje)
+    - Wiedza o Naturze
+- Technika i obsługa
+    - Elektronika
+    - Elektryka
+    - Mechanika
+    - Obsługa Ciężkiego Sprzętu
+    - Ślusarstwo
+    - Zręczne Palce
+    - Korzystanie z Komputerów
+    - Pilotowanie (różne specjalizacje)
+    - Prowadzenie Samochodu
+    - Nawigacja
+- Przetrwanie i teren
+    - Pływanie
+    - Skakanie
+    - Wspinaczka
+    - Tropienie
+    - Ukrywanie
+    - Nurkowanie
+    - Sztuka Przetrwania (różne specjalizacje)
+- Społeczne i kontaktowe
+    - Gadanina
+    - Perswazja
+    - Urok Osobisty
+    - Zastraszanie
+    - Psychoanaliza
+    - Psychologia
+    - Hipnoza
+- Zmysły i obserwacja
+    - Nasłuchiwanie
+    - Spostrzegawczość
+    - Czytanie z Ruchu Warg
+- Humanistyka / społeczeństwo / formalne
+    - Historia
+    - Prawo
+    - Księgowość
+    - Wycena
+    - Majętność
+    - Korzystanie z Bibliotek
+    - Język Ojczysty
+    - Język (Obcy)
+- Sztuka i rzemiosło
+    - Aktorstwo
+    - Charakteryzacja
+    - Fałszerstwo
+    - Fotografia
+    - Sztuka/Rzemiosło (różne specjalizacje)
+    - Sztuki Piękne
+- Religia / tajemnica / nadnaturalne
+    - Okultyzm
+    - Wiedza Tajemna
