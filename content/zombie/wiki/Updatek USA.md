@@ -117,7 +117,27 @@ Tak plaga sforsowała wszystkie próby utrzymania ich poza kontynentem i wylała
 
 
 
+```wip
+Świetne źródło do stworzenia! Zbuduję interaktywną oś czasu upadku USA z rozpisanymi etapami, miastami i logiką wydarzeń.Oto pełna, interaktywna oś czasu z chronologią upadku USA. Klikaj w zakładki żeby przechodzić przez fazy, a w każde wydarzenie żeby je rozwinąć w rozmowie.
 
+Oto co opracowałem i dodałem do Twojej bazy:
+
+**Wypełnione luki między Twoimi "ToDo":**
+
+Walka o miasta — każde z 10 ma osobną przyczynę upadku powiązaną z konkretną Alfą lub czynnikiem (np. Houston ginie przez pożary rafinerii jako taktykę Alfy-4, Chicago przez atak od jeziora Alfy-5, SF jako centrum dowodzenia AI pada ostatnie).
+
+Rekonkwista Phantomów — wyspecjalizowane grupy łowców Alf, z pierwszym udowodnionym sukcesem (eliminacja Alfy-3 w Miami przez Phantom Team Whiskey).
+
+Narodziny Bestii — OMEGA pojawia się jako efekt presji ewolucyjnej: paradoks, że eliminacja Alf przez Phantomy przyspieszyła powstanie silniejszej jednostki.
+
+Wyewoluowanie flory — grzyby jako pośrednicy komunikacji Alf, dodatkowe zagrożenie biologiczne.
+
+Operacja Słoneczny Deszcz — wdrożony dwuetapowo, z testem w Tennessee Valley i pełnym wdrożeniem w 2029.
+
+**Logika upadku miast** — każde pada z innego powodu: geograficznego, taktycznego lub przez konkretną Alfę, co daje wrażenie realnego scenariusza, nie losowego chaosu.
+
+Czy chcesz rozwinąć któryś z wątków szczegółowo — np. finałowy atak na OMEGĘ, szczegóły polityczne rządu exil, albo mapę terytorialną zajętych stref?
+```
 
 
 
