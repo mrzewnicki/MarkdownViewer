@@ -21,16 +21,15 @@
 | Handel        | Pułapki              | Zombie                |
 | Wyczucie      | Tropienie            | Mutacje               |
 ```
-
-| [Eksploracja](#eksploracja) | [Walka](#walka) | [Nauka i wiedza](#nauka-i-wiedza) | [Wytwórstwo](#wytwórstwo) | [Społeczne](#społeczne) | [Natura i przetrwanie](#natura-i-przetrwanie) | [Okultyzm i Tajemnice](#okultyzm-i-tajemnice) |
+| [Eksploracja](Umiej%C4%99tno%C5%9Bci.md#eksploracja) | [Walka](Umiej%C4%99tno%C5%9Bci.md#walka) | [Nauka i wiedza](Umiej%C4%99tno%C5%9Bci.md#nauka-i-wiedza) | [Wytwórstwo](Umiej%C4%99tno%C5%9Bci.md#wytwórstwo) | [Społeczne](Umiej%C4%99tno%C5%9Bci.md#społeczne) | [Natura i przetrwanie](Umiej%C4%99tno%C5%9Bci.md#natura-i-przetrwanie) | [Okultyzm i Tajemnice](Umiej%C4%99tno%C5%9Bci.md#okultyzm-i-tajemnice) |
 | --------------------- | ------------------- | -------------- | --------------- | ------------- | -------------------- | --------------------- |
-| [Wspinaczka](#wspinaczka) | [Walka wręcz](#walka-wręcz) | [Medycyna](#medycyna) | [Mechanika](#mechanika) | [Zastraszanie](#zastraszanie) | [Zielarstwo](#zielarstwo) | [Zwyczaje ocalałych](#zwyczaje-ocalałych) |
-| [Pływanie i nurkowanie](#pływanie-i-nurkowanie) | [Broń biała](#broń-biała) | [Chemia](#chemia) | [Kowalstwo](#kowalstwo) | [Przekonywanie](#przekonywanie) | [Tresura](#tresura) | [Rytuały Przebudzonych](#rytuały-przebudzonych) |
-| [Parkour](#parkour) | [Broń palna](#broń-palna) | [Fizyka](#fizyka) | [Rusznikarstwo](#rusznikarstwo) | [Manipulacja](#manipulacja) | [Hodowla](#hodowla) | [DeathNet](#deathnet) |
-| [Ukrywanie](#ukrywanie) | [Broń miotana](#broń-miotana) | [Biologia](#biologia) | [Budownictwo](#budownictwo) | [Dowodzenie](#dowodzenie) | [Jeździectwo](#jeździectwo) | [LiveCore](#livecore) |
-| [Wyszukiwanie](#wyszukiwanie) | [Strzelectwo](#strzelectwo) | [Historia](#historia) | [Krawiectwo](#krawiectwo) | [Handel](#handel) | [Pułapki](#pułapki) | [Zombie](#zombie) |
-| [Prowadzenie pojazdów](#prowadzenie-pojazdów) | [Taktyka i strategia](#taktyka-i-strategia) | [Szyfry](#szyfry) | [Kucharstwo](#kucharstwo) | [Wyczucie](#wyczucie) | [Tropienie](#tropienie) | [Mutacje](#mutacje) |
-| [Nawigacja](#nawigacja) | [Broń palna ciężka](#broń-palna-ciężka) | [Weterynaria](#weterynaria) | [Elektrotechnika](#elektrotechnika) | | | |
+| [Wspinaczka](Umiej%C4%99tno%C5%9Bci.md#wspinaczka) | [Walka wręcz](Umiej%C4%99tno%C5%9Bci.md#walka-wręcz) | [Medycyna](Umiej%C4%99tno%C5%9Bci.md#medycyna) | [Mechanika](Umiej%C4%99tno%C5%9Bci.md#mechanika) | [Zastraszanie](Umiej%C4%99tno%C5%9Bci.md#zastraszanie) | [Zielarstwo](Umiej%C4%99tno%C5%9Bci.md#zielarstwo) | [Zwyczaje ocalałych](Umiej%C4%99tno%C5%9Bci.md#zwyczaje-ocalałych) |
+| [Pływanie i nurkowanie](Umiej%C4%99tno%C5%9Bci.md#pływanie-i-nurkowanie) | [Broń biała](Umiej%C4%99tno%C5%9Bci.md#broń-biała) | [Chemia](Umiej%C4%99tno%C5%9Bci.md#chemia) | [Kowalstwo](Umiej%C4%99tno%C5%9Bci.md#kowalstwo) | [Przekonywanie](Umiej%C4%99tno%C5%9Bci.md#przekonywanie) | [Tresura](Umiej%C4%99tno%C5%9Bci.md#tresura) | [Rytuały Przebudzonych](Umiej%C4%99tno%C5%9Bci.md#rytuały-przebudzonych) |
+| [Parkour](Umiej%C4%99tno%C5%9Bci.md#parkour) | [Broń palna](Umiej%C4%99tno%C5%9Bci.md#broń-palna) | [Fizyka](Umiej%C4%99tno%C5%9Bci.md#fizyka) | [Rusznikarstwo](Umiej%C4%99tno%C5%9Bci.md#rusznikarstwo) | [Manipulacja](Umiej%C4%99tno%C5%9Bci.md#manipulacja) | [Hodowla](Umiej%C4%99tno%C5%9Bci.md#hodowla) | [DeathNet](Umiej%C4%99tno%C5%9Bci.md#deathnet) |
+| [Ukrywanie](Umiej%C4%99tno%C5%9Bci.md#ukrywanie) | [Broń miotana](Umiej%C4%99tno%C5%9Bci.md#broń-miotana) | [Biologia](Umiej%C4%99tno%C5%9Bci.md#biologia) | [Budownictwo](Umiej%C4%99tno%C5%9Bci.md#budownictwo) | [Dowodzenie](Umiej%C4%99tno%C5%9Bci.md#dowodzenie) | [Jeździectwo](Umiej%C4%99tno%C5%9Bci.md#jeździectwo) | [LiveCore](Umiej%C4%99tno%C5%9Bci.md#livecore) |
+| [Wyszukiwanie](Umiej%C4%99tno%C5%9Bci.md#wyszukiwanie) | [Strzelectwo](Umiej%C4%99tno%C5%9Bci.md#strzelectwo) | [Historia](Umiej%C4%99tno%C5%9Bci.md#historia) | [Krawiectwo](Umiej%C4%99tno%C5%9Bci.md#krawiectwo) | [Handel](Umiej%C4%99tno%C5%9Bci.md#handel) | [Pułapki](Umiej%C4%99tno%C5%9Bci.md#pułapki) | [Zombie](Umiej%C4%99tno%C5%9Bci.md#zombie) |
+| [Prowadzenie pojazdów](Umiej%C4%99tno%C5%9Bci.md#prowadzenie-pojazdów) | [Taktyka i strategia](Umiej%C4%99tno%C5%9Bci.md#taktyka-i-strategia) | [Szyfry](Umiej%C4%99tno%C5%9Bci.md#szyfry) | [Kucharstwo](Umiej%C4%99tno%C5%9Bci.md#kucharstwo) | [Wyczucie](Umiej%C4%99tno%C5%9Bci.md#wyczucie) | [Tropienie](Umiej%C4%99tno%C5%9Bci.md#tropienie) | [Mutacje](Umiej%C4%99tno%C5%9Bci.md#mutacje) |
+| [Nawigacja](Umiej%C4%99tno%C5%9Bci.md#nawigacja) | [Broń palna ciężka](Umiej%C4%99tno%C5%9Bci.md#broń-palna-ciężka) | [Weterynaria](Umiej%C4%99tno%C5%9Bci.md#weterynaria) | [Elektrotechnika](Umiej%C4%99tno%C5%9Bci.md#elektrotechnika) | | | |
 
 ## Eksploracja
 
