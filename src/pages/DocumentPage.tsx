@@ -150,8 +150,8 @@ export function DocumentPage() {
           </button>
         </header>
         <MarkdownContent project={project} file={file} />
-        {headings.length > 0 ? <TableOfContents headings={headings} activeSlug={scrollActiveSlug} /> : null}
       </div>
+      {headings.length > 0 ? <TableOfContents headings={headings} activeSlug={scrollActiveSlug} /> : null}
       <CommentPanel projectId={project.id} fileId={file.routePath} isOpen={commentsOpen} />
     </div>
   )

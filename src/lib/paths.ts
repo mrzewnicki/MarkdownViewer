@@ -75,3 +75,17 @@ export function basename(path: string): string {
   const parts = normalizePath(path).split('/')
   return parts[parts.length - 1] ?? path
 }
+
+/** Hash route for the current document page (without `?s=` query). */
+export function getCurrentDocumentHash(): string {
+  if (typeof window === 'undefined') return ''
+  return window.location.hash.split('?')[0].split('#').slice(0, 2).join('#')
+}
+
+/** Full shareable URL pointing at a heading on the current document. */
+export function buildDocumentHeadingLinkUrl(slug: string): string {
+  if (typeof window === 'undefined') {
+    return `#?s=${encodeURIComponent(slug)}`
+  }
+  return `${window.location.origin}${window.location.pathname}${getCurrentDocumentHash()}?s=${encodeURIComponent(slug)}`
+}
