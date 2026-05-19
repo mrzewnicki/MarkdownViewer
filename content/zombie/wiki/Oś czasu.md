@@ -16,7 +16,7 @@
 - [2027.10] Upadek Miami — Alfa zalewa dzielnicę po dzielnicy. Zalana infrastruktura uniemożliwia obronę konwencjonalną.
 - [2027.11] Houston (Texas) — pożary rafinerii po ataku Alfa używa ognia jako fali strachu by wepchnąć ludzi w nacierającą horde.
 - [2027.12] Rozłam rządu federalnego — Dekret Wojenny nr 7, cała władza przechodzi na Połączone Dowództwo.
-- [2028.01] Upadek Nowego Jorku — Alfa kieruje horpde na ufortyfikowane mosty, które w końcu ustępują naporowi bestii
+- [2028.01] Upadek Nowego Jorku — Alfa kieruje horde na ufortyfikowane mosty, które w końcu ustępują naporowi bestii
 - [2028.02] Upadek Chicago — Alfa (Kanada) atakuje spod ziemi. 11 tygodni obrony — rekord konfliktu. Ewakuacja 1,2 mln koleją.
 - [2028.03] Operacja SCORCHED LINE — nuklearny atak na południe
 	- 3 głowice B61 na Saltillo, Tampico i Colón (Panama).

@@ -21,6 +21,7 @@
 | Handel        | Pułapki              | Zombie                |
 | Wyczucie      | Tropienie            | Mutacje               |
 ```
+
 | [Eksploracja](Umiej%C4%99tno%C5%9Bci.md#eksploracja) | [Walka](Umiej%C4%99tno%C5%9Bci.md#walka) | [Nauka i wiedza](Umiej%C4%99tno%C5%9Bci.md#nauka-i-wiedza) | [Wytwórstwo](Umiej%C4%99tno%C5%9Bci.md#wytwórstwo) | [Społeczne](Umiej%C4%99tno%C5%9Bci.md#społeczne) | [Natura i przetrwanie](Umiej%C4%99tno%C5%9Bci.md#natura-i-przetrwanie) | [Okultyzm i Tajemnice](Umiej%C4%99tno%C5%9Bci.md#okultyzm-i-tajemnice) |
 | --------------------- | ------------------- | -------------- | --------------- | ------------- | -------------------- | --------------------- |
 | [Wspinaczka](Umiej%C4%99tno%C5%9Bci.md#wspinaczka) | [Walka wręcz](Umiej%C4%99tno%C5%9Bci.md#walka-wręcz) | [Medycyna](Umiej%C4%99tno%C5%9Bci.md#medycyna) | [Mechanika](Umiej%C4%99tno%C5%9Bci.md#mechanika) | [Zastraszanie](Umiej%C4%99tno%C5%9Bci.md#zastraszanie) | [Zielarstwo](Umiej%C4%99tno%C5%9Bci.md#zielarstwo) | [Zwyczaje ocalałych](Umiej%C4%99tno%C5%9Bci.md#zwyczaje-ocalałych) |
