@@ -786,28 +786,32 @@ button {
 
 .preview-body,
 .preview-body pre,
-.sidebar {
+.sidebar,
+.toc {
   scrollbar-width: thin;
   scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
 }
 
 .preview-body::-webkit-scrollbar,
 .preview-body pre::-webkit-scrollbar,
-.sidebar::-webkit-scrollbar {
+.sidebar::-webkit-scrollbar,
+.toc::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 
 .preview-body::-webkit-scrollbar-track,
 .preview-body pre::-webkit-scrollbar-track,
-.sidebar::-webkit-scrollbar-track {
+.sidebar::-webkit-scrollbar-track,
+.toc::-webkit-scrollbar-track {
   background: var(--scrollbar-track);
   border-radius: 4px;
 }
 
 .preview-body::-webkit-scrollbar-thumb,
 .preview-body pre::-webkit-scrollbar-thumb,
-.sidebar::-webkit-scrollbar-thumb {
+.sidebar::-webkit-scrollbar-thumb,
+.toc::-webkit-scrollbar-thumb {
   background: var(--scrollbar-thumb);
   border: 2px solid var(--scrollbar-track);
   border-radius: 4px;
@@ -816,7 +820,8 @@ button {
 
 .preview-body::-webkit-scrollbar-thumb:hover,
 .preview-body pre::-webkit-scrollbar-thumb:hover,
-.sidebar::-webkit-scrollbar-thumb:hover {
+.sidebar::-webkit-scrollbar-thumb:hover,
+.toc::-webkit-scrollbar-thumb:hover {
   background: var(--scrollbar-thumb-hover);
 }
 
