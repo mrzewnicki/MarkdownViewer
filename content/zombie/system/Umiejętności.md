@@ -22,15 +22,15 @@
 | Wyczucie      | Tropienie            | Mutacje               |
 ```
 
-| Eksploracja           | Walka               | Nauka i wiedza | Wytwórstwo      | Społeczne     | Natura i przetrwanie | Okultyzm i Tajemnice  |
+| [Eksploracja](#eksploracja) | [Walka](#walka) | [Nauka i wiedza](#nauka-i-wiedza) | [Wytwórstwo](#wytwórstwo) | [Społeczne](#społeczne) | [Natura i przetrwanie](#natura-i-przetrwanie) | [Okultyzm i Tajemnice](#okultyzm-i-tajemnice) |
 | --------------------- | ------------------- | -------------- | --------------- | ------------- | -------------------- | --------------------- |
-| Wspinaczka            | Walka wręcz         | Medycyna       | Mechanika       | Zastraszanie  | Zielarstwo           | Zwyczaje ocalałych    |
-| Pływanie i nurkowanie | Broń biała          | Chemia         | Kowalstwo       | Przekonywanie | Tresura              | Rytuały Przebudzonych |
-| Parkour               | Broń palna          | Fizyka         | Rusznikarstwo   | Manipulacja   | Hodowla              | DeathNet              |
-| Ukrywanie             | Broń miotana        | Biologia       | Budownictwo     | Dowodzenie    | Jeździectwo          | LiveCore              |
-| Wyszukiwanie          | Strzelectwo         | Historia       | Krawiectwo      | Handel        | Pułapki              | Zombie                |
-| Prowadzenie pojazdów  | Taktyka i strategia | Szyfry         | Kucharstwo      | Wyczucie      | Tropienie            | Mutacje               |
-| Nawigacja             | Broń palna ciężka   | Weterynaria    | Elektrotechnika |               |                      |                       |
+| [Wspinaczka](#wspinaczka) | [Walka wręcz](#walka-wręcz) | [Medycyna](#medycyna) | [Mechanika](#mechanika) | [Zastraszanie](#zastraszanie) | [Zielarstwo](#zielarstwo) | [Zwyczaje ocalałych](#zwyczaje-ocalałych) |
+| [Pływanie i nurkowanie](#pływanie-i-nurkowanie) | [Broń biała](#broń-biała) | [Chemia](#chemia) | [Kowalstwo](#kowalstwo) | [Przekonywanie](#przekonywanie) | [Tresura](#tresura) | [Rytuały Przebudzonych](#rytuały-przebudzonych) |
+| [Parkour](#parkour) | [Broń palna](#broń-palna) | [Fizyka](#fizyka) | [Rusznikarstwo](#rusznikarstwo) | [Manipulacja](#manipulacja) | [Hodowla](#hodowla) | [DeathNet](#deathnet) |
+| [Ukrywanie](#ukrywanie) | [Broń miotana](#broń-miotana) | [Biologia](#biologia) | [Budownictwo](#budownictwo) | [Dowodzenie](#dowodzenie) | [Jeździectwo](#jeździectwo) | [LiveCore](#livecore) |
+| [Wyszukiwanie](#wyszukiwanie) | [Strzelectwo](#strzelectwo) | [Historia](#historia) | [Krawiectwo](#krawiectwo) | [Handel](#handel) | [Pułapki](#pułapki) | [Zombie](#zombie) |
+| [Prowadzenie pojazdów](#prowadzenie-pojazdów) | [Taktyka i strategia](#taktyka-i-strategia) | [Szyfry](#szyfry) | [Kucharstwo](#kucharstwo) | [Wyczucie](#wyczucie) | [Tropienie](#tropienie) | [Mutacje](#mutacje) |
+| [Nawigacja](#nawigacja) | [Broń palna ciężka](#broń-palna-ciężka) | [Weterynaria](#weterynaria) | [Elektrotechnika](#elektrotechnika) | | | |
 
 ## Eksploracja
 
