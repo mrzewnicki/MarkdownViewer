@@ -6,19 +6,19 @@ import {
   useRef,
   useState,
   type MouseEvent as ReactMouseEvent,
-  type RefObject,
 } from 'react'
 import { createPortal } from 'react-dom'
 import { useLocation } from 'react-router-dom'
 import type { MarkdownHeading } from '../lib/rpgMarkdown'
 import { buildDocumentHeadingLinkUrl, getCurrentDocumentHash } from '../lib/paths'
+import { TocNodeItem } from './TocNodeItem'
 
-interface TableOfContentsProps {
+export interface TableOfContentsProps {
   headings: MarkdownHeading[]
   activeSlug?: string | null
 }
 
-interface TocNode {
+export interface TocNode {
   heading: MarkdownHeading
   children: TocNode[]
 }
@@ -29,7 +29,17 @@ interface TocContextMenuState {
   slug: string
 }
 
+export interface TocContextMenuProps {
+  x: number
+  y: number
+  slug: string
+  onClose: () => void
+}
+
 const COLLAPSE_THRESHOLD = 14
+
+const TOC_CONTEXT_MENU_GAP = 8
+const TOC_CONTEXT_MENU_VIEWPORT_PADDING = 8
 
 function buildTocTree(headings: MarkdownHeading[]): TocNode[] {
   const roots: TocNode[] = []
@@ -52,15 +62,6 @@ function buildTocTree(headings: MarkdownHeading[]): TocNode[] {
   return roots
 }
 
-function nodeContainsSlug(node: TocNode, slug: string | null | undefined): boolean {
-  if (!slug) return false
-  if (node.heading.slug === slug) return true
-  return node.children.some((child) => nodeContainsSlug(child, slug))
-}
-
-const TOC_CONTEXT_MENU_GAP = 8
-const TOC_CONTEXT_MENU_VIEWPORT_PADDING = 8
-
 function clampTocContextMenuPosition(menu: HTMLElement, x: number, y: number) {
   const rect = menu.getBoundingClientRect()
   const pad = TOC_CONTEXT_MENU_VIEWPORT_PADDING
@@ -72,7 +73,6 @@ function clampTocContextMenuPosition(menu: HTMLElement, x: number, y: number) {
   let top = y
 
   if (tocBounds) {
-    // Right-docked TOC: open left of the cursor, clamped inside the sidebar column.
     left = x - rect.width - TOC_CONTEXT_MENU_GAP
     left = Math.min(left, tocBounds.right - rect.width - pad)
     left = Math.max(left, tocBounds.left + pad)
@@ -87,17 +87,7 @@ function clampTocContextMenuPosition(menu: HTMLElement, x: number, y: number) {
   menu.style.top = `${top}px`
 }
 
-function TocLinkContextMenu({
-  x,
-  y,
-  slug,
-  onClose,
-}: {
-  x: number
-  y: number
-  slug: string
-  onClose: () => void
-}) {
+function TocLinkContextMenu({ x, y, slug, onClose }: TocContextMenuProps) {
   const menuRef = useRef<HTMLDivElement>(null)
   const [copied, setCopied] = useState(false)
 
@@ -152,69 +142,6 @@ function TocLinkContextMenu({
       </button>
     </div>,
     document.body,
-  )
-}
-
-interface TocNodeItemProps {
-  node: TocNode
-  activeSlug: string | null | undefined
-  currentHash: string
-  activeRef: RefObject<HTMLAnchorElement | null>
-  collapsible: boolean
-  onLinkContextMenu: (event: ReactMouseEvent<HTMLAnchorElement>, slug: string) => void
-}
-
-function TocNodeItem({ node, activeSlug, currentHash, activeRef, collapsible, onLinkContextMenu }: TocNodeItemProps) {
-  const hasChildren = node.children.length > 0
-  const containsActive = nodeContainsSlug(node, activeSlug)
-  const [expanded, setExpanded] = useState(() => !collapsible || containsActive)
-
-  useEffect(() => {
-    if (containsActive) setExpanded(true)
-  }, [containsActive])
-
-  const isActive = activeSlug === node.heading.slug
-  const level = node.heading.level
-
-  return (
-    <li className={`toc-item toc-item--level-${level}`}>
-      <div className="toc-row">
-        {hasChildren && collapsible ? (
-          <button
-            type="button"
-            className="toc-expand"
-            aria-expanded={expanded}
-            aria-label={expanded ? 'Zwiń sekcję' : 'Rozwiń sekcję'}
-            onClick={() => setExpanded((value) => !value)}
-          >
-            <span className="toc-expand-icon" aria-hidden />
-          </button>
-        ) : null}
-        <a
-          ref={isActive ? activeRef : null}
-          className={isActive ? 'toc-link toc-link--active' : 'toc-link'}
-          href={`${currentHash}?s=${encodeURIComponent(node.heading.slug)}`}
-          onContextMenu={(event) => onLinkContextMenu(event, node.heading.slug)}
-        >
-          {node.heading.text}
-        </a>
-      </div>
-      {hasChildren && (!collapsible || expanded) ? (
-        <ol className="toc-list toc-list--nested">
-          {node.children.map((child) => (
-            <TocNodeItem
-              key={child.heading.slug}
-              node={child}
-              activeSlug={activeSlug}
-              currentHash={currentHash}
-              activeRef={activeRef}
-              collapsible={collapsible}
-              onLinkContextMenu={onLinkContextMenu}
-            />
-          ))}
-        </ol>
-      ) : null}
-    </li>
   )
 }
 

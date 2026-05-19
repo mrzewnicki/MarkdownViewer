@@ -1,14 +1,17 @@
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useCallback, useMemo, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import type { FileTreeNode } from '../types'
-import { loadComments, subscribeToComments } from '../lib/commentStore'
+import { useComments } from '../hooks/useComments'
 import { toProjectRoute, withoutMarkdownExtension } from '../lib/paths'
 
 const FOLDER_PATH =
   'M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9l-1.42-1.9A2 2 0 0 0 7.43 2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2Z'
 
-/** Outline when collapsed, filled when open (per sidebar convention). */
-function TreeDirectoryIcon({ open }: { open: boolean }) {
+interface TreeDirectoryIconProps {
+  open: boolean
+}
+
+function TreeDirectoryIcon({ open }: TreeDirectoryIconProps) {
   return (
     <svg
       className="tree-directory-icon"
@@ -41,19 +44,15 @@ interface FileTreeProps {
   nodes: FileTreeNode[]
 }
 
-function FileTreeItem({
-  projectId,
-  node,
-  collapsedPaths,
-  commentCounts,
-  onToggleFolder,
-}: {
+export interface FileTreeItemProps {
   projectId: string
   node: FileTreeNode
   collapsedPaths: ReadonlySet<string>
   commentCounts: ReadonlyMap<string, number>
   onToggleFolder: (path: string) => void
-}) {
+}
+
+function FileTreeItem({ projectId, node, collapsedPaths, commentCounts, onToggleFolder }: FileTreeItemProps) {
   if (node.kind === 'dir') {
     const hasChildren = Boolean(node.children && node.children.length > 0)
     const isExpanded = hasChildren && !collapsedPaths.has(node.path)
@@ -125,7 +124,7 @@ function FileTreeItem({
 
 export function FileTree({ projectId, nodes }: FileTreeProps) {
   const [collapsedPaths, setCollapsedPaths] = useState<Set<string>>(() => new Set())
-  const [comments, setComments] = useState(() => loadComments())
+  const comments = useComments()
 
   const onToggleFolder = useCallback((path: string) => {
     setCollapsedPaths((prev) => {
@@ -135,20 +134,6 @@ export function FileTree({ projectId, nodes }: FileTreeProps) {
       return next
     })
   }, [])
-
-  const refreshComments = useCallback(() => {
-    setComments(loadComments())
-  }, [])
-
-  useEffect(() => {
-    const unsubscribe = subscribeToComments(refreshComments)
-    window.addEventListener('storage', refreshComments)
-
-    return () => {
-      unsubscribe()
-      window.removeEventListener('storage', refreshComments)
-    }
-  }, [refreshComments])
 
   const commentCounts = useMemo(() => {
     const counts = new Map<string, number>()

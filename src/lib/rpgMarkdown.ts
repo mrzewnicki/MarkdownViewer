@@ -18,6 +18,27 @@ export interface MarkdownHeading {
   level: number
 }
 
+export interface MarkdownHeadingLink {
+  text: string
+  slug: string
+}
+
+export interface ContainerRenderToken {
+  nesting: number
+  type: string
+}
+
+export interface TimelineSubitem {
+  date: string
+  name: string
+}
+
+export interface TimelineItem {
+  date: string
+  name: string
+  subitems: TimelineSubitem[]
+}
+
 function sortedKeys(record: Record<string, unknown>): string[] {
   return Object.keys(record).sort()
 }
@@ -156,17 +177,6 @@ function preprocessInline(src: string, cfg: RpgRendererConfig, options?: RenderR
 
 // ─── Timeline block ──────────────────────────────────────────────────────────
 
-interface TimelineSubitem {
-  date: string
-  name: string
-}
-
-interface TimelineItem {
-  date: string
-  name: string
-  subitems: TimelineSubitem[]
-}
-
 function parseTimelineContent(src: string): TimelineItem[] {
   const lines = src.split(/\r?\n/)
   const items: TimelineItem[] = []
@@ -301,7 +311,7 @@ function buildMd(cfg: RpgRendererConfig): MarkdownIt {
 
   for (const type of sortedKeys(cfg.entityTypes)) {
     installContainer(container, type, {
-      render(tokens: { nesting: number; type: string }[], idx: number) {
+      render(tokens: ContainerRenderToken[], idx: number) {
         const token = tokens[idx]
         if (!token) return ''
         const kind = entityBlockKindFromToken(token, type)
@@ -318,7 +328,7 @@ function buildMd(cfg: RpgRendererConfig): MarkdownIt {
   for (const callout of sortedKeys(cfg.calloutTypes)) {
     const key = `callout-${callout}`
     installContainer(container, key, {
-      render(tokens: { nesting: number; type: string }[], idx: number) {
+      render(tokens: ContainerRenderToken[], idx: number) {
         const token = tokens[idx]
         if (!token) return ''
         const kind = calloutKindFromToken(token, callout)
@@ -384,7 +394,7 @@ function anchorStyleInlinePlainText(inline: Token): string {
   return parts.join('')
 }
 
-export function extractHeadingsForLinkPicker(source: string, cfg: RpgRendererConfig): { text: string; slug: string }[] {
+export function extractHeadingsForLinkPicker(source: string, cfg: RpgRendererConfig): MarkdownHeadingLink[] {
   return extractHeadingsForToc(source, cfg).map(({ text, slug }) => ({ text, slug }))
 }
 

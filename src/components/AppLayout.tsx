@@ -3,6 +3,8 @@ import { useLocation } from 'react-router-dom'
 import { Sidebar } from './Sidebar'
 import { SearchDialog } from './SearchDialog'
 import { CommentsOverview } from './CommentsOverview'
+import { ChevronRightIcon } from './icons'
+import { useKeyboardShortcut } from '../hooks/useKeyboardShortcut'
 import type { ProjectContent } from '../types'
 
 interface AppLayoutProps {
@@ -31,29 +33,25 @@ export function AppLayout({ activeProject, children }: AppLayoutProps) {
     setSidebarOpen((o) => !o)
   }, [])
 
-  useEffect(() => {
-    const onKey = (e: KeyboardEvent) => {
-      if (!e.ctrlKey && !e.metaKey) return
-      if (e.key.toLowerCase() !== 'b') return
-      if (e.shiftKey || e.altKey) return
+  const handleToggleSidebarShortcut = useCallback(
+    (e: KeyboardEvent) => {
       e.preventDefault()
       toggleSidebar()
-    }
-    window.addEventListener('keydown', onKey)
-    return () => window.removeEventListener('keydown', onKey)
-  }, [toggleSidebar])
+    },
+    [toggleSidebar],
+  )
 
-  useEffect(() => {
-    const onKey = (e: KeyboardEvent) => {
-      if (!e.shiftKey || e.ctrlKey || e.metaKey || e.altKey) return
-      if (e.key.toLowerCase() !== 'f') return
+  const handleOpenSearchShortcut = useCallback(
+    (e: KeyboardEvent) => {
       if (!activeProject) return
       e.preventDefault()
       setSearchOpen(true)
-    }
-    window.addEventListener('keydown', onKey)
-    return () => window.removeEventListener('keydown', onKey)
-  }, [activeProject])
+    },
+    [activeProject],
+  )
+
+  useKeyboardShortcut({ key: 'b', ctrlOrMeta: true }, handleToggleSidebarShortcut)
+  useKeyboardShortcut({ key: 'f', shift: true }, handleOpenSearchShortcut)
 
   useEffect(() => {
     const el = mainRef.current
@@ -83,7 +81,12 @@ export function AppLayout({ activeProject, children }: AppLayoutProps) {
 
   return (
     <div className={sidebarOpen ? 'app-shell' : 'app-shell app-shell--sidebar-collapsed'}>
-      <Sidebar activeProject={activeProject} onOpenSearch={openSearch} onOpenCommentsOverview={openCommentsOverview} onCloseSidebar={() => setSidebarOpen(false)} />
+      <Sidebar
+        activeProject={activeProject}
+        onOpenSearch={openSearch}
+        onOpenCommentsOverview={openCommentsOverview}
+        onCloseSidebar={() => setSidebarOpen(false)}
+      />
       <button
         type="button"
         className={sidebarOpen ? 'sidebar-reopen sidebar-reopen--dormant' : 'sidebar-reopen'}
@@ -105,19 +108,5 @@ export function AppLayout({ activeProject, children }: AppLayoutProps) {
       {activeProject ? <SearchDialog project={activeProject} open={searchOpen} onClose={closeSearch} /> : null}
       <CommentsOverview open={commentsOverviewOpen} onClose={closeCommentsOverview} />
     </div>
-  )
-}
-
-function ChevronRightIcon() {
-  return (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-      <path
-        d="m9 18 6-6-6-6"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
   )
 }

@@ -6,6 +6,12 @@ export interface ProjectSearchHit {
   snippet?: string
 }
 
+export interface SearchProjectResult {
+  filenames: ProjectSearchHit[]
+  tags: ProjectSearchHit[]
+  content: ProjectSearchHit[]
+}
+
 function norm(s: string): string {
   return s.toLowerCase()
 }
@@ -31,10 +37,7 @@ const sortByTitle = (a: ProjectSearchHit, b: ProjectSearchHit) =>
   a.file.title.localeCompare(b.file.title, 'pl', { sensitivity: 'base' }) ||
   a.file.path.localeCompare(b.file.path, 'pl')
 
-export function searchProject(
-  project: ProjectContent,
-  query: string
-): { filenames: ProjectSearchHit[]; tags: ProjectSearchHit[]; content: ProjectSearchHit[] } {
+export function searchProject(project: ProjectContent, query: string): SearchProjectResult {
   const q = query.trim()
   if (!q) {
     return { filenames: [], tags: [], content: [] }

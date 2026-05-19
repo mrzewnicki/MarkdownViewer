@@ -3,6 +3,7 @@ import { getFirstFile, projects } from '../content-loader'
 import { toProjectRoute } from '../lib/paths'
 import type { ProjectContent } from '../types'
 import { FileTree } from './FileTree'
+import { ChevronLeftIcon, CommentsIcon, SearchIcon } from './icons'
 
 interface SidebarProps {
   activeProject?: ProjectContent | null
@@ -12,7 +13,6 @@ interface SidebarProps {
 }
 
 export function Sidebar({ activeProject, onOpenSearch, onOpenCommentsOverview, onCloseSidebar }: SidebarProps) {
-
   return (
     <aside className="sidebar">
       <div className="brand">
@@ -35,9 +35,7 @@ export function Sidebar({ activeProject, onOpenSearch, onOpenCommentsOverview, o
           onClick={onOpenSearch}
           disabled={!activeProject}
           title={activeProject ? 'Szukaj (Shift+F)' : 'Wybierz projekt, aby włączyć wyszukiwanie'}
-          aria-label={
-            activeProject ? 'Wyszukaj' : 'Wybierz projekt, aby włączyć wyszukiwanie'
-          }
+          aria-label={activeProject ? 'Wyszukaj' : 'Wybierz projekt, aby włączyć wyszukiwanie'}
         >
           <SearchIcon />
           <span className="search-icon-button-label">Wyszukaj</span>
@@ -76,54 +74,5 @@ export function Sidebar({ activeProject, onOpenSearch, onOpenCommentsOverview, o
         </>
       ) : null}
     </aside>
-  )
-}
-
-function ChevronLeftIcon() {
-  return (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-      <path
-        d="m15 18-6-6 6-6"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  )
-}
-
-function SearchIcon() {
-  return (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-      <path
-        d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="m21 21-4.35-4.35"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  )
-}
-
-function CommentsIcon() {
-  return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-      <path
-        d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
   )
 }

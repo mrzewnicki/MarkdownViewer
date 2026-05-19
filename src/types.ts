@@ -4,40 +4,51 @@ export interface ScanOptions {
   maxDepth?: number
 }
 
+export interface EntityTypeConfig {
+  label: string
+  color: string
+  icon?: string
+}
+
+export interface CalloutTypeConfig {
+  label: string
+  color: string
+  icon?: string
+}
+
+export interface RendererPaths {
+  configDir: string
+  templatesDir: string
+  themesDir: string
+  indexFile: string
+}
+
+export type PreviewTheme = 'light' | 'dark' | 'system'
+
+export interface PreviewConfig {
+  syncScroll: boolean
+  theme: PreviewTheme
+}
+
+export interface RendererOptions {
+  wikiLinks: boolean
+  highlightCode: boolean
+}
+
+export interface SelectionOffset {
+  start: number
+  end: number
+}
+
 export interface RpgRendererConfig {
   version: 1
-  entityTypes: Record<
-    string,
-    {
-      label: string
-      color: string
-      icon?: string
-    }
-  >
+  entityTypes: Record<string, EntityTypeConfig>
   icons: Record<string, string>
-  calloutTypes: Record<
-    string,
-    {
-      label: string
-      color: string
-      icon?: string
-    }
-  >
-  paths: {
-    configDir: string
-    templatesDir: string
-    themesDir: string
-    indexFile: string
-  }
+  calloutTypes: Record<string, CalloutTypeConfig>
+  paths: RendererPaths
   scan: ScanOptions
-  preview: {
-    syncScroll: boolean
-    theme: 'light' | 'dark' | 'system'
-  }
-  renderer: {
-    wikiLinks: boolean
-    highlightCode: boolean
-  }
+  preview: PreviewConfig
+  renderer: RendererOptions
 }
 
 export const DEFAULT_RPG_CONFIG: RpgRendererConfig = {
