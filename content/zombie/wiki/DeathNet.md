@@ -33,8 +33,6 @@ Sławni Phantomi:
 - [Null](DeathNet.md#null)
 - [Ashen](DeathNet.md#ashen)
 
-`ToDo: Opisać więcej sławnych Phantomów i ich wpływ na wojnę.`
-
 Mimo, że ludzkość w rozumieniu państw upadła, to pojedyncze osobniki z tej elitarnej grupy przetrwały i nigdy nie zapomnieli jak zostali potraktowani. Nigdy też nie pozbędą się głosów w swojej głowie. Uważa się, że po wojnie przyjęli bardziej koczowniczy tryb życia lub zaszywali się w swoich kryjówkach z dala od ludzi, bestii i zombie. Postrzega się ich za jedno z największych niebezpieczeństw jakie można napotkać bo nikt tak naprawdę do końca nie rozumie czym oni są. Niektórzy uważają, że Phantomi po służbie weszli między ludzi i z ich dzieci powstały później najgroźniejsze mutacje.
 
 Bez względu na to gdzie leży prawda o tym co się z nimi stało ludzkość zawdzięcza im życie. Pokazali oni również, że w genotypie ludzkości za sprawą DeathNet'u pojawiło się coś co zaczyna ich wszystkich łączyć na zupełnie innym niż dotychczas poziomie. To jak to zostanie wykorzystane zależy już tylko od samych ludzi.
