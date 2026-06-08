@@ -9,10 +9,12 @@ Rozróżnia się 3 kategorie odzieży ochronnej:
 
 Istnieją specjalne właściwości umożliwiający wpłynięcie na liczbę slotów w poszczególnych kategoriach.
 
+Wartość ochrony redukuje każdorazowo zadawane obrażenia, dopóki nie zostanie zniszczony. Jeśli obrażenia po redukcji wciąż są zbyt duże by je zaakceptować, można poświęcić punkty z wartości ochrony by zanegować uderzenie. Wtedy otrzyma wadę "Uszkodzony" z wartością numeryczną reprezentującą poświęcone punkty. 
+
 Każdy przedmiot ochrony opisywany jest przez następujące atrybuty:
 - Nazwa i opis
 - Wartość ochrony
-- Atury i Wady
+- Atury i Wady z wartością numeryczną
 - Kategoria
 
 ### Odzież
