@@ -1,5 +1,17 @@
 # Pancerze
 
+`ToDo: Czy robić różne typy obrażeń`
+```wip
+## Typy obrażeń
+
+| Kolor | Typ zagrożenia |
+|----------|----------|
+| 🟥 | Fizyczne: pociski lub eksplozje  |
+| 🟨 | Promieniowanie  |
+| 🟩 | Biologiczne: infekcje, pasożyty, chemia  |
+| 🟪 | Psionika |
+```
+
 ## Ekwipunek ochronny
 
 Rozróżnia się 3 kategorie odzieży ochronnej:

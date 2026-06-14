@@ -62,7 +62,7 @@ Dzięki temu żołnierze posiadający karabiny i granaty wiedzieli, że mogą po
 | Kolor | Typ zagrożenia |
 |----------|----------|
 | 🟥 | Natychmiastowe: toksyny chemiczne lub eksplozje  |
-| 🟨 | Długoterminowe: rakotwórcze lub mutagenne  |
+| 🟨 | Długoterminowe: promieniowanie lub mutagenne  |
 | 🟩 | Biologiczne: infekcje lub pasożyty  |
 | 🟪 | Anomalia lub zagrożenie paranormalne |
 
