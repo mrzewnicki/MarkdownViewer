@@ -222,4 +222,5 @@ Znajomość typów zombie, zachowań hord, mutacji i metod walki z zakażonymi.
 
 ### Mutacje
 
+Wiedza o naturze skażenia, jego pochodzeniu oraz sposobach identyfikowania, stabilizowania i rozwijania mutacji u siebie i innych. Obejmuje rozpoznawanie wczesnych objawów przemiany, ocenę ryzyka związanego z korzystaniem z mutacji oraz teorie na temat granicy między człowiekiem, mutantem i zombie. Cenna wiedza dla tych, którzy chcą zrozumieć, czym się stają, zamiast tego się bać.
 

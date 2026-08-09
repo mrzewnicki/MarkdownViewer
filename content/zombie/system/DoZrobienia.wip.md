@@ -2,6 +2,7 @@
 
 ## System
 
+- Mechanika stresu
 - System zakażenia Zombie i mutacji
     - Postać nie zmieni się w zombie od jednego ugryzienia. To powinien być dłuższy proces, który umożliwi gre ryzykiem i korzyści jak mutacje
     - Postać powinna bardziej skupiać się na rozwijaniu potencjału mniejszej ilości mutacji niż przeładowywać się zbyt dużą ilością mutacji

@@ -5,6 +5,9 @@ tags: [lore]
 
 # Psionika
 
+
+
+
 - Adaptacja -> Modulacja/Dostrojenie/Transformacja/Przystosowanie
 - Artefakt -> Kondensat/Rdzeń
 - Bastion -> Izolator
@@ -13,8 +16,10 @@ tags: [lore]
 - Mobilność -> Relokacja/Translokacja/Dynamika
 - Przekognicja -> Predykcja/Symulacja
 
----
 
+
+---
+```wip
 ## Adaptacja
 ### Pytania wzmacniające
 - KTÓRA MOC MYTHOS POZWALA CI DOSTOSOWYWAĆ SWOJE REAKCJE DO SYTUACJI?
@@ -75,3 +80,4 @@ tags: [lore]
 - JACY PRZECIWNICY SĄ ODPORNI NA TWOJE MOCE?
 - CO MOŻE SIĘ STAĆ, KIEDY TRACISZ KONTROLĘ NAD SWOJĄ MOCĄ?
 - JAKIE SĄ KONSEKWENCJE UWOLNIENIA TWOJEGO MYTHOS?
+```

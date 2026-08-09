@@ -1,17 +1,5 @@
 # Pancerze
 
-`ToDo: Czy robić różne typy obrażeń`
-```wip
-## Typy obrażeń
-
-| Kolor | Typ zagrożenia |
-|----------|----------|
-| 🟥 | Fizyczne: pociski lub eksplozje  |
-| 🟨 | Promieniowanie  |
-| 🟩 | Biologiczne: infekcje, pasożyty, chemia  |
-| 🟪 | Psionika |
-```
-
 ## Ekwipunek ochronny
 
 Rozróżnia się 3 kategorie odzieży ochronnej:
@@ -26,7 +14,7 @@ Wartość ochrony redukuje każdorazowo zadawane obrażenia, dopóki nie zostani
 Każdy przedmiot ochrony opisywany jest przez następujące atrybuty:
 - Nazwa i opis
 - Wartość ochrony
-- Atury i Wady z wartością numeryczną
+- [Właściwości](W%C5%82a%C5%9Bciwo%C5%9Bci.md)
 - Kategoria
 
 ### Odzież
