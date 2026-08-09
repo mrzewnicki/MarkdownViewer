@@ -17,9 +17,9 @@ Suma wszystkich trzech torów to **Skażenie całkowite**, porównywane z Maksym
 
 Maksymalne Skażenie wylicza się wzorem:
 
-`Maksymalne Skażenie = Zdrowie + Opanowanie + Rozsądek + Modyfikator Rasy`
+`Maksymalne Skażenie = Kondycja + Opanowanie + Determinacja + Modyfikator Rasy`
 
-Wzór łączy po jednej cesze defensywnej z każdej domeny (Fizyczna / Mentalna / Umysłowa) - Maksymalne skażenie to miara oporu organizmu, psychiki i umysłu przed utratą samego siebie.
+Wzór łączy po jednej cesze defensywnej z każdej domeny (Fizyczna / Społeczna / Umysłowa) - Maksymalne skażenie to miara oporu organizmu, psychiki i umysłu przed utratą samego siebie.
 
 `ToDo: modyfikator rasy dla Skażenia - do ustalenia, czy rasy inne niż człowiek (zombie, zmutowane zwierzę) mają wyższy lub niższy pułap`
 
@@ -221,7 +221,7 @@ Rezonans może zostawić trwały ślad wykraczający poza samą hibernację - np
 Gdy potrzebna jest nowa mutacja lub rozwój istniejącej, MG projektuje ją tak, by pasowała do fabuły i wydarzenia, które ją wywołało. Jeśli potrzebny jest szybki, losowy wynik (np. brak czasu na przygotowanie, sytuacja przy stole), można skorzystać z prostej procedury 4-osiowej:
 
 1. **Pochodzenie** - wynika z fabuły (co spowodowało wzrost Skażenia); rzut k10 tylko jeśli fabuła nie wskazuje jasno (1-4 LiveCore, 5-7 DeathNet, 8-10 Anomalie).
-2. **Rodzaj i domena** - wybór Rodzaju (Fizyczna / Mentalna / Psioniczna) oraz jednej z 12 cech, na którą mutacja wpływa.
+2. **Rodzaj i domena** - wybór Rodzaju (Fizyczna / Mentalna / Psioniczna) oraz jednej z 9 cech, na którą mutacja wpływa.
 3. **Charakter** - Pasywna / Aktywna.
 4. **Polaryzacja** - dla Pasywnej: Atut-dominująca / Wada-dominująca / Zrównoważona (domyślnie najczęstsza). Dla Aktywnej: potężny efekt o wysokim koszcie / umiarkowany efekt o niskim koszcie.
 

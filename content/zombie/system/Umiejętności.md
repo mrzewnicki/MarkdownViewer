@@ -6,11 +6,11 @@
 | --------------------- | ------------------- | -------------- | --------------- | ------------- | -------------------- | --------------------- |
 | [Wspinaczka](Umiej%C4%99tno%C5%9Bci.md#wspinaczka) | [Walka wręcz](Umiej%C4%99tno%C5%9Bci.md#walka-wręcz) | [Medycyna](Umiej%C4%99tno%C5%9Bci.md#medycyna) | [Mechanika](Umiej%C4%99tno%C5%9Bci.md#mechanika) | [Zastraszanie](Umiej%C4%99tno%C5%9Bci.md#zastraszanie) | [Zielarstwo](Umiej%C4%99tno%C5%9Bci.md#zielarstwo) | [Zwyczaje ocalałych](Umiej%C4%99tno%C5%9Bci.md#zwyczaje-ocalałych) |
 | [Pływanie i nurkowanie](Umiej%C4%99tno%C5%9Bci.md#pływanie-i-nurkowanie) | [Broń biała](Umiej%C4%99tno%C5%9Bci.md#broń-biała) | [Chemia](Umiej%C4%99tno%C5%9Bci.md#chemia) | [Kowalstwo](Umiej%C4%99tno%C5%9Bci.md#kowalstwo) | [Przekonywanie](Umiej%C4%99tno%C5%9Bci.md#przekonywanie) | [Tresura](Umiej%C4%99tno%C5%9Bci.md#tresura) | [Rytuały Przebudzonych](Umiej%C4%99tno%C5%9Bci.md#rytuały-przebudzonych) |
-| [Parkour](Umiej%C4%99tno%C5%9Bci.md#parkour) | [Broń palna](Umiej%C4%99tno%C5%9Bci.md#broń-palna) | [Fizyka](Umiej%C4%99tno%C5%9Bci.md#fizyka) | [Rusznikarstwo](Umiej%C4%99tno%C5%9Bci.md#rusznikarstwo) | [Manipulacja](Umiej%C4%99tno%C5%9Bci.md#manipulacja) | [Hodowla](Umiej%C4%99tno%C5%9Bci.md#hodowla) | [DeathNet](Umiej%C4%99tno%C5%9Bci.md#deathnet) |
+| [Parkour](Umiej%C4%99tno%C5%9Bci.md#parkour) | [Broń palna](Umiej%C4%99tno%C5%9Bci.md#broń-palna) | [Fizyka](Umiej%C4%99tno%C5%9Bci.md#fizyka) | [Rusznikarstwo](Umiej%C4%99tno%C5%9Bci.md#rusznikarstwo) | [Oszustwo](Umiej%C4%99tno%C5%9Bci.md#oszustwo) | [Hodowla](Umiej%C4%99tno%C5%9Bci.md#hodowla) | [DeathNet](Umiej%C4%99tno%C5%9Bci.md#deathnet) |
 | [Ukrywanie](Umiej%C4%99tno%C5%9Bci.md#ukrywanie) | [Broń miotana](Umiej%C4%99tno%C5%9Bci.md#broń-miotana) | [Biologia](Umiej%C4%99tno%C5%9Bci.md#biologia) | [Budownictwo](Umiej%C4%99tno%C5%9Bci.md#budownictwo) | [Dowodzenie](Umiej%C4%99tno%C5%9Bci.md#dowodzenie) | [Jeździectwo](Umiej%C4%99tno%C5%9Bci.md#jeździectwo) | [LiveCore](Umiej%C4%99tno%C5%9Bci.md#livecore) |
 | [Wyszukiwanie](Umiej%C4%99tno%C5%9Bci.md#wyszukiwanie) | [Strzelectwo](Umiej%C4%99tno%C5%9Bci.md#strzelectwo) | [Historia](Umiej%C4%99tno%C5%9Bci.md#historia) | [Krawiectwo](Umiej%C4%99tno%C5%9Bci.md#krawiectwo) | [Handel](Umiej%C4%99tno%C5%9Bci.md#handel) | [Pułapki](Umiej%C4%99tno%C5%9Bci.md#pułapki) | [Zombie](Umiej%C4%99tno%C5%9Bci.md#zombie) |
 | [Prowadzenie pojazdów](Umiej%C4%99tno%C5%9Bci.md#prowadzenie-pojazdów) | [Taktyka i strategia](Umiej%C4%99tno%C5%9Bci.md#taktyka-i-strategia) | [Szyfry](Umiej%C4%99tno%C5%9Bci.md#szyfry) | [Kucharstwo](Umiej%C4%99tno%C5%9Bci.md#kucharstwo) | [Wyczucie](Umiej%C4%99tno%C5%9Bci.md#wyczucie) | [Tropienie](Umiej%C4%99tno%C5%9Bci.md#tropienie) | [Mutacje](Umiej%C4%99tno%C5%9Bci.md#mutacje) |
-| [Nawigacja](Umiej%C4%99tno%C5%9Bci.md#nawigacja) | [Broń palna ciężka](Umiej%C4%99tno%C5%9Bci.md#broń-palna-ciężka) | [Weterynaria](Umiej%C4%99tno%C5%9Bci.md#weterynaria) | [Elektrotechnika](Umiej%C4%99tno%C5%9Bci.md#elektrotechnika) | | Sztuka Przetrwania | |
+| [Nawigacja](Umiej%C4%99tno%C5%9Bci.md#nawigacja) | [Broń palna ciężka](Umiej%C4%99tno%C5%9Bci.md#broń-palna-ciężka) | [Weterynaria](Umiej%C4%99tno%C5%9Bci.md#weterynaria) | [Elektrotechnika](Umiej%C4%99tno%C5%9Bci.md#elektrotechnika) | | [Sztuka Przetrwania](Umiej%C4%99tno%C5%9Bci.md#sztuka-przetrwania) | |
 
 ## Eksploracja
 
@@ -152,9 +152,9 @@ Dominacja psychiczna poprzez demonstrację siły, groźby i brutalność. Pozwal
 
 Komunikacja oparta na zaufaniu, logice i empatii — negocjacje, budowanie sojuszy, rozwiązywanie konfliktów i mobilizowanie do działania. W przeciwieństwie do zastraszania polega na dobrowolnym wpływie. Fundament trwałych społeczności opartych na współpracy.
 
-### Manipulacja
+### Oszustwo
 
-Kontrola poprzez oszustwo, prowokację emocji i ukrywanie prawdziwych zamiarów. Pozwala zdobywać informacje, wpływać na decyzje bez świadomości rozmówcy i prowokować wrogów do błędów. Wysoka umiejętność obejmuje też wykrywanie manipulacji u innych.
+Kontrola poprzez kłamstwo, prowokację emocji i ukrywanie prawdziwych zamiarów. Pozwala zdobywać informacje, wpływać na decyzje bez świadomości rozmówcy i prowokować wrogów do błędów. Wysoka umiejętność obejmuje też wykrywanie oszustwa u innych.
 
 ### Dowodzenie
 
@@ -195,6 +195,10 @@ Budowa mechanicznych, chemicznych i improwizowanych urządzeń do schwytania, zr
 ### Tropienie
 
 Odczytywanie śladów stóp, odchodów, zapachu, krwi i innych oznak obecności. Pozwala polować, śledzić wrogie grupy, odnajdywać zagubionych i przewidywać ruchy hord. Obejmuje też maskowanie własnych śladów, by pozostać niezauważonym.
+
+### Sztuka Przetrwania
+
+Praktyczna wiedza o tym, jak przeżyć poza osadą bez zaplecza i zasobów. Obejmuje rozpalanie ognia bez zapalniczki, budowę prowizorycznych schronień, znajdowanie wody zdatnej do picia, orientację w terenie bez mapy i zarządzanie własnym ciałem w warunkach skrajnego wyczerpania. Łączy to, co inne umiejętności przetrwania rozdzielają — jest wiedzą ogólną, którą stosuje się wtedy, gdy specjalistyczna wiedza się kończy. Człowiek z wysoką Sztuką Przetrwania nie umrze sam w lesie. Pytanie tylko, co z tego lasu wyniesie.
 
 ## Okultyzm i Tajemnice
 

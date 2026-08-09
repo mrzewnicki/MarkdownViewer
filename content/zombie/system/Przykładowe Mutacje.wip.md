@@ -50,7 +50,7 @@ Zbiór gotowych do użycia mutacji, ilustrujący [Format mutacji](Mutacje%20i%20
 - Charakter: Aktywna
 - Koszt aktywacji: 1 Punkt Mutacji lub 1 Skażenie (LiveCore)
 - Aktywacja per Ranga:
-  - Ranga 1: +2 kości do jednego testu Tężyzny lub Kondycji w tej samej scenie
+  - Ranga 1: +2 kości do jednego testu Siły lub Kondycji w tej samej scenie
   - Ranga 2: efekt trwa do końca starcia, nie tylko jeden test
   - Ranga 3: dodatkowo ignoruje 1 poziom Zmęczenia na czas trwania
   - Ranga 4: postać przez chwilę przekracza fizyczne granice własnego ciała - zakres ustala MG wraz z graczem (np. zerwanie kajdan, wyważenie zablokowanych drzwi)
@@ -79,7 +79,7 @@ Zbiór gotowych do użycia mutacji, ilustrujący [Format mutacji](Mutacje%20i%20
 - Koszt aktywacji: 4 Punkty Mutacji lub 4 Skażenie (Anomalie); dodatkowo +2 Zmęczenie (przeciążenie zmysłów jest wyczerpujące)
 - Aktywacja per Ranga:
   - Ranga 1: w krytycznym momencie postać zyskuje chwilę na spokojne przemyślenie sytuacji, zanim podejmie decyzję
-  - Ranga 2: dodatkowo może przerzucić jeden nieudany test Percepcji lub Rozsądku w tej scenie
+  - Ranga 2: dodatkowo może przerzucić jeden nieudany test Sprytu w tej scenie
   - Ranga 3: przez całą scenę czas subiektywnie płynie wolniej - postać reaguje pierwsza w każdej wymianie akcji
   - Ranga 4: na jedną turę postać przetwarza świat tak szybko, że może wykonać dwie pełne akcje pod rząd
 - Rezonans: Świat na chwilę zwalnia, a szczegóły otoczenia stają się przerysowanie wyraźne, jakby czas płynął przez gęstą wodę
@@ -144,7 +144,7 @@ Poniższe mutacje wzmacniają współpracę z zwierzęcym [Stronnikiem](Towarzys
 
 Poniższe mutacje powstały z inspiracji konkretnymi [Cechami](Cechy.md) i [Umiejętnościami](Umiejętności.md) - każda pokazuje, jak Skażenie może wypaczyć albo wyostrzyć naturalny talent postaci, zamiast tylko dodawać surową siłę.
 
-**Krok Pająka** *(inspiracja: Precyzja, Wspinaczka, Parkour)*
+**Krok Pająka** *(inspiracja: Zręczność, Wspinaczka, Parkour)*
 - Pochodzenie: LiveCore
 - Rodzaj: Fizyczna
 - Opis: Skórę dłoni i stóp pokrywa delikatna sieć błon i szorstkich zgrubień, niemal niewidocznych, dopóki nie przyjrzeć się im z bliska
@@ -156,7 +156,7 @@ Poniższe mutacje powstały z inspiracji konkretnymi [Cechami](Cechy.md) i [Umie
   - Sztywny chwyt (1) - dłonie trudniej w pełni rozewrzeć, upuszczanie przedmiotów na życzenie lub szybkie manipulowanie drobnymi narzędziami jest utrudnione
 - Rezonans: Na dłoniach i stopach wyrastają na krótki czas dodatkowe, twarde haczyki, pozwalające przywierać nawet do gładkiego szkła lub metalu
 
-**Głos Dowódcy** *(inspiracja: Ego, Dowodzenie, Zastraszanie)*
+**Głos Dowódcy** *(inspiracja: Charyzma, Dowodzenie, Zastraszanie)*
 - Pochodzenie: DeathNet
 - Rodzaj: Psioniczna
 - Opis: Struny głosowe zmieniły barwę - w zwykłej rozmowie brzmią niemal jak dawniej, ale gdy postać podnosi głos, w tle słychać coś, co nie powinno wydobywać się z ludzkiego gardła
@@ -170,7 +170,7 @@ Poniższe mutacje powstały z inspiracji konkretnymi [Cechami](Cechy.md) i [Umie
   - Ranga 4: na chwilę narzuca swoją wolę nawet zwierzętom i zombie w zasięgu głosu - te wahają się, jakby usłyszały rozkaz kogoś silniejszego
 - Rezonans: Głos rozdziera się na dwa tony naraz, jeden ludzki, jeden nie do końca - ci, którzy go usłyszą, zapamiętają to na długo
 
-**Czytanie z Twarzy** *(inspiracja: Empatia, Wyczucie, Przekonywanie)*
+**Czytanie z Twarzy** *(inspiracja: Manipulacja, Wyczucie, Przekonywanie)*
 - Pochodzenie: Anomalia
 - Rodzaj: Psioniczna
 - Opis: Źrenice i mikroruchy twarzy postaci reagują na najdrobniejsze sygnały emocjonalne rozmówcy, zanim jeszcze ten zdąży je ukryć za maską spokoju
@@ -182,19 +182,19 @@ Poniższe mutacje powstały z inspiracji konkretnymi [Cechami](Cechy.md) i [Umie
   - Przeciążenie empatyczne (1) - w tłumie lub przy silnych emocjach innych, postać czuje ich napór jak własne emocje, co utrudnia zachowanie chłodnego osądu (utrudnienie do testów Opanowania w takich sytuacjach)
 - Rezonans: Na chwilę widzi się emocje rozmówcy niemal jak kolory na jego skórze - zbyt wyraźnie, by je zignorować
 
-**Pamięć Harona** *(inspiracja: Inteligencja, Kreatywność)*
+**Pamięć Harona** *(inspiracja: Inteligencja, Spryt)*
 - Pochodzenie: DeathNet
 - Rodzaj: Mentalna
 - Opis: Hipokamp przechowuje i porządkuje wspomnienia z bezlitosną dokładnością - nic, co postać choć raz zobaczyła, nie ginie bez śladu
 - Ranga: 3 (Rozwinięta)
 - Charakter: Pasywna
 - Atuty:
-  - Wzorce w chaosie (3) - umysł postaci błyskawicznie odnajduje wzorce i analogie tam, gdzie inni widzą tylko przypadek, +2 kości do testów Inteligencji lub Kreatywności przy rozwiązywaniu złożonych problemów
+  - Wzorce w chaosie (3) - umysł postaci błyskawicznie odnajduje wzorce i analogie tam, gdzie inni widzą tylko przypadek, +2 kości do testów Inteligencji lub Sprytu przy rozwiązywaniu złożonych problemów
 - Wady:
   - Natłok myśli (2) - umysł nigdy nie odpoczywa, nawet we śnie przetwarza informacje; postać ma trudności z prawdziwym relaksem, MG może nałożyć dodatkowe Zmęczenie po długich okresach bez odpoczynku psychicznego
 - Rezonans: Na chwilę umysł postaci przetwarza informacje z prędkością, która przypomina bardziej maszynę niż człowieka
 
-**Żelazny Żołądek** *(inspiracja: Zdrowie, Zielarstwo, Biologia)*
+**Żelazny Żołądek** *(inspiracja: Kondycja, Zielarstwo, Biologia)*
 - Pochodzenie: Anomalia
 - Rodzaj: Fizyczna
 - Opis: Wątroba rozrosła się i zgęstniała, pracując bez przerwy jak drugi, ukryty filtr, przez który przechodzi wszystko, co postać zje lub wypije

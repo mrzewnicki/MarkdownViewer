@@ -4,7 +4,7 @@ Poniższy opis reprezentuje wymaganie systemu dotyczące karty. Poza nimi karta 
 
 ## Punkty życia
 
-`Zdrowie + Kondycja + Modyfikator Rasy`
+`(2×Kondycja) + Siła + Modyfikator Rasy`
 
 Modyfikatory rasy to stała wartość.
 
@@ -17,9 +17,9 @@ Reprezentuje psychiczne wycieńczenie.
 
 ## Punkty Zmęczenia
 
-Reprezentuje psychiczne wycieńczenie.
+Reprezentuje fizyczne wycieńczenie organizmu.
 
-`Opanowanie + Determinacja`
+`Kondycja + Determinacja`
 
 ## Punkty stresu
 

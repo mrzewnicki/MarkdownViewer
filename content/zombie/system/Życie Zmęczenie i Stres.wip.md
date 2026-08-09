@@ -2,7 +2,7 @@
 
 ## Życie
 
-Suma punktów życia, która reprezentuje jak postać blisko znajduje się śmierci. Wyliczana jest z cech: `(2x Zdrowie) + Tężyzna + Modyfikator Rasy`.
+Suma punktów życia, która reprezentuje jak postać blisko znajduje się śmierci. Wyliczana jest z cech: `(2×Kondycja) + Siła + Modyfikator Rasy`.
 
 Modyfikatory rasy to stała wartość. Z poniższej tabeli:
 
@@ -21,7 +21,7 @@ Reprezentuje fizyczne wycieńczenie organizmu na skutek długotrwałej aktywnoś
 
 ## Stres
 
-Reprezentuje psychiczną wyporność na zdarzenia, traumy i podejmowane ryzyko. Maksymalny próg zmęczenia wylicza się z: `Opanowanie + Rozsądek`
+Reprezentuje psychiczną wyporność na zdarzenia, traumy i podejmowane ryzyko. Maksymalny próg stresu wylicza się z: `Opanowanie + Determinacja`
 
 ## Wykorzystanie Stresu i Zmęczenia
 
