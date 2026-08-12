@@ -74,6 +74,8 @@ Pojedynczy Krukowiec jest jednak zaskakująco kruchy i przy pierwszym poważniej
 
 Krukowce gniazdują wysoko, z dala od ziemi, w dużych koloniach. Młode karmione są niemal wyłącznie padliną, przez co całe populacje są silnie uzależnione od liczby hord przemieszczających się przez ich terytorium.
 
+![Krukowce.jpg](../../images/Krukowce.jpg)
+
 4. **Studnik** — ślepy, wielonogi drapieżnik zamieszkujący metro, kanały i piwnice dawnych miast. Porusza się w całkowitej ciemności, wykorzystując drgania powietrza i wibracje podłoża do wykrywania ruchu.
 
 Pancerny, chitynowy pancerz chroni go przed większością zagrożeń spotykanych pod ziemią, a wyjątkowo silne przednie kończyny pozwalają przebijać się przez zawalone tunele i cienkie ściany.

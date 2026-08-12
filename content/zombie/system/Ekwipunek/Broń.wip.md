@@ -9,10 +9,8 @@ Każdy przedmiot opisywany jest przez następujące atrybuty:
 - [Właściwości](../Właściwości.md)
 
 ## Broń wręcz
-```wip
-@pros:Cichy(1)
-@pros:Duży-Kaliber(2)
-```
+
+`ToDo: statystyki jeszcze są do przetestowania`
 
 | Nazwa | Obrażenia | Właściwości |
 |---|---|---|

@@ -11,3 +11,5 @@ Lista otwarta, czysto opisowa - nie wpływa na mechanikę, ułatwia tylko klasyf
 - **Widzenie** - odczytywanie ludzi, miejsc i sytuacji w sposób niemożliwy przy użyciu zwykłych zmysłów (przeczucia, prekognicja, wyczuwanie emocji lub intencji innych)
 
 MG lub gracz mogą dopisać nowy kierunek, jeśli dana mutacja Psioniczna nie pasuje do żadnego z powyższych.
+
+`ToDo: rozbudzowanie psioniki. Konkretne przykłady zaklęć, ich rzucanie, i przeciwstawianie się im. Dorobić warstwe fabularną. Przeanalizować DeathNet i LiveCore`

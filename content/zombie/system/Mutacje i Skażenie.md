@@ -38,6 +38,12 @@ Niektóre mechaniki (np. [Zainfekowany](#zainfekowany)) nie zwiększają Skażen
 
 Każda mechanika korzystająca ze Skażenia tymczasowego definiuje własne: tempo przyrostu, czas trwania i próg minimalny po przerwaniu.
 
+#### Przeciwdziałanie Skażeniu tymczasowemu
+
+Skażeniu tymczasowemu przeciwdziała się przedmiotami z Atutem **Antyseptyczny**. Przy udanym opracowaniu rany lub leczeniu przedmiot zmniejsza bieżące Skażenie tymczasowe o wartość Atutu. Redukcja nie może zejść poniżej minimum ustalonego przez mechanikę źródłową (np. 1 punkt trwały przy [Zainfekowanym](#zainfekowany)). Użycie zwykle zużywa lub częściowo zużywa przedmiot - decyzja MG zależnie od sytuacji i ilości.
+
+Przykładowe przedmioty z tym Atutem: [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md#środki-antyseptyczne).
+
 ### Skażenie jako zasób
 
 Skażenie to nie tylko zegar zagłady, ale też zasób, po który gracz może sięgnąć w kryzysowej sytuacji. Gdy aktywacja mutacji Aktywnej (patrz [Charakter mutacji](#charakter-mutacji)) nie jest opłacana Punktami Mutacji ani Rezonansem, jej koszt spada na Skażenie - to gracz decyduje, kiedy przewaga tu i teraz jest warta przybliżenia się do przemiany. Pełne zasady wymiany opisuje [Aktywacja](#aktywacja).
@@ -64,7 +70,7 @@ Ugryzienie zombie, poza obrażeniami, wywołuje natychmiastowo:
 Od momentu ugryzienia, każdego dnia przez liczbę dni równą wartości Wady `Zainfekowany`, Skażenie `LiveCore` rośnie o **1 punkt tymczasowy**.
 
 - Jeśli w trakcie tego procesu Skażenie całkowite przekroczy Maksymalne Skażenie, natychmiast rozpoczyna się [Przemiana](#przemiana).
-- Jeśli gracze podejmą skuteczne działania, by powstrzymać infekcję (trucizna, leki ze starego świata, oczyszczanie rany i inne fabularne środki zaakceptowane przez MG), tymczasowe Skażenie nabyte od ugryzienia redukuje się do **1 punktu trwałego**, a Wada `Zainfekowany` zostaje zdjęta. Podczas procesu zainfekowania można podejmować wiele prób przerwania.
+- Jeśli gracze podejmą skuteczne działania, by powstrzymać infekcję - przede wszystkim przedmiotami z Atutem [Antyseptyczny](#przeciwdziałanie-skażeniu-tymczasowemu), a także trucizną, lekami ze starego świata lub innymi fabularnymi środkami zaakceptowanymi przez MG - tymczasowe Skażenie nabyte od ugryzienia redukuje się do **1 punktu trwałego**, a Wada `Zainfekowany` zostaje zdjęta. Podczas procesu zainfekowania można podejmować wiele prób przerwania.
 - Jeśli infekcja przejdzie przez cały swój cykl (wszystkie dni) bez przerwania, całość nabytego tymczasowego Skażenia staje się **trwała**, a Wada `Zainfekowany` zostaje zdjęta - infekcja rozstrzygnęła się, na dobre lub na złe.
 
 ### Przykład
@@ -132,14 +138,15 @@ Mutacja rozwija się w 4 rangach:
 1. **Zalążek** - mutacja dopiero się objawia, efekt niewielki, wada łagodna (lub najsłabszy poziom Aktywacji).
 2. **Adaptacja** - mutacja zaczyna współgrać ze swoim nosicielem, efekt zauważalnie silniejszy.
 3. **Rozwinięta** - utrwalona mutacja jest w pełni funkcjonalną częścią postaci. Jest perfekcyjnie zestrojona.
-4. **Dominacja** - mutacja zaburza harmonie i przejmuje znaczącą część natury postaci, efekt bardzo silny, ale poważnie wpływa na funkcjonowanie lub relacje postaci. Zawsza pojawiają sie wady lub komplikacje.
+4. **Dominacja** - mutacja zaburza harmonie i przejmuje znaczącą część natury postaci, efekt bardzo silny, ale poważnie wpływa na funkcjonowanie lub relacje postaci. Zawsza pojawiają sie wady lub komplikacje. Jeśli nie posiada się specjalnej cechy można posiadać tylko jedną mutację o randzie Dominacja.
 
 Przy każdej randze wartość Atutów (mutacje Pasywne) lub siła efektu Aktywacji (mutacje Aktywne) rośnie, a Wady się pogłębiają lub zyskują nowy aspekt - to mechaniczny wyraz tego, że mutacja daje jednocześnie większą siłę i większy problem.
 
 ### Pozyskiwanie Mutacji
 
-`ToDo: do zrobienia - by bardziej się opłacało rozwijać posiadane mutacje niż tworzyć ciagle nowe`
+Nowe mutacje i podnoszenie Rang opłaca się [Punktami Doświadczenia](Punkty%20Doświadczenia.wip.md). Koszt mutacji rośnie z Rangą (`Ranga × 4`), więc rozwój posiadanej mutacji szybko staje się droższy niż utrzymanie kilku Zalążków - to celowe: postać ma inwestować w rozpoznawalny rys, a nie w kolekcję słabych efektów.
 
+`ToDo: do zrobienia jest pełniejszy sposób zdobywania nowych mutacji (wyzwalacze fabularne, progi Skażenia) - by jeszcze wyraźniej opłacało się rozwijać posiadane mutacje niż tworzyć ciągle nowe`
 
 ### Limit mutacji
 
@@ -152,7 +159,20 @@ Postać może mieć do kilku mutacji na raz. Dokładna liczba zależy od Modyfik
 - Każda mutacja Aktywna ma własny koszt w PM, który może się różnić zależnie od Rangi (wyższa Ranga = mocniejszy efekt = zwykle wyższy koszt).
 - Gracz może zaproponować podniesienie kosztu aktywacji w PM w zamian za drobny, ale czasem istotny dodatkowy efekt ("przeciążenie") - takie wzmocnienie nie powinno jednak całkowicie negować żadnej Wady mutacji.
 
-`ToDo: jak wylicza się pulę Punktów Mutacji postaci`
+`ToDo: jak wylicza się pulę Punktów Mutacji dla postaci`
+
+#### Regeneracja Punktów Mutacji
+
+Zużyte PM regenerują się z kilku źródeł. Regeneracja nigdy nie przekracza maksymalnej puli postaci.
+
+| Źródło | Ilość |
+|---|---|
+| Odpoczynek | średnia |
+| Substancje i zioła mutagenne | średnia |
+| Aktywator genetyczny | duża |
+| Zaklęcie psioniczne | zależy od zaklęcia |
+
+Dokładną liczbę punktów w ramach "średniej" i "dużej" ilości ustala MG w zależności od sytuacji, jakości źródła i maksymalnej puli postaci.
 
 ### Format mutacji
 

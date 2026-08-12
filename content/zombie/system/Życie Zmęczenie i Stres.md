@@ -10,7 +10,7 @@ Modyfikatory rasy to stała wartość. Z poniższej tabeli:
 | Rasa | Modyfikator |
 |---|---|
 | Człowiek | +3 |
-| Zwierze | +4 |
+| Zwierze | +3 |
 | Zombie | +5 |
 | Zmutowane zwierze | +5 |
 
