@@ -17,6 +17,14 @@ const configModules = import.meta.glob<{ default: unknown }>('/content/**/.rpg-r
   eager: true,
 })
 
+/** Viewer-only overlay — survives authoring sync when restored (see sync-viewer-content skill). */
+const viewerConfigModules = import.meta.glob<{ default: unknown }>(
+  '/content/**/.rpg-renderer/viewer-config.json',
+  {
+    eager: true,
+  },
+)
+
 const assetModules = import.meta.glob<string>(
   '/content/**/*.{png,jpg,jpeg,jfif,gif,webp,avif,svg,bmp,ico,tif,tiff}',
   {
@@ -53,11 +61,10 @@ function cloneConfig(config: RpgRendererConfig): RpgRendererConfig {
   }
 }
 
-function mergeConfig(projectConfig: unknown): RpgRendererConfig {
-  const base = cloneConfig(DEFAULT_RPG_CONFIG)
-  if (!projectConfig || typeof projectConfig !== 'object') return base
+function mergeRpgConfig(base: RpgRendererConfig, overlay: unknown): RpgRendererConfig {
+  if (!overlay || typeof overlay !== 'object') return cloneConfig(base)
 
-  const partial = projectConfig as Partial<RpgRendererConfig>
+  const partial = overlay as Partial<RpgRendererConfig>
   return {
     ...base,
     ...partial,
@@ -69,6 +76,10 @@ function mergeConfig(projectConfig: unknown): RpgRendererConfig {
     preview: { ...base.preview, ...(partial.preview ?? {}) },
     renderer: { ...base.renderer, ...(partial.renderer ?? {}) },
   }
+}
+
+function mergeConfig(projectConfig: unknown): RpgRendererConfig {
+  return mergeRpgConfig(DEFAULT_RPG_CONFIG, projectConfig)
 }
 
 function readFrontmatterTitle(content: string): string | null {
@@ -200,6 +211,13 @@ function buildProjects(): ProjectContent[] {
     const parsed = parseContentPath(path)
     if (!parsed) continue
     projectConfigs.set(parsed.projectId, mergeConfig(module.default ?? module))
+  }
+
+  for (const [path, module] of Object.entries(viewerConfigModules)) {
+    const parsed = parseContentPath(path)
+    if (!parsed) continue
+    const current = projectConfigs.get(parsed.projectId) ?? cloneConfig(DEFAULT_RPG_CONFIG)
+    projectConfigs.set(parsed.projectId, mergeRpgConfig(current, module.default ?? module))
   }
 
   for (const [path, content] of Object.entries(markdownModules)) {

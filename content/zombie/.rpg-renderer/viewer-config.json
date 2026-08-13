@@ -1,0 +1,24 @@
+{
+  "renderer": {
+    "hoverInfo": {
+      "sources": [
+        {
+          "kind": "markdownTableRegistry",
+          "file": "system/Lista Atutów i Wad.md",
+          "namespaces": {
+            "pros": {
+              "heading": "Atuty",
+              "nameColumn": "Nazwa",
+              "descriptionColumn": "Opis"
+            },
+            "cons": {
+              "heading": "Wady",
+              "nameColumn": "Nazwa",
+              "descriptionColumn": "Opis"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

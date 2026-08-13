@@ -44,7 +44,7 @@ In each project folder, optional file:
 
 3. **Sync** (Windows)  
    - `dest` = absolute path to `MarkdownViewer/content/<projectId>` in the workspace.  
-   - If `content/<projectId>/.rpg-renderer/viewer-link.json` already exists, read and keep its `sourcePath` in memory, or copy the file to a temp path. **`/MIR` deletes files that exist only under `dest`**, so it will remove `viewer-link.json` and `viewer-link.json.example` unless they also exist under `<sourcePath>`. After robocopy, if `viewer-link.json` is missing, write it back (same `sourcePath` as before, or from step 2).  
+   - If `content/<projectId>/.rpg-renderer/viewer-link.json` already exists, read and keep its `sourcePath` in memory, or copy the file to a temp path. **Also keep** `viewer-config.json` (viewer-only RPG config overlay, e.g. `renderer.hoverInfo`) if present — **`/MIR` deletes files that exist only under `dest`**. After robocopy, restore `viewer-link.json` and `viewer-config.json` if they were removed.  
    - Run:
 
    ```text

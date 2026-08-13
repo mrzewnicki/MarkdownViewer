@@ -55,14 +55,15 @@
       "exports": ["RpgRendererConfig", "DEFAULT_RPG_CONFIG", "ContentFile", "FileTreeNode", "ProjectContent", "ScanOptions", "HoverInfoConfig", "HoverInfoSource", "MarkdownTableRegistrySource"]
     },
     "src/content-loader.ts": {
-      "role": "Build-time static content index. Uses import.meta.glob to load all .md files and .rpg-renderer/config.json files from content/. Builds ProjectContent[] at module load time (eager).",
+      "role": "Build-time static content index. Uses import.meta.glob to load all .md files and .rpg-renderer/config.json files from content/. Optionally merges .rpg-renderer/viewer-config.json (viewer-only overlay) on top. Builds ProjectContent[] at module load time (eager).",
       "exports": ["projects", "getProject(projectId)", "getFirstFile(project)"],
       "globs": [
         "/content/**/*.{md,markdown,mdx}  → raw string",
         "/content/**/.rpg-renderer/config.json → JSON module",
+        "/content/**/.rpg-renderer/viewer-config.json → JSON module (optional overlay)",
         "/content/**/*.{png,jpg,...}       → ?url string"
       ],
-      "note": "Adding a new project = drop a folder under content/ and rebuild. No code changes needed."
+      "note": "Adding a new project = drop a folder under content/ and rebuild. No code changes needed. viewer-config.json holds viewer-only settings (e.g. hoverInfo) that should be restored after content MIR sync."
     },
     "src/lib/rpgMarkdown.ts": {
       "role": "Self-contained markdown rendering pipeline — identical behavior to rpg-knowledge-editor minus Electron IPC. Stateless except for a markdown-it instance cache keyed by JSON(config).",
@@ -167,7 +168,7 @@
     "newSidebarSection": "Add JSX to src/components/Sidebar.tsx. ProjectContent and projects array are already imported.",
     "newMarkdownSyntax": "Extend renderRpgMarkdown options (src/lib/rpgMarkdown.ts) or add a new preprocessor step in the pipeline.",
     "newEntityOrCalloutType": "Add to entityTypes / calloutTypes in the project's .rpg-renderer/config.json. Fallback defaults live in src/types.ts DEFAULT_RPG_CONFIG.",
-    "hoverInfoRegistry": "Add renderer.hoverInfo.sources in the project's .rpg-renderer/config.json (kind: markdownTableRegistry + file + namespaces). Mark elements with data-hover-info=\"namespace:id\" (pros/cons badges already do). HoverInfoLayer resolves descriptions via createHoverInfoProvider.",
+    "hoverInfoRegistry": "Prefer content/<projectId>/.rpg-renderer/viewer-config.json (merged over config.json) so MIR content sync does not wipe hoverInfo. Alternatively set renderer.hoverInfo.sources in config.json. Mark elements with data-hover-info=\"namespace:id\". HoverInfoLayer resolves via createHoverInfoProvider.",
     "globalStyle": "Edit src/index.css. CSS variables are defined in :root.",
     "newContentFileField": "Extend ContentFile in src/types.ts, update titleForFile / buildProjects in src/content-loader.ts.",
     "search": "All file content is available at build time in project.files[].content — a full-text index can be built as an additional export from src/content-loader.ts.",
