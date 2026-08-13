@@ -40,7 +40,7 @@ Rejestr wszystkich [Atutów i Wad](Właściwości.md) używanych w systemie - ż
 | Antyseptyczny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Mocny alkohol, Woda utleniona, Jodyna, Spirytus, Zestaw chirurgiczny, Miód, Wrzątek, Chlorheksydyna | Redukuje Skażenie tymczasowe przy opracowaniu ran; wartość Atutu to liczba usuniętych punktów. |
 | Leczniczy | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Apteczka | Zawiera szeroką gamę środków; daje bonus do testów leczenia różnego rodzaju ran. |
 | Tamujący | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Opatrunek kompresowy, Opaska uciskowa | Zatrzymuje lub spowalnia krwawienie, redukując utratę HP w czasie. |
-| Uśmierzający | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Tabletki przeciwbólowe | Zmniejsza ból, umożliwiając działanie mimo ran lub przywracając zdolność do testów. |
+| Przeciwbólowy | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Tabletki przeciwbólowe | Zmniejsza ból, umożliwiając działanie mimo ran lub przywracając zdolność do testów. |
 | Antybakteryjny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Antybiotyki | Zwalcza infekcje bakteryjne i choroby; wartość Atutu wpływa na skuteczność leczenia. |
 | Filtr | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Filtr wody, Maska filtrująca | Odsiewa zanieczyszczenia — wodę pitną albo powietrze (pył, dym, patogeny). |
 | Wielofunkcyjny | [Broń](Ekwipunek/Broń.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Łom, Maczeta; Multitool, Taśma klejąca; Chemia | Sprawdza się w wielu zastosowaniach poza podstawowym; zastępuje brakujący specjalistyczny sprzęt. |
@@ -51,7 +51,9 @@ Rejestr wszystkich [Atutów i Wad](Właściwości.md) używanych w systemie - ż
 | Szybki | [Transport](Ekwipunek/Transport.md) | Koń, Motocykl, Samochód spalinowy, Samochód elektryczny | Pozwala przemieszczać się znacznie szybciej niż pieszo lub rowerem. |
 | Manewrowość | [Transport](Ekwipunek/Transport.md) | Rower, Motocykl, Koń | Ułatwia omijanie przeszkód, ciasne skręty i zmianę kierunku w trudnym terenie. |
 | Ładowność | [Transport](Ekwipunek/Transport.md) | Wóz pociągowy, Koń, Samochód spalinowy, Samochód elektryczny, Ciężarówka, Tir | Pozwala przewieźć znaczną ilość ładunku lub ekwipunku; wartość Atutu odzwierciedla skalę nośności. |
-| Energia | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Transport](Ekwipunek/Transport.md), [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Akumulator; Bateria samochodowa; Generator, Instalacja elektryczna | Magazynuje, dostarcza lub produkuje ładunek elektryczny; wartość Atutu to pojemność / zapas / moc. |
+| Energia | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Transport](Ekwipunek/Transport.md), [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Baterie, Akumulator; Bateria samochodowa; Generator, Instalacja elektryczna | Magazynuje, dostarcza lub produkuje ładunek elektryczny; wartość Atutu to pojemność / zapas / moc. |
+| Paliwo | [Transport](Ekwipunek/Transport.md) | Kanister na paliwo | Zapas paliwa do pojazdów i urządzeń; wartość Atutu to ilość / zasięg, jaki zapewnia. |
+| Wybuchowy | [Transport](Ekwipunek/Transport.md) | Kanister na paliwo | Zawartość można celowo wykorzystać jako improwizowany ładunek wybuchowy. |
 | Głośny | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Alarm na sznurku, Dzwonki alarmowe, Pułapka na drzwi, Alarm mechaniczny | Generuje hałas — sygnalizuje naruszenie lub przyciąga uwagę. |
 | Warsztat | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Stół roboczy, Warsztat, Stół warsztatowy, Garaż, Rusznikarnia | Daje bonus do craftingu, napraw i obróbki materiałów. |
 | Pojemny | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Zbiornik na wodę, Składowisko, Magazyn, Stodoła, Hala, Cysterna | Zapewnia dużą przestrzeń lub pojemność do przechowywania zapasów i materiałów. |
@@ -99,10 +101,12 @@ Rejestr wszystkich [Atutów i Wad](Właściwości.md) używanych w systemie - ż
 | Zainfekowany | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Procedura Zainfekowany (skutek ugryzienia zombie) | Trwająca infekcja; każdego dnia przybywa punkt Skażenia tymczasowego LiveCore. |
 | Zapach rozkładu | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Grzybnia Ostrzegawcza | Unoszący się zapach grzyba może być wyczuwalny przez zombie i zwierzęta. |
 | Niekontrolowane błyski | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Bioluminescencyjny Szyfr | Mimowolna bioluminescencja w stresie lub ciemności zdradza pozycję postaci. |
-| Wilgociowrażliwy | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Zapałki | Kontakt z wilgocią całkowicie unieszkodliwia — cała paczka staje się bezużyteczna. |
+| Wrażliwy na wilgoć | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Zapałki | Kontakt z wilgocią całkowicie unieszkodliwia — cała paczka staje się bezużyteczna. |
 | Kruchy | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Szkło; Dron | Łatwo pęka lub kruszy się przy uderzeniu, nacisku lub upadku. |
 | Energia | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Transport](Ekwipunek/Transport.md) | Latarka, Dron; Samochód elektryczny | Działa tylko przy dostępnym zasilaniu; bez baterii lub ładowania jest bezużyteczny. |
 | Ryzykowny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Opaska uciskowa | Nieprawidłowe zastosowanie pogarsza stan zamiast pomagać; wymaga wiedzy medycznej. |
 | Zależny od pogody | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Panele słoneczne | Skuteczność spada lub znika przy zachmurzeniu, deszczu lub w nocy. |
 | Spalanie | [Transport](Ekwipunek/Transport.md) | Motocykl, Samochód spalinowy, Ciężarówka, Tir | Zużywa paliwo podczas pracy; bez regularnych uzupełnień zasięg jest mocno ograniczony. |
+| Mały ładowność | [Transport](Ekwipunek/Transport.md) | Motocykl | Przewozi tylko niewielki ładunek — brak miejsca na większy ekwipunek lub dodatkowych pasażerów. |
+| Konsumpcja | [Transport](Ekwipunek/Transport.md) | Koń | Wymaga regularnego karmienia i pojenia; bez zapasów traci sprawność lub staje się bezużyteczny. |
 | Łatwopalny | [Broń](Ekwipunek/Broń.md), [Transport](Ekwipunek/Transport.md), [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Koktajl Mołotowa; Kanister na paliwo; Chemia | Szczególnie podatny na zapłon; ogień, iskra lub nieudane użycie mogą skierować płomień na użytkownika, sojuszników albo wywołać eksplozję. |

@@ -16,7 +16,7 @@ Materiały są abstrakcyjnymi kategoriami zasobów. Nie określają konkretnego 
 | Kamień | 2 | - | Kamienie, cegły, beton, gruz i inne ciężkie materiały mineralne wykorzystywane w budownictwie. |
 | Szkło | 2 | @cons:Kruchy(4) | Szyby, tafle i inne elementy szklane. Szczególnie przydatne przy oknach, szklarniach, laboratoriach i specjalistycznej aparaturze. |
 | Elektryka | 3 | - | Kable, przewody, przełączniki, gniazda i podstawowe elementy instalacji elektrycznych. |
-| Chemia | 3 | @cons:Łatwopalny(3) | Odczynniki, rozpuszczalniki, kwasy, utleniacze i inne substancje chemiczne. Z Metalem do produkcji amunicji; także do leków i paliwa. |
+| Chemia | 3 | @pros:Wielofunkcyjny @cons:Łatwopalny(3) | Odczynniki, rozpuszczalniki, kwasy, utleniacze i inne substancje chemiczne. Z Metalem do produkcji amunicji; także do leków i paliwa. |
 | Spoiwa | 1 | - | Gwoździe, śruby, wkręty, kleje, taśmy, zipy, drut i inne materiały służące do łączenia elementów. |
 
 # Konstrukcje
@@ -161,7 +161,7 @@ Właściwość `@cons:Skomplikowany(N)` oznacza, że konstrukcja wymaga specjali
 | Wieża obserwacyjna | 3 | 5 | Drewno × 8, Metal × 2, Spoiwa × 3 | @pros:Pozycja-obserwacyjna(3) | Wysoka konstrukcja zapewniająca kontrolę nad rozległym obszarem. |
 | Warsztat mechaniczny | 4 | 6 | Drewno × 8, Metal × 6, Elektryka × 2, Spoiwa × 5 | @pros:Produkcja(3) | Rozbudowany warsztat umożliwiający naprawę maszyn, pojazdów i urządzeń. |
 | Farma | 4 | 6 | Drewno × 8, Kamień × 3, Metal × 2, Spoiwa × 3 | @pros:Produkcja(4) | Zorganizowany obszar przeznaczony do stałej produkcji żywności. |
-| Generator | 4 | 6 | Metal × 5, Kamień × 3, Elektryka × 5, Spoiwa × 4 | @pros:Energia(3) @cons:Skomplikowany(2) | Obiekt przeznaczony do produkcji i obsługi energii elektrycznej. |
+| Generator | 4 | 6 | Metal × 5, Kamień × 3, Elektryka × 5, Spoiwa × 4 | @pros:Energia(5) @cons:Skomplikowany(2) | Obiekt przeznaczony do produkcji i obsługi energii elektrycznej. |
 | Instalacja elektryczna | 4 | 5 | Metal × 2, Elektryka × 5, Spoiwa × 3 | @pros:Energia(3) @cons:Skomplikowany(2) | System przewodów i urządzeń umożliwiający dystrybucję energii po osadzie. |
 | Młyn | 4 | 6 | Drewno × 8, Metal × 4, Kamień × 4, Spoiwa × 3 | @pros:Produkcja(3) @cons:Skomplikowany | Konstrukcja umożliwiająca przetwarzanie zbóż na mąkę. |
 | Most | 4 | 6 | Drewno × 12, Metal × 5, Kamień × 5, Spoiwa × 5 | @pros:Logistyka(4) @cons:Skomplikowany(2) | Konstrukcja umożliwiająca przekraczanie rzek, przepaści i innych przeszkód terenowych. |

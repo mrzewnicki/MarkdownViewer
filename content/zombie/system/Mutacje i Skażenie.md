@@ -42,7 +42,7 @@ Każda mechanika korzystająca ze Skażenia tymczasowego definiuje własne: temp
 
 Skażeniu tymczasowemu przeciwdziała się przedmiotami z Atutem **Antyseptyczny**. Przy udanym opracowaniu rany lub leczeniu przedmiot zmniejsza bieżące Skażenie tymczasowe o wartość Atutu. Redukcja nie może zejść poniżej minimum ustalonego przez mechanikę źródłową (np. 1 punkt trwały przy [Zainfekowanym](#zainfekowany)). Użycie zwykle zużywa lub częściowo zużywa przedmiot - decyzja MG zależnie od sytuacji i ilości.
 
-Przykładowe przedmioty z tym Atutem: [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md#środki-antyseptyczne).
+Przykładowe przedmioty z tym Atutem: [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md#medycyna).
 
 ### Skażenie jako zasób
 
