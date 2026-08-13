@@ -7,7 +7,7 @@ Każdy przedmiot opisywany jest przez następujące atrybuty:
 - Wartość (skala 1–5, rzadkość / cena barterowa)
 - [Właściwości](../Właściwości.md)
 
-> Broń opisana jest w [Broń](Broń.wip.md), ekwipunek ochronny w [Ekwipunek ochronny](EkwipunekOchronny.md).
+> Broń opisana jest w [Broń](Broń.md), ekwipunek ochronny w [Ekwipunek ochronny](EkwipunekOchronny.md).
 
 ## Przetrwanie
 
@@ -15,7 +15,7 @@ Każdy przedmiot opisywany jest przez następujące atrybuty:
 |---|:---:|---|---|
 | Woda pitna | 1 | - | Podstawowy zasób. Minimum litr dziennie na osobę. Zanieczyszczona jest niebezpieczna — warto używać filtra lub gotować. |
 | Żywność konserwowa | 2 | - | Puszki z długim terminem przydatności. Ciężkie w większych ilościach, ale niezawodne. |
-| Filtr wody | 3 | @pros:Oczyszczający(2) | Przenośny filtr mechaniczny. Umożliwia bezpieczne picie z rzek i zbiorników bez gotowania. Wymaga regularnego czyszczenia. |
+| Filtr wody | 3 | @pros:Filtr(2) | Przenośny filtr mechaniczny. Umożliwia bezpieczne picie z rzek i zbiorników bez gotowania. Wymaga regularnego czyszczenia. |
 | Zapałki | 1 | @cons:Wilgociowrażliwy(1) | Drewniane zapałki do rozpalania ognia. Przechowywać w szczelnym pojemniku — wilgoć unieszkodliwia całą paczkę. |
 | Zapalniczka | 2 | - | Szybsza i wygodniejsza od zapałek. Paliwo się kończy. |
 | Latarka | 2 | @cons:Energia(1) | Niezbędna w nocy i ciemnych budynkach. Bez baterii bezużyteczna. |
@@ -32,7 +32,7 @@ Każdy przedmiot opisywany jest przez następujące atrybuty:
 | Opaska uciskowa | 3 | @pros:Tamujący(3) @cons:Ryzykowny(1) | Ostateczny środek przy silnym krwotoku z kończyny. Źle założona lub zbyt długo utrzymywana uszkadza tkanki. |
 | Tabletki przeciwbólowe | 2 | @pros:Uśmierzający(1) | Aspiryna, ibuprofen. Zmniejszają ból i stan zapalny. Nie leczą przyczyny. |
 | Antybiotyki | 4 | @pros:Antybakteryjny(3) | Leczą infekcje bakteryjne. Stosować tylko przy potwierdzonym zakażeniu — nadużycie buduje oporność. |
-| Maska filtrująca | 3 | @pros:Filtrujący(2) | Chroni przed pyłem, dymem i częścią patogenów. Wkłady mają ograniczoną żywotność. |
+| Maska filtrująca | 3 | @pros:Filtr(2) | Chroni przed pyłem, dymem i częścią patogenów. Wkłady mają ograniczoną żywotność. |
 
 ### Środki antyseptyczne
 
@@ -54,7 +54,7 @@ Przedmioty z Atutem **Antyseptyczny** służą do przeciwdziałania [Skażeniu t
 | Nazwa | Wartość | Właściwości | Opis |
 |---|:---:|---|---|
 | Multitool | 3 | @pros:Wielofunkcyjny(2) | Nóż, śrubokręt, kombinerki i więcej w jednym narzędziu. Niezastąpiony przy improwizowanych naprawach. |
-| Taśma klejąca | 2 | @pros:Wszechstronny(2) | Mocna taśma do prowizorycznych napraw, uszczelnień i improwizacji. Traci przyczepność w wilgoci. |
+| Taśma klejąca | 2 | @pros:Wielofunkcyjny(2) | Mocna taśma do prowizorycznych napraw, uszczelnień i improwizacji. Traci przyczepność w wilgoci. |
 | Linka stalowa | 3 | @pros:Wytrzymały(2) | Odporna na przecięcie i rozerwanie. Do zabezpieczeń, pułapek i napraw wymagających dużej nośności. |
 | Drut | 2 | - | Stalowy lub miedziany. Do napraw, pułapek, improwizacji anten i wiązania konstrukcji. |
 | Nici i igły | 2 | - | Do naprawy odzieży, plecaków i ekwipunku. |
