@@ -73,7 +73,7 @@
       "pipeline": [
         "1. Strip YAML front matter → render as .markdown-frontmatter aside",
         "2. preprocessCallouts: > [!kind] blockquotes → ::: callout-kind containers",
-        "3. preprocessInline: @type:id → .rpg-inline-ref spans; [[wiki]] → <a class='rpg-wikilink'> or <span class='is-missing'>",
+        "3. preprocessInline: @pros/@cons:id(n?) → .pros-cons-badge; @type:id → .rpg-inline-ref; [[wiki]] → <a class='rpg-wikilink'> or <span class='is-missing'>",
         "4. fixMarkdownParenDestinationsWithWhitespace: wraps spaced link destinations in <>",
         "5. markdown-it render: one container plugin per entityType and calloutType",
         "6. rewriteLocalRefs: calls options.resolveAssetSrc and options.resolveDocumentHref on img/a",
@@ -141,6 +141,7 @@
     "rpgBlocks": [".rpg-block", ".rpg-block-{type}", ".rpg-block-head", ".rpg-block-icon", ".rpg-block-title", ".rpg-block-body"],
     "rpgCallouts": [".rpg-callout", ".rpg-callout-{kind}", ".rpg-callout-bar", ".rpg-callout-inner", ".rpg-callout-head", ".rpg-callout-icon", ".rpg-callout-label", ".rpg-callout-content"],
     "rpgInline": [".rpg-inline", ".rpg-inline-ref", ".rpg-inline-icon", ".rpg-inline-label", ".rpg-inline-id"],
+    "rpgProsCons": [".pros-cons-badge", ".pros-cons-badge--pros", ".pros-cons-badge--cons", ".pros-cons-badge-icon", ".pros-cons-badge-id", ".pros-cons-badge-num"],
     "rpgWikilinks": [".rpg-wikilink", ".rpg-wikilink.is-missing"]
   },
 

@@ -135,9 +135,44 @@ export interface RenderRpgMarkdownOptions {
   resolveDocumentHref?: (href: string, currentFilePath?: string) => string | null
 }
 
+function formatInlineDisplayName(id: string): string {
+  return id.replace(/-/g, ' ')
+}
+
+function parseOptionalRank(raw: string | undefined): number | null {
+  if (raw == null || raw === '') return null
+  const n = Number(raw)
+  return Number.isFinite(n) ? n : null
+}
+
 function applyInlineRpg(src: string, cfg: RpgRendererConfig, options?: RenderRpgMarkdownOptions): string {
-  let output = src.replace(/@([a-z]+):([\w-]+)/gi, (_all, type: string, id: string) => {
+  // Ranked @pros / @cons (rank optional) must run before generic @type:id.
+  let output = src.replace(
+    /@(pros|cons):([\p{L}\p{N}_-]+)(?:\((\d+)\))?/giu,
+    (_all, type: string, id: string, rankRaw: string | undefined) => {
+      const variant = type.toLowerCase() === 'cons' ? 'cons' : 'pros'
+      const displayName = formatInlineDisplayName(id)
+      const rank = parseOptionalRank(rankRaw)
+      const icon = variant === 'pros' ? '✚' : '−'
+      const tip =
+        rank == null
+          ? variant === 'pros'
+            ? `Zaleta · ${displayName}`
+            : `Wada · ${displayName}`
+          : variant === 'pros'
+            ? `Zaleta · ${displayName} (${rank})`
+            : `Wada · ${displayName} (${rank})`
+      const numHtml =
+        rank == null
+          ? ''
+          : `<span class="pros-cons-badge-num" aria-label="ranga ${escapeAttr(String(rank))}">${escapeHtml(String(rank))}</span>`
+      return `<span class="pros-cons-badge pros-cons-badge--${variant}" title="${escapeAttr(tip)}"><span class="pros-cons-badge-icon" aria-hidden="true">${icon}</span><span class="pros-cons-badge-id">${escapeHtml(displayName)}</span>${numHtml}</span>`
+    },
+  )
+
+  output = output.replace(/@([a-z][a-z0-9-]*):([\p{L}\p{N}_-]+)/giu, (_all, type: string, id: string) => {
     const entityType = type.toLowerCase()
+    if (entityType === 'pros' || entityType === 'cons') return `@${type}:${id}`
     const label = resolveEntityLabel(entityType, cfg)
     const icon = resolveEntityIcon(entityType, cfg, '')
     return `<span class="rpg-inline rpg-inline-ref" data-entity="${escapeAttr(entityType)}" data-id="${escapeAttr(id)}"><span class="rpg-inline-icon">${icon}</span><span class="rpg-inline-label">${escapeHtml(label)}</span><span class="rpg-inline-id">${escapeHtml(id)}</span></span>`
@@ -444,7 +479,21 @@ function rewriteLocalRefs(html: string, options?: RenderRpgMarkdownOptions): str
 }
 
 const PURIFY_PREVIEW: import('dompurify').Config = {
-  ADD_ATTR: ['data-entity', 'data-id', 'data-title', 'data-block', 'data-callout', 'data-date', 'data-timeline-expandable', 'id', 'tabindex', 'class'],
+  ADD_ATTR: [
+    'data-entity',
+    'data-id',
+    'data-title',
+    'data-block',
+    'data-callout',
+    'data-date',
+    'data-timeline-expandable',
+    'id',
+    'tabindex',
+    'class',
+    'title',
+    'aria-label',
+    'aria-hidden',
+  ],
   ADD_TAGS: ['aside', 'header', 'section'],
   ALLOWED_URI_REGEXP:
     /^(?:(?:(?:f|ht)tps?|mailto|tel|callto|sms|cid|xmpp|matrix):|#|\/|\.\/|\.\.\/|[^a-z]|[a-z+.-]+(?:[^a-z+.-:]|$))/i,
