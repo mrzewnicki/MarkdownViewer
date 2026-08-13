@@ -1265,6 +1265,39 @@ button {
   background: #f87171;
 }
 
+.pros-cons-badge[data-hover-info] {
+  cursor: help;
+}
+
+.hover-info-layer {
+  position: relative;
+}
+
+.hover-info-tooltip {
+  position: fixed;
+  z-index: 40;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  background: #0f172a;
+  color: #e2e8f0;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.hover-info-tooltip-title {
+  margin-bottom: 4px;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.hover-info-tooltip-body {
+  color: #cbd5e1;
+}
+
 .rpg-wikilink {
   padding: 1px 6px;
   border-radius: 4px;

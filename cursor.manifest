@@ -40,8 +40,9 @@
   "dataModel": {
     "source": "src/types.ts",
     "types": {
-      "RpgRendererConfig": "Full renderer config — entityTypes, calloutTypes, icons, paths, scan, preview, renderer. Mirrors rpg-knowledge-editor shared/types.ts.",
+      "RpgRendererConfig": "Full renderer config — entityTypes, calloutTypes, icons, paths, scan, preview, renderer (including optional hoverInfo). Mirrors rpg-knowledge-editor shared/types.ts.",
       "DEFAULT_RPG_CONFIG": "Baseline config exported from src/types.ts; project configs are merged on top.",
+      "HoverInfoConfig": "Optional renderer.hoverInfo — sources that feed HoverInfoProvider (e.g. markdownTableRegistry).",
       "ContentFile": "{ path, routePath, title, content, tags } — single resolved markdown file; tags from YAML frontmatter",
       "FileTreeNode": "{ name, path, kind ('file'|'dir'), title?, children? } — recursive sidebar tree node",
       "ProjectContent": "{ id, title, config, files, fileMap, routeMap, tree, assets } — all data for one project"
@@ -51,7 +52,7 @@
   "modules": {
     "src/types.ts": {
       "role": "Shared TypeScript types and DEFAULT_RPG_CONFIG constant",
-      "exports": ["RpgRendererConfig", "DEFAULT_RPG_CONFIG", "ContentFile", "FileTreeNode", "ProjectContent", "ScanOptions"]
+      "exports": ["RpgRendererConfig", "DEFAULT_RPG_CONFIG", "ContentFile", "FileTreeNode", "ProjectContent", "ScanOptions", "HoverInfoConfig", "HoverInfoSource", "MarkdownTableRegistrySource"]
     },
     "src/content-loader.ts": {
       "role": "Build-time static content index. Uses import.meta.glob to load all .md files and .rpg-renderer/config.json files from content/. Builds ProjectContent[] at module load time (eager).",
@@ -73,7 +74,7 @@
       "pipeline": [
         "1. Strip YAML front matter → render as .markdown-frontmatter aside",
         "2. preprocessCallouts: > [!kind] blockquotes → ::: callout-kind containers",
-        "3. preprocessInline: @pros/@cons:id(n?) → .pros-cons-badge; @type:id → .rpg-inline-ref; [[wiki]] → <a class='rpg-wikilink'> or <span class='is-missing'>",
+        "3. preprocessInline: @pros/@cons:id(n?) → .pros-cons-badge[data-hover-info]; @type:id → .rpg-inline-ref; [[wiki]] → <a class='rpg-wikilink'> or <span class='is-missing'>",
         "4. fixMarkdownParenDestinationsWithWhitespace: wraps spaced link destinations in <>",
         "5. markdown-it render: one container plugin per entityType and calloutType",
         "6. rewriteLocalRefs: calls options.resolveAssetSrc and options.resolveDocumentHref on img/a",
@@ -89,6 +90,16 @@
     "src/lib/entityMeta.ts": {
       "role": "Resolves display label and emoji icon for entity types and callout types from RpgRendererConfig",
       "exports": ["resolveEntityLabel", "resolveEntityIcon", "resolveCalloutLabel", "resolveCalloutIcon"]
+    },
+    "src/lib/hoverInfo.ts": {
+      "role": "Optional hover-info provider. Parses markdown table registries (e.g. Lista Atutów i Wad) configured via renderer.hoverInfo and resolves descriptions for data-hover-info markers.",
+      "exports": [
+        "createHoverInfoProvider(project, config?) → HoverInfoProvider",
+        "parseMarkdownTableRegistry(markdown, namespaces) → Map",
+        "parseHoverInfoAttr(raw) → {namespace,id} | null",
+        "normalizeHoverInfoId(value)",
+        "HoverInfoProvider / HoverInfo / HoverInfoKey interfaces"
+      ]
     },
     "src/lib/paths.ts": {
       "role": "All path/URL helpers — normalization, route encoding/decoding, relative path resolution",
@@ -119,8 +130,12 @@
       "props": ["projectId: string", "nodes: FileTreeNode[]"]
     },
     "src/components/MarkdownContent.tsx": {
-      "role": "Calls renderRpgMarkdown with all three resolver callbacks wired to the project's fileMap/routeMap/assets, then outputs dangerouslySetInnerHTML. The wiki link resolver does fuzzy title matching.",
+      "role": "Calls renderRpgMarkdown with resolver callbacks, wraps output in HoverInfoLayer + CommentLayer, then outputs dangerouslySetInnerHTML. The wiki link resolver does fuzzy title matching.",
       "props": ["project: ProjectContent", "file: ContentFile"]
+    },
+    "src/components/HoverInfoLayer.tsx": {
+      "role": "Event-delegation hover layer for [data-hover-info] markers. Resolves tooltips via HoverInfoProvider; suppresses native title while the custom tip is visible.",
+      "props": ["provider: HoverInfoProvider", "children: ReactNode"]
     },
     "src/pages/HomePage.tsx": {
       "role": "Landing page. Shows project cards (title + file count). Redirects to first file of each project on click."
@@ -142,6 +157,7 @@
     "rpgCallouts": [".rpg-callout", ".rpg-callout-{kind}", ".rpg-callout-bar", ".rpg-callout-inner", ".rpg-callout-head", ".rpg-callout-icon", ".rpg-callout-label", ".rpg-callout-content"],
     "rpgInline": [".rpg-inline", ".rpg-inline-ref", ".rpg-inline-icon", ".rpg-inline-label", ".rpg-inline-id"],
     "rpgProsCons": [".pros-cons-badge", ".pros-cons-badge--pros", ".pros-cons-badge--cons", ".pros-cons-badge-icon", ".pros-cons-badge-id", ".pros-cons-badge-num"],
+    "hoverInfo": [".hover-info-layer", ".hover-info-tooltip", ".hover-info-tooltip-title", ".hover-info-tooltip-body"],
     "rpgWikilinks": [".rpg-wikilink", ".rpg-wikilink.is-missing"]
   },
 
@@ -151,6 +167,7 @@
     "newSidebarSection": "Add JSX to src/components/Sidebar.tsx. ProjectContent and projects array are already imported.",
     "newMarkdownSyntax": "Extend renderRpgMarkdown options (src/lib/rpgMarkdown.ts) or add a new preprocessor step in the pipeline.",
     "newEntityOrCalloutType": "Add to entityTypes / calloutTypes in the project's .rpg-renderer/config.json. Fallback defaults live in src/types.ts DEFAULT_RPG_CONFIG.",
+    "hoverInfoRegistry": "Add renderer.hoverInfo.sources in the project's .rpg-renderer/config.json (kind: markdownTableRegistry + file + namespaces). Mark elements with data-hover-info=\"namespace:id\" (pros/cons badges already do). HoverInfoLayer resolves descriptions via createHoverInfoProvider.",
     "globalStyle": "Edit src/index.css. CSS variables are defined in :root.",
     "newContentFileField": "Extend ContentFile in src/types.ts, update titleForFile / buildProjects in src/content-loader.ts.",
     "search": "All file content is available at build time in project.files[].content — a full-text index can be built as an additional export from src/content-loader.ts.",

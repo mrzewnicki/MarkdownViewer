@@ -31,8 +31,10 @@ Porównaj wyniki z poniższą mapą. Każdy nieznany plik `.md` przeczytaj przed
 | Przykładowe mutacje (gotowe przykłady) | `system/Przykładowe Mutacje.wip.md` |
 | Towarzysze i relacje | `system/Towarzysze i relacje.md` |
 | Ekwipunek ogólny | `system/Ekwipunek/EkwipunekOgólny.md` |
-| Broń | `system/Ekwipunek/Broń.wip.md` |
+| Broń | `system/Ekwipunek/Broń.md` |
 | Ekwipunek ochronny | `system/Ekwipunek/EkwipunekOchronny.md` |
+| Transport | `system/Ekwipunek/Transport.md` |
+| Materiały i konstrukcje | `system/Ekwipunek/Materiały i Konstrukcje.md` |
 | Planowane mechaniki | `system/DoZrobienia.wip.md` |
 
 > `.wip.md` = work in progress — może być niekompletne lub zawierać niespójności. Sygnalizuj je zamiast cicho naprawiać.
@@ -50,8 +52,10 @@ Porównaj wyniki z poniższą mapą. Każdy nieznany plik `.md` przeczytaj przed
 | Ile kosztuje rozwój postaci (PD)? | `Punkty Doświadczenia.wip.md` |
 | Czy jest gotowy przykład konkretnej mutacji? | `Przykładowe Mutacje.wip.md` |
 | Jak działają sojusznicy i relacje? | `Towarzysze i relacje.md` |
-| Jakie są rodzaje broni i ich obrażenia? | `Ekwipunek/Broń.wip.md` |
+| Jakie są rodzaje broni i ich obrażenia? | `Ekwipunek/Broń.md` |
 | Jakie są rodzaje pancerzy? | `Ekwipunek/EkwipunekOchronny.md` |
+| Jakie są pojazdy i sprzęt transportowy? | `Ekwipunek/Transport.md` |
+| Jakie są materiały i konstrukcje? | `Ekwipunek/Materiały i Konstrukcje.md` |
 | Co jest jeszcze zaplanowane do zrobienia? | `DoZrobienia.wip.md` |
 
 ## Skrót kluczowych wartości systemu
@@ -59,7 +63,7 @@ Porównaj wyniki z poniższą mapą. Każdy nieznany plik `.md` przeczytaj przed
 Przydatny przy ocenie spójności nowej mechaniki bez czytania wszystkich plików:
 
 - **Kości testów**: k10 — (1 kryt. porażka / 4–5 porażka / 6–9 sukces / 10 kryt. sukces)
-- **Pula kości**: cechy + umiejętności ± właściwości (Atuty/Wady jako modyfikatory)
+- **Pula kości**: cechy + umiejętności ± właściwości (Atuty/Wady jako modyfikatory, skala 1–5)
 - **HP gracza**: `(2×Kondycja) + Siła + mod. rasy` → typowo 6–16
 - **Obrażenia**: d6 — lekka `1d6`, średnia `1d6+1/+2`, ciężka `2d6`, niszcząca `2d6+2`
 - **Ochrona pancerza**: odzież 1–2 / uzupełniający 2–4 / główny 4–8

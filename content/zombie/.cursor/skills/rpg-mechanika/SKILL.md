@@ -35,9 +35,11 @@ Każdy element mechaniczny dokumentuj według wzorca:
 - Kategoria: [kategoria]
 - [Kluczowy atrybut mechaniczny]: [wartość]
 - Właściwości:
-  - Atut: Nazwa (wartość) - krótki opis narracyjny
-  - Wada: Nazwa (wartość) - krótki opis narracyjny
+  - Atut: Nazwa - krótki opis (wartość 1 domyślna, bez nawiasu; od 2: Nazwa (N))
+  - Wada: Nazwa - krótki opis
 ```
+
+W tagach ekwipunku: `@pros:Cichy` (=1), `@pros:Cichy(2)` (od 2 wzwyż).
 
 Dla nowych zasad systemowych (nie ekwipunku):
 - Zacznij od jednozdaniowego opisu czym jest zasada

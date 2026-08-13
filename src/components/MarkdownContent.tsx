@@ -1,8 +1,10 @@
 import { useEffect, useMemo, useRef } from 'react'
+import { createHoverInfoProvider } from '../lib/hoverInfo'
 import { renderRpgMarkdown } from '../lib/rpgMarkdown'
 import { buildDocumentHeadingLinkUrl, resolveRelativePath, toProjectHref, withoutMarkdownExtension } from '../lib/paths'
 import type { ContentFile, ProjectContent } from '../types'
 import { CommentLayer } from './CommentLayer'
+import { HoverInfoLayer } from './HoverInfoLayer'
 
 interface MarkdownContentProps {
   project: ProjectContent
@@ -81,6 +83,7 @@ function injectHeadingCopyLinks(html: string): string {
 
 export function MarkdownContent({ project, file }: MarkdownContentProps) {
   const articleRef = useRef<HTMLElement>(null)
+  const hoverInfoProvider = useMemo(() => createHoverInfoProvider(project), [project])
   const html = useMemo(() => {
     const rendered = renderRpgMarkdown(file.content, project.config, {
       currentFilePath: file.path,
@@ -138,7 +141,9 @@ export function MarkdownContent({ project, file }: MarkdownContentProps) {
 
   return (
     <CommentLayer projectId={project.id} fileId={file.routePath}>
-      <article ref={articleRef} className="preview-body" dangerouslySetInnerHTML={{ __html: html }} />
+      <HoverInfoLayer provider={hoverInfoProvider}>
+        <article ref={articleRef} className="preview-body" dangerouslySetInnerHTML={{ __html: html }} />
+      </HoverInfoLayer>
     </CommentLayer>
   )
 }

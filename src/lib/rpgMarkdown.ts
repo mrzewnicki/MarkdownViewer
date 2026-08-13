@@ -166,7 +166,7 @@ function applyInlineRpg(src: string, cfg: RpgRendererConfig, options?: RenderRpg
         rank == null
           ? ''
           : `<span class="pros-cons-badge-num" aria-label="ranga ${escapeAttr(String(rank))}">${escapeHtml(String(rank))}</span>`
-      return `<span class="pros-cons-badge pros-cons-badge--${variant}" title="${escapeAttr(tip)}"><span class="pros-cons-badge-icon" aria-hidden="true">${icon}</span><span class="pros-cons-badge-id">${escapeHtml(displayName)}</span>${numHtml}</span>`
+      return `<span class="pros-cons-badge pros-cons-badge--${variant}" data-hover-info="${escapeAttr(`${variant}:${id}`)}" title="${escapeAttr(tip)}"><span class="pros-cons-badge-icon" aria-hidden="true">${icon}</span><span class="pros-cons-badge-id">${escapeHtml(displayName)}</span>${numHtml}</span>`
     },
   )
 
@@ -487,6 +487,7 @@ const PURIFY_PREVIEW: import('dompurify').Config = {
     'data-callout',
     'data-date',
     'data-timeline-expandable',
+    'data-hover-info',
     'id',
     'tabindex',
     'class',

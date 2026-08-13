@@ -30,9 +30,28 @@ export interface PreviewConfig {
   theme: PreviewTheme
 }
 
+export interface HoverInfoNamespaceConfig {
+  heading: string
+  nameColumn: string
+  descriptionColumn: string
+}
+
+export interface MarkdownTableRegistrySource {
+  kind: 'markdownTableRegistry'
+  file: string
+  namespaces: Record<string, HoverInfoNamespaceConfig>
+}
+
+export type HoverInfoSource = MarkdownTableRegistrySource
+
+export interface HoverInfoConfig {
+  sources: HoverInfoSource[]
+}
+
 export interface RendererOptions {
   wikiLinks: boolean
   highlightCode: boolean
+  hoverInfo?: HoverInfoConfig
 }
 
 export interface SelectionOffset {

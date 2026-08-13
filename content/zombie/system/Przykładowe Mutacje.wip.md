@@ -11,9 +11,9 @@ Zbiór gotowych do użycia mutacji, ilustrujący [Format mutacji](Mutacje%20i%20
 - Ranga: 1 (Zalążek)
 - Charakter: Pasywna
 - Atuty:
-  - Wzmocnione pięści (1) - kości dłoni stały się gęstsze i twardsze, uderzenia pięścią zadają odczuwalnie więcej bólu
+  - Wzmocnione pięści - kości dłoni stały się gęstsze i twardsze, uderzenia pięścią zadają odczuwalnie więcej bólu
 - Wady:
-  - Chłodne dłonie (1) - skóra na rękach jest sztywna i mniej czuła, drobne czynności manualne (np. rozbrajanie zamka, opatrywanie ran) są utrudnione
+  - Chłodne dłonie - skóra na rękach jest sztywna i mniej czuła, drobne czynności manualne (np. rozbrajanie zamka, opatrywanie ran) są utrudnione
 - Rezonans: Kość porasta dalej wzdłuż ramienia, tworząc na krótki czas kostny pancerz na całej kończynie
 
 **Zimny Obserwator**
@@ -95,9 +95,9 @@ Poniższe mutacje wzmacniają współpracę z zwierzęcym [Stronnikiem](Towarzys
 - Ranga: 1 (Zalążek)
 - Charakter: Pasywna
 - Atuty:
-  - Mowa Watażki (1) - odczytywanie mowy ciała zwierzęcego Stronnika przychodzi naturalnie, +1 kość do testów Tresury lub Taktyki i strategii w scenach, w których razem walczą
+  - Mowa Watażki - odczytywanie mowy ciała zwierzęcego Stronnika przychodzi naturalnie, +1 kość do testów Tresury lub Taktyki i strategii w scenach, w których razem walczą
 - Wady:
-  - Terytorialna agresja (1) - postać nieświadomie warczy lub spina się w obronie "swojej" grupy na widok innych zwierząt, co utrudnia tresurę nowych sojuszników lub spokojne rozejście się z cudzym stadem
+  - Terytorialna agresja - postać nieświadomie warczy lub spina się w obronie "swojej" grupy na widok innych zwierząt, co utrudnia tresurę nowych sojuszników lub spokojne rozejście się z cudzym stadem
 - Rezonans: Postać na chwilę zaczyna poruszać się i reagować dosłownie jak zwierzę, warcząc i naznaczając teren
 
 **Wspólny Puls**
@@ -153,7 +153,7 @@ Poniższe mutacje powstały z inspiracji konkretnymi [Cechami](Cechy.md) i [Umie
 - Atuty:
   - Przyczepne dłonie (2) - błony między palcami i mikroskopijne haczyki na skórze umożliwiają przyczepianie się do nierównych powierzchni, +2 kości do testów Wspinaczki i Parkour
 - Wady:
-  - Sztywny chwyt (1) - dłonie trudniej w pełni rozewrzeć, upuszczanie przedmiotów na życzenie lub szybkie manipulowanie drobnymi narzędziami jest utrudnione
+  - Sztywny chwyt - dłonie trudniej w pełni rozewrzeć, upuszczanie przedmiotów na życzenie lub szybkie manipulowanie drobnymi narzędziami jest utrudnione
 - Rezonans: Na dłoniach i stopach wyrastają na krótki czas dodatkowe, twarde haczyki, pozwalające przywierać nawet do gładkiego szkła lub metalu
 
 **Głos Dowódcy** *(inspiracja: Charyzma, Dowodzenie, Zastraszanie)*
@@ -177,9 +177,9 @@ Poniższe mutacje powstały z inspiracji konkretnymi [Cechami](Cechy.md) i [Umie
 - Ranga: 1 (Zalążek)
 - Charakter: Pasywna
 - Atuty:
-  - Niechciana szczerość (1) - postać podświadomie wyczuwa najsilniejszą emocję rozmówcy, nawet gdy ten świetnie ją skrywa, +1 kość do testów Wyczucia i Przekonywania
+  - Niechciana szczerość - postać podświadomie wyczuwa najsilniejszą emocję rozmówcy, nawet gdy ten świetnie ją skrywa, +1 kość do testów Wyczucia i Przekonywania
 - Wady:
-  - Przeciążenie empatyczne (1) - w tłumie lub przy silnych emocjach innych, postać czuje ich napór jak własne emocje, co utrudnia zachowanie chłodnego osądu (utrudnienie do testów Opanowania w takich sytuacjach)
+  - Przeciążenie empatyczne - w tłumie lub przy silnych emocjach innych, postać czuje ich napór jak własne emocje, co utrudnia zachowanie chłodnego osądu (utrudnienie do testów Opanowania w takich sytuacjach)
 - Rezonans: Na chwilę widzi się emocje rozmówcy niemal jak kolory na jego skórze - zbyt wyraźnie, by je zignorować
 
 **Pamięć Harona** *(inspiracja: Inteligencja, Spryt)*
@@ -285,9 +285,9 @@ Poniższe mutacje nie są prostymi wzmocnieniami do testów - to narzędzia narr
 - Ranga: 1 (Zalążek)
 - Charakter: Pasywna
 - Atuty:
-  - Świetlna mowa (1) - postać może wywoływać kontrolowane, przygaszone błyski skóry, wystarczające do przekazania prostych, wcześniej ustalonych sygnałów sojusznikom w zasięgu wzroku, bez żadnego dźwięku
+  - Świetlna mowa - postać może wywoływać kontrolowane, przygaszone błyski skóry, wystarczające do przekazania prostych, wcześniej ustalonych sygnałów sojusznikom w zasięgu wzroku, bez żadnego dźwięku
 - Wady:
-  - Niekontrolowane błyski (1) - silne emocje (strach, gniew, ból) czasem wywołują niekontrolowane błyski światła, które mogą zdradzić pozycję postaci w ukryciu
+  - Niekontrolowane błyski - silne emocje (strach, gniew, ból) czasem wywołują niekontrolowane błyski światła, które mogą zdradzić pozycję postaci w ukryciu
 - Rezonans: Całe ciało na chwilę zaczyna pulsować rytmicznie jak żywa latarnia, zbyt jasno, by to zignorować
 
 **Drugie Odbicie**

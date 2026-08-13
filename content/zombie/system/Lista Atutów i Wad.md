@@ -12,12 +12,12 @@ Rejestr wszystkich [Atutów i Wad](Właściwości.md) używanych w systemie - ż
 
 | Nazwa | Źródło | Kontekst | Opis |
 |---|---|---|---|
-| Cichy | [Broń](Ekwipunek/Broń.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Nóż survivalowy, Kusza; Rower | Nie generuje hałasu podczas użycia, nie przyciągając niepożądanej uwagi. |
+| Cichy | [Broń](Ekwipunek/Broń.md), [Transport](Ekwipunek/Transport.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Nóż survivalowy, Kusza; Rower, Samochód elektryczny, Koń; Dron | Nie generuje hałasu podczas użycia, nie przyciągając niepożądanej uwagi. |
 | Precyzyjny | [Broń](Ekwipunek/Broń.md) | Nóż survivalowy, Karabin myśliwski | Ułatwia trafienie konkretnego celu lub miejsca na ciele. |
-| Lekki | [Broń](Ekwipunek/Broń.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Nóż survivalowy; Plandeka | Niska waga przyspiesza użycie i redukuje zmęczenie przy długim noszeniu. |
+| Lekki | [Broń](Ekwipunek/Broń.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Nóż survivalowy; Plandeka, Dron | Niska waga przyspiesza użycie i redukuje zmęczenie przy długim noszeniu. |
 | Krwawiący | [Broń](Ekwipunek/Broń.md) | Kij bejsbolowy z gwoździami | Zadawane rany krwawią, utrudniając przeciwnikowi działanie w kolejnych rundach. |
 | Tnący | [Broń](Ekwipunek/Broń.md) | Maczeta | Ostrze tnie materiały inne niż ciała: liny, gałęzie, odzież, płótno. |
-| Zrównoważony | [Broń](Ekwipunek/Broń.md) | Maczeta | Wyważenie ułatwia kontrolę i długotrwałe użytkowanie bez utraty precyzji. |
+| Wyważony | [Broń](Ekwipunek/Broń.md) | Maczeta | Wyważenie ułatwia kontrolę i długotrwałe użytkowanie bez utraty precyzji. |
 | Niezawodny | [Broń](Ekwipunek/Broń.md) | Pistolet 9mm | Rzadko zawodzi, zacina się lub psuje w krytycznych momentach. |
 | Dostępna amunicja | [Broń](Ekwipunek/Broń.md) | Pistolet 9mm | Pasująca amunicja jest stosunkowo łatwa do znalezienia lub wyhandlowania. |
 | Potężny | [Broń](Ekwipunek/Broń.md) | Karabin myśliwski | Obrażenia i siła przebicia wyraźnie powyżej normy dla swojej klasy broni. |
@@ -43,24 +43,45 @@ Rejestr wszystkich [Atutów i Wad](Właściwości.md) używanych w systemie - ż
 | Uśmierzający | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Tabletki przeciwbólowe | Zmniejsza ból, umożliwiając działanie mimo ran lub przywracając zdolność do testów. |
 | Antybakteryjny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Antybiotyki | Zwalcza infekcje bakteryjne i choroby; wartość Atutu wpływa na skuteczność leczenia. |
 | Filtr | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Filtr wody, Maska filtrująca | Odsiewa zanieczyszczenia — wodę pitną albo powietrze (pył, dym, patogeny). |
-| Wielofunkcyjny | [Broń](Ekwipunek/Broń.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Łom, Maczeta; Multitool, Taśma klejąca | Sprawdza się w wielu zastosowaniach poza podstawowym; zastępuje brakujący specjalistyczny sprzęt. |
-| Wytrzymały | [Broń](Ekwipunek/Broń.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Łom; Linka stalowa | Odporny na mechaniczne uszkodzenia; trudno go przerwać, rozciąć, zdeformować lub zużyć przy ciężkim użyciu. |
+| Wielofunkcyjny | [Broń](Ekwipunek/Broń.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Łom, Maczeta; Multitool, Taśma klejąca; Chemia | Sprawdza się w wielu zastosowaniach poza podstawowym; zastępuje brakujący specjalistyczny sprzęt. |
+| Wytrzymały | [Broń](Ekwipunek/Broń.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Transport](Ekwipunek/Transport.md), [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Łom; Linka stalowa; Ciężarówka, Tir; Wzmocniona barykada, Wzmocniony płot, Brama warowna, Mur, Wzmocniony mur, Mur forteczny | Odporny na mechaniczne uszkodzenia; trudno go przerwać, rozciąć, zdeformować lub zużyć przy ciężkim użyciu. |
 | Konserwujący | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Smar | Zapobiega rdzy i zużyciu; regularnie stosowany przedłuża żywotność sprzętu i broni. |
 | Odnawialny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Panele słoneczne | Ładuje się bez zużywania jednorazowych zasobów — wystarczy dostęp do światła. |
-| Niezależny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Radio korbowe, Rower | Działa bez zewnętrznej infrastruktury, paliwa ani sieci zasilającej. |
-| Szybki | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Motocykl | Pozwala przemieszczać się znacznie szybciej niż pieszo lub rowerem. |
+| Niezależny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Transport](Ekwipunek/Transport.md) | Radio korbowe; Wóz pociągowy, Rower, Koń | Działa bez zewnętrznej infrastruktury, paliwa ani sieci zasilającej. |
+| Szybki | [Transport](Ekwipunek/Transport.md) | Koń, Motocykl, Samochód spalinowy, Samochód elektryczny | Pozwala przemieszczać się znacznie szybciej niż pieszo lub rowerem. |
+| Manewrowość | [Transport](Ekwipunek/Transport.md) | Rower, Motocykl, Koń | Ułatwia omijanie przeszkód, ciasne skręty i zmianę kierunku w trudnym terenie. |
+| Ładowność | [Transport](Ekwipunek/Transport.md) | Wóz pociągowy, Koń, Samochód spalinowy, Samochód elektryczny, Ciężarówka, Tir | Pozwala przewieźć znaczną ilość ładunku lub ekwipunku; wartość Atutu odzwierciedla skalę nośności. |
+| Energia | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Transport](Ekwipunek/Transport.md), [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Akumulator; Bateria samochodowa; Generator, Instalacja elektryczna | Magazynuje, dostarcza lub produkuje ładunek elektryczny; wartość Atutu to pojemność / zapas / moc. |
+| Głośny | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Alarm na sznurku, Dzwonki alarmowe, Pułapka na drzwi, Alarm mechaniczny | Generuje hałas — sygnalizuje naruszenie lub przyciąga uwagę. |
+| Warsztat | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Stół roboczy, Warsztat, Stół warsztatowy, Garaż, Rusznikarnia | Daje bonus do craftingu, napraw i obróbki materiałów. |
+| Pojemny | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Zbiornik na wodę, Składowisko, Magazyn, Stodoła, Hala, Cysterna | Zapewnia dużą przestrzeń lub pojemność do przechowywania zapasów i materiałów. |
+| Przenośny | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Namiot | Można złożyć i przenieść bez burzenia konstrukcji. |
+| Izolowany | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Spiżarnia | Chroni zawartość przed warunkami zewnętrznymi (temperatura, wilgoć, szkodniki). |
+| Higieniczny | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Latryna, System kanalizacyjny | Redukuje ryzyko chorób i zanieczyszczeń związanych z nieczystościami. |
+| Ognioodporny | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Piec, Kuźnia | Wytrzymuje wysokie temperatury bez uszkodzenia; umożliwia obróbkę ogniową. |
+| Wspomagający | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Dźwignia, Bloczek, Rampa, Kołowrót, Wielokrążek, Wciągarki, Żurawie | Zmniejsza siłę lub wysiłek potrzebny do podnoszenia i przesuwania ciężarów. |
+| Logistyka | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Taczka, Wózki, Droga, Most | Ułatwia przemieszczanie ludzi, pojazdów lub ładunków na dystansie. |
+| Ukryty | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Ukryta linka, Przeszkoda, Zapadnia | Trudny do wykrycia przed uruchomieniem lub przejściem. |
+| Spowalniający | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Rów | Utrudnia i spowalnia przejście lub przejazd przez obszar. |
+| Ciernie | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Kolczasta przeszkoda, Strefa pułapek | Ostre elementy ranią lub utrudniają forsowanie przy kontakcie. |
+| Unieruchamiający | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Pułapka zaciskowa, Pułapka na pojazdy | Ogranicza lub uniemożliwia dalszy ruch celu po uruchomieniu. |
+| Obronny | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Rygiel, Okiennica, Brama, Kraty, Palisada, Wał ziemny, Rów obronny, Stanowisko ochronne, Umocniony budynek | Chroni obszar, otwór lub osoby — utrudnia atak, forsowanie i otwarcie. |
+| Pozycja obserwacyjna | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Stanowisko obserwacyjne, Wieża strażnicza, Wieża obserwacyjna; Dron | Ułatwia obserwację otoczenia i wczesne wykrywanie zagrożeń. |
+| Mieszkalny | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Chata, Domek, Budynek mieszkalny, Dom | Zapewnia warunki do stałego zamieszkania. |
+| Woda | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | System zbierania deszczówki, Pompa wodna, Studnia | Zapewnia dostęp, zbieranie lub dystrybucję wody. |
+| Produkcja | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Kuźnia, Szklarnia, Warsztat mechaniczny, Farma, Młyn, Rusznikarnia | Umożliwia stałą produkcję dóbr, żywności lub zaawansowaną obróbkę. |
 
 ## Wady
 
 | Nazwa | Źródło | Kontekst | Opis |
 |---|---|---|---|
-| Ciężki | [Broń](Ekwipunek/Broń.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Łom; Akumulator | Wysoka masa utrudnia szybkie użycie i zwiększa zmęczenie przy długim noszeniu. |
+| Ciężki | [Broń](Ekwipunek/Broń.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Transport](Ekwipunek/Transport.md) | Łom; Akumulator; Ciężarówka, Tir | Wysoka masa utrudnia szybkie użycie, manewry i zwiększa zmęczenie przy długim noszeniu. |
 | Chałupniczy | [Broń](Ekwipunek/Broń.md) | Kij bejsbolowy z gwoździami | Nieregularny kształt i wykonanie obniżają precyzję i niezawodność. |
 | Rozpoznawalny | [Broń](Ekwipunek/Broń.md) | Kij bejsbolowy z gwoździami | Rzuca się w oczy i trudno go wytłumaczyć przy kontakcie z nieznanymi grupami. |
-| Głośny | [Broń](Ekwipunek/Broń.md) | Pistolet 9mm, Strzelba pompowa | Hałas przy użyciu może przyciągnąć zombie lub zaalarmować wrogów w pobliżu. |
-| Wolny | [Broń](Ekwipunek/Broń.md) | Karabin myśliwski, Kusza | Przeładowanie lub przygotowanie zajmuje tyle czasu, że traci się inicjatywę w walce. |
+| Głośny | [Broń](Ekwipunek/Broń.md), [Transport](Ekwipunek/Transport.md) | Pistolet 9mm, Strzelba pompowa; Samochód spalinowy, Ciężarówka, Tir | Hałas przy użyciu może przyciągnąć zombie lub zaalarmować wrogów w pobliżu. |
+| Wolny | [Broń](Ekwipunek/Broń.md), [Transport](Ekwipunek/Transport.md) | Karabin myśliwski, Kusza; Wóz pociągowy | Przeładowanie, przygotowanie lub przemieszczanie zajmuje tyle czasu, że traci się inicjatywę. |
 | Długi | [Broń](Ekwipunek/Broń.md) | Karabin myśliwski | Duże gabaryty utrudniają użycie w ciasnych przestrzeniach i ukrycie przy ciele. |
-| Skomplikowany | [Broń](Ekwipunek/Broń.md) | Kusza | Sprawne użycie wymaga wiedzy i praktyki; nieprzeszkolona osoba traci kości do testu. |
+| Skomplikowany | [Broń](Ekwipunek/Broń.md), [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Kusza; Generator, Instalacja elektryczna, Młyn, Most, System kanalizacyjny; Dron | Sprawne użycie lub budowa wymaga wiedzy i praktyki; bez niej traci się kości / dostaje karę do testu. |
 | Krótki zasięg | [Broń](Ekwipunek/Broń.md) | Strzelba pompowa | Skuteczna tylko z bliskiej odległości; na dystansie traci zdecydowanie na efektywności. |
 | Mocny odrzut | [Broń](Ekwipunek/Broń.md) | Strzelba pompowa | Silny odrzut przesuwa linię celowania; kolejny strzał bez korekty jest utrudniony. |
 | Jednorazowy | [Broń](Ekwipunek/Broń.md) | Koktajl Mołotowa | Po użyciu ulega zniszczeniu i nie nadaje się do ponownego użycia. |
@@ -79,8 +100,9 @@ Rejestr wszystkich [Atutów i Wad](Właściwości.md) używanych w systemie - ż
 | Zapach rozkładu | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Grzybnia Ostrzegawcza | Unoszący się zapach grzyba może być wyczuwalny przez zombie i zwierzęta. |
 | Niekontrolowane błyski | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Bioluminescencyjny Szyfr | Mimowolna bioluminescencja w stresie lub ciemności zdradza pozycję postaci. |
 | Wilgociowrażliwy | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Zapałki | Kontakt z wilgocią całkowicie unieszkodliwia — cała paczka staje się bezużyteczna. |
-| Energia | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Latarka | Działa tylko przy dostępnym zasilaniu; bez baterii lub ładowania jest bezużyteczny. |
+| Kruchy | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Szkło; Dron | Łatwo pęka lub kruszy się przy uderzeniu, nacisku lub upadku. |
+| Energia | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Transport](Ekwipunek/Transport.md) | Latarka, Dron; Samochód elektryczny | Działa tylko przy dostępnym zasilaniu; bez baterii lub ładowania jest bezużyteczny. |
 | Ryzykowny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Opaska uciskowa | Nieprawidłowe zastosowanie pogarsza stan zamiast pomagać; wymaga wiedzy medycznej. |
 | Zależny od pogody | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Panele słoneczne | Skuteczność spada lub znika przy zachmurzeniu, deszczu lub w nocy. |
-| Paliwożerny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Motocykl | Szybko zużywa paliwo; bez regularnych uzupełnień zasięg jest mocno ograniczony. |
-| Łatwopalny | [Broń](Ekwipunek/Broń.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Koktajl Mołotowa; Kanister na paliwo | Szczególnie podatny na zapłon; ogień, iskra lub nieudane użycie mogą skierować płomień na użytkownika, sojuszników albo wywołać eksplozję. |
+| Spalanie | [Transport](Ekwipunek/Transport.md) | Motocykl, Samochód spalinowy, Ciężarówka, Tir | Zużywa paliwo podczas pracy; bez regularnych uzupełnień zasięg jest mocno ograniczony. |
+| Łatwopalny | [Broń](Ekwipunek/Broń.md), [Transport](Ekwipunek/Transport.md), [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Koktajl Mołotowa; Kanister na paliwo; Chemia | Szczególnie podatny na zapłon; ogień, iskra lub nieudane użycie mogą skierować płomień na użytkownika, sojuszników albo wywołać eksplozję. |
