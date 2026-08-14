@@ -12,101 +12,143 @@ Rejestr wszystkich [Atutów i Wad](Właściwości.md) używanych w systemie - ż
 
 | Nazwa | Źródło | Kontekst | Opis |
 |---|---|---|---|
-| Cichy | [Broń](Ekwipunek/Broń.md), [Transport](Ekwipunek/Transport.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Nóż survivalowy, Kusza; Rower, Samochód elektryczny, Koń; Dron | Nie generuje hałasu podczas użycia, nie przyciągając niepożądanej uwagi. |
-| Precyzyjny | [Broń](Ekwipunek/Broń.md) | Nóż survivalowy, Karabin myśliwski | Ułatwia trafienie konkretnego celu lub miejsca na ciele. |
-| Lekki | [Broń](Ekwipunek/Broń.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Nóż survivalowy; Plandeka, Dron | Niska waga przyspiesza użycie i redukuje zmęczenie przy długim noszeniu. |
-| Krwawiący | [Broń](Ekwipunek/Broń.md) | Kij bejsbolowy z gwoździami | Zadawane rany krwawią, utrudniając przeciwnikowi działanie w kolejnych rundach. |
-| Tnący | [Broń](Ekwipunek/Broń.md) | Maczeta | Ostrze tnie materiały inne niż ciała: liny, gałęzie, odzież, płótno. |
-| Wyważony | [Broń](Ekwipunek/Broń.md) | Maczeta | Wyważenie ułatwia kontrolę i długotrwałe użytkowanie bez utraty precyzji. |
-| Niezawodny | [Broń](Ekwipunek/Broń.md) | Pistolet 9mm | Rzadko zawodzi, zacina się lub psuje w krytycznych momentach. |
-| Dostępna amunicja | [Broń](Ekwipunek/Broń.md) | Pistolet 9mm | Pasująca amunicja jest stosunkowo łatwa do znalezienia lub wyhandlowania. |
-| Potężny | [Broń](Ekwipunek/Broń.md) | Karabin myśliwski | Obrażenia i siła przebicia wyraźnie powyżej normy dla swojej klasy broni. |
-| Możliwość odzysku amunicji | [Broń](Ekwipunek/Broń.md) | Kusza | Użyte bełty można wyciągnąć z celu i wykorzystać ponownie. |
-| Rozpryskowy | [Broń](Ekwipunek/Broń.md) | Strzelba pompowa | Szeroki rozrzut śrutu utrudnia chybienie z bliskiego dystansu. |
-| Zastraszający | [Broń](Ekwipunek/Broń.md) | Strzelba pompowa | Sam dźwięk lub widok broni wywołuje silną reakcję strachu u większości celów. |
-| Obszarowy | [Broń](Ekwipunek/Broń.md) | Koktajl Mołotowa | Efekt obejmuje większy obszar, mogąc dosięgnąć wielu celów naraz. |
-| Prowizorka | [Broń](Ekwipunek/Broń.md) | Koktajl Mołotowa | Można wytworzyć z dostępnych materiałów bez specjalistycznych narzędzi. |
-| Wzmocnione pięści | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Kościane Szpony | Gęstsze kości dłoni sprawiają, że uderzenia wręcz zadają obrażenia jak lekka broń. |
-| Chłodna kalkulacja | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Zimny Obserwator | W chaosie walki postać zachowuje chłodny osąd; bonus do testów Opanowania pod presją. |
-| Aura niepokoju | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Feromony Grozy | Zwierzęta i cywile w pobliżu podświadomie unikają postaci, ułatwiając unikanie uwagi. |
-| Mowa Watażki | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Instynkt Watażki | Naturalne odczytywanie mowy ciała zwierzęcego Stronnika; bonus do wspólnych akcji. |
-| Empatyczne echo | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Wspólny Puls | Postać wyczuwa emocje Stronnika (strach, czujność); bonus do Percepcji gdy Stronnik ostrzega. |
-| Przyczepne dłonie | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Krok Pająka | Mikrohaczyki na skórze umożliwiają wspinaczkę po nierównych powierzchniach; bonus do Wspinaczki. |
-| Niechciana szczerość | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Czytanie z Twarzy | Postać podświadomie wyczuwa dominującą emocję rozmówcy; bonus do Wyczucia i Przekonywania. |
-| Wzorce w chaosie | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Pamięć Harona | Umysł błyskawicznie odnajduje wzorce i analogie; bonus do Inteligencji przy złożonych problemach. |
-| Odporność na trucizny | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Żelazny Żołądek | Organizm neutralizuje trucizny, skażoną wodę i zepsutą żywność zanim zdążą zaszkodzić. |
-| Zarodniki ostrzegawcze | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Grzybnia Ostrzegawcza | Fragmenty grzybni zostawione w terenie fosforyzują gdy coś przejdzie w pobliżu; bonus do Pułapek. |
-| Świetlna mowa | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Bioluminescencyjny Szyfr | Kontrolowane błyski skóry umożliwiają cichą komunikację sygnałami z sojusznikami w zasięgu wzroku. |
-| Antyseptyczny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Mocny alkohol, Woda utleniona, Jodyna, Spirytus, Zestaw chirurgiczny, Miód, Wrzątek, Chlorheksydyna | Redukuje Skażenie tymczasowe przy opracowaniu ran; wartość Atutu to liczba usuniętych punktów. |
-| Leczniczy | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Apteczka | Zawiera szeroką gamę środków; daje bonus do testów leczenia różnego rodzaju ran. |
-| Tamujący | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Opatrunek kompresowy, Opaska uciskowa | Zatrzymuje lub spowalnia krwawienie, redukując utratę HP w czasie. |
-| Przeciwbólowy | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Tabletki przeciwbólowe | Zmniejsza ból, umożliwiając działanie mimo ran lub przywracając zdolność do testów. |
+| Amortyzacja | [Ekwipunek ochronny](Ekwipunek/EkwipunekOchronny.md) | Ciężka odzież, Nakolanniki i nałokietniki | Zmniejsza skutki uderzeń, upadków lub innych obrażeń, które można częściowo pochłonąć przez odzież lub wyposażenie. |
+| Antyprzebiciowy | [Ekwipunek ochronny](Ekwipunek/EkwipunekOchronny.md) | Kolczuga | Zwiększa ochronę przed bronią kłującą, kolcami, bagnetami i podobnymi atakami. |
+| Antyprzecięciowy | [Ekwipunek ochronny](Ekwipunek/EkwipunekOchronny.md) | Odzież antyprzecięciowa | Zwiększa ochronę przed cięciem ostrzem. |
+| Antyradiacyjny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Leadplant | Ogranicza skutki ekspozycji na promieniowanie przez ograniczony czas po zażyciu. |
+| Antyseptyczny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Mocny alkohol, Woda utleniona, Jodyna, Spirytus, Zestaw chirurgiczny, Miód, Wrzątek, Chlorheksydyna, Leadplant | Redukuje Skażenie tymczasowe przy opracowaniu ran; wartość Atutu to liczba usuniętych punktów. |
 | Antybakteryjny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Antybiotyki | Zwalcza infekcje bakteryjne i choroby; wartość Atutu wpływa na skuteczność leczenia. |
+| Aura niepokoju | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Feromony Grozy | Zwierzęta i cywile w pobliżu podświadomie unikają postaci, ułatwiając unikanie uwagi. |
+| Chłodna kalkulacja | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Zimny Obserwator | W chaosie walki postać zachowuje chłodny osąd; bonus do testów Opanowania pod presją. |
+| Cichy | [Broń](Ekwipunek/Broń.md), [Transport](Ekwipunek/Transport.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Nóż, Nóż survivalowy, Pistolet .22, Kusza, Łuk, Proca; Rower, Samochód elektryczny, Koń; Wiertarka ręczna, Dron | Nie generuje hałasu podczas użycia, nie przyciągając niepożądanej uwagi. |
+| Ciepły | [Ekwipunek ochronny](Ekwipunek/EkwipunekOchronny.md) | Ciężka odzież, Odzież termiczna | Chroni przed zimnem, wyziębieniem i podobnymi efektami środowiskowymi. |
+| Ciernie | [Konstrukcje](Ekwipunek/Konstrukcje.md) | Kolczasta przeszkoda, Strefa pułapek | Ostre elementy ranią lub utrudniają forsowanie przy kontakcie. |
+| Dalekowzroczność | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Lornetka | Ułatwia dostrzeganie szczegółów znajdujących się w dużej odległości. |
+| Dostępna amunicja | [Broń](Ekwipunek/Broń.md) | Pistolet 9mm | Pasująca amunicja jest stosunkowo łatwa do znalezienia lub wyhandlowania. |
+| Empatyczne echo | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Wspólny Puls | Postać wyczuwa emocje Stronnika (strach, czujność); bonus do Percepcji gdy Stronnik ostrzega. |
+| Energia | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Transport](Ekwipunek/Transport.md), [Konstrukcje](Ekwipunek/Konstrukcje.md) | Baterie, Akumulator; Bateria samochodowa; Generator, Instalacja elektryczna | Przechowuje albo wytwarza energię — co z tych dwóch, zależy od przedmiotu. Wartość Atutu to pojemność zapasu albo ilość wytwarzana. |
 | Filtr | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Filtr wody, Maska filtrująca | Odsiewa zanieczyszczenia — wodę pitną albo powietrze (pył, dym, patogeny). |
-| Wielofunkcyjny | [Broń](Ekwipunek/Broń.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Łom, Maczeta; Multitool, Taśma klejąca; Chemia | Sprawdza się w wielu zastosowaniach poza podstawowym; zastępuje brakujący specjalistyczny sprzęt. |
-| Wytrzymały | [Broń](Ekwipunek/Broń.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Transport](Ekwipunek/Transport.md), [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Łom; Linka stalowa; Ciężarówka, Tir; Wzmocniona barykada, Wzmocniony płot, Brama warowna, Mur, Wzmocniony mur, Mur forteczny | Odporny na mechaniczne uszkodzenia; trudno go przerwać, rozciąć, zdeformować lub zużyć przy ciężkim użyciu. |
-| Konserwujący | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Smar | Zapobiega rdzy i zużyciu; regularnie stosowany przedłuża żywotność sprzętu i broni. |
-| Odnawialny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Panele słoneczne | Ładuje się bez zużywania jednorazowych zasobów — wystarczy dostęp do światła. |
-| Niezależny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Transport](Ekwipunek/Transport.md) | Radio korbowe; Wóz pociągowy, Rower, Koń | Działa bez zewnętrznej infrastruktury, paliwa ani sieci zasilającej. |
-| Szybki | [Transport](Ekwipunek/Transport.md) | Koń, Motocykl, Samochód spalinowy, Samochód elektryczny | Pozwala przemieszczać się znacznie szybciej niż pieszo lub rowerem. |
-| Manewrowość | [Transport](Ekwipunek/Transport.md) | Rower, Motocykl, Koń | Ułatwia omijanie przeszkód, ciasne skręty i zmianę kierunku w trudnym terenie. |
+| Głośny | [Konstrukcje](Ekwipunek/Konstrukcje.md) | Alarm na sznurku, Dzwonki alarmowe, Pułapka na drzwi, Alarm mechaniczny | Generuje hałas — sygnalizuje naruszenie lub przyciąga uwagę. |
+| Higieniczny | [Konstrukcje](Ekwipunek/Konstrukcje.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Latryna, System kanalizacyjny; Mydło, Środki piorące, Szczoteczka i pasta | Redukuje ryzyko chorób i zanieczyszczeń; pomaga utrzymać higienę osobistą lub sanitarną. |
+| Hipnotyzujący | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Pan John | Przyciąga uwagę i osłabia wolę; cel ma trudność z oderwaniem się od źródła lub oporem wobec sugestii. |
+| Izolowany | [Konstrukcje](Ekwipunek/Konstrukcje.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Spiżarnia; Śpiwór, Pojemnik hermetyczny | Chroni zawartość lub użytkownika przed warunkami zewnętrznymi (temperatura, wilgoć, szkodniki). |
+| Kaloryczny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Olej spożywczy | Dostarcza dużej ilości energii w stosunku do masy lub objętości. |
+| Kamuflujący | [Ekwipunek ochronny](Ekwipunek/EkwipunekOchronny.md) | Mundur wojskowy | Utrudnia zauważenie użytkownika w odpowiednim środowisku. |
+| Komunikacja | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Krótkofalówka | Umożliwia przekazywanie informacji na odległość bez stałej infrastruktury. |
+| Konserwujący | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Smar, Sól | Zapobiega rdzy, zużyciu lub zepsuciu; przedłuża żywotność sprzętu albo żywności. |
+| Krwawiący | [Broń](Ekwipunek/Broń.md) | Kij bejsbolowy z gwoździami, Piła łańcuchowa | Zadawane rany krwawią, utrudniając przeciwnikowi działanie w kolejnych rundach. |
+| Kuloodporny | [Ekwipunek ochronny](Ekwipunek/EkwipunekOchronny.md) | Kamizelka kevlarowa, Tarcza balistyczna, Kamizelka balistyczna z płytami | Zwiększa ochronę przed pociskami z broni palnej. |
+| Lekki | [Broń](Ekwipunek/Broń.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Nóż, Nóż survivalowy, Pistolet .22, Proca; Suchary, Żywność suszona/liofilizowana, Latarka czołowa, Plandeka, Plecak, Torba, Worek, Kuchenka turystyczna, Dron | Niska waga przyspiesza użycie i redukuje zmęczenie przy długim noszeniu. |
+| Leczniczy | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Apteczka, Zestaw chirurgiczny, Czarny klon | Zawiera szeroką gamę środków; daje bonus do testów leczenia różnego rodzaju ran i dolegliwości. |
+| Logistyka | [Konstrukcje](Ekwipunek/Konstrukcje.md) | Taczka, Wózki, Droga, Most | Ułatwia przemieszczanie ludzi, pojazdów lub ładunków na dystansie. |
 | Ładowność | [Transport](Ekwipunek/Transport.md) | Wóz pociągowy, Koń, Samochód spalinowy, Samochód elektryczny, Ciężarówka, Tir | Pozwala przewieźć znaczną ilość ładunku lub ekwipunku; wartość Atutu odzwierciedla skalę nośności. |
-| Energia | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Transport](Ekwipunek/Transport.md), [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Baterie, Akumulator; Bateria samochodowa; Generator, Instalacja elektryczna | Magazynuje, dostarcza lub produkuje ładunek elektryczny; wartość Atutu to pojemność / zapas / moc. |
-| Paliwo | [Transport](Ekwipunek/Transport.md) | Kanister na paliwo | Zapas paliwa do pojazdów i urządzeń; wartość Atutu to ilość / zasięg, jaki zapewnia. |
+| Manewrowość | [Transport](Ekwipunek/Transport.md) | Rower, Motocykl, Koń | Ułatwia omijanie przeszkód, ciasne skręty i zmianę kierunku w trudnym terenie. |
+| Mieszkalny | [Konstrukcje](Ekwipunek/Konstrukcje.md) | Chata, Domek, Budynek mieszkalny, Dom | Zapewnia warunki do stałego zamieszkania. |
+| Mowa Watażki | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Instynkt Watażki | Naturalne odczytywanie mowy ciała zwierzęcego Stronnika; bonus do wspólnych akcji. |
+| Mutagenny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Czarny klon | Wspomaga organizm już zmieniony mutacją — regeneruje Punkty Mutacji lub przyspiesza adaptację. Dla niemutowanych zwykle szkodliwy. |
+| Możliwość odzysku amunicji | [Broń](Ekwipunek/Broń.md) | Kusza, Łuk | Użyte bełty lub strzały można wyciągnąć z celu i wykorzystać ponownie. |
+| Niechciana szczerość | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Czytanie z Twarzy | Postać podświadomie wyczuwa dominującą emocję rozmówcy; bonus do Wyczucia i Przekonywania. |
+| Niezależny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Transport](Ekwipunek/Transport.md) | Radio korbowe; Wóz pociągowy, Rower, Koń | Działa bez zewnętrznej infrastruktury, paliwa ani sieci zasilającej. |
+| Niezawodny | [Broń](Ekwipunek/Broń.md) | Pistolet 9mm, Rewolwer | Rzadko zawodzi, zacina się lub psuje w krytycznych momentach. |
+| Obronny | [Konstrukcje](Ekwipunek/Konstrukcje.md) | Rygiel, Okiennica, Brama, Kraty, Palisada, Wał ziemny, Rów obronny, Stanowisko ochronne, Umocniony budynek | Chroni obszar, otwór lub osoby — utrudnia atak, forsowanie i otwarcie. |
+| Obszarowy | [Broń](Ekwipunek/Broń.md) | Granaty, Ładunek wybuchowy, Mina improwizowana, Koktajl Mołotowa, Miotacz ognia | Efekt obejmuje większy obszar, mogąc dosięgnąć wielu celów naraz. |
+| Ochrona chemiczna | [Ekwipunek ochronny](Ekwipunek/EkwipunekOchronny.md) | Kombinezon antychemiczny | Chroni przed kontaktem ze szkodliwymi substancjami chemicznymi, toksynami i skażeniem środowiskowym. |
+| Ochrona wybuchowa | [Ekwipunek ochronny](Ekwipunek/EkwipunekOchronny.md) | Kombinezon saperski | Chroni przed odłamkami, falą uderzeniową i innymi skutkami eksplozji. |
+| Odnawialny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Panele słoneczne, Turbina wiatrowa | Ładuje się bez zużywania jednorazowych zasobów — wystarczy dostęp do światła lub wiatru. |
+| Odporność na trucizny | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Żelazny Żołądek | Organizm neutralizuje trucizny, skażoną wodę i zepsutą żywność zanim zdążą zaszkodzić. |
+| Ogłuszający | [Broń](Ekwipunek/Broń.md) | Pałka, Granat hukowy | Trafienie lub użycie może wywołać chwilowe ogłuszenie, dezorientację lub utratę możliwości działania. |
+| Ognioodporny | [Konstrukcje](Ekwipunek/Konstrukcje.md), [Ekwipunek ochronny](Ekwipunek/EkwipunekOchronny.md) | Piec, Kuźnia; Odzież ognioodporna | Wytrzymuje wysokie temperatury bez uszkodzenia; ogranicza skutki ognia i płomieni. |
+| Orientacja | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Mapa, Kompas | Ułatwia określanie kierunku, położenia i odnajdywanie drogi. |
+| Oślepiający | [Broń](Ekwipunek/Broń.md) | Flara | Może chwilowo ograniczyć widzenie celu. |
+| Paliwo | [Transport](Ekwipunek/Transport.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Kanister na paliwo; Butla gazowa | Przechowuje albo wytwarza paliwo — co z tych dwóch, zależy od przedmiotu. Wartość Atutu to pojemność zapasu albo ilość wytwarzana. |
+| Podpalający | [Broń](Ekwipunek/Broń.md) | Granat zapalający, Miotacz ognia | Trafienie lub użycie może podpalić cel albo obszar. |
+| Pojemny | [Konstrukcje](Ekwipunek/Konstrukcje.md), [Ekwipunek ochronny](Ekwipunek/EkwipunekOchronny.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Zbiornik na wodę, Składowisko, Magazyn, Stodoła, Hala, Cysterna; Kamizelka taktyczna, Hełm taktyczny; Plecak, Skrzynia, Kanister na wodę | Zapewnia dużą przestrzeń lub pojemność do przechowywania zapasów i wyposażenia. |
+| Potężny | [Broń](Ekwipunek/Broń.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Siekiera strażacka, Kilof, Piła łańcuchowa, Karabin myśliwski, Karabin wyborowy, Ciężki karabin maszynowy, Ładunek wybuchowy; Piła łańcuchowa (narzędzie) | Obrażenia i siła przebicia lub działania wyraźnie powyżej normy dla swojej klasy. |
+| Pozycja obserwacyjna | [Konstrukcje](Ekwipunek/Konstrukcje.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Stanowisko obserwacyjne, Wieża strażnicza, Wieża obserwacyjna; Dron | Ułatwia obserwację otoczenia i wczesne wykrywanie zagrożeń. |
+| Precyzyjny | [Broń](Ekwipunek/Broń.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Nóż survivalowy, Włócznia, Karabin myśliwski, Karabin wyborowy; Szczypce, Zestaw śrubokrętów, Piła do metalu, Wytrychy | Ułatwia trafienie konkretnego celu, miejsca lub precyzyjną pracę. |
+| Produkcja | [Konstrukcje](Ekwipunek/Konstrukcje.md) | Kuźnia, Szklarnia, Warsztat mechaniczny, Farma, Młyn, Rusznikarnia | Umożliwia stałą produkcję dóbr, żywności lub zaawansowaną obróbkę. |
+| Prosty | [Broń](Ekwipunek/Broń.md) | Rewolwer | Przedmiot jest łatwy w obsłudze i nie wymaga specjalistycznej wiedzy. |
+| Prowizorka | [Broń](Ekwipunek/Broń.md), [Ekwipunek ochronny](Ekwipunek/EkwipunekOchronny.md) | Koktajl Mołotowa; Improwizowany pancerz | Można wytworzyć z dostępnych materiałów bez specjalistycznych narzędzi. |
+| Przeciwbólowy | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Tabletki przeciwbólowe, Leadplant | Zmniejsza ból, umożliwiając działanie mimo ran lub przywracając zdolność do testów. |
+| Przenośny | [Konstrukcje](Ekwipunek/Konstrukcje.md) | Namiot | Można złożyć i przenieść bez burzenia konstrukcji. |
+| Przyczepne dłonie | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Krok Pająka | Mikrohaczyki na skórze umożliwiają wspinaczkę po nierównych powierzchniach; bonus do Wspinaczki. |
+| Rozpryskowy | [Broń](Ekwipunek/Broń.md) | Strzelba pompowa, Granat odłamkowy | Szeroki rozrzut utrudnia chybienie lub obejmuje cele blisko siebie. |
+| Spowalniający | [Konstrukcje](Ekwipunek/Konstrukcje.md) | Rów | Utrudnia i spowalnia przejście lub przejazd przez obszar. |
+| Sygnalizacyjny | [Broń](Ekwipunek/Broń.md) | Flara | Umożliwia łatwe przekazywanie informacji lub zwracanie uwagi na położenie użytkownika. |
+| Szybki | [Transport](Ekwipunek/Transport.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Koń, Motocykl, Samochód spalinowy, Samochód elektryczny; Wiertarka akumulatorowa, Piła łańcuchowa | Pozwala wykonać czynność lub przemieszczać się znacznie szybciej niż bez atutu. |
+| Szybkostrzelny | [Broń](Ekwipunek/Broń.md) | Pistolet maszynowy, Karabinek szturmowy, Ciężki karabin maszynowy | Umożliwia oddanie wielu strzałów w krótkim czasie. |
+| Świetlna mowa | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Bioluminescencyjny Szyfr | Kontrolowane błyski skóry umożliwiają cichą komunikację sygnałami z sojusznikami w zasięgu wzroku. |
+| Tamujący | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Ekwipunek ochronny](Ekwipunek/EkwipunekOchronny.md) | Opatrunek kompresowy, Opaska uciskowa; Zwykłe ubrania | Zatrzymuje lub spowalnia krwawienie, redukując utratę HP w czasie. |
+| Tnący | [Broń](Ekwipunek/Broń.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Siekiera ręczna, Maczeta, Szabla / miecz, Tasak; Siekiera | Ostrze tnie materiały inne niż ciała: liny, gałęzie, odzież, płótno, drewno. |
+| Trwały | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Żywność konserwowa, Suchary, Żywność suszona/liofilizowana, Mąka, Cukier, Sól, Pasza | Przedmiot lub zasób długo zachowuje swoje właściwości i nie psuje się łatwo. |
+| Ukryty | [Konstrukcje](Ekwipunek/Konstrukcje.md) | Ukryta linka, Przeszkoda, Zapadnia | Trudny do wykrycia przed uruchomieniem lub przejściem. |
+| Unieruchamiający | [Konstrukcje](Ekwipunek/Konstrukcje.md) | Pułapka zaciskowa, Pułapka na pojazdy | Ogranicza lub uniemożliwia dalszy ruch celu po uruchomieniu. |
+| Usypiający | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Pan John | Wywołuje senność lub utratę przytomności; utrudnia czuwanie, walkę i opór. |
+| Warsztat | [Konstrukcje](Ekwipunek/Konstrukcje.md) | Stół roboczy, Warsztat, Stół warsztatowy, Garaż, Rusznikarnia | Daje bonus do craftingu, napraw i obróbki materiałów. |
+| Widzenie w ciemności | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Noktowizor | Pozwala widzieć w warunkach bardzo słabego oświetlenia. |
+| Wielofunkcyjny | [Broń](Ekwipunek/Broń.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Materiały](Ekwipunek/Materiały.md) | Łom, Maczeta, Młotek; Multitool, Kombinerki, Klucze, Łopata, Zestaw naprawczy, Taśma klejąca, Lina, Zestaw naczyń, Dron; Chemia | Sprawdza się w wielu zastosowaniach poza podstawowym; zastępuje brakujący specjalistyczny sprzęt. |
+| Wodoodporny | [Ekwipunek ochronny](Ekwipunek/EkwipunekOchronny.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Odzież przeciwdeszczowa; Pojemnik hermetyczny | Chroni przed wodą i wilgocią lub pozwala bezpiecznie używać przedmiotu w takich warunkach. |
+| Woda | [Konstrukcje](Ekwipunek/Konstrukcje.md) | System zbierania deszczówki, Pompa wodna, Studnia | Zapewnia dostęp, zbieranie lub dystrybucję wody. |
+| Wszechstronny | [Broń](Ekwipunek/Broń.md) | Karabinek szturmowy | Przedmiot dobrze sprawdza się w wielu różnych zastosowaniach bojowych. |
+| Wspomagający | [Konstrukcje](Ekwipunek/Konstrukcje.md) | Dźwignia, Bloczek, Rampa, Kołowrót, Wielokrążek, Wciągarki, Żurawie | Zmniejsza siłę lub wysiłek potrzebny do podnoszenia i przesuwania ciężarów. |
 | Wybuchowy | [Transport](Ekwipunek/Transport.md) | Kanister na paliwo | Zawartość można celowo wykorzystać jako improwizowany ładunek wybuchowy. |
-| Głośny | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Alarm na sznurku, Dzwonki alarmowe, Pułapka na drzwi, Alarm mechaniczny | Generuje hałas — sygnalizuje naruszenie lub przyciąga uwagę. |
-| Warsztat | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Stół roboczy, Warsztat, Stół warsztatowy, Garaż, Rusznikarnia | Daje bonus do craftingu, napraw i obróbki materiałów. |
-| Pojemny | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Zbiornik na wodę, Składowisko, Magazyn, Stodoła, Hala, Cysterna | Zapewnia dużą przestrzeń lub pojemność do przechowywania zapasów i materiałów. |
-| Przenośny | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Namiot | Można złożyć i przenieść bez burzenia konstrukcji. |
-| Izolowany | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Spiżarnia | Chroni zawartość przed warunkami zewnętrznymi (temperatura, wilgoć, szkodniki). |
-| Higieniczny | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Latryna, System kanalizacyjny | Redukuje ryzyko chorób i zanieczyszczeń związanych z nieczystościami. |
-| Ognioodporny | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Piec, Kuźnia | Wytrzymuje wysokie temperatury bez uszkodzenia; umożliwia obróbkę ogniową. |
-| Wspomagający | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Dźwignia, Bloczek, Rampa, Kołowrót, Wielokrążek, Wciągarki, Żurawie | Zmniejsza siłę lub wysiłek potrzebny do podnoszenia i przesuwania ciężarów. |
-| Logistyka | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Taczka, Wózki, Droga, Most | Ułatwia przemieszczanie ludzi, pojazdów lub ładunków na dystansie. |
-| Ukryty | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Ukryta linka, Przeszkoda, Zapadnia | Trudny do wykrycia przed uruchomieniem lub przejściem. |
-| Spowalniający | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Rów | Utrudnia i spowalnia przejście lub przejazd przez obszar. |
-| Ciernie | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Kolczasta przeszkoda, Strefa pułapek | Ostre elementy ranią lub utrudniają forsowanie przy kontakcie. |
-| Unieruchamiający | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Pułapka zaciskowa, Pułapka na pojazdy | Ogranicza lub uniemożliwia dalszy ruch celu po uruchomieniu. |
-| Obronny | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Rygiel, Okiennica, Brama, Kraty, Palisada, Wał ziemny, Rów obronny, Stanowisko ochronne, Umocniony budynek | Chroni obszar, otwór lub osoby — utrudnia atak, forsowanie i otwarcie. |
-| Pozycja obserwacyjna | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Stanowisko obserwacyjne, Wieża strażnicza, Wieża obserwacyjna; Dron | Ułatwia obserwację otoczenia i wczesne wykrywanie zagrożeń. |
-| Mieszkalny | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Chata, Domek, Budynek mieszkalny, Dom | Zapewnia warunki do stałego zamieszkania. |
-| Woda | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | System zbierania deszczówki, Pompa wodna, Studnia | Zapewnia dostęp, zbieranie lub dystrybucję wody. |
-| Produkcja | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Kuźnia, Szklarnia, Warsztat mechaniczny, Farma, Młyn, Rusznikarnia | Umożliwia stałą produkcję dóbr, żywności lub zaawansowaną obróbkę. |
+| Wydajny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Wiertarka akumulatorowa | Pozwala wykonać daną czynność szybciej lub mniejszym kosztem zasobów. |
+| Wytrzymały | [Broń](Ekwipunek/Broń.md), [Ekwipunek ochronny](Ekwipunek/EkwipunekOchronny.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Transport](Ekwipunek/Transport.md), [Konstrukcje](Ekwipunek/Konstrukcje.md) | Siekiera ręczna, Łom, Kilof; Odzież robocza, Hełmy, Pancerze płytowe, Kombinezon saperski, Zbroja historyczna; Łopata, Siekiera, Linka stalowa, Menażka, Garnek, Skrzynia, Kanister na wodę, Przewody; Ciężarówka, Tir; Wzmocnione konstrukcje | Odporny na mechaniczne uszkodzenia; trudno go przerwać, rozciąć, zdeformować lub zużyć przy ciężkim użyciu. |
+| Wyważony | [Broń](Ekwipunek/Broń.md) | Siekiera strażacka, Kij bejsbolowy, Maczeta, Szabla / miecz | Wyważenie ułatwia kontrolę i długotrwałe użytkowanie bez utraty precyzji. |
+| Wzorce w chaosie | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Pamięć Harona | Umysł błyskawicznie odnajduje wzorce i analogie; bonus do Inteligencji przy złożonych problemach. |
+| Wzmocnione pięści | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Kościane Szpony | Gęstsze kości dłoni sprawiają, że uderzenia wręcz zadają obrażenia jak lekka broń. |
+| Zasadzka | [Broń](Ekwipunek/Broń.md) | Mina improwizowana | Szczególnie dobrze sprawdza się podczas przygotowanego ataku z zaskoczenia. |
+| Zasłaniający | [Broń](Ekwipunek/Broń.md) | Granat dymny | Tworzy przeszkodę ograniczającą widoczność lub utrudniającą obserwację. |
+| Zasięgowy | [Broń](Ekwipunek/Broń.md) | Włócznia | Pozwala atakować lub oddziaływać na cele z większej odległości niż typowa broń wręcz. |
+| Zastraszający | [Broń](Ekwipunek/Broń.md) | Strzelba pompowa | Sam dźwięk lub widok broni wywołuje silną reakcję strachu u większości celów. |
+| Zarodniki ostrzegawcze | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Grzybnia Ostrzegawcza | Fragmenty grzybni zostawione w terenie fosforyzują gdy coś przejdzie w pobliżu; bonus do Pułapek. |
 
 ## Wady
 
 | Nazwa | Źródło | Kontekst | Opis |
 |---|---|---|---|
-| Ciężki | [Broń](Ekwipunek/Broń.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Transport](Ekwipunek/Transport.md) | Łom; Akumulator; Ciężarówka, Tir | Wysoka masa utrudnia szybkie użycie, manewry i zwiększa zmęczenie przy długim noszeniu. |
+| Bardzo ciężki | [Ekwipunek ochronny](Ekwipunek/EkwipunekOchronny.md) | Kombinezon saperski | Znaczna masa mocno ogranicza mobilność, transport i długotrwałe użytkowanie. |
 | Chałupniczy | [Broń](Ekwipunek/Broń.md) | Kij bejsbolowy z gwoździami | Nieregularny kształt i wykonanie obniżają precyzję i niezawodność. |
-| Rozpoznawalny | [Broń](Ekwipunek/Broń.md) | Kij bejsbolowy z gwoździami | Rzuca się w oczy i trudno go wytłumaczyć przy kontakcie z nieznanymi grupami. |
-| Głośny | [Broń](Ekwipunek/Broń.md), [Transport](Ekwipunek/Transport.md) | Pistolet 9mm, Strzelba pompowa; Samochód spalinowy, Ciężarówka, Tir | Hałas przy użyciu może przyciągnąć zombie lub zaalarmować wrogów w pobliżu. |
-| Wolny | [Broń](Ekwipunek/Broń.md), [Transport](Ekwipunek/Transport.md) | Karabin myśliwski, Kusza; Wóz pociągowy | Przeładowanie, przygotowanie lub przemieszczanie zajmuje tyle czasu, że traci się inicjatywę. |
-| Długi | [Broń](Ekwipunek/Broń.md) | Karabin myśliwski | Duże gabaryty utrudniają użycie w ciasnych przestrzeniach i ukrycie przy ciele. |
-| Skomplikowany | [Broń](Ekwipunek/Broń.md), [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Kusza; Generator, Instalacja elektryczna, Młyn, Most, System kanalizacyjny; Dron | Sprawne użycie lub budowa wymaga wiedzy i praktyki; bez niej traci się kości / dostaje karę do testu. |
-| Krótki zasięg | [Broń](Ekwipunek/Broń.md) | Strzelba pompowa | Skuteczna tylko z bliskiej odległości; na dystansie traci zdecydowanie na efektywności. |
-| Mocny odrzut | [Broń](Ekwipunek/Broń.md) | Strzelba pompowa | Silny odrzut przesuwa linię celowania; kolejny strzał bez korekty jest utrudniony. |
-| Jednorazowy | [Broń](Ekwipunek/Broń.md) | Koktajl Mołotowa | Po użyciu ulega zniszczeniu i nie nadaje się do ponownego użycia. |
-| Niestabilny | [Broń](Ekwipunek/Broń.md) | Koktajl Mołotowa | Może samoistnie zadziałać lub ulec uszkodzeniu przy nieumiejętnym obchodzeniu. |
-| Uszkodzony | [Ekwipunek ochronny](Ekwipunek/EkwipunekOchronny.md) | Pancerz po poświęceniu punktów ochrony | Wartość ochrony jest trwale obniżona o wskazaną liczbę punktów. |
 | Chłodne dłonie | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Kościane Szpony | Gęste kości obniżają precyzję manualną; testy drobnych ruchów rąk są utrudnione. |
-| Emocjonalny dystans | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Zimny Obserwator | Budowanie zaufania i bliskich relacji jest utrudnione przez brak widocznych emocji. |
-| Odpychająca obecność | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Feromony Grozy | Zwierzęta i wrażliwi ludzie reagują na bliskość postaci niepokojem lub ucieczką. |
-| Terytorialna agresja | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Instynkt Watażki | Trudność z kontrolą agresji w sytuacjach postrzeganych jako naruszenie terytorium lub dominacji. |
+| Ciężki | [Broń](Ekwipunek/Broń.md), [Ekwipunek ochronny](Ekwipunek/EkwipunekOchronny.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Transport](Ekwipunek/Transport.md) | Siekiery, Łom, Kilof, Tasak, Piła łańcuchowa, Ciężki karabin maszynowy, Miotacz ognia; Kombinezon antychemiczny, Kolczuga, Hełm stalowy, Tarcza, Pancerze, Odzież ognioodporna; Łom, Skrzynia, Butla gazowa, Akumulator, Panele słoneczne, Piła łańcuchowa; Ciężarówka, Tir | Wysoka masa utrudnia szybkie użycie, manewry i zwiększa zmęczenie przy długim noszeniu. |
 | Cudzy strach | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Wspólny Puls | Silne emocje Stronnika przenikają do własnych odczuć, utrudniając ocenę sytuacji. |
-| Sztywny chwyt | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Krok Pająka | Zmiany skóry dłoni ograniczają precyzję poza wspinaczką; dotykowe testy są utrudnione. |
-| Przeciążenie empatyczne | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Czytanie z Twarzy | Nadmiar odczytywanych emocji w tłumie lub przy wielu osobach może paraliżować decyzje. |
+| Długi | [Broń](Ekwipunek/Broń.md) | Karabin myśliwski, Karabin wyborowy, Ciężki karabin maszynowy | Duże gabaryty utrudniają użycie w ciasnych przestrzeniach i ukrycie przy ciele. |
+| Emocjonalny dystans | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Zimny Obserwator | Budowanie zaufania i bliskich relacji jest utrudnione przez brak widocznych emocji. |
+| Energia | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Transport](Ekwipunek/Transport.md) | Latarka, Latarka czołowa, Wiertarka akumulatorowa, Krótkofalówka, Noktowizor, Dron; Samochód elektryczny | Zużywa energię przy normalnym użytkowaniu w scenie; wartość Wady to ilość zejścia z zapasu. Bez zapasu przedmiot w tej scenie nie działa. |
+| Gorący | [Ekwipunek ochronny](Ekwipunek/EkwipunekOchronny.md) | Ciężki pancerz płytowy, Zbroja historyczna | Przedmiot utrudnia funkcjonowanie w wysokiej temperaturze i może powodować przegrzewanie. |
+| Głośny | [Broń](Ekwipunek/Broń.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Transport](Ekwipunek/Transport.md) | Broń palna, Piła łańcuchowa, Granaty, Ładunek wybuchowy; Piła łańcuchowa; Samochód spalinowy, Ciężarówka, Tir | Hałas przy użyciu może przyciągnąć zombie lub zaalarmować wrogów w pobliżu. |
+| Jednorazowy | [Broń](Ekwipunek/Broń.md) | Flara, Granaty, Ładunek wybuchowy, Mina improwizowana, Koktajl Mołotowa | Po użyciu ulega zniszczeniu i nie nadaje się do ponownego użycia. |
+| Konsumpcja | [Transport](Ekwipunek/Transport.md) | Koń | Wymaga regularnego karmienia i pojenia; bez zapasów traci sprawność lub staje się bezużyteczny. |
+| Krótki | [Broń](Ekwipunek/Broń.md) | Młotek, Pałka | Ograniczony zasięg lub zastosowanie przedmiotu. |
+| Krótki zasięg | [Broń](Ekwipunek/Broń.md) | Strzelba pompowa, Miotacz ognia | Skuteczna tylko z bliskiej odległości; na dystansie traci zdecydowanie na efektywności. |
+| Kruchy | [Materiały](Ekwipunek/Materiały.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Szkło; Noktowizor, Dron | Łatwo pęka lub kruszy się przy uderzeniu, nacisku lub upadku. |
+| Łatwopalny | [Broń](Ekwipunek/Broń.md), [Transport](Ekwipunek/Transport.md), [Materiały](Ekwipunek/Materiały.md) | Koktajl Mołotowa, Miotacz ognia; Kanister na paliwo; Chemia | Szczególnie podatny na zapłon; ogień, iskra lub nieudane użycie mogą skierować płomień na użytkownika, sojuszników albo wywołać eksplozję. |
+| Mały ładowność | [Transport](Ekwipunek/Transport.md) | Motocykl | Przewozi tylko niewielki ładunek — brak miejsca na większy ekwipunek lub dodatkowych pasażerów. |
+| Mocny odrzut | [Broń](Ekwipunek/Broń.md) | Strzelba pompowa | Silny odrzut przesuwa linię celowania; kolejny strzał bez korekty jest utrudniony. |
+| Naboje | [Broń](Ekwipunek/Broń.md) | Broń palna | Abstrakcyjne zużycie nabojów na scenę walki; pistolet 1, ciężki karabin maszynowy 5. |
 | Natłok myśli | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Pamięć Harona | Mimowolna analiza wzorców utrudnia skupienie na prostych, bezpośrednich działaniach. |
+| Niekontrolowane błyski | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Bioluminescencyjny Szyfr | Mimowolna bioluminescencja w stresie lub ciemności zdradza pozycję postaci. |
 | Nienasycenie | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Żelazny Żołądek | Organizm potrzebuje więcej pożywienia niż normalnie, komplikując zarządzanie zasobami. |
+| Nieporęczny | [Broń](Ekwipunek/Broń.md), [Ekwipunek ochronny](Ekwipunek/EkwipunekOchronny.md) | Włócznia; Improwizowany pancerz | Duży rozmiar lub nietypowy kształt utrudnia przenoszenie i używanie w ciasnych przestrzeniach. |
+| Niestabilny | [Broń](Ekwipunek/Broń.md) | Mina improwizowana, Koktajl Mołotowa | Może samoistnie zadziałać lub ulec uszkodzeniu przy nieumiejętnym obchodzeniu. |
+| Paliwo | [Broń](Ekwipunek/Broń.md) | Miotacz ognia | Zużywa paliwo przy normalnym użytkowaniu w scenie; wartość Wady to ilość zejścia z zapasu. |
+| Odpychająca obecność | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Feromony Grozy | Zwierzęta i wrażliwi ludzie reagują na bliskość postaci niepokojem lub ucieczką. |
+| Przeciążenie empatyczne | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Czytanie z Twarzy | Nadmiar odczytywanych emocji w tłumie lub przy wielu osobach może paraliżować decyzje. |
+| Rozpoznawalny | [Broń](Ekwipunek/Broń.md) | Kij bejsbolowy, Kij bejsbolowy z gwoździami | Rzuca się w oczy i trudno go wytłumaczyć przy kontakcie z nieznanymi grupami. |
+| Ryzykowny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Opaska uciskowa, Pan John | Nieprawidłowe zastosowanie pogarsza stan zamiast pomagać; łatwo stracić kontrolę nad efektem. |
+| Skomplikowany | [Broń](Ekwipunek/Broń.md), [Konstrukcje](Ekwipunek/Konstrukcje.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Kusza, Ładunek wybuchowy; Generator, Instalacja elektryczna, Młyn, Most, System kanalizacyjny; Wytrychy, Dron, Leadplant | Sprawne użycie lub budowa wymaga wiedzy i praktyki; bez niej traci się kości / dostaje karę do testu. |
+| Specjalistyczny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Zestaw chirurgiczny, Chlorheksydyna | Skuteczne użycie wymaga specjalistycznej wiedzy medycznej lub szkolenia. |
+| Strzały | [Broń](Ekwipunek/Broń.md) | Łuk, Kusza | Abstrakcyjne zużycie strzał lub bełtów na scenę walki; wartość Wady to ilość zużyta w starciu. |
+| Spalanie | [Transport](Ekwipunek/Transport.md), [Broń](Ekwipunek/Broń.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Motocykl, Samochód spalinowy, Ciężarówka, Tir; Piła łańcuchowa; Kuchenka turystyczna, Piła łańcuchowa | Zużywa paliwo podczas pracy; bez regularnych uzupełnień zasięg lub działanie jest mocno ograniczone. |
+| Słaby | [Broń](Ekwipunek/Broń.md) | Pistolet .22, Proca | Przedmiot ma wyraźnie mniejszą skuteczność od typowych przedmiotów swojej kategorii. |
+| Szybko psujący | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Żywność świeża | Zasób szybko traci przydatność i wymaga odpowiedniego przechowywania. |
+| Sztywny chwyt | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Krok Pająka | Zmiany skóry dłoni ograniczają precyzję poza wspinaczką; dotykowe testy są utrudnione. |
+| Terytorialna agresja | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Instynkt Watażki | Trudność z kontrolą agresji w sytuacjach postrzeganych jako naruszenie terytorium lub dominacji. |
+| Trudny do zdobycia | [Broń](Ekwipunek/Broń.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Szabla / miecz; Pan John | Przedmiot jest wyjątkowo rzadki i trudny do znalezienia lub zdobycia. |
+| Trujący | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Czarny klon, Pan John | Zażycie szkodzi organizmowi — osłabia, zatruwa lub zabija przy niewłaściwym odbiorcy albo dawce. |
+| Uszkodzony | [Ekwipunek ochronny](Ekwipunek/EkwipunekOchronny.md) | Pancerz po poświęceniu punktów ochrony | Wartość ochrony jest trwale obniżona o wskazaną liczbę punktów. |
+| Wolny | [Broń](Ekwipunek/Broń.md), [Transport](Ekwipunek/Transport.md) | Rewolwer, Karabin myśliwski, Karabin wyborowy, Kusza, Łuk; Wóz pociągowy | Przeładowanie, przygotowanie lub przemieszczanie zajmuje tyle czasu, że traci się inicjatywę. |
+| Wrażliwy na wilgoć | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Zapałki | Kontakt z wilgocią całkowicie unieszkodliwia — cała paczka staje się bezużyteczna. |
 | Zainfekowany | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Procedura Zainfekowany (skutek ugryzienia zombie) | Trwająca infekcja; każdego dnia przybywa punkt Skażenia tymczasowego LiveCore. |
 | Zapach rozkładu | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Grzybnia Ostrzegawcza | Unoszący się zapach grzyba może być wyczuwalny przez zombie i zwierzęta. |
-| Niekontrolowane błyski | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Bioluminescencyjny Szyfr | Mimowolna bioluminescencja w stresie lub ciemności zdradza pozycję postaci. |
-| Wrażliwy na wilgoć | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Zapałki | Kontakt z wilgocią całkowicie unieszkodliwia — cała paczka staje się bezużyteczna. |
-| Kruchy | [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Szkło; Dron | Łatwo pęka lub kruszy się przy uderzeniu, nacisku lub upadku. |
-| Energia | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Transport](Ekwipunek/Transport.md) | Latarka, Dron; Samochód elektryczny | Działa tylko przy dostępnym zasilaniu; bez baterii lub ładowania jest bezużyteczny. |
-| Ryzykowny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Opaska uciskowa | Nieprawidłowe zastosowanie pogarsza stan zamiast pomagać; wymaga wiedzy medycznej. |
-| Zależny od pogody | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Panele słoneczne | Skuteczność spada lub znika przy zachmurzeniu, deszczu lub w nocy. |
-| Spalanie | [Transport](Ekwipunek/Transport.md) | Motocykl, Samochód spalinowy, Ciężarówka, Tir | Zużywa paliwo podczas pracy; bez regularnych uzupełnień zasięg jest mocno ograniczony. |
-| Mały ładowność | [Transport](Ekwipunek/Transport.md) | Motocykl | Przewozi tylko niewielki ładunek — brak miejsca na większy ekwipunek lub dodatkowych pasażerów. |
-| Konsumpcja | [Transport](Ekwipunek/Transport.md) | Koń | Wymaga regularnego karmienia i pojenia; bez zapasów traci sprawność lub staje się bezużyteczny. |
-| Łatwopalny | [Broń](Ekwipunek/Broń.md), [Transport](Ekwipunek/Transport.md), [Materiały i Konstrukcje](Ekwipunek/Materiały%20i%20Konstrukcje.md) | Koktajl Mołotowa; Kanister na paliwo; Chemia | Szczególnie podatny na zapłon; ogień, iskra lub nieudane użycie mogą skierować płomień na użytkownika, sojuszników albo wywołać eksplozję. |
+| Zależny od pogody | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Panele słoneczne, Turbina wiatrowa | Skuteczność spada lub znika przy niekorzystnych warunkach atmosferycznych. |

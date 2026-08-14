@@ -34,7 +34,8 @@ Porównaj wyniki z poniższą mapą. Każdy nieznany plik `.md` przeczytaj przed
 | Broń | `system/Ekwipunek/Broń.md` |
 | Ekwipunek ochronny | `system/Ekwipunek/EkwipunekOchronny.md` |
 | Transport | `system/Ekwipunek/Transport.md` |
-| Materiały i konstrukcje | `system/Ekwipunek/Materiały i Konstrukcje.md` |
+| Materiały | `system/Ekwipunek/Materiały.md` |
+| Konstrukcje | `system/Ekwipunek/Konstrukcje.md` |
 | Planowane mechaniki | `system/DoZrobienia.wip.md` |
 
 > `.wip.md` = work in progress — może być niekompletne lub zawierać niespójności. Sygnalizuj je zamiast cicho naprawiać.
@@ -55,7 +56,8 @@ Porównaj wyniki z poniższą mapą. Każdy nieznany plik `.md` przeczytaj przed
 | Jakie są rodzaje broni i ich obrażenia? | `Ekwipunek/Broń.md` |
 | Jakie są rodzaje pancerzy? | `Ekwipunek/EkwipunekOchronny.md` |
 | Jakie są pojazdy i sprzęt transportowy? | `Ekwipunek/Transport.md` |
-| Jakie są materiały i konstrukcje? | `Ekwipunek/Materiały i Konstrukcje.md` |
+| Jakie są materiały budowlane? | `Ekwipunek/Materiały.md` |
+| Jakie są konstrukcje i budynki? | `Ekwipunek/Konstrukcje.md` |
 | Co jest jeszcze zaplanowane do zrobienia? | `DoZrobienia.wip.md` |
 
 ## Skrót kluczowych wartości systemu
