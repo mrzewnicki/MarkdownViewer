@@ -207,7 +207,7 @@ Rejestr wszystkich [Atutów i Wad](Właściwości.md) używanych w systemie - ż
 
 | Nazwa | Źródło | Kontekst | Opis |
 |---|---|---|---|
-| Mały ładowność | [Transport](Ekwipunek/Transport.md) | Motocykl | Przewozi tylko niewielki ładunek — brak miejsca na większy ekwipunek lub dodatkowych pasażerów. |
+| Mała ładowność | [Transport](Ekwipunek/Transport.md) | Motocykl | Przewozi tylko niewielki ładunek — brak miejsca na większy ekwipunek lub dodatkowych pasażerów. |
 
 ### Zasoby i zużycie
 

@@ -32,7 +32,7 @@ Narzędzia używane też jako broń (siekiera, łom, młotek, piła łańcuchowa
 | Pałka | 1d6 | @pros:Ogłuszający @cons:Krótki | (Drewno × 1) |
 | Miecz | 1d6+2 | @pros:Tnący(2) @pros:Wyważony @cons:Trudny-do-zdobycia | (Metal × 3) + [Kowalstwo](../Umiejętności.md#kowalstwo) |
 | Tasak | 1d6+1 | @pros:Tnący @cons:Ciężki | (Metal × 1) + [Kowalstwo](../Umiejętności.md#kowalstwo) |
-| Piła łańcuchowa | 2d6+1 | @pros:Szybki(3) @pros:Potężny(2) @pros:Krwawiący(2) @cons:Głośny(5) @cons:Paliwo @cons:Ciężki(2) | (Metal × 3) + [Mechanika](../Umiejętności.md#mechanika) |
+| Piła łańcuchowa | 2d6+1 | @pros:Potężny(2) @pros:Krwawiący(2) @cons:Głośny(4) @cons:Paliwo @cons:Ciężki(2) | (Metal × 3) + [Mechanika](../Umiejętności.md#mechanika) |
 
 ## Broń dystansowa
 

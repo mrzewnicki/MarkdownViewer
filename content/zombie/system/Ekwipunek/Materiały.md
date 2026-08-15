@@ -13,7 +13,7 @@ Zastosowanie materiałów w budowie jest opisane w [Konstrukcjach](Konstrukcje.m
 
 | Nazwa | Wartość | Właściwości | Opis |
 |---|:---:|---|---|
-| Drewno | 1 | - | Deski, pale, belki, kantówki, sklejka i inne elementy drewniane możliwe do wykorzystania w konstrukcjach. |
+| Drewno | 1 | @cons:Wrażliwy-na-wilgoć(1) @cons:Łatwopalny(1) | Deski, pale, belki, kantówki, sklejka i inne elementy drewniane możliwe do wykorzystania w konstrukcjach. |
 | Metal | 2 | - | Blachy, pręty, profile, podpory, kraty i inne metalowe elementy konstrukcyjne. |
 | Kamień | 2 | - | Kamienie, cegły, beton, gruz i inne ciężkie materiały mineralne wykorzystywane w budownictwie. |
 | Szkło | 2 | @cons:Kruchy(4) | Szyby, tafle i inne elementy szklane. Szczególnie przydatne przy oknach, szklarniach, laboratoriach i specjalistycznej aparaturze. |
