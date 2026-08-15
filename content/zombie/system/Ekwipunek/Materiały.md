@@ -9,7 +9,7 @@ Każdy materiał opisywany jest przez następujące atrybuty:
 
 Materiały są abstrakcyjnymi kategoriami zasobów. Nie określają konkretnego rodzaju przedmiotu, lecz grupę materiałów o podobnym zastosowaniu.
 
-Zastosowanie materiałów w budowie jest opisane w [Konstrukcjach](Konstrukcje.md), w broni w [Broni](Broń.md), a w ochronie w [Ekwipunku ochronnym](EkwipunekOchronny.md).
+Zastosowanie materiałów w budowie jest opisane w [Konstrukcjach](Konstrukcje.md), w broni w [Broni](Broń.md), w ochronie w [Ekwipunku ochronnym](EkwipunekOchronny.md), a w ekwipunku ogólnym w [Ekwipunku ogólnym](EkwipunekOgólny.md).
 
 | Nazwa | Wartość | Właściwości | Opis |
 |---|:---:|---|---|

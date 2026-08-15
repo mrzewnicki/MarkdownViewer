@@ -10,7 +10,7 @@
 | [Ukrywanie](Umiej%C4%99tno%C5%9Bci.md#ukrywanie) | [Broń miotana](Umiej%C4%99tno%C5%9Bci.md#broń-miotana) | [Biologia](Umiej%C4%99tno%C5%9Bci.md#biologia) | [Budownictwo](Umiej%C4%99tno%C5%9Bci.md#budownictwo) | [Dowodzenie](Umiej%C4%99tno%C5%9Bci.md#dowodzenie) | [Jeździectwo](Umiej%C4%99tno%C5%9Bci.md#jeździectwo) | [LiveCore](Umiej%C4%99tno%C5%9Bci.md#livecore) |
 | [Wyszukiwanie](Umiej%C4%99tno%C5%9Bci.md#wyszukiwanie) | [Strzelectwo](Umiej%C4%99tno%C5%9Bci.md#strzelectwo) | [Historia](Umiej%C4%99tno%C5%9Bci.md#historia) | [Krawiectwo](Umiej%C4%99tno%C5%9Bci.md#krawiectwo) | [Handel](Umiej%C4%99tno%C5%9Bci.md#handel) | [Pułapki](Umiej%C4%99tno%C5%9Bci.md#pułapki) | [Zombie](Umiej%C4%99tno%C5%9Bci.md#zombie) |
 | [Prowadzenie pojazdów](Umiej%C4%99tno%C5%9Bci.md#prowadzenie-pojazdów) | [Taktyka i strategia](Umiej%C4%99tno%C5%9Bci.md#taktyka-i-strategia) | [Szyfry](Umiej%C4%99tno%C5%9Bci.md#szyfry) | [Kucharstwo](Umiej%C4%99tno%C5%9Bci.md#kucharstwo) | [Wyczucie](Umiej%C4%99tno%C5%9Bci.md#wyczucie) | [Tropienie](Umiej%C4%99tno%C5%9Bci.md#tropienie) | [Mutacje](Umiej%C4%99tno%C5%9Bci.md#mutacje) |
-| [Nawigacja](Umiej%C4%99tno%C5%9Bci.md#nawigacja) | [Broń palna ciężka](Umiej%C4%99tno%C5%9Bci.md#broń-palna-ciężka) | [Weterynaria](Umiej%C4%99tno%C5%9Bci.md#weterynaria) | [Elektrotechnika](Umiej%C4%99tno%C5%9Bci.md#elektrotechnika) | | [Sztuka Przetrwania](Umiej%C4%99tno%C5%9Bci.md#sztuka-przetrwania) | |
+| [Nawigacja](Umiej%C4%99tno%C5%9Bci.md#nawigacja) | [Broń palna ciężka](Umiej%C4%99tno%C5%9Bci.md#broń-palna-ciężka) | [Weterynaria](Umiej%C4%99tno%C5%9Bci.md#weterynaria) | [Elektrotechnika](Umiej%C4%99tno%C5%9Bci.md#elektrotechnika) | [Hazard](Umiej%C4%99tno%C5%9Bci.md#hazard) | [Sztuka Przetrwania](Umiej%C4%99tno%C5%9Bci.md#sztuka-przetrwania) | [Śnienie](Umiej%C4%99tno%C5%9Bci.md#śnienie) |
 
 ## Eksploracja
 
@@ -168,6 +168,10 @@ Negocjacje, wycena zasobów i wymiana w barterze — żywność, amunicja, leki,
 
 Intuicyjne rozumienie ludzi — emocji, motywacji, kłamstw i ukrytych zamiarów. Obejmuje obserwację mowy ciała, wyczuwanie napięć i rozpoznawanie manipulacji. Cenne w negocjacjach, przesłuchaniach i dla przywódców ostrzegających przed zdradą.
 
+### Hazard
+
+Gry o stawkę — kości, karty, zakłady i improwizowane turnieje w osadach, barach i przy ogniskach. Pozwala wygrywać zasoby, informacje i przychylność, ale też czytać stół i wyczuwać, kiedy przeciwnik blefuje albo kiedy gra jest ustawiona. W świecie bez pieniędzy stawką bywa amunicja, racje żywnościowe, dług albo życie.
+
 ## Natura i przetrwanie
 
 Umiejętności związane z naturą opisują funkcjonowanie w dzikich warunkach, interakcję ze zwierzętami i wykorzystanie zasobów naturalnych. Gdy infrastruktura zanikła, survivalowe know-how staje się koniecznością poza murami cywilizacji.
@@ -206,25 +210,29 @@ Umiejętności okultystyczne i tajemne obejmują wiedzę o zagadkowych aspektach
 
 ### Zwyczaje ocalałych
 
-Znajomość kultur, wierzeń i zachowań społeczności po upadku świata.
+Znajomość kultur, wierzeń i zachowań społeczności po upadku świata. Obejmuje rozpoznawanie tabu, rytuałów powitalnych, hierarchii w osadach i plemionach oraz tego, co w danej grupie uznaje się za świętokradztwo, a co za gościnność. Pozwala czytać znaki — od zabobonów o „czystych” zwierzętach i ptakach padlinożercach po lokalne prawa handlu, kary i sojusze. Człowiek z tą wiedzą nie wchodzi do obcej osady jak wróg przez pomyłkę; wie, jak mówić, czego nie pytać i kiedy milczeć.
 
 ### Rytuały Przebudzonych
 
-Wiedza o praktykach, ceremoniach i wierzeniach grupy stworzonej przez Harona.
+Wiedza o praktykach, ceremoniach i wierzeniach grupy stworzonej przez Harona. Przebudzeni wywodzą się z „przebudzenia” — ludzi wyciągniętych ze śpiączki i stagnacji życiowej, którym podano zmodyfikowany DeathNet niosący myśli Harona. Umiejętność obejmuje rozpoznawanie ich symboli, obrzędów inicjacji, sposobu werbowania akolitów oraz tego, jak odróżnić szczere oddanie od manipulacji wplecionej w rytuał. Przydatna zarówno do negocjacji z kultem, jak i do zrozumienia, skąd bierze się ich fanatyczna pewność, że działają w imię czegoś większego niż człowiek.
 
 ### DeathNet
 
-Znajomość historii, eksperymentów i technologii organizacji DeathNet. 
+Znajomość historii, eksperymentów i technologii organizacji DeathNet. Obejmuje program superżołnierzy, projekt Phantom, przetaczanie wspomnień oraz to, jak organizacja łączyła ratowanie życia z kontrolą nad ciałem i umysłem. Pozwala rozpoznawać ślady ich placówek, ekwipunek i rezydualne efekty środków w organizmie, a także orientować się w legendach o Phantomach, ich frakcjach i tym, czemu ocalałe społeczności ich jednocześnie czczą i się boją. Wiedza cenna dla tych, którzy szukają odpowiedzi w ruinach laboratoriów — i dla tych, którzy chcą wiedzieć, czy napotkany „bohater” jest jeszcze człowiekiem.
 
 ### LiveCore
 
-Wiedza o projektach, wpływach i sekretach korporacji LiveCore.
+Wiedza o projektach, wpływach i sekretach korporacji LiveCore. Obejmuje genezę broni biologicznej wymierzonej w DeathNet, atak na pierwotne instynkty i korę przedczołową, metody przenoszenia wirusa oraz rolę ludzi takich jak doktor Kurobane w wypaczeniu eksperymentu w „odrodzenie”. Pozwala odróżniać plotki od faktów o tym, jak zaraza wyszła spod kontroli, rozpoznawać ślady ich ośrodków i propagandę „walki ogniem z ogniem”. W świecie, w którym każdy ocalały ma własną wersję końca — to umiejętność tych, którzy chcą wiedzieć, kto naprawdę zapalił lont.
 
 ### Zombie
 
-Znajomość typów zombie, zachowań hord, mutacji i metod walki z zakażonymi.
+Znajomość typów zombie, zachowań hord, mutacji i metod walki z zakażonymi. Obejmuje rozpoznawanie faz przemiany (od gorączki po wymazanie świadomości), klasyfikację zagrożenia (od Z-0 po osobniki wymagające środków ciężkich), zachowania hord oraz rolę Alph w kierowaniu zakażonymi. Pozwala ocenić, kiedy uciekać, kiedy walczyć i jakiej broni użyć, a także wyczuć, że „zwykły” trup może być czymś więcej. W praktyce to różnica między przeżyciem patrolu a wejściem w pułapkę, której nie da się już zamknąć.
 
 ### Mutacje
 
 Wiedza o naturze skażenia, jego pochodzeniu oraz sposobach identyfikowania, stabilizowania i rozwijania mutacji u siebie i innych. Obejmuje rozpoznawanie wczesnych objawów przemiany, ocenę ryzyka związanego z korzystaniem z mutacji oraz teorie na temat granicy między człowiekiem, mutantem i zombie. Cenna wiedza dla tych, którzy chcą zrozumieć, czym się stają, zamiast tego się bać.
+
+### Śnienie
+
+Sztuka świadomego snu, odczytywania wizji i poruszania się po krajobrazie marzeń sennych. Pozwala rozpoznawać, które sny niosą znaczenie, a które są tylko echem strachu lub wspomnień, oraz celowo wchodzić w stany graniczne między snem a jawą. W świecie pełnym widzeń, echo wspomnień i zjawisk wykraczających poza rozumienie — to umiejętność tych, którzy traktują noc nie jako odpoczynek, lecz jako drogę.
 
