@@ -9,7 +9,7 @@ Każdy przedmiot opisywany jest przez następujące atrybuty:
 - [Właściwości](../Właściwości.md) (skala 1–5)
 - Wytworzenie — `(Materiał, Materiał) + Umiejętność`; materiały z [Materiałów](Materiały.md), ilość jest abstrakcyjną jednostką
 
-Wytworzenie przedmiotu wymaga wskazanej umiejętności i podanych materiałów. Osobnego Płatnerstwa nie ma — pancerze metalowe i broń biała z metalu kuje się [Kowalstwem](../Umiejętności.md#kowalstwo), broń palną [Rusznikarstwem](../Umiejętności.md#rusznikarstwo). Brak umiejętności działa jak `@cons:Skomplikowany` przy konstrukcjach: kara do testu albo niemożność wykonania.
+Wytworzenie przedmiotu wymaga wskazanej umiejętności i podanych materiałów. Osobnego Płatnerstwa nie ma — pancerze metalowe i broń biała z metalu kuje się [Kowalstwem](../Umiejętności.md#kowalstwo), broń palną [Rusznikarstwem](../Umiejętności.md#rusznikarstwo). Brak umiejętności działa jak @cons:Skomplikowany przy konstrukcjach: kara do testu albo niemożność wykonania.
 
 Wady **Naboje**, **Strzały** i **Paliwo** oznaczają abstrakcyjne zużycie nabojów, strzał lub paliwa na scenę (skala 1–5). Pistolet ręczny zużywa 1 nabój, ciężki karabin maszynowy 5, miotacz ognia 4 paliwa. Granaty i ładunki wybuchowe pomijamy — są @cons:Jednorazowy.
 

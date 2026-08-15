@@ -35,6 +35,13 @@ wiki/
 
 > Pliki `.wip.md` to materiały robocze — mogą być niekompletne lub zawierać sprzeczności.
 
+## Bloki ```ai
+
+Znacznik ` ```ai ` chowa treść przed użytkownikiem (podgląd / Viewer), ale zostawia ją w źródle dla modelu.
+
+- Przy czytaniu i edycji wiki **uwzględniaj bloki `ai`** — instrukcje i meta dla AI, niewidoczne w UI
+- Nowe wskazówki procesu / ToDo / uzasadnienia designu pakuj w ` ```ai `, nie w widoczny lore
+
 ## Jak szukać informacji
 
 **Nie wiesz gdzie szukać?** Zacznij od `wiki/Wprowadzenie.md` — zawiera zarys świata i linki do szczegółów.

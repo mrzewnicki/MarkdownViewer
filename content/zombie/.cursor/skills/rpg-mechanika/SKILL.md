@@ -11,6 +11,14 @@ description: Tworzenie i edycja mechanik systemu RPG zombie postapo. Używaj gdy
 - Mechaniki są **narracyjne przede wszystkim** — zasada powinna być prosta do zapamiętania i naturalna w użyciu
 - Nowe mechaniki muszą być spójne z istniejącym systemem
 
+## Bloki ```ai
+
+Znacznik ` ```ai ` chowa treść przed użytkownikiem (podgląd / Viewer), ale zostawia ją w źródle dla modelu.
+
+- Instrukcje procesu, ToDo, uzasadnienia designu i inne meta dla AI pakuj w ` ```ai `, nie wplatuj ich w widoczne zasady
+- Przy edycji pliku **czytaj i stosuj** istniejące bloki `ai` — są ukryte tylko w UI
+- Przykład: rejestr Atutów/Wad ma w `ai` obowiązek aktualizacji przy każdym nowym Atucie/Wadzie
+
 ## Krok 1 — Załaduj kontekst systemu
 
 Użyj skilla **`rpg-mechanika-lookup`** — przeskanuje `system/`, znajdzie nowe pliki i dostarczy potrzebny kontekst mechanik.
@@ -39,7 +47,7 @@ Każdy element mechaniczny dokumentuj według wzorca:
   - Wada: Nazwa - krótki opis
 ```
 
-W tagach ekwipunku: `@pros:Cichy` (=1), `@pros:Cichy(2)` (od 2 wzwyż).
+W tagach ekwipunku: @pros:Cichy (=1), @pros:Cichy(2) (od 2 wzwyż).
 
 Dla nowych zasad systemowych (nie ekwipunku):
 - Zacznij od jednozdaniowego opisu czym jest zasada

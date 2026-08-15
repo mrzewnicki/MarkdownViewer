@@ -2,20 +2,34 @@
 
 Rejestr wszystkich [Atutów i Wad](Właściwości.md) używanych w systemie - żeby uniknąć niezamierzonych duplikatów nazw oraz szybko sprawdzić, czy dana nazwa jest już zajęta i przez co.
 
-> [!info]
-> Ten plik trzeba aktualizować przy każdym dodaniu nowego Atutu lub Wady - do ekwipunku, mutacji, stanów lub czegokolwiek innego.
+```ai
+- Ten plik trzeba aktualizować przy każdym dodaniu nowego Atutu lub Wady - do ekwipunku, mutacji, stanów lub czegokolwiek innego.
+```
 
 > [!info]
 > Ta sama nazwa może istnieć jako Atut w jednym kontekście i Wada w innym (np. przy różnych kategoriach przedmiotów) - to zgodne z zasadą z `Właściwości.md`. Poniższe tabele to rejestr referencyjny, nie źródło ograniczeń.
 
-> [!tip]
-> Kategorie grupują po **efekcie**, nie po źródle. Kolumna Źródło nadal wskazuje, skąd nazwa pochodzi.
-
 ## Spis
 
-**Atuty:** [Walka](#walka) · [Ochrona](#ochrona) · [Skrytość, zmysły i komunikacja](#skrytość-zmysły-i-komunikacja) · [Ruch i transport](#ruch-i-transport) · [Zasoby i zapasy](#zasoby-i-zapasy) · [Medycyna i organizm](#medycyna-i-organizm) · [Praca, craft i baza](#praca-craft-i-baza) · [Mutacje](#mutacje)
+**Atuty:**
+- [Walka](#walka)
+- [Ochrona](#ochrona)
+- [Skrytość, zmysły i komunikacja](#skrytość-zmysły-i-komunikacja)
+- [Ruch i transport](#ruch-i-transport)
+- [Zasoby i zapasy](#zasoby-i-zapasy)
+- [Medycyna i organizm](#medycyna-i-organizm)
+- [Praca, craft i baza](#praca-craft-i-baza)
+- [Mutacje](#mutacje)
 
-**Wady:** [Walka](#walka-1) · [Ochrona i obciążenie](#ochrona-i-obciążenie) · [Skrytość i zauważalność](#skrytość-i-zauważalność) · [Ruch i transport](#ruch-i-transport-1) · [Zasoby i zużycie](#zasoby-i-zużycie) · [Medycyna i organizm](#medycyna-i-organizm-1) · [Obsługa i niezawodność](#obsługa-i-niezawodność) · [Mutacje](#mutacje-1)
+**Wady:**
+- [Walka](#walka-1)
+- [Ochrona i obciążenie](#ochrona-i-obciążenie)
+- [Skrytość i zauważalność](#skrytość-i-zauważalność)
+- [Ruch i transport](#ruch-i-transport-1)
+- [Zasoby i zużycie](#zasoby-i-zużycie)
+- [Medycyna i organizm](#medycyna-i-organizm-1)
+- [Obsługa i niezawodność](#obsługa-i-niezawodność)
+- [Mutacje](#mutacje-1)
 
 ---
 
@@ -66,7 +80,7 @@ Rejestr wszystkich [Atutów i Wad](Właściwości.md) używanych w systemie - ż
 
 | Nazwa | Źródło | Kontekst | Opis |
 |---|---|---|---|
-| Cichy | [Broń](Ekwipunek/Broń.md), [Transport](Ekwipunek/Transport.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Nóż, Nóż survivalowy, Pistolet .22, Kusza, Łuk, Proca; Rower, Samochód elektryczny, Koń; Dron | Nie generuje hałasu podczas użycia, nie przyciągając niepożądanej uwagi. |
+| Cichy | [Broń](Ekwipunek/Broń.md), [Transport](Ekwipunek/Transport.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Nóż, Nóż survivalowy, Pistolet .22, Kusza, Łuk, Proca; Rower, Samochód elektryczny, Koń; Wiertarka ręczna, Dron | Nie generuje hałasu podczas użycia, nie przyciągając niepożądanej uwagi. |
 | Dalekowzroczność | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Lornetka | Ułatwia dostrzeganie szczegółów znajdujących się w dużej odległości. |
 | Głośny | [Konstrukcje](Ekwipunek/Konstrukcje.md) | Alarm na sznurku, Dzwonki alarmowe, Pułapka na drzwi, Alarm mechaniczny | Generuje hałas — sygnalizuje naruszenie lub przyciąga uwagę. |
 | Hipnotyzujący | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Pan John | Przyciąga uwagę i osłabia wolę; cel ma trudność z oderwaniem się od źródła lub oporem wobec sugestii. |
@@ -88,7 +102,7 @@ Rejestr wszystkich [Atutów i Wad](Właściwości.md) używanych w systemie - ż
 | Ładowność | [Transport](Ekwipunek/Transport.md) | Wóz pociągowy, Koń, Samochód spalinowy, Samochód elektryczny, Ciężarówka, Tir | Pozwala przewieźć znaczną ilość ładunku lub ekwipunku; wartość Atutu odzwierciedla skalę nośności. |
 | Manewrowość | [Transport](Ekwipunek/Transport.md) | Rower, Motocykl, Koń | Ułatwia omijanie przeszkód, ciasne skręty i zmianę kierunku w trudnym terenie. |
 | Przenośny | [Konstrukcje](Ekwipunek/Konstrukcje.md) | Namiot | Można złożyć i przenieść bez burzenia konstrukcji. |
-| Szybki | [Transport](Ekwipunek/Transport.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Broń](Ekwipunek/Broń.md) | Koń, Motocykl, Samochód spalinowy, Samochód elektryczny; Piła łańcuchowa | Pozwala wykonać czynność lub przemieszczać się znacznie szybciej niż bez atutu. |
+| Szybki | [Transport](Ekwipunek/Transport.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Broń](Ekwipunek/Broń.md) | Koń, Motocykl, Samochód spalinowy, Samochód elektryczny; Wiertarka akumulatorowa, Piła łańcuchowa | Pozwala wykonać czynność lub przemieszczać się znacznie szybciej niż bez atutu. |
 | Wspomagający | [Konstrukcje](Ekwipunek/Konstrukcje.md) | Dźwignia, Bloczek, Rampa, Kołowrót, Wielokrążek, Wciągarki, Żurawie | Zmniejsza siłę lub wysiłek potrzebny do podnoszenia i przesuwania ciężarów. |
 
 ### Zasoby i zapasy
@@ -96,11 +110,12 @@ Rejestr wszystkich [Atutów i Wad](Właściwości.md) używanych w systemie - ż
 | Nazwa | Źródło | Kontekst | Opis |
 |---|---|---|---|
 | Dostępna amunicja | [Broń](Ekwipunek/Broń.md) | Pistolet 9mm | Pasująca amunicja jest stosunkowo łatwa do znalezienia lub wyhandlowania. |
-| Energia | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Transport](Ekwipunek/Transport.md), [Konstrukcje](Ekwipunek/Konstrukcje.md) | Baterie, Akumulator, Panele słoneczne, Turbina wiatrowa; Bateria samochodowa; Generator, Instalacja elektryczna | Przechowuje albo wytwarza energię — co z tych dwóch, zależy od przedmiotu. Wartość Atutu to pojemność zapasu albo ilość wytwarzana. |
+| Energia | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Transport](Ekwipunek/Transport.md), [Konstrukcje](Ekwipunek/Konstrukcje.md) | Baterie, Akumulator; Bateria samochodowa; Generator, Instalacja elektryczna | Przechowuje albo wytwarza energię — co z tych dwóch, zależy od przedmiotu. Wartość Atutu to pojemność zapasu albo ilość wytwarzana. |
 | Kaloryczny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Olej spożywczy | Dostarcza dużej ilości energii w stosunku do masy lub objętości. |
 | Konserwujący | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Smar, Sól | Zapobiega rdzy, zużyciu lub zepsuciu; przedłuża żywotność sprzętu albo żywności. |
 | Możliwość odzysku amunicji | [Broń](Ekwipunek/Broń.md) | Kusza, Łuk | Użyte bełty lub strzały można wyciągnąć z celu i wykorzystać ponownie. |
 | Niezależny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Transport](Ekwipunek/Transport.md) | Radio korbowe; Wóz pociągowy, Rower, Koń | Działa bez zewnętrznej infrastruktury, paliwa ani sieci zasilającej. |
+| Odnawialny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Panele słoneczne, Turbina wiatrowa | Ładuje się bez zużywania jednorazowych zasobów — wystarczy dostęp do światła lub wiatru. |
 | Paliwo | [Transport](Ekwipunek/Transport.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Kanister na paliwo; Butla gazowa | Przechowuje albo wytwarza paliwo — co z tych dwóch, zależy od przedmiotu. Wartość Atutu to pojemność zapasu albo ilość wytwarzana. |
 | Pojemny | [Konstrukcje](Ekwipunek/Konstrukcje.md), [Ekwipunek ochronny](Ekwipunek/EkwipunekOchronny.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Zbiornik na wodę, Składowisko, Magazyn, Stodoła, Hala, Cysterna; Kamizelka taktyczna, Hełm taktyczny; Plecak, Skrzynia, Kanister na wodę | Zapewnia dużą przestrzeń lub pojemność do przechowywania zapasów i wyposażenia. |
 | Trwały | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Żywność konserwowa, Suchary, Żywność suszona/liofilizowana, Mąka, Cukier, Sól, Pasza | Przedmiot lub zasób długo zachowuje swoje właściwości i nie psuje się łatwo. |
@@ -128,13 +143,13 @@ Rejestr wszystkich [Atutów i Wad](Właściwości.md) używanych w systemie - ż
 |---|---|---|---|
 | Mieszkalny | [Konstrukcje](Ekwipunek/Konstrukcje.md) | Chata, Domek, Budynek mieszkalny, Dom | Zapewnia warunki do stałego zamieszkania. |
 | Niezawodny | [Broń](Ekwipunek/Broń.md) | Pistolet 9mm, Rewolwer | Rzadko zawodzi, zacina się lub psuje w krytycznych momentach. |
-| Precyzyjny | [Broń](Ekwipunek/Broń.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Nóż survivalowy, Włócznia, Karabin myśliwski, Karabin wyborowy; Kombinerki, Narzędzia do metalu, Narzędzia do szkła, Narzędzia do elektryki, Wytrychy | Ułatwia trafienie konkretnego celu, miejsca lub precyzyjną pracę. |
+| Precyzyjny | [Broń](Ekwipunek/Broń.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Nóż survivalowy, Włócznia, Karabin myśliwski, Karabin wyborowy; Szczypce, Zestaw śrubokrętów, Piła do metalu, Wytrychy | Ułatwia trafienie konkretnego celu, miejsca lub precyzyjną pracę. |
 | Produkcja | [Konstrukcje](Ekwipunek/Konstrukcje.md) | Kuźnia, Szklarnia, Warsztat mechaniczny, Farma, Młyn, Rusznikarnia | Umożliwia stałą produkcję dóbr, żywności lub zaawansowaną obróbkę. |
 | Prosty | [Broń](Ekwipunek/Broń.md) | Rewolwer | Przedmiot jest łatwy w obsłudze i nie wymaga specjalistycznej wiedzy. |
 | Prowizorka | [Broń](Ekwipunek/Broń.md), [Ekwipunek ochronny](Ekwipunek/EkwipunekOchronny.md) | Koktajl Mołotowa; Improwizowany pancerz | Można wytworzyć z dostępnych materiałów bez specjalistycznych narzędzi. |
 | Warsztat | [Konstrukcje](Ekwipunek/Konstrukcje.md) | Stół roboczy, Warsztat, Stół warsztatowy, Garaż, Rusznikarnia | Daje bonus do craftingu, napraw i obróbki materiałów. |
-| Wielofunkcyjny | [Broń](Ekwipunek/Broń.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Materiały](Ekwipunek/Materiały.md) | Łom, Maczeta, Młotek; Multitool, Kombinerki, Narzędzia do drewna, Narzędzia do metalu, Łopata, Zestaw naprawczy, Taśma klejąca, Lina, Zestaw naczyń, Dron; Chemia | Sprawdza się w wielu zastosowaniach poza podstawowym; zastępuje brakujący specjalistyczny sprzęt. |
-| Wydajny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Wiertarka | Pozwala wykonać daną czynność szybciej lub mniejszym kosztem zasobów. |
+| Wielofunkcyjny | [Broń](Ekwipunek/Broń.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Materiały](Ekwipunek/Materiały.md) | Łom, Maczeta, Młotek; Multitool, Kombinerki, Klucze, Łopata, Zestaw naprawczy, Taśma klejąca, Lina, Zestaw naczyń, Dron; Chemia | Sprawdza się w wielu zastosowaniach poza podstawowym; zastępuje brakujący specjalistyczny sprzęt. |
+| Wydajny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Wiertarka akumulatorowa | Pozwala wykonać daną czynność szybciej lub mniejszym kosztem zasobów. |
 
 ### Mutacje
 
@@ -198,10 +213,10 @@ Rejestr wszystkich [Atutów i Wad](Właściwości.md) używanych w systemie - ż
 
 | Nazwa | Źródło | Kontekst | Opis |
 |---|---|---|---|
-| Energia | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Transport](Ekwipunek/Transport.md) | Latarka, Latarka czołowa, Wiertarka, Krótkofalówka, Noktowizor, Dron; Samochód elektryczny | Zużywa energię przy normalnym użytkowaniu w scenie; wartość Wady to ilość zejścia z zapasu. Bez zapasu przedmiot w tej scenie nie działa. |
+| Energia | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Transport](Ekwipunek/Transport.md) | Latarka, Latarka czołowa, Wiertarka akumulatorowa, Krótkofalówka, Noktowizor, Dron; Samochód elektryczny | Zużywa energię przy normalnym użytkowaniu w scenie; wartość Wady to ilość zejścia z zapasu. Bez zapasu przedmiot w tej scenie nie działa. |
 | Jednorazowy | [Broń](Ekwipunek/Broń.md) | Flara, Granaty, Ładunek wybuchowy, Mina improwizowana, Koktajl Mołotowa | Po użyciu ulega zniszczeniu i nie nadaje się do ponownego użycia. |
 | Konsumpcja | [Transport](Ekwipunek/Transport.md) | Koń | Wymaga regularnego karmienia i pojenia; bez zapasów traci sprawność lub staje się bezużyteczny. |
-| Naboje | [Broń](Ekwipunek/Broń.md) | Broń palna | Zużycie nabojów na scenę walki; pistolet 1, ciężki karabin maszynowy 5. |
+| Naboje | [Broń](Ekwipunek/Broń.md) | Broń palna | Zużycie nabojów na scenę walki przy założeniu rozsądnego wykorzystywania |
 | Paliwo | [Broń](Ekwipunek/Broń.md), [Transport](Ekwipunek/Transport.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Miotacz ognia; Motocykl, Samochód spalinowy, Ciężarówka, Tir; Piła łańcuchowa, Kuchenka turystyczna | Zużywa paliwo przy normalnym użytkowaniu w scenie; wartość Wady to ilość zejścia z zapasu. Bez zapasu przedmiot w tej scenie nie działa albo działa tylko tyle, na ile starczy jednostek. |
 | Strzały | [Broń](Ekwipunek/Broń.md) | Łuk, Kusza | Zużycie strzał lub bełtów na scenę walki; wartość Wady to ilość zużyta w starciu. |
 | Szybko psujący | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Żywność świeża | Zasób szybko traci przydatność i wymaga odpowiedniego przechowywania. |
@@ -222,7 +237,7 @@ Rejestr wszystkich [Atutów i Wad](Właściwości.md) używanych w systemie - ż
 | Nazwa | Źródło | Kontekst | Opis |
 |---|---|---|---|
 | Niestabilny | [Broń](Ekwipunek/Broń.md) | Mina improwizowana, Koktajl Mołotowa | Może samoistnie zadziałać lub ulec uszkodzeniu przy nieumiejętnym obchodzeniu. |
-| Skomplikowany | [Broń](Ekwipunek/Broń.md), [Konstrukcje](Ekwipunek/Konstrukcje.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Kusza, Ładunek wybuchowy; Generator, Instalacja elektryczna, Młyn, Most, System kanalizacyjny; Wytrychy, Narzędzia do elektryki, Dron, Leadplant | Sprawne użycie lub budowa wymaga wiedzy i praktyki; bez niej traci się kości / dostaje karę do testu. |
+| Skomplikowany | [Broń](Ekwipunek/Broń.md), [Konstrukcje](Ekwipunek/Konstrukcje.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Kusza, Ładunek wybuchowy; Generator, Instalacja elektryczna, Młyn, Most, System kanalizacyjny; Wytrychy, Dron, Leadplant | Sprawne użycie lub budowa wymaga wiedzy i praktyki; bez niej traci się kości / dostaje karę do testu. |
 | Trudny do zdobycia | [Broń](Ekwipunek/Broń.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Szabla / miecz; Pan John | Przedmiot jest wyjątkowo rzadki i trudny do znalezienia lub zdobycia. |
 
 ### Mutacje

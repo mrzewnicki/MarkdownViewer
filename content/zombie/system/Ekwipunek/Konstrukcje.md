@@ -12,17 +12,17 @@ Każda konstrukcja opisywana jest przez następujące atrybuty:
 
 **Złożoność** określa trudność testu Budowania. Im wyższa wartość, tym trudniejsza jest konstrukcja.
 
-**Czas** określa abstrakcyjny czas potrzebny na wykonanie konstrukcji:
+**Czas** określa orientacyjny czas potrzebny na wykonanie konstrukcji:
 - 1 — kilka minut
 - 2 — do godziny
 - 3 — kilka godzin
-- 4 — większość dnia
+- 4 — jeden dzień
 - 5 — kilka dni
 - 6 — tydzień lub więcej
 
 **Materiały** określają podstawowe zasoby wymagane do wykonania konstrukcji. Podana ilość jest abstrakcyjną jednostką materiału i nie musi odpowiadać konkretnej jednostce masy lub objętości.
 
-Właściwość `@cons:Skomplikowany(N)` oznacza, że konstrukcja wymaga specjalistycznej wiedzy. W przypadku braku odpowiedniej wiedzy jej wartość może stanowić ujemny modyfikator testu Budowania.
+Właściwość @cons:Skomplikowany(0) oznacza, że konstrukcja wymaga specjalistycznej wiedzy. W przypadku braku odpowiedniej wiedzy jej wartość może stanowić ujemny modyfikator testu Budowania.
 
 | Nazwa | Złożoność | Czas | Materiały | Właściwości | Opis |
 |---|:---:|:---:|---|---|---|

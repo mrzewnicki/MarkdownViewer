@@ -40,6 +40,13 @@ Porównaj wyniki z poniższą mapą. Każdy nieznany plik `.md` przeczytaj przed
 
 > `.wip.md` = work in progress — może być niekompletne lub zawierać niespójności. Sygnalizuj je zamiast cicho naprawiać.
 
+## Bloki ```ai
+
+Znacznik ` ```ai ` ukrywa treść w podglądzie i Viewerze, ale zostaje w pliku Markdown.
+
+- Przy wyszukiwaniu i przed edycją **czytaj bloki `ai`** — to instrukcje i kontekst dla modelu, nie zasady dla gracza
+- Nie pomijaj ich tylko dlatego, że nie widać ich w UI
+
 ## Quick-lookup — gdzie szukać czego
 
 | Pytanie | Plik |

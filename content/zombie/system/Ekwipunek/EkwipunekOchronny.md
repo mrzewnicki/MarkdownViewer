@@ -18,7 +18,7 @@ Każdy przedmiot ochrony opisywany jest przez następujące atrybuty:
 - Kategoria
 - Wytworzenie — `(Materiał, Materiał) + Umiejętność`; materiały z [Materiałów](Materiały.md), ilość jest abstrakcyjną jednostką
 
-Wytworzenie wymaga wskazanej umiejętności i podanych materiałów. Odzież i pancerze tkaninowe: [Krawiectwo](../Umiejętności.md#krawiectwo). Pancerze metalowe (kolczuga, hełmy, płyty, zbroja): [Kowalstwo](../Umiejętności.md#kowalstwo) — osobnego Płatnerstwa nie ma. Brak umiejętności działa jak `@cons:Skomplikowany` przy konstrukcjach.
+Wytworzenie wymaga wskazanej umiejętności i podanych materiałów. Odzież i pancerze tkaninowe: [Krawiectwo](../Umiejętności.md#krawiectwo). Pancerze metalowe (kolczuga, hełmy, płyty, zbroja): [Kowalstwo](../Umiejętności.md#kowalstwo) — osobnego Płatnerstwa nie ma. Brak umiejętności działa jak @cons:Skomplikowany przy konstrukcjach.
 
 ### Odzież
 
