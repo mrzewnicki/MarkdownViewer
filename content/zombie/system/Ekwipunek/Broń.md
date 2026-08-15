@@ -11,7 +11,9 @@ Każdy przedmiot opisywany jest przez następujące atrybuty:
 
 Wytworzenie przedmiotu wymaga wskazanej umiejętności i podanych materiałów. Osobnego Płatnerstwa nie ma — pancerze metalowe i broń biała z metalu kuje się [Kowalstwem](../Umiejętności.md#kowalstwo), broń palną [Rusznikarstwem](../Umiejętności.md#rusznikarstwo). Brak umiejętności działa jak `@cons:Skomplikowany` przy konstrukcjach: kara do testu albo niemożność wykonania.
 
-Wady **Naboje**, **Strzały** i **Paliwo** oznaczają abstrakcyjne zużycie amunicji na scenę walki (skala 1–5). Pistolet ręczny zużywa 1, ciężki karabin maszynowy 5. Granaty i ładunki wybuchowe pomijamy — są @cons:Jednorazowy.
+Wady **Naboje**, **Strzały** i **Paliwo** oznaczają abstrakcyjne zużycie nabojów, strzał lub paliwa na scenę (skala 1–5). Pistolet ręczny zużywa 1 nabój, ciężki karabin maszynowy 5, miotacz ognia 4 paliwa. Granaty i ładunki wybuchowe pomijamy — są @cons:Jednorazowy.
+
+Narzędzia używane też jako broń (siekiera, łom, młotek, piła łańcuchowa itd.) mają **tę samą listę właściwości** w [Ekwipunku ogólnym](EkwipunekOgólny.md); tu dokładane są obrażenia i wytworzenie.
 
 ## Broń wręcz
 
@@ -20,20 +22,17 @@ Wady **Naboje**, **Strzały** i **Paliwo** oznaczają abstrakcyjne zużycie amun
 | Nazwa | Obrażenia | Właściwości | Wytworzenie |
 |---|---:|---|---|
 | Nóż | 1d6 | @pros:Cichy @pros:Lekki | (Metal × 1) + [Kowalstwo](../Umiejętności.md#kowalstwo) |
-| Nóż survivalowy | 1d6 | @pros:Cichy(1) @pros:Precyzyjny @pros:Lekki | (Metal × 1) + [Kowalstwo](../Umiejętności.md#kowalstwo) |
-| Siekiera ręczna | 1d6+2 | @pros:Tnący(2) @pros:Wytrzymały @cons:Ciężki | (Metal × 1, Drewno × 1) + [Kowalstwo](../Umiejętności.md#kowalstwo) |
-| Siekiera strażacka | 2d6 | @pros:Potężny(2) @pros:Wyważony @cons:Ciężki(2) | (Metal × 2, Drewno × 1) + [Kowalstwo](../Umiejętności.md#kowalstwo) |
+| Siekiera | 1d6+2 | @pros:Tnący(2) @pros:Wytrzymały @cons:Ciężki | (Metal × 1, Drewno × 1) + [Kowalstwo](../Umiejętności.md#kowalstwo) |
 | Łom | 1d6+2 | @pros:Wytrzymały(2) @pros:Wielofunkcyjny @cons:Ciężki | (Metal × 2) + [Kowalstwo](../Umiejętności.md#kowalstwo) |
 | Kij bejsbolowy | 1d6 | @pros:Wyważony @cons:Rozpoznawalny | (Drewno × 1) |
-| Kij bejsbolowy z gwoździami | 1d6+1 | @pros:Krwawiący(2) @cons:Chałupniczy @cons:Rozpoznawalny | (Drewno × 1, Metal × 1, Spoiwa × 1) |
 | Maczeta | 1d6+1 | @pros:Tnący(2) @pros:Wielofunkcyjny @pros:Wyważony | (Metal × 1) + [Kowalstwo](../Umiejętności.md#kowalstwo) |
 | Młotek | 1d6 | @pros:Wielofunkcyjny @cons:Krótki | (Metal × 1, Drewno × 1) + [Kowalstwo](../Umiejętności.md#kowalstwo) |
 | Kilof | 1d6+2 | @pros:Potężny @pros:Wytrzymały @cons:Ciężki | (Metal × 2, Drewno × 1) + [Kowalstwo](../Umiejętności.md#kowalstwo) |
 | Włócznia | 1d6+1 | @pros:Zasięgowy @pros:Precyzyjny @cons:Nieporęczny | (Drewno × 1, Metal × 1) + [Kowalstwo](../Umiejętności.md#kowalstwo) |
 | Pałka | 1d6 | @pros:Ogłuszający @cons:Krótki | (Drewno × 1) |
-| Szabla / miecz | 1d6+2 | @pros:Tnący(2) @pros:Wyważony @cons:Trudny-do-zdobycia | (Metal × 3) + [Kowalstwo](../Umiejętności.md#kowalstwo) |
+| Miecz | 1d6+2 | @pros:Tnący(2) @pros:Wyważony @cons:Trudny-do-zdobycia | (Metal × 3) + [Kowalstwo](../Umiejętności.md#kowalstwo) |
 | Tasak | 1d6+1 | @pros:Tnący @cons:Ciężki | (Metal × 1) + [Kowalstwo](../Umiejętności.md#kowalstwo) |
-| Piła łańcuchowa | 2d6+1 | @pros:Potężny(2) @pros:Krwawiący(2) @cons:Głośny(3) @cons:Ciężki(2) @cons:Spalanie | (Metal × 3) + [Mechanika](../Umiejętności.md#mechanika) |
+| Piła łańcuchowa | 2d6+1 | @pros:Szybki(3) @pros:Potężny(2) @pros:Krwawiący(2) @cons:Głośny(5) @cons:Paliwo @cons:Ciężki(2) | (Metal × 3) + [Mechanika](../Umiejętności.md#mechanika) |
 
 ## Broń dystansowa
 

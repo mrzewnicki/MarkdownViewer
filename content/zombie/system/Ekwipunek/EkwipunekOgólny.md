@@ -11,6 +11,8 @@ Każdy przedmiot opisywany jest przez następujące atrybuty:
 
 ## Żywność i napoje
 
+Jeśli postać przez cały dzień nie ma możliwości zjedzenia czegokolwiek lub napicia się wody to może otrzymać 1 punkt `Stresu` lub `Zmęczenia`.
+
 | Nazwa | Wartość | Właściwości | Opis |
 |---|:---:|---|---|
 | Woda pitna | 1 | - | Podstawowy zasób niezbędny do przetrwania. Minimum litr dziennie na osobę. Zanieczyszczona jest niebezpieczna — warto używać filtra lub gotować. |
@@ -30,23 +32,22 @@ Każdy przedmiot opisywany jest przez następujące atrybuty:
 | Nazwa | Wartość | Właściwości | Opis |
 |---|:---:|---|---|
 | Multitool | 3 | @pros:Wielofunkcyjny(2) | Nóż, śrubokręt, kombinerki i więcej w jednym narzędziu. Niezastąpiony przy improwizowanych naprawach. |
-| Szczypce | 2 | @pros:Precyzyjny | Do cięcia i chwytania elementów. |
-| Kombinerki | 2 | @pros:Wielofunkcyjny | Podstawowe narzędzie do napraw i prac technicznych. |
-| Zestaw śrubokrętów | 2 | @pros:Precyzyjny | Do podstawowych napraw mechanicznych i elektrycznych. |
-| Klucze płaskie | 2 | @pros:Wielofunkcyjny | Podstawowy zestaw do napraw mechanicznych. |
-| Klucz nastawny | 2 | @pros:Wielofunkcyjny | Jeden klucz zastępujący kilka rozmiarów. |
+| Nóż | 2 | @pros:Cichy @pros:Lekki | Uniwersalny nóż do prac w terenie i walki. Statystyki bojowe: [Nóż](Broń.md#broń-wręcz). |
+| Kombinerki | 2 | @pros:Wielofunkcyjny @pros:Precyzyjny | Cięcie, chwytanie i podstawowe naprawy techniczne. |
+| Narzędzia do drewna | 3 | @pros:Wielofunkcyjny | Piła, dłuta, strug i inne podstawowe narzędzia do cięcia oraz obróbki drewna. |
+| Narzędzia do metalu | 3 | @pros:Wielofunkcyjny @pros:Precyzyjny | Piła do metalu, klucze, imadło podręczne i narzędzia do cięcia, montażu oraz napraw elementów metalowych. |
+| Narzędzia do szkła | 3 | @pros:Precyzyjny | Nóż do szkła, przyssawki, szczypce i środki do bezpiecznego cięcia oraz obróbki szkła. |
+| Narzędzia do elektryki | 3 | @pros:Precyzyjny @cons:Skomplikowany | Śrubokręty izolowane, miernik, szczypce do przewodów i zestaw do napraw instalacji elektrycznych. |
 | Łopata | 2 | @pros:Wielofunkcyjny @pros:Wytrzymały | Kopanie, prace ziemne i improwizowane zastosowania. |
-| Siekiera | 2 | @pros:Wytrzymały @pros:Tnący | Ścinanie i przygotowanie drewna. Do walki — [Siekiera ręczna](Broń.md#broń-wręcz). |
-| Piła ręczna | 2 | - | Ciche cięcie drewna. Powolna, ale bezgłośna i niezawodna. |
-| Piła do metalu | 2 | @pros:Precyzyjny | Cięcie metalowych elementów. |
-| Wiertarka ręczna | 2 | @pros:Cichy | Wiercenie bez potrzeby zasilania. |
-| Wiertarka akumulatorowa | 3 | @pros:Szybki @pros:Wydajny @cons:Energia | Szybsze prace konstrukcyjne, wymaga sprawnego akumulatora. |
-| Latarka czołowa | 2 | @pros:Lekki @cons:Energia | Oświetla miejsce pracy bez zajmowania rąk. |
+| Siekiera | 2 | @pros:Tnący(2) @pros:Wytrzymały @cons:Ciężki | Ścinanie i przygotowanie drewna. Statystyki bojowe: [Siekiera](Broń.md#broń-wręcz). |
+| Maczeta | 2 | @pros:Tnący(2) @pros:Wielofunkcyjny @pros:Wyważony | Przecinanie zarośli, lin i lekkiego drewna. Statystyki bojowe: [Maczeta](Broń.md#broń-wręcz). |
+| Wiertarka | 3 | @pros:Wydajny @cons:Energia | Wiercenie w konstrukcjach i naprawach. Egzemplarz ręczny jest cichszy i wolniejszy; akumulatorowy wymaga energii. |
 | Łom | 3 | @pros:Wytrzymały(2) @pros:Wielofunkcyjny @cons:Ciężki | Wyważanie, rozbieranie konstrukcji i improwizowane naprawy. Statystyki bojowe: [Łom](Broń.md#broń-wręcz). |
-| Młotek | 2 | @pros:Wielofunkcyjny | Do wbijania gwoździ, wyważania i podstawowych prac ciesielskich. Statystyki bojowe: [Młotek](Broń.md#broń-wręcz). |
+| Młotek | 2 | @pros:Wielofunkcyjny @cons:Krótki | Do wbijania gwoździ, wyważania i podstawowych prac ciesielskich. Statystyki bojowe: [Młotek](Broń.md#broń-wręcz). |
+| Kilof | 3 | @pros:Potężny @pros:Wytrzymały @cons:Ciężki | Kruszenie skał, betonu i twardego gruntu. Statystyki bojowe: [Kilof](Broń.md#broń-wręcz). |
 | Zestaw naprawczy | 3 | @pros:Wielofunkcyjny(2) | Zbiór podstawowych narzędzi i materiałów do napraw sprzętu. |
 | Wytrychy | 4 | @pros:Precyzyjny(2) @cons:Skomplikowany | Umożliwiają otwieranie niektórych zamków bez klucza. |
-| Piła łańcuchowa | 4 | @pros:Szybki(3) @pros:Potężny(2) @cons:Głośny(5) @cons:Spalanie @cons:Ciężki | Szybkie cięcie drewna. Statystyki bojowe: [Piła łańcuchowa](Broń.md#broń-wręcz). |
+| Piła łańcuchowa | 4 | @pros:Szybki(3) @pros:Potężny(2) @pros:Krwawiący(2) @cons:Głośny(5) @cons:Paliwo @cons:Ciężki(2) | Szybkie cięcie drewna. Statystyki bojowe: [Piła łańcuchowa](Broń.md#broń-wręcz). |
 | Taśma klejąca | 2 | @pros:Wielofunkcyjny(2) | Mocna taśma do prowizorycznych napraw, uszczelnień i improwizacji. Traci przyczepność w wilgoci. |
 | Linka stalowa | 3 | @pros:Wytrzymały(2) | Odporna na przecięcie i rozerwanie. Do zabezpieczeń, pułapek i napraw wymagających dużej nośności. |
 | Drut | 2 | - | Stalowy lub miedziany. Do napraw, pułapek, improwizacji anten i wiązania konstrukcji. |
@@ -59,7 +60,7 @@ Każdy przedmiot opisywany jest przez następujące atrybuty:
 |---|:---:|---|---|
 | Menażka | 1 | @pros:Wytrzymały | Naczynie do gotowania i spożywania posiłków w terenie. |
 | Garnek | 1 | @pros:Wytrzymały | Do gotowania większych ilości żywności. |
-| Kuchenka turystyczna | 2 | @pros:Lekki @cons:Spalanie | Przenośne źródło ognia do gotowania. |
+| Kuchenka turystyczna | 2 | @pros:Lekki @cons:Paliwo | Przenośne źródło ognia do gotowania. |
 | Butla gazowa | 2 | @pros:Paliwo @cons:Ciężki | Zapas gazu do kuchenek i innych urządzeń. |
 | Zestaw naczyń | 2 | @pros:Wielofunkcyjny | Podstawowe naczynia i sztućce do przygotowywania posiłków. |
 
@@ -67,11 +68,11 @@ Każdy przedmiot opisywany jest przez następujące atrybuty:
 
 | Nazwa | Wartość | Właściwości | Opis |
 |---|:---:|---|---|
-| Mydło | 1 | @pros:Higieniczny | Podstawowy środek do mycia rąk i ciała. |
-| Środki piorące | 1 | @pros:Higieniczny | Umożliwiają pranie odzieży i utrzymanie jej w używalnym stanie. |
-| Papier toaletowy | 1 | - | Podstawowy środek higieniczny. |
-| Szczoteczka i pasta | 1 | @pros:Higieniczny | Podstawowa higiena jamy ustnej. |
-| Ręcznik | 1 | - | Do osuszania ciała i wyposażenia. |
+| Mydło | 3 | @pros:Higieniczny | Podstawowy środek do mycia rąk i ciała. |
+| Środki piorące | 3 | @pros:Higieniczny | Umożliwiają pranie odzieży i utrzymanie jej w używalnym stanie. |
+| Papier toaletowy | 4 | @pros:Relaksacyjny | Podstawowy środek higieniczny — w postapo daje też poczucie normalności i komfortu. |
+| Szczoteczka i pasta | 4 | @pros:Higieniczny | Podstawowa higiena jamy ustnej. |
+| Ręcznik | 2 | - | Do osuszania ciała i wyposażenia. |
 
 ## Eksploracja
 
@@ -89,11 +90,11 @@ Każdy przedmiot opisywany jest przez następujące atrybuty:
 
 | Nazwa | Wartość | Właściwości | Opis |
 |---|:---:|---|---|
-| Plecak | 2 | @pros:Pojemny @pros:Lekki | Podstawowy sposób przenoszenia wyposażenia. |
-| Torba | 1 | @pros:Lekki | Prosty pojemnik na wyposażenie. |
-| Worek | 1 | @pros:Lekki | Prosty i tani sposób przechowywania materiałów. |
-| Skrzynia | 2 | @pros:Wytrzymały @pros:Pojemny @cons:Ciężki | Solidny pojemnik do przechowywania wyposażenia. |
-| Kanister na wodę | 2 | @pros:Pojemny @pros:Wytrzymały | Przenośny pojemnik na wodę pitną. |
+| Plecak | 2 | @pros:Pojemny(2) | Podstawowy sposób przenoszenia wyposażenia. |
+| Torba | 1 | @pros:Pojemny @pros:Lekki | Prosty pojemnik na wyposażenie. |
+| Worek | 1 | @pros:Pojemny @pros:Lekki | Prosty i tani sposób przechowywania materiałów. |
+| Skrzynia | 2 | @pros:Wytrzymały @pros:Pojemny(3) @cons:Ciężki | Solidny pojemnik do przechowywania wyposażenia. |
+| Kanister na wodę | 2 | @pros:Pojemny(2) @pros:Wytrzymały | Przenośny pojemnik na wodę pitną. |
 | Pojemnik hermetyczny | 3 | @pros:Izolowany @pros:Wodoodporny | Chroni zawartość przed wodą, wilgocią i zanieczyszczeniami. |
 
 ## Przetrwanie
@@ -104,7 +105,7 @@ Każdy przedmiot opisywany jest przez następujące atrybuty:
 | Zapałki | 1 | @cons:Wrażliwy-na-wilgoć | Drewniane zapałki do rozpalania ognia. Przechowywać w szczelnym pojemniku — wilgoć unieszkodliwia całą paczkę. |
 | Zapalniczka | 2 | - | Szybsza i wygodniejsza od zapałek. Paliwo się kończy. |
 | Plandeka | 2 | @pros:Lekki | Lekka płachta do budowy prowizorycznego schronienia lub ochrony przed deszczem. |
-| Śpiwór | 2 | @pros:Izolowany | Ochrona przed zimnem przy nocowaniu w terenie. |
+| Śpiwór | 2 | @pros:Izolowany @pros:Regeneracyjny | Ochrona przed zimnem i lepszy odpoczynek przy nocowaniu w terenie. |
 | Lina (10 m) | 2 | @pros:Wielofunkcyjny | Nylonowa lub sizalowa. Wspinaczka, pułapki, schronienia — jedno z najbardziej wielozadaniowych narzędzi przetrwania. |
 
 ## Medycyna
@@ -124,7 +125,7 @@ Przedmioty z Atutem **Antyseptyczny** służą do przeciwdziałania [Skażeniu t
 
 | Nazwa | Wartość | Właściwości | Opis |
 |---|:---:|---|---|
-| Mocny alkohol | 3 | @pros:Antyseptyczny(3) | Wysokoprocentowy alkohol, który może być wykorzystany do dezynfekcji ran i narzędzi. |
+| Mocny alkohol | 3 | @pros:Antyseptyczny(3) @pros:Relaksacyjny(2) @cons:Wycieńczający | Wysokoprocentowy alkohol do dezynfekcji; wypity łagodzi napięcie, ale psuje regenerację fizyczną. |
 | Woda utleniona | 2 | @pros:Antyseptyczny(2) | Popularny środek antyseptyczny, który pomaga oczyścić ranę z drobnoustrojów i zanieczyszczeń. |
 | Jodyna | 4 | @pros:Antyseptyczny(4) | Skuteczny środek o szerokim działaniu przeciwdrobnoustrojowym, ceniony za możliwość dezynfekcji ran. |
 | Spirytus | 3 | @pros:Antyseptyczny(3) | Bardzo wysokoprocentowy alkohol, skuteczny w dezynfekcji, choć drażniący dla uszkodzonych tkanek. |
@@ -151,6 +152,6 @@ Rośliny zastępują rzadkie i przeterminowane leki. Zbieranie, rozpoznanie i pr
 | Turbina wiatrowa | 4 | @pros:Odnawialny(1) @cons:Zależny-od-pogody(2) | Poruszane wiatrem łopaty generują prąd. Do ładowania akumulatorów i zasilania prostych urządzeń. |
 | Baterie | 1 | @pros:Energia | Jednorazowe ogniwa do latarek, radia i drobnej elektroniki. Niewielki zapas — szybko się wyczerpują. |
 | Akumulator | 3 | @pros:Energia(3) @cons:Ciężki(2) | Magazyn energii elektrycznej. Do zasilania urządzeń gdy nie ma innego źródła prądu. |
-| Radio korbowe | 3 | @pros:Niezależny | Odbiornik na baterie lub korbkę. Dostęp do informacji bez zewnętrznego zasilania. |
+| Radio korbowe | 3 | @pros:Niezależny @pros:Relaksacyjny | Odbiornik na baterie lub korbkę. Głosy, muzyka i wiadomości — namiastka dawnego życia bez zewnętrznego zasilania. |
 | Przewody elektryczne | 2 | @pros:Wytrzymały | Miedziane lub aluminiowe kable. Do rozprowadzania prądu i napraw instalacji. |
 | Dron | 4 | @pros:Pozycja-obserwacyjna(3) @pros:Wielofunkcyjny @pros:Cichy(2) @cons:Energia @cons:Skomplikowany(2) @cons:Kruchy(2) | Bezzałogowy aparat latający ze kamerą. Zwiad z powietrza bez narażania operatora — wymaga naładowania, wprawy w sterowaniu i łatwo ulega uszkodzeniu. |

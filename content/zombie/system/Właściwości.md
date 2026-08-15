@@ -2,7 +2,7 @@
 
 To narracyjne określenia z wartością liczbową umożliwiającą wpłynięcie na różne elementy gry dodając pozytywne lub negatywne modyfikatory. Każda właściwość pozytywna to `Atut`, a negatywna to `Wada`.
 
-Każdy atut i wada ma domyślną wartość 1, którą można zwiększyć. W zapisie tagów wartość 1 pomija się (`@pros:Cichy`), a od 2 wzwyż podaje się w nawiasie (`@pros:Cichy(2)`). Skala wartości to **1–5**. MG może wyjść poza nią w wyjątkowych przypadkach (np. liczba sojuszników). Ostatecznie każdy atut i wada podlegają narracyjnej interpretacji.
+Każdy atut i wada ma domyślną wartość 1, którą można zwiększyć. W zapisie tagów wartość 1 pomija się (@pros:Cichy), a od 2 wzwyż podaje się w nawiasie (@pros:Cichy(2)). Skala wartości to **1–5**. MG może wyjść poza nią w wyjątkowych przypadkach (np. liczba sojuszników). Ostatecznie każdy atut i wada podlegają narracyjnej interpretacji.
 
 Właściwości może mieć niemal każdy element gry by opisać w tym świecie. Najczęściej spotyka się je przy postaciach i NPC, ekwipunktu, pojazdach, mutacjach i zaklęciach.
 
@@ -16,13 +16,11 @@ Pełny rejestr wszystkich Atutów i Wad używanych w systemie znajduje się w [L
 
 ## Koszt i przychód z przedmiotów
 
-`Paliwo` i `Energia` mogą występować jako Atut albo jako Wada. To nie jest ten sam efekt ze znakiem plus/minus — Atut mówi, ile zasobu przedmiot **trzyma albo wytwarza**, Wada mówi, ile **zużywa** przy normalnym użytkowaniu w scenie. Jednostki są abstrakcyjne, tak jak [Naboje i Strzały](Ekwipunek/Broń.md).
-
-Nazw nie scala się z innymi wadami o podobnym temacie. `Spalanie` zostaje `Spalaniem`, `Paliwo` zostaje `Paliwem`, `Energia` zostaje `Energią`.
+`Paliwo` i `Energia` mogą występować jako Atut albo jako Wada. Atut mówi, ile zasobu przedmiot **zawiera albo wytwarza**, Wada mówi, ile **zużywa** przy normalnym użytkowaniu w scenie.
 
 ### Wada — zużycie na scenę
 
-Jeśli przedmiot ma Wadę `Paliwo` o wartości 1, przy zwykłym użyciu w scenie spala 1 jednostkę paliwa. Wyższa wartość to większy apetyt: miotacz ognia z @cons:Paliwo(4) zużywa 4 na scenę.
+Jeśli przedmiot ma Wadę `Paliwo` o wartości 1, przy zwykłym użyciu w scenie spala 1 jednostkę paliwa. Wyższa wartość to większy apetyt: kuchenka lub piła z @cons:Paliwo zużywa 1, samochód z @cons:Paliwo(2) zużywa 2, miotacz ognia z @cons:Paliwo(4) zużywa 4 na scenę.
 
 Jeśli przedmiot ma Wadę `Energia` o wartości 1, przy zwykłym użyciu w scenie zużywa 1 jednostkę energii. Dron z @cons:Energia spala 1 na zwiad; noktowizor z @cons:Energia(2) spala 2.
 
