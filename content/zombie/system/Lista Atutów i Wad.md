@@ -96,12 +96,11 @@ Rejestr wszystkich [Atutów i Wad](Właściwości.md) używanych w systemie - ż
 | Nazwa | Źródło | Kontekst | Opis |
 |---|---|---|---|
 | Dostępna amunicja | [Broń](Ekwipunek/Broń.md) | Pistolet 9mm | Pasująca amunicja jest stosunkowo łatwa do znalezienia lub wyhandlowania. |
-| Energia | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Transport](Ekwipunek/Transport.md), [Konstrukcje](Ekwipunek/Konstrukcje.md) | Baterie, Akumulator; Bateria samochodowa; Generator, Instalacja elektryczna | Przechowuje albo wytwarza energię — co z tych dwóch, zależy od przedmiotu. Wartość Atutu to pojemność zapasu albo ilość wytwarzana. |
+| Energia | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Transport](Ekwipunek/Transport.md), [Konstrukcje](Ekwipunek/Konstrukcje.md) | Baterie, Akumulator, Panele słoneczne, Turbina wiatrowa; Bateria samochodowa; Generator, Instalacja elektryczna | Przechowuje albo wytwarza energię — co z tych dwóch, zależy od przedmiotu. Wartość Atutu to pojemność zapasu albo ilość wytwarzana. |
 | Kaloryczny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Olej spożywczy | Dostarcza dużej ilości energii w stosunku do masy lub objętości. |
 | Konserwujący | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Smar, Sól | Zapobiega rdzy, zużyciu lub zepsuciu; przedłuża żywotność sprzętu albo żywności. |
 | Możliwość odzysku amunicji | [Broń](Ekwipunek/Broń.md) | Kusza, Łuk | Użyte bełty lub strzały można wyciągnąć z celu i wykorzystać ponownie. |
 | Niezależny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Transport](Ekwipunek/Transport.md) | Radio korbowe; Wóz pociągowy, Rower, Koń | Działa bez zewnętrznej infrastruktury, paliwa ani sieci zasilającej. |
-| Odnawialny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Panele słoneczne, Turbina wiatrowa | Ładuje się bez zużywania jednorazowych zasobów — wystarczy dostęp do światła lub wiatru. |
 | Paliwo | [Transport](Ekwipunek/Transport.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Kanister na paliwo; Butla gazowa | Przechowuje albo wytwarza paliwo — co z tych dwóch, zależy od przedmiotu. Wartość Atutu to pojemność zapasu albo ilość wytwarzana. |
 | Pojemny | [Konstrukcje](Ekwipunek/Konstrukcje.md), [Ekwipunek ochronny](Ekwipunek/EkwipunekOchronny.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Zbiornik na wodę, Składowisko, Magazyn, Stodoła, Hala, Cysterna; Kamizelka taktyczna, Hełm taktyczny; Plecak, Skrzynia, Kanister na wodę | Zapewnia dużą przestrzeń lub pojemność do przechowywania zapasów i wyposażenia. |
 | Trwały | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Żywność konserwowa, Suchary, Żywność suszona/liofilizowana, Mąka, Cukier, Sól, Pasza | Przedmiot lub zasób długo zachowuje swoje właściwości i nie psuje się łatwo. |

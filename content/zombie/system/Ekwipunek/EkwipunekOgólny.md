@@ -1,4 +1,4 @@
-# Ekwipunek ogólny
+# Ogólny
 
 Każdy przedmiot opisywany jest przez następujące atrybuty:
 - Nazwa
@@ -148,8 +148,8 @@ Rośliny zastępują rzadkie i przeterminowane leki. Zbieranie, rozpoznanie i pr
 
 | Nazwa | Wartość | Właściwości | Opis |
 |---|:---:|---|---|
-| Panele słoneczne | 4 | @pros:Odnawialny(2) @cons:Zależny-od-pogody(4) @cons:Ciężki | Konwertują światło słoneczne na prąd. Do ładowania akumulatorów i zasilania prostych urządzeń. |
-| Turbina wiatrowa | 4 | @pros:Odnawialny(1) @cons:Zależny-od-pogody(2) | Poruszane wiatrem łopaty generują prąd. Do ładowania akumulatorów i zasilania prostych urządzeń. |
+| Panele słoneczne | 4 | @pros:Energia(2) @cons:Zależny-od-pogody(4) @cons:Ciężki | Konwertują światło słoneczne na prąd. Do ładowania akumulatorów i zasilania prostych urządzeń. |
+| Turbina wiatrowa | 4 | @pros:Energia(1) @cons:Zależny-od-pogody(2) | Poruszane wiatrem łopaty generują prąd. Do ładowania akumulatorów i zasilania prostych urządzeń. |
 | Baterie | 1 | @pros:Energia | Jednorazowe ogniwa do latarek, radia i drobnej elektroniki. Niewielki zapas — szybko się wyczerpują. |
 | Akumulator | 3 | @pros:Energia(3) @cons:Ciężki(2) | Magazyn energii elektrycznej. Do zasilania urządzeń gdy nie ma innego źródła prądu. |
 | Radio korbowe | 3 | @pros:Niezależny @pros:Relaksacyjny | Odbiornik na baterie lub korbkę. Głosy, muzyka i wiadomości — namiastka dawnego życia bez zewnętrznego zasilania. |

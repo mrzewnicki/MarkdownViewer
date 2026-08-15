@@ -51,7 +51,7 @@ Narzędzia używane też jako broń (siekiera, łom, młotek, piła łańcuchowa
 | Łuk | 1d6+1 | @pros:Cichy(2) @pros:Możliwość-odzysku-amunicji @cons:Wolny @cons:Strzały | (Drewno × 1, Tkanina × 1) + [Krawiectwo](../Umiejętności.md#krawiectwo) |
 | Proca | 1d6 | @pros:Cichy(2) @pros:Lekki @cons:Słaby | (Tkanina × 1) + [Krawiectwo](../Umiejętności.md#krawiectwo) |
 | Flara | 1d6 | @pros:Oślepiający @pros:Sygnalizacyjny @cons:Jednorazowy | (Chemia × 1) + [Chemia](../Umiejętności.md#chemia) |
-| Miotacz ognia | 2d6 (+ płonięcie) | @pros:Obszarowy(2) @pros:Podpalający(3) @cons:Krótki-zasięg(2) @cons:Ciężki(2) @cons:Łatwopalny(2) @cons:Paliwo(4) | (Metal × 2, Chemia × 2) + [Mechanika](../Umiejętności.md#mechanika) |
+| Miotacz ognia | 2d6 (+ płonięcie) | @pros:Obszarowy(2) @pros:Podpalający(3) @cons:Krótki-zasięg(2) @cons:Ciężki(2) @cons:Łatwopalny(2) @cons:Paliwo(2) | (Metal × 2, Chemia × 2) + [Mechanika](../Umiejętności.md#mechanika) |
 
 ## Granaty i materiały wybuchowe
 
