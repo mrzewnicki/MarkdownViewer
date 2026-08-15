@@ -1,5 +1,15 @@
 import type { Comment, SelectionOffset } from '../types'
 
+const TABLE_STRUCTURE_TAGS = new Set([
+  'TABLE',
+  'THEAD',
+  'TBODY',
+  'TFOOT',
+  'TR',
+  'COLGROUP',
+  'COL',
+])
+
 export function walkTextNodes(root: HTMLElement): Text[] {
   const nodes: Text[] = []
   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
@@ -43,9 +53,18 @@ export function selectionIntersectsCommentHighlight(root: HTMLElement, range: Ra
   )
 }
 
+function unwrapCommentMark(mark: Element): void {
+  const parent = mark.parentNode
+  if (!parent) return
+  while (mark.firstChild) {
+    parent.insertBefore(mark.firstChild, mark)
+  }
+  mark.remove()
+}
+
 function restoreCommentHighlights(root: HTMLElement): void {
   root.querySelectorAll('mark.comment-highlight').forEach((mark) => {
-    mark.replaceWith(document.createTextNode(mark.textContent ?? ''))
+    unwrapCommentMark(mark)
   })
   root.normalize()
 }
@@ -62,30 +81,73 @@ function findQuoteOffset(root: HTMLElement, comment: Comment): number {
   return fullText.indexOf(comment.quote)
 }
 
-function getRangeFromOffsets(root: HTMLElement, start: number, end: number): Range | null {
+function createCommentMark(comment: Comment): HTMLElement {
+  const mark = document.createElement('mark')
+  mark.className = 'comment-highlight'
+  mark.dataset.commentId = comment.id
+  mark.title = comment.text
+  return mark
+}
+
+function isTableStructureParent(node: Node): boolean {
+  const parent = node.parentElement
+  return Boolean(parent && TABLE_STRUCTURE_TAGS.has(parent.tagName))
+}
+
+interface TextSlice {
+  node: Text
+  start: number
+  end: number
+}
+
+function collectTextSlices(root: HTMLElement, start: number, end: number): TextSlice[] {
+  const slices: TextSlice[] = []
   const nodes = walkTextNodes(root)
-  const range = document.createRange()
   let current = 0
-  let startSet = false
 
   for (const node of nodes) {
     const length = node.textContent?.length ?? 0
     const next = current + length
+    const overlapStart = Math.max(start, current)
+    const overlapEnd = Math.min(end, next)
 
-    if (!startSet && start <= next) {
-      range.setStart(node, Math.max(0, start - current))
-      startSet = true
-    }
-
-    if (startSet && end <= next) {
-      range.setEnd(node, Math.max(0, end - current))
-      return range
+    if (overlapStart < overlapEnd && !isTableStructureParent(node)) {
+      slices.push({
+        node,
+        start: overlapStart - current,
+        end: overlapEnd - current,
+      })
     }
 
     current = next
+    if (current >= end) break
   }
 
-  return null
+  return slices
+}
+
+function wrapTextSlice(slice: TextSlice, comment: Comment): void {
+  let textNode = slice.node
+  const { start, end } = slice
+
+  if (end < (textNode.textContent?.length ?? 0)) {
+    textNode.splitText(end)
+  }
+  if (start > 0) {
+    textNode = textNode.splitText(start)
+  }
+
+  const mark = createCommentMark(comment)
+  textNode.parentNode?.insertBefore(mark, textNode)
+  mark.append(textNode)
+}
+
+function applyCommentHighlight(comment: Comment, slices: TextSlice[]): void {
+  // Wrap each intersecting text node separately so <mark> never becomes a
+  // direct child of <tr>/<table> or a wrapper around <td>/<th>.
+  for (let i = slices.length - 1; i >= 0; i -= 1) {
+    wrapTextSlice(slices[i]!, comment)
+  }
 }
 
 export function restoreHighlightsFromComments(root: HTMLElement, comments: Comment[]): void {
@@ -99,17 +161,10 @@ export function restoreHighlightsFromComments(root: HTMLElement, comments: Comme
     const nextRange: SelectionOffset = { start, end }
     if (highlightedRanges.some((highlightedRange) => rangesOverlap(highlightedRange, nextRange))) return
 
-    const range = getRangeFromOffsets(root, start, end)
-    if (!range || range.collapsed) return
+    const slices = collectTextSlices(root, start, end)
+    if (slices.length === 0) return
 
-    const mark = document.createElement('mark')
-    mark.className = 'comment-highlight'
-    mark.dataset.commentId = comment.id
-    mark.title = comment.text
-
-    const contents = range.extractContents()
-    mark.append(contents)
-    range.insertNode(mark)
+    applyCommentHighlight(comment, slices)
     highlightedRanges.push(nextRange)
   })
 }
