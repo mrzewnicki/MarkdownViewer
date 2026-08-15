@@ -387,6 +387,9 @@ function buildMd(cfg: RpgRendererConfig): MarkdownIt {
   md.renderer.rules.fence = (tokens, idx, options, env, self) => {
     const token = tokens[idx]
     if (token?.info.trim() === 'wip') return ''
+    if (token?.info.trim() === 'ai') {
+      return `<div class="ai-instructions" aria-hidden="true">${escapeHtml(token.content)}</div>\n`
+    }
     if (token?.info.trim() === 'timeline') {
       const renderInline = (text: string): string =>
         md.renderInline(applyInlineRpg(text, cfg, _currentRenderOptions))

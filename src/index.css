@@ -945,6 +945,10 @@ button {
   text-align: justify;
 }
 
+.preview-body .ai-instructions {
+  display: none;
+}
+
 .preview-body h1,
 .preview-body h2,
 .preview-body h3,
