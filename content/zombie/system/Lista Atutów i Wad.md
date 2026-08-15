@@ -9,28 +9,6 @@ Rejestr wszystkich [Atutów i Wad](Właściwości.md) używanych w systemie - ż
 > [!info]
 > Ta sama nazwa może istnieć jako Atut w jednym kontekście i Wada w innym (np. przy różnych kategoriach przedmiotów) - to zgodne z zasadą z `Właściwości.md`. Poniższe tabele to rejestr referencyjny, nie źródło ograniczeń.
 
-## Spis
-
-**Atuty:**
-- [Walka](#walka)
-- [Ochrona](#ochrona)
-- [Skrytość, zmysły i komunikacja](#skrytość-zmysły-i-komunikacja)
-- [Ruch i transport](#ruch-i-transport)
-- [Zasoby i zapasy](#zasoby-i-zapasy)
-- [Medycyna i organizm](#medycyna-i-organizm)
-- [Praca, craft i baza](#praca-craft-i-baza)
-- [Mutacje](#mutacje)
-
-**Wady:**
-- [Walka](#walka-1)
-- [Ochrona i obciążenie](#ochrona-i-obciążenie)
-- [Skrytość i zauważalność](#skrytość-i-zauważalność)
-- [Ruch i transport](#ruch-i-transport-1)
-- [Zasoby i zużycie](#zasoby-i-zużycie)
-- [Medycyna i organizm](#medycyna-i-organizm-1)
-- [Obsługa i niezawodność](#obsługa-i-niezawodność)
-- [Mutacje](#mutacje-1)
-
 ---
 
 ## Atuty
@@ -57,7 +35,6 @@ Rejestr wszystkich [Atutów i Wad](Właściwości.md) używanych w systemie - ż
 | Zasadzka | [Broń](Ekwipunek/Broń.md) | Mina improwizowana | Szczególnie dobrze sprawdza się podczas przygotowanego ataku z zaskoczenia. |
 | Zasłaniający | [Broń](Ekwipunek/Broń.md) | Granat dymny | Tworzy przeszkodę ograniczającą widoczność lub utrudniającą obserwację. |
 | Zasięgowy | [Broń](Ekwipunek/Broń.md) | Włócznia | Pozwala atakować lub oddziaływać na cele z większej odległości niż typowa broń wręcz. |
-| Zastraszający | [Broń](Ekwipunek/Broń.md) | Strzelba pompowa | Sam dźwięk lub widok broni wywołuje silną reakcję strachu u większości celów. |
 
 ### Ochrona
 
@@ -97,7 +74,7 @@ Rejestr wszystkich [Atutów i Wad](Właściwości.md) używanych w systemie - ż
 
 | Nazwa | Źródło | Kontekst | Opis |
 |---|---|---|---|
-| Lekki | [Broń](Ekwipunek/Broń.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Nóż, Nóż survivalowy, Pistolet .22, Proca; Suchary, Żywność suszona/liofilizowana, Latarka czołowa, Plandeka, Plecak, Torba, Worek, Kuchenka turystyczna, Dron | Niska waga przyspiesza użycie i redukuje zmęczenie przy długim noszeniu. |
+| Lekki | [Broń](Ekwipunek/Broń.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Nóż, Nóż survivalowy, Pistolet .22, Proca; Latarka czołowa, Plandeka, Plecak, Torba, Worek, Kuchenka turystyczna, Dron | Niska waga przyspiesza użycie i redukuje zmęczenie przy długim noszeniu. |
 | Logistyka | [Konstrukcje](Ekwipunek/Konstrukcje.md) | Taczka, Wózki, Droga, Most | Ułatwia przemieszczanie ludzi, pojazdów lub ładunków na dystansie. |
 | Ładowność | [Transport](Ekwipunek/Transport.md) | Wóz pociągowy, Koń, Samochód spalinowy, Samochód elektryczny, Ciężarówka, Tir | Pozwala przewieźć znaczną ilość ładunku lub ekwipunku; wartość Atutu odzwierciedla skalę nośności. |
 | Manewrowość | [Transport](Ekwipunek/Transport.md) | Rower, Motocykl, Koń | Ułatwia omijanie przeszkód, ciasne skręty i zmianę kierunku w trudnym terenie. |
@@ -111,14 +88,14 @@ Rejestr wszystkich [Atutów i Wad](Właściwości.md) używanych w systemie - ż
 |---|---|---|---|
 | Dostępna amunicja | [Broń](Ekwipunek/Broń.md) | Pistolet 9mm | Pasująca amunicja jest stosunkowo łatwa do znalezienia lub wyhandlowania. |
 | Energia | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Transport](Ekwipunek/Transport.md), [Konstrukcje](Ekwipunek/Konstrukcje.md) | Baterie, Akumulator; Bateria samochodowa; Generator, Instalacja elektryczna | Przechowuje albo wytwarza energię — co z tych dwóch, zależy od przedmiotu. Wartość Atutu to pojemność zapasu albo ilość wytwarzana. |
-| Kaloryczny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Olej spożywczy | Dostarcza dużej ilości energii w stosunku do masy lub objętości. |
-| Konserwujący | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Smar, Sól | Zapobiega rdzy, zużyciu lub zepsuciu; przedłuża żywotność sprzętu albo żywności. |
+| Kaloryczny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Ciepły posiłek, Żywność konserwowa, Suszone jedzenie, Zepsute jedzenie, Surowe mięso | Syci — zaspokaja głód; baza 1, bardzo sycące (2). |
+| Konserwujący | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Smar | Zapobiega rdzy, zużyciu lub zepsuciu; przedłuża żywotność sprzętu albo żywności. |
 | Możliwość odzysku amunicji | [Broń](Ekwipunek/Broń.md) | Kusza, Łuk | Użyte bełty lub strzały można wyciągnąć z celu i wykorzystać ponownie. |
 | Niezależny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Transport](Ekwipunek/Transport.md) | Radio korbowe; Wóz pociągowy, Rower, Koń | Działa bez zewnętrznej infrastruktury, paliwa ani sieci zasilającej. |
 | Odnawialny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Panele słoneczne, Turbina wiatrowa | Ładuje się bez zużywania jednorazowych zasobów — wystarczy dostęp do światła lub wiatru. |
 | Paliwo | [Transport](Ekwipunek/Transport.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Kanister na paliwo; Butla gazowa | Przechowuje albo wytwarza paliwo — co z tych dwóch, zależy od przedmiotu. Wartość Atutu to pojemność zapasu albo ilość wytwarzana. |
 | Pojemny | [Konstrukcje](Ekwipunek/Konstrukcje.md), [Ekwipunek ochronny](Ekwipunek/EkwipunekOchronny.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Zbiornik na wodę, Składowisko, Magazyn, Stodoła, Hala, Cysterna; Kamizelka taktyczna, Hełm taktyczny; Plecak, Skrzynia, Kanister na wodę | Zapewnia dużą przestrzeń lub pojemność do przechowywania zapasów i wyposażenia. |
-| Trwały | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Żywność konserwowa, Suchary, Żywność suszona/liofilizowana, Mąka, Cukier, Sól, Pasza | Przedmiot lub zasób długo zachowuje swoje właściwości i nie psuje się łatwo. |
+| Trwały | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Żywność konserwowa, Suszone jedzenie, Pasza dla zwierząt | Przedmiot lub zasób długo zachowuje właściwości; przy żywności: całkiem odporne (2), praktycznie nie psuje się (3). |
 | Woda | [Konstrukcje](Ekwipunek/Konstrukcje.md) | System zbierania deszczówki, Pompa wodna, Studnia | Zapewnia dostęp, zbieranie lub dystrybucję wody. |
 
 ### Medycyna i organizm
@@ -127,15 +104,16 @@ Rejestr wszystkich [Atutów i Wad](Właściwości.md) używanych w systemie - ż
 |---|---|---|---|
 | Antybakteryjny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Antybiotyki | Zwalcza infekcje bakteryjne i choroby; wartość Atutu wpływa na skuteczność leczenia. |
 | Antyradiacyjny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Leadplant | Ogranicza skutki ekspozycji na promieniowanie przez ograniczony czas po zażyciu. |
-| Antyseptyczny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Mocny alkohol, Woda utleniona, Jodyna, Spirytus, Zestaw chirurgiczny, Miód, Wrzątek, Chlorheksydyna, Leadplant | Redukuje Skażenie tymczasowe przy opracowaniu ran; wartość Atutu to liczba usuniętych punktów. |
+| Antyseptyczny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Wino, Mocny alkohol, Woda utleniona, Jodyna, Spirytus, Zestaw chirurgiczny, Miód, Wrzątek, Chlorheksydyna, Leadplant | Redukuje Skażenie tymczasowe przy opracowaniu ran; wartość Atutu to liczba usuniętych punktów. |
 | Filtr | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Filtr wody, Maska filtrująca | Odsiewa zanieczyszczenia — wodę pitną albo powietrze (pył, dym, patogeny). |
 | Higieniczny | [Konstrukcje](Ekwipunek/Konstrukcje.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Latryna, System kanalizacyjny; Mydło, Środki piorące, Szczoteczka i pasta | Redukuje ryzyko chorób i zanieczyszczeń; pomaga utrzymać higienę osobistą lub sanitarną. |
 | Leczniczy | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Apteczka, Zestaw chirurgiczny, Czarny klon | Zawiera szeroką gamę środków; daje bonus do testów leczenia różnego rodzaju ran i dolegliwości. |
 | Mutagenny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Czarny klon | Wspomaga organizm już zmieniony mutacją — regeneruje Punkty Mutacji lub przyspiesza adaptację. Dla niemutowanych zwykle szkodliwy. |
 | Przeciwbólowy | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Tabletki przeciwbólowe, Leadplant | Zmniejsza ból, umożliwiając działanie mimo ran lub przywracając zdolność do testów. |
 | Regeneracyjny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Śpiwór | Pomaga szybciej regenerować zmęczenie fizyczne lub poprawia jakość odpoczynku. |
-| Relaksacyjny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Papier toaletowy, Mocny alkohol, Radio korbowe | Poprawia samopoczucie psychiczne, redukuje stres lub daje namiastkę normalnego życia. |
+| Relaksacyjny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Piwo, Ciepły posiłek, Wino, Deser, Whisky, Papier toaletowy, Mocny alkohol, Radio korbowe | Poprawia samopoczucie psychiczne lub daje namiastkę luksusu; przy żywności/napojach: trochę (1), luksus (2), bardzo luksus (3). |
 | Tamujący | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Ekwipunek ochronny](Ekwipunek/EkwipunekOchronny.md) | Opatrunek kompresowy, Opaska uciskowa; Zwykłe ubrania | Zatrzymuje lub spowalnia krwawienie, redukując utratę HP w czasie. |
+| Zdrowy | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Woda pitna, Mleko, Warzywa | Wspiera organizm; baza 1, wyraźnie zdrowsze (2). |
 
 ### Praca, craft i baza
 
@@ -219,18 +197,18 @@ Rejestr wszystkich [Atutów i Wad](Właściwości.md) używanych w systemie - ż
 | Naboje | [Broń](Ekwipunek/Broń.md) | Broń palna | Zużycie nabojów na scenę walki przy założeniu rozsądnego wykorzystywania |
 | Paliwo | [Broń](Ekwipunek/Broń.md), [Transport](Ekwipunek/Transport.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Miotacz ognia; Motocykl, Samochód spalinowy, Ciężarówka, Tir; Piła łańcuchowa, Kuchenka turystyczna | Zużywa paliwo przy normalnym użytkowaniu w scenie; wartość Wady to ilość zejścia z zapasu. Bez zapasu przedmiot w tej scenie nie działa albo działa tylko tyle, na ile starczy jednostek. |
 | Strzały | [Broń](Ekwipunek/Broń.md) | Łuk, Kusza | Zużycie strzał lub bełtów na scenę walki; wartość Wady to ilość zużyta w starciu. |
-| Szybko psujący | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Żywność świeża | Zasób szybko traci przydatność i wymaga odpowiedniego przechowywania. |
+| Szybko psujący | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Mleko, Ciepły posiłek, Surowe mięso, Warzywa | Zasób szybko traci przydatność i wymaga odpowiedniego przechowywania. |
 | Zależny od pogody | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Panele słoneczne, Turbina wiatrowa | Skuteczność spada lub znika przy niekorzystnych warunkach atmosferycznych. |
 
 ### Medycyna i organizm
 
 | Nazwa | Źródło | Kontekst | Opis |
 |---|---|---|---|
-| Ryzykowny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Opaska uciskowa, Pan John | Nieprawidłowe zastosowanie pogarsza stan zamiast pomagać; łatwo stracić kontrolę nad efektem. |
+| Ryzykowny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Brudna woda, Zepsute jedzenie, Opaska uciskowa, Pan John | Nieprawidłowe zastosowanie lub spożycie pogarsza stan zamiast pomagać; łatwo o chorobę, zatrucie albo utratę kontroli nad efektem. |
 | Specjalistyczny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Zestaw chirurgiczny, Chlorheksydyna | Skuteczne użycie wymaga specjalistycznej wiedzy medycznej lub szkolenia. |
 | Stresogenny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | — | Zwiększa napięcie psychiczne, lęk, dyskomfort lub obciążenie emocjonalne. |
 | Trujący | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Czarny klon, Pan John | Zażycie szkodzi organizmowi — osłabia, zatruwa lub zabija przy niewłaściwym odbiorcy albo dawce. |
-| Wycieńczający | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Mocny alkohol | Zwiększa fizyczne wyczerpanie albo utrudnia regenerację sił. |
+| Wycieńczający | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Whisky, Mocny alkohol | Zwiększa fizyczne wyczerpanie albo utrudnia regenerację sił. |
 
 ### Obsługa i niezawodność
 

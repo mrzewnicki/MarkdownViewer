@@ -16,9 +16,9 @@ Każdy pojazd i element wyposażenia transportowego opisywany jest przez następ
 | Wóz pociągowy | 1 | @pros:Niezależny(2) @pros:Ładowność(2) @cons:Wolny(3) | Ręcznie lub zwierzęco ciągnięty wóz. Bez paliwa, przyzwoita ładowność — wolny i męczący w użyciu. |
 | Rower | 2 | @pros:Niezależny(2) @pros:Cichy @pros:Manewrowość(2) @cons:Mała-ładowność(1) | Transport bez paliwa i hałasu. Wytrzymały i łatwy w naprawie. Ograniczona ładowność. |
 | Motocykl | 3 | @pros:Szybki(3) @pros:Manewrowość @cons:Paliwo @cons:Mała-ładowność(2) | Szybki transport dla jednej lub dwóch osób. Wymaga benzyny i podstawowej wiedzy mechanicznej. |
-| Samochód spalinowy | 4 | @pros:Szybki(2) @pros:Ładowność(2) @pros:Wytrzymały(2) @cons:Paliwo(2) @cons:Głośny(2) | Osobowy lub dostawczy na benzynie/oleju. Szybki transport grupy i ekwipunku — wymaga paliwa i przejezdnych dróg. |
-| Samochód elektryczny | 4 | @pros:Szybki(2) @pros:Ładowność(2) @pros:Cichy(2) @pros:Wytrzymały(2) @cons:Energia(2) | Osobowy lub dostawczy na prąd. Cichy i bez spalania — bez ładowania lub sprawnego akumulatora staje się bezużyteczny. |
 | Ciężarówka | 4 | @pros:Ładowność(4) @pros:Wytrzymały(2) @cons:Paliwo(3) @cons:Głośny(3) @cons:Ciężki | Średni lub ciężki pojazd użytkowy. Duża ładowność przy umiarkowanej manewrowości — paliwożerna i głośna. |
+| Samochód elektryczny | 4 | @pros:Szybki(2) @pros:Ładowność(2) @pros:Cichy(2) @pros:Wytrzymały(2) @cons:Energia(2) | Osobowy lub dostawczy na prąd. Cichy i bez spalania — bez ładowania lub sprawnego akumulatora staje się bezużyteczny. |
+| Samochód spalinowy | 4 | @pros:Szybki(2) @pros:Ładowność(2) @pros:Wytrzymały(2) @cons:Paliwo(2) @cons:Głośny(2) | Osobowy lub dostawczy na benzynie/oleju. Szybki transport grupy i ekwipunku — wymaga paliwa i przejezdnych dróg. |
 | Tir | 5 | @pros:Ładowność(5) @pros:Wytrzymały(3) @cons:Paliwo(4) @cons:Głośny(3) @cons:Ciężki(2) | Ciężarówka dalekobieżna z naczepą. Ogromna ładowność, trudna w manewrach i żarłoczna na paliwo. Przyciąga uwagę. |
 
 ## Zwierzęta

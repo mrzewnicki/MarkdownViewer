@@ -15,64 +15,67 @@ Jeśli postać przez cały dzień nie ma możliwości zjedzenia czegokolwiek lub
 
 | Nazwa | Wartość | Właściwości | Opis |
 |---|:---:|---|---|
-| Woda pitna | 1 | - | Podstawowy zasób niezbędny do przetrwania. Minimum litr dziennie na osobę. Zanieczyszczona jest niebezpieczna — warto używać filtra lub gotować. |
-| Żywność konserwowa | 2 | @pros:Trwały(2) | Puszki i konserwy. Ciężkie w większych ilościach, ale długo zachowują przydatność. |
-| Suchary | 1 | @pros:Trwały(3) @pros:Lekki | Prosty, suchy pokarm o bardzo długiej trwałości. |
-| Żywność suszona | 2 | @pros:Trwały(2) @pros:Lekki | Suszone mięso, warzywa lub owoce. Łatwa do transportu. |
-| Żywność liofilizowana | 4 | @pros:Trwały(4) @pros:Lekki(2) | Bardzo trwała i lekka żywność wymagająca wody do przygotowania. |
-| Żywność świeża | 1 | @cons:Szybko-psujący | Mięso, warzywa, pieczywo i inne świeże produkty. |
-| Mąka / zboże | 1 | @pros:Trwały | Podstawa przygotowywania chleba i innych pokarmów. |
-| Cukier | 1 | @pros:Trwały(3) | Kaloryczny i bardzo trwały zapas. |
-| Sól | 1 | @pros:Konserwujący(2) @pros:Trwały(3) | Do przyprawiania i konserwowania żywności. |
-| Olej spożywczy | 2 | @pros:Kaloryczny(2) | Łatwy sposób przechowywania dużej ilości energii w małej objętości. |
-| Pasza dla zwierząt | 1 | @pros:Trwały | Pokarm dla zwierząt gospodarskich i transportowych. |
+| Zepsute jedzenie | 1 | @pros:Kaloryczny @cons:Ryzykowny | Nadal może dostarczyć energii, ale jego spożycie grozi zatruciem lub chorobą. Wartość głównie w sytuacji skrajnego głodu. |
+| Brudna woda | 2 | @cons:Ryzykowny | Gasi pragnienie, ale może zawierać patogeny i toksyny. Warto ją przegotować lub przepuścić przez filtr. |
+| Piwo | 2 | @pros:Relaksacyjny | Nietrwały w porównaniu z mocnym alkoholem, ciężki do transportu i wymagający stosunkowo dużo miejsca. Mimo to może być cennym luksusem. |
+| Ciepły posiłek | 3 | @pros:Kaloryczny @pros:Relaksacyjny @cons:Szybko-psujący | Gotowany posiłek — dostarcza energii i poprawia morale. Jego wartość rośnie szczególnie podczas długiego pobytu w terenie. |
+| Deser | 3 | @pros:Relaksacyjny(2) | Słodycze i inne rzadkie przysmaki. Nie są istotne dla przetrwania, ale mogą mieć dużą wartość dla morale i wymiany. |
+| Mleko | 3 | @pros:Zdrowy(2) @cons:Szybko-psujący | Odżywczy napój, ale trudny do przechowywania bez chłodzenia. Dostęp do świeżego mleka może być cenny w osadach posiadających zwierzęta gospodarskie. |
+| Pasza dla zwierząt | 3 | @pros:Trwały(2) | Pokarm dla zwierząt gospodarskich i transportowych. Ma niewielką wartość dla samotnego wędrowca, ale dużą dla osad utrzymujących zwierzęta. |
+| Surowe mięso | 3 | @pros:Kaloryczny(3) @cons:Szybko-psujący | Bardzo kaloryczne i odżywcze, ale wymaga szybkiego spożycia lub przetworzenia. Jego wartość rośnie, jeśli społeczność posiada możliwość gotowania, wędzenia lub suszenia. |
+| Warzywa | 3 | @pros:Zdrowy(2) @cons:Szybko-psujący | Świeże warzywa są cenne ze względu na wartości odżywcze, ale ich krótka trwałość mocno ogranicza wartość w handlu i transporcie. |
+| Wino | 3 | @pros:Relaksacyjny(2) @pros:Antyseptyczny | Alkohol o umiarkowanej wartości użytkowej. Zagotowany może służyć do wypalania ran, ale przede wszystkim jest luksusem poprawiającym morale. |
+| Suszone jedzenie | 4 | @pros:Kaloryczny @pros:Trwały(3) | Suszone mięso, warzywa lub owoce. Lekkie, trwałe i łatwe do transportowania. Szczególnie wartościowe podczas podróży. |
+| Whisky | 4 | @pros:Relaksacyjny(3) @cons:Wycieńczający | Mocny alkohol o wysokiej wartości wymiennej. Trwały, łatwy do przechowywania i ceniony jako luksus oraz środek dezynfekujący. |
+| Żywność konserwowa | 4 | @pros:Kaloryczny @pros:Trwały(2) | Puszki i konserwy. Jedzenie gotowe do spożycia, stosunkowo kaloryczne i długo zachowujące przydatność. Jeden z podstawowych zasobów handlowych. |
+| Woda pitna | 5 | @pros:Zdrowy | Czysta, bezpieczna woda. Jeden z najcenniejszych zasobów — niezbędna do przeżycia i trudna do zastąpienia. |
 
 ## Narzędzia
 
 | Nazwa | Wartość | Właściwości | Opis |
 |---|:---:|---|---|
-| Multitool | 3 | @pros:Wielofunkcyjny(2) | Nóż, śrubokręt, kombinerki i więcej w jednym narzędziu. Niezastąpiony przy improwizowanych naprawach. |
-| Nóż | 2 | @pros:Cichy @pros:Lekki | Uniwersalny nóż do prac w terenie i walki. Statystyki bojowe: [Nóż](Broń.md#broń-wręcz). |
+| Drut | 2 | - | Stalowy lub miedziany. Do napraw, pułapek, improwizacji anten i wiązania konstrukcji. |
 | Kombinerki | 2 | @pros:Wielofunkcyjny @pros:Precyzyjny | Cięcie, chwytanie i podstawowe naprawy techniczne. |
+| Maczeta | 2 | @pros:Tnący(2) @pros:Wielofunkcyjny @pros:Wyważony | Przecinanie zarośli, lin i lekkiego drewna. Statystyki bojowe: [Maczeta](Broń.md#broń-wręcz). |
+| Młotek | 2 | @pros:Wielofunkcyjny @cons:Krótki | Do wbijania gwoździ, wyważania i podstawowych prac ciesielskich. Statystyki bojowe: [Młotek](Broń.md#broń-wręcz). |
+| Nici i igły | 2 | - | Do naprawy odzieży, plecaków i ekwipunku. |
+| Nóż | 2 | @pros:Cichy @pros:Lekki | Uniwersalny nóż do prac w terenie i walki. Statystyki bojowe: [Nóż](Broń.md#broń-wręcz). |
+| Siekiera | 2 | @pros:Tnący(2) @pros:Wytrzymały @cons:Ciężki | Ścinanie i przygotowanie drewna. Statystyki bojowe: [Siekiera](Broń.md#broń-wręcz). |
+| Smar | 2 | @pros:Konserwujący | Olej lub odpowiednik WD-40. Do konserwacji broni, narzędzi i ruchomych części mechanizmów. Zapobiega rdzy. |
+| Taśma klejąca | 2 | @pros:Wielofunkcyjny(2) | Mocna taśma do prowizorycznych napraw, uszczelnień i improwizacji. Traci przyczepność w wilgoci. |
+| Łopata | 2 | @pros:Wielofunkcyjny @pros:Wytrzymały | Kopanie, prace ziemne i improwizowane zastosowania. |
+| Kilof | 3 | @pros:Potężny @pros:Wytrzymały @cons:Ciężki | Kruszenie skał, betonu i twardego gruntu. Statystyki bojowe: [Kilof](Broń.md#broń-wręcz). |
+| Linka stalowa | 3 | @pros:Wytrzymały(2) | Odporna na przecięcie i rozerwanie. Do zabezpieczeń, pułapek i napraw wymagających dużej nośności. |
+| Multitool | 3 | @pros:Wielofunkcyjny(2) | Nóż, śrubokręt, kombinerki i więcej w jednym narzędziu. Niezastąpiony przy improwizowanych naprawach. |
 | Narzędzia do drewna | 3 | @pros:Wielofunkcyjny | Piła, dłuta, strug i inne podstawowe narzędzia do cięcia oraz obróbki drewna. |
+| Narzędzia do elektryki | 3 | @pros:Precyzyjny @cons:Skomplikowany | Śrubokręty izolowane, miernik, szczypce do przewodów i zestaw do napraw instalacji elektrycznych. |
 | Narzędzia do metalu | 3 | @pros:Wielofunkcyjny @pros:Precyzyjny | Piła do metalu, klucze, imadło podręczne i narzędzia do cięcia, montażu oraz napraw elementów metalowych. |
 | Narzędzia do szkła | 3 | @pros:Precyzyjny | Nóż do szkła, przyssawki, szczypce i środki do bezpiecznego cięcia oraz obróbki szkła. |
-| Narzędzia do elektryki | 3 | @pros:Precyzyjny @cons:Skomplikowany | Śrubokręty izolowane, miernik, szczypce do przewodów i zestaw do napraw instalacji elektrycznych. |
-| Łopata | 2 | @pros:Wielofunkcyjny @pros:Wytrzymały | Kopanie, prace ziemne i improwizowane zastosowania. |
-| Siekiera | 2 | @pros:Tnący(2) @pros:Wytrzymały @cons:Ciężki | Ścinanie i przygotowanie drewna. Statystyki bojowe: [Siekiera](Broń.md#broń-wręcz). |
-| Maczeta | 2 | @pros:Tnący(2) @pros:Wielofunkcyjny @pros:Wyważony | Przecinanie zarośli, lin i lekkiego drewna. Statystyki bojowe: [Maczeta](Broń.md#broń-wręcz). |
 | Wiertarka | 3 | @pros:Wydajny @cons:Energia | Wiercenie w konstrukcjach i naprawach. Egzemplarz ręczny jest cichszy i wolniejszy; akumulatorowy wymaga energii. |
-| Łom | 3 | @pros:Wytrzymały(2) @pros:Wielofunkcyjny @cons:Ciężki | Wyważanie, rozbieranie konstrukcji i improwizowane naprawy. Statystyki bojowe: [Łom](Broń.md#broń-wręcz). |
-| Młotek | 2 | @pros:Wielofunkcyjny @cons:Krótki | Do wbijania gwoździ, wyważania i podstawowych prac ciesielskich. Statystyki bojowe: [Młotek](Broń.md#broń-wręcz). |
-| Kilof | 3 | @pros:Potężny @pros:Wytrzymały @cons:Ciężki | Kruszenie skał, betonu i twardego gruntu. Statystyki bojowe: [Kilof](Broń.md#broń-wręcz). |
 | Zestaw naprawczy | 3 | @pros:Wielofunkcyjny(2) | Zbiór podstawowych narzędzi i materiałów do napraw sprzętu. |
-| Wytrychy | 4 | @pros:Precyzyjny(2) @cons:Skomplikowany | Umożliwiają otwieranie niektórych zamków bez klucza. |
+| Łom | 3 | @pros:Wytrzymały(2) @pros:Wielofunkcyjny @cons:Ciężki | Wyważanie, rozbieranie konstrukcji i improwizowane naprawy. Statystyki bojowe: [Łom](Broń.md#broń-wręcz). |
 | Piła łańcuchowa | 4 | @pros:Szybki(3) @pros:Potężny(2) @pros:Krwawiący(2) @cons:Głośny(5) @cons:Paliwo @cons:Ciężki(2) | Szybkie cięcie drewna. Statystyki bojowe: [Piła łańcuchowa](Broń.md#broń-wręcz). |
-| Taśma klejąca | 2 | @pros:Wielofunkcyjny(2) | Mocna taśma do prowizorycznych napraw, uszczelnień i improwizacji. Traci przyczepność w wilgoci. |
-| Linka stalowa | 3 | @pros:Wytrzymały(2) | Odporna na przecięcie i rozerwanie. Do zabezpieczeń, pułapek i napraw wymagających dużej nośności. |
-| Drut | 2 | - | Stalowy lub miedziany. Do napraw, pułapek, improwizacji anten i wiązania konstrukcji. |
-| Nici i igły | 2 | - | Do naprawy odzieży, plecaków i ekwipunku. |
-| Smar | 2 | @pros:Konserwujący | Olej lub odpowiednik WD-40. Do konserwacji broni, narzędzi i ruchomych części mechanizmów. Zapobiega rdzy. |
+| Wytrychy | 4 | @pros:Precyzyjny(2) @cons:Skomplikowany | Umożliwiają otwieranie niektórych zamków bez klucza. |
 
 ## Gotowanie
 
 | Nazwa | Wartość | Właściwości | Opis |
 |---|:---:|---|---|
-| Menażka | 1 | @pros:Wytrzymały | Naczynie do gotowania i spożywania posiłków w terenie. |
 | Garnek | 1 | @pros:Wytrzymały | Do gotowania większych ilości żywności. |
-| Kuchenka turystyczna | 2 | @pros:Lekki @cons:Paliwo | Przenośne źródło ognia do gotowania. |
+| Menażka | 1 | @pros:Wytrzymały | Naczynie do gotowania i spożywania posiłków w terenie. |
 | Butla gazowa | 2 | @pros:Paliwo @cons:Ciężki | Zapas gazu do kuchenek i innych urządzeń. |
+| Kuchenka turystyczna | 2 | @pros:Lekki @cons:Paliwo | Przenośne źródło ognia do gotowania. |
 | Zestaw naczyń | 2 | @pros:Wielofunkcyjny | Podstawowe naczynia i sztućce do przygotowywania posiłków. |
 
 ## Higiena
 
 | Nazwa | Wartość | Właściwości | Opis |
 |---|:---:|---|---|
+| Ręcznik | 2 | - | Do osuszania ciała i wyposażenia. |
 | Mydło | 3 | @pros:Higieniczny | Podstawowy środek do mycia rąk i ciała. |
 | Środki piorące | 3 | @pros:Higieniczny | Umożliwiają pranie odzieży i utrzymanie jej w używalnym stanie. |
 | Papier toaletowy | 4 | @pros:Relaksacyjny | Podstawowy środek higieniczny — w postapo daje też poczucie normalności i komfortu. |
 | Szczoteczka i pasta | 4 | @pros:Higieniczny | Podstawowa higiena jamy ustnej. |
-| Ręcznik | 2 | - | Do osuszania ciała i wyposażenia. |
 
 ## Eksploracja
 
@@ -80,33 +83,33 @@ Jeśli postać przez cały dzień nie ma możliwości zjedzenia czegokolwiek lub
 |---|:---:|---|---|
 | Mapa | 1 | @pros:Orientacja | Pomaga określić położenie i zaplanować trasę. |
 | Kompas | 2 | @pros:Orientacja | Umożliwia określenie kierunków bez dostępu do elektroniki. |
-| Lornetka | 2 | @pros:Dalekowzroczność | Umożliwia obserwację odległych miejsc i celów. |
-| Krótkofalówka | 3 | @pros:Komunikacja @cons:Energia | Pozwala komunikować się na odległość bez infrastruktury. |
 | Latarka | 2 | @cons:Energia | Niezbędna w nocy i ciemnych budynkach. Bez baterii bezużyteczna. |
 | Latarka czołowa | 2 | @pros:Lekki @cons:Energia | Oświetla miejsce pracy bez zajmowania rąk. |
+| Lornetka | 2 | @pros:Dalekowzroczność | Umożliwia obserwację odległych miejsc i celów. |
+| Krótkofalówka | 3 | @pros:Komunikacja @cons:Energia | Pozwala komunikować się na odległość bez infrastruktury. |
 | Noktowizor | 5 | @pros:Widzenie-w-ciemności @cons:Energia(2) @cons:Kruchy | Umożliwia obserwację w bardzo słabym świetle. |
 
 ## Magazynowanie
 
 | Nazwa | Wartość | Właściwości | Opis |
 |---|:---:|---|---|
-| Plecak | 2 | @pros:Pojemny(2) | Podstawowy sposób przenoszenia wyposażenia. |
 | Torba | 1 | @pros:Pojemny @pros:Lekki | Prosty pojemnik na wyposażenie. |
 | Worek | 1 | @pros:Pojemny @pros:Lekki | Prosty i tani sposób przechowywania materiałów. |
-| Skrzynia | 2 | @pros:Wytrzymały @pros:Pojemny(3) @cons:Ciężki | Solidny pojemnik do przechowywania wyposażenia. |
 | Kanister na wodę | 2 | @pros:Pojemny(2) @pros:Wytrzymały | Przenośny pojemnik na wodę pitną. |
+| Plecak | 2 | @pros:Pojemny(2) | Podstawowy sposób przenoszenia wyposażenia. |
+| Skrzynia | 2 | @pros:Wytrzymały @pros:Pojemny(3) @cons:Ciężki | Solidny pojemnik do przechowywania wyposażenia. |
 | Pojemnik hermetyczny | 3 | @pros:Izolowany @pros:Wodoodporny | Chroni zawartość przed wodą, wilgocią i zanieczyszczeniami. |
 
 ## Przetrwanie
 
 | Nazwa | Wartość | Właściwości | Opis |
 |---|:---:|---|---|
-| Filtr wody | 3 | @pros:Filtr(5) | Przenośny filtr mechaniczny. Umożliwia bezpieczne picie z rzek i zbiorników bez gotowania. Wymaga regularnego czyszczenia. |
 | Zapałki | 1 | @cons:Wrażliwy-na-wilgoć | Drewniane zapałki do rozpalania ognia. Przechowywać w szczelnym pojemniku — wilgoć unieszkodliwia całą paczkę. |
-| Zapalniczka | 2 | - | Szybsza i wygodniejsza od zapałek. Paliwo się kończy. |
-| Plandeka | 2 | @pros:Lekki | Lekka płachta do budowy prowizorycznego schronienia lub ochrony przed deszczem. |
-| Śpiwór | 2 | @pros:Izolowany @pros:Regeneracyjny | Ochrona przed zimnem i lepszy odpoczynek przy nocowaniu w terenie. |
 | Lina (10 m) | 2 | @pros:Wielofunkcyjny | Nylonowa lub sizalowa. Wspinaczka, pułapki, schronienia — jedno z najbardziej wielozadaniowych narzędzi przetrwania. |
+| Plandeka | 2 | @pros:Lekki | Lekka płachta do budowy prowizorycznego schronienia lub ochrony przed deszczem. |
+| Zapalniczka | 2 | - | Szybsza i wygodniejsza od zapałek. Paliwo się kończy. |
+| Śpiwór | 2 | @pros:Izolowany @pros:Regeneracyjny | Ochrona przed zimnem i lepszy odpoczynek przy nocowaniu w terenie. |
+| Filtr wody | 3 | @pros:Filtr(5) | Przenośny filtr mechaniczny. Umożliwia bezpieczne picie z rzek i zbiorników bez gotowania. Wymaga regularnego czyszczenia. |
 
 ## Medycyna
 
@@ -114,24 +117,24 @@ Przedmioty z Atutem **Antyseptyczny** służą do przeciwdziałania [Skażeniu t
 
 | Nazwa | Wartość | Właściwości | Opis |
 |---|:---:|---|---|
-| Apteczka | 3 | @pros:Leczniczy(2) | Bandaże, gaziki, opatrunki i środki dezynfekujące. Standardowe wyposażenie do opatrywania ran. |
-| Opatrunek kompresowy | 3 | @pros:Tamujący(2) | Jałowy opatrunek z bandażem. Skuteczny przy tamowaniu krwawień. |
-| Opaska uciskowa | 3 | @pros:Tamujący(5) @cons:Ryzykowny | Ostateczny środek przy silnym krwotoku z kończyny. Źle założona lub zbyt długo utrzymywana uszkadza tkanki. |
 | Tabletki przeciwbólowe | 2 | @pros:Przeciwbólowy | Aspiryna, ibuprofen. Zmniejszają ból i stan zapalny. Nie leczą przyczyny. |
-| Antybiotyki | 4 | @pros:Antybakteryjny(3) | Leczą infekcje bakteryjne. Stosować tylko przy potwierdzonym zakażeniu — nadużycie buduje oporność. |
+| Apteczka | 3 | @pros:Leczniczy(2) | Bandaże, gaziki, opatrunki i środki dezynfekujące. Standardowe wyposażenie do opatrywania ran. |
 | Maska filtrująca | 3 | @pros:Filtr(2) | Chroni przed pyłem, dymem i częścią patogenów. Wkłady mają ograniczoną żywotność. |
+| Opaska uciskowa | 3 | @pros:Tamujący(5) @cons:Ryzykowny | Ostateczny środek przy silnym krwotoku z kończyny. Źle założona lub zbyt długo utrzymywana uszkadza tkanki. |
+| Opatrunek kompresowy | 3 | @pros:Tamujący(2) | Jałowy opatrunek z bandażem. Skuteczny przy tamowaniu krwawień. |
+| Antybiotyki | 4 | @pros:Antybakteryjny(3) | Leczą infekcje bakteryjne. Stosować tylko przy potwierdzonym zakażeniu — nadużycie buduje oporność. |
 
 ### Środki antyseptyczne
 
 | Nazwa | Wartość | Właściwości | Opis |
 |---|:---:|---|---|
-| Mocny alkohol | 3 | @pros:Antyseptyczny(3) @pros:Relaksacyjny(2) @cons:Wycieńczający | Wysokoprocentowy alkohol do dezynfekcji; wypity łagodzi napięcie, ale psuje regenerację fizyczną. |
-| Woda utleniona | 2 | @pros:Antyseptyczny(2) | Popularny środek antyseptyczny, który pomaga oczyścić ranę z drobnoustrojów i zanieczyszczeń. |
-| Jodyna | 4 | @pros:Antyseptyczny(4) | Skuteczny środek o szerokim działaniu przeciwdrobnoustrojowym, ceniony za możliwość dezynfekcji ran. |
-| Spirytus | 3 | @pros:Antyseptyczny(3) | Bardzo wysokoprocentowy alkohol, skuteczny w dezynfekcji, choć drażniący dla uszkodzonych tkanek. |
-| Zestaw chirurgiczny | 4 | @pros:Antyseptyczny(3) @pros:Leczniczy(4) @cons:Specjalistyczny(2) | Komplet sterylnych lub możliwych do wysterylizowania narzędzi pozwalających na profesjonalne opracowanie ran. |
-| Miód | 3 | @pros:Antyseptyczny(3) | Naturalny środek o właściwościach przeciwdrobnoustrojowych, który może być stosowany jako improwizowany opatrunek. |
 | Wrzątek | 1 | @pros:Antyseptyczny | Gorąca woda przydatna przede wszystkim do oczyszczania ran oraz wyjaławiania narzędzi i materiałów. |
+| Woda utleniona | 2 | @pros:Antyseptyczny(2) | Popularny środek antyseptyczny, który pomaga oczyścić ranę z drobnoustrojów i zanieczyszczeń. |
+| Miód | 3 | @pros:Antyseptyczny(3) @pros:Kaloryczny | Naturalny środek o właściwościach przeciwdrobnoustrojowych, który może być stosowany jako improwizowany opatrunek. |
+| Mocny alkohol | 3 | @pros:Antyseptyczny(3) @pros:Relaksacyjny(2) @cons:Wycieńczający | Wysokoprocentowy alkohol do dezynfekcji; wypity łagodzi napięcie, ale psuje regenerację fizyczną. |
+| Spirytus | 3 | @pros:Antyseptyczny(3) | Bardzo wysokoprocentowy alkohol, skuteczny w dezynfekcji, choć drażniący dla uszkodzonych tkanek. |
+| Jodyna | 4 | @pros:Antyseptyczny(4) | Skuteczny środek o szerokim działaniu przeciwdrobnoustrojowym, ceniony za możliwość dezynfekcji ran. |
+| Zestaw chirurgiczny | 4 | @pros:Antyseptyczny(3) @pros:Leczniczy(4) @cons:Specjalistyczny(2) | Komplet sterylnych lub możliwych do wysterylizowania narzędzi pozwalających na profesjonalne opracowanie ran. |
 | Chlorheksydyna | 5 | @pros:Antyseptyczny(5) @cons:Specjalistyczny | Silny i szeroko działający antyseptyk, skuteczny przeciwko wielu bakteriom i innym drobnoustrojom. |
 
 ### Zielarstwo
@@ -148,10 +151,10 @@ Rośliny zastępują rzadkie i przeterminowane leki. Zbieranie, rozpoznanie i pr
 
 | Nazwa | Wartość | Właściwości | Opis |
 |---|:---:|---|---|
-| Panele słoneczne | 4 | @pros:Energia(2) @cons:Zależny-od-pogody(4) @cons:Ciężki | Konwertują światło słoneczne na prąd. Do ładowania akumulatorów i zasilania prostych urządzeń. |
-| Turbina wiatrowa | 4 | @pros:Energia(1) @cons:Zależny-od-pogody(2) | Poruszane wiatrem łopaty generują prąd. Do ładowania akumulatorów i zasilania prostych urządzeń. |
 | Baterie | 1 | @pros:Energia | Jednorazowe ogniwa do latarek, radia i drobnej elektroniki. Niewielki zapas — szybko się wyczerpują. |
+| Przewody elektryczne | 2 | @pros:Wytrzymały | Miedziane lub aluminiowe kable. Do rozprowadzania prądu i napraw instalacji. |
 | Akumulator | 3 | @pros:Energia(3) @cons:Ciężki(2) | Magazyn energii elektrycznej. Do zasilania urządzeń gdy nie ma innego źródła prądu. |
 | Radio korbowe | 3 | @pros:Niezależny @pros:Relaksacyjny | Odbiornik na baterie lub korbkę. Głosy, muzyka i wiadomości — namiastka dawnego życia bez zewnętrznego zasilania. |
-| Przewody elektryczne | 2 | @pros:Wytrzymały | Miedziane lub aluminiowe kable. Do rozprowadzania prądu i napraw instalacji. |
 | Dron | 4 | @pros:Pozycja-obserwacyjna(3) @pros:Wielofunkcyjny @pros:Cichy(2) @cons:Energia @cons:Skomplikowany(2) @cons:Kruchy(2) | Bezzałogowy aparat latający ze kamerą. Zwiad z powietrza bez narażania operatora — wymaga naładowania, wprawy w sterowaniu i łatwo ulega uszkodzeniu. |
+| Panele słoneczne | 4 | @pros:Energia(2) @cons:Zależny-od-pogody(4) @cons:Ciężki | Konwertują światło słoneczne na prąd. Do ładowania akumulatorów i zasilania prostych urządzeń. |
+| Turbina wiatrowa | 4 | @pros:Energia(1) @cons:Zależny-od-pogody(2) | Poruszane wiatrem łopaty generują prąd. Do ładowania akumulatorów i zasilania prostych urządzeń. |

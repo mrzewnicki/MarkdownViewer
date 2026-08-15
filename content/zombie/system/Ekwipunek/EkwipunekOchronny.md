@@ -36,15 +36,15 @@ Choć istnieją ubrania zdolne zwiększyć ochronę przed atakami fizycznymi to 
 
 | Nazwa | Ochrona | Właściwości | Wytworzenie |
 |---|---:|---|---|
-| Zwykłe ubrania | 0 | @pros:Tamujący | (Tkanina × 1) + [Krawiectwo](../Umiejętności.md#krawiectwo) |
 | Ciężka odzież | 0 | @pros:Ciepły @pros:Amortyzacja | (Tkanina × 2) + [Krawiectwo](../Umiejętności.md#krawiectwo) |
-| Odzież robocza | 1 | @pros:Wytrzymały | (Tkanina × 2) + [Krawiectwo](../Umiejętności.md#krawiectwo) |
+| Kombinezon antychemiczny | 0 | @pros:Ochrona-chemiczna(3) @cons:Ciężki | (Tkanina × 2, Chemia × 2) + [Krawiectwo](../Umiejętności.md#krawiectwo) |
+| Mundur wojskowy | 0 | @pros:Kamuflujący | (Tkanina × 2) + [Krawiectwo](../Umiejętności.md#krawiectwo) |
 | Odzież przeciwdeszczowa | 0 | @pros:Wodoodporny | (Tkanina × 1, Chemia × 1) + [Krawiectwo](../Umiejętności.md#krawiectwo) |
 | Odzież termiczna | 0 | @pros:Ciepły(2) | (Tkanina × 2) + [Krawiectwo](../Umiejętności.md#krawiectwo) |
-| Mundur wojskowy | 0 | @pros:Kamuflujący | (Tkanina × 2) + [Krawiectwo](../Umiejętności.md#krawiectwo) |
-| Kombinezon antychemiczny | 0 | @pros:Ochrona-chemiczna(3) @cons:Ciężki | (Tkanina × 2, Chemia × 2) + [Krawiectwo](../Umiejętności.md#krawiectwo) |
+| Zwykłe ubrania | 0 | @pros:Tamujący | (Tkanina × 1) + [Krawiectwo](../Umiejętności.md#krawiectwo) |
 | Odzież antyprzecięciowa | 1 | @pros:Antyprzecięciowy(2) | (Tkanina × 2, Metal × 1) + [Krawiectwo](../Umiejętności.md#krawiectwo) |
 | Odzież ognioodporna | 1 | @pros:Ognioodporny(2) @cons:Ciężki | (Tkanina × 2, Chemia × 1) + [Krawiectwo](../Umiejętności.md#krawiectwo) |
+| Odzież robocza | 1 | @pros:Wytrzymały | (Tkanina × 2) + [Krawiectwo](../Umiejętności.md#krawiectwo) |
 
 ### Pancerz Uzupełniający
 
@@ -60,11 +60,11 @@ Przykłady:
 | Nazwa | Ochrona | Właściwości | Wytworzenie |
 |---|---:|---|---|
 | Kamizelka taktyczna | 0 | @pros:Pojemny(2) | (Tkanina × 2, Spoiwa × 1) + [Krawiectwo](../Umiejętności.md#krawiectwo) |
-| Kamizelka kevlarowa | 2 | @pros:Kuloodporny(2) | (Tkanina × 2, Chemia × 1) + [Krawiectwo](../Umiejętności.md#krawiectwo) |
-| Kolczuga | 1 | @pros:Antyprzebiciowy(2) @cons:Ciężki | (Metal × 3) + [Kowalstwo](../Umiejętności.md#kowalstwo) |
 | Hełm stalowy | 1 | @pros:Wytrzymały @cons:Ciężki | (Metal × 2) + [Kowalstwo](../Umiejętności.md#kowalstwo) |
 | Hełm taktyczny | 1 | @pros:Wytrzymały @pros:Pojemny | (Metal × 1, Tkanina × 1) + [Kowalstwo](../Umiejętności.md#kowalstwo) |
+| Kolczuga | 1 | @pros:Antyprzebiciowy(2) @cons:Ciężki | (Metal × 3) + [Kowalstwo](../Umiejętności.md#kowalstwo) |
 | Nakolanniki i nałokietniki | 1 | @pros:Amortyzacja | (Tkanina × 1, Spoiwa × 1) + [Krawiectwo](../Umiejętności.md#krawiectwo) |
+| Kamizelka kevlarowa | 2 | @pros:Kuloodporny(2) | (Tkanina × 2, Chemia × 1) + [Krawiectwo](../Umiejętności.md#krawiectwo) |
 | Tarcza balistyczna | 2 | @pros:Kuloodporny(3) @cons:Ciężki(3) | (Metal × 3, Tkanina × 1) + [Kowalstwo](../Umiejętności.md#kowalstwo) |
 
 ### Pancerz Główny
@@ -76,9 +76,9 @@ Najwyższy poziom ochrony zapewniajacy największe wartości pancerza. Często s
 
 | Nazwa | Ochrona | Właściwości | Wytworzenie |
 |---|---:|---|---|
+| Improwizowany pancerz | 1 | @pros:Prowizorka(2) @cons:Nieporęczny | (Metal × 1, Tkanina × 1, Spoiwa × 1) |
 | Lekki pancerz płytowy | 2 | @pros:Wytrzymały(2) @cons:Ciężki | (Metal × 4, Tkanina × 1) + [Kowalstwo](../Umiejętności.md#kowalstwo) |
 | Ciężki pancerz płytowy | 3 | @pros:Wytrzymały(3) @cons:Ciężki(3) @cons:Gorący | (Metal × 6, Tkanina × 1) + [Kowalstwo](../Umiejętności.md#kowalstwo) |
 | Kamizelka balistyczna z płytami | 3 | @pros:Kuloodporny(3) @cons:Ciężki(2) | (Tkanina × 2, Metal × 3, Chemia × 1) + [Krawiectwo](../Umiejętności.md#krawiectwo), [Kowalstwo](../Umiejętności.md#kowalstwo) |
 | Kombinezon saperski | 3 | @pros:Ochrona-wybuchowa(5) @pros:Wytrzymały(2) @cons:Bardzo-ciężki(3) | (Tkanina × 3, Metal × 3, Chemia × 1) + [Krawiectwo](../Umiejętności.md#krawiectwo), [Kowalstwo](../Umiejętności.md#kowalstwo) |
-| Improwizowany pancerz | 1 | @pros:Prowizorka(2) @cons:Nieporęczny | (Metal × 1, Tkanina × 1, Spoiwa × 1) |
 | Zbroja historyczna | 3 | @pros:Wytrzymały(3) @cons:Ciężki(3) @cons:Gorący | (Metal × 6) + [Kowalstwo](../Umiejętności.md#kowalstwo) |

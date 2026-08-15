@@ -42,7 +42,7 @@ Narzędzia używane też jako broń (siekiera, łom, młotek, piła łańcuchowa
 | Pistolet 9mm (Glock) | 1d6+2 | @pros:Niezawodny(2) @pros:Dostępna-amunicja @cons:Głośny(2) @cons:Naboje | (Metal × 2) + [Rusznikarstwo](../Umiejętności.md#rusznikarstwo) |
 | Rewolwer | 1d6+2 | @pros:Niezawodny @pros:Prosty @cons:Wolny @cons:Naboje | (Metal × 2) + [Rusznikarstwo](../Umiejętności.md#rusznikarstwo) |
 | Pistolet maszynowy | 1d6+2 | @pros:Szybkostrzelny(2) @cons:Głośny(3) @cons:Naboje(3) | (Metal × 2) + [Rusznikarstwo](../Umiejętności.md#rusznikarstwo) |
-| Strzelba pompowa (12-gauge) | 2d6+2 | @pros:Rozpryskowy(3) @pros:Zastraszający(2) @cons:Głośny(3) @cons:Krótki-zasięg(2) @cons:Mocny-odrzut @cons:Naboje(2) | (Metal × 2, Drewno × 1) + [Rusznikarstwo](../Umiejętności.md#rusznikarstwo) |
+| Strzelba pompowa (12-gauge) | 2d6+2 | @pros:Rozpryskowy(3) @cons:Głośny(3) @cons:Krótki-zasięg(2) @cons:Mocny-odrzut @cons:Naboje(2) | (Metal × 2, Drewno × 1) + [Rusznikarstwo](../Umiejętności.md#rusznikarstwo) |
 | Karabin myśliwski | 2d6 | @pros:Precyzyjny(2) @pros:Potężny(2) @cons:Wolny(2) @cons:Długi @cons:Naboje | (Metal × 2, Drewno × 1) + [Rusznikarstwo](../Umiejętności.md#rusznikarstwo) |
 | Karabinek szturmowy | 2d6 | @pros:Wszechstronny @pros:Szybkostrzelny(2) @cons:Głośny(3) @cons:Naboje(4) | (Metal × 3) + [Rusznikarstwo](../Umiejętności.md#rusznikarstwo) |
 | Karabin wyborowy | 2d6+1 | @pros:Precyzyjny(3) @pros:Potężny(2) @cons:Długi(2) @cons:Wolny(2) @cons:Naboje | (Metal × 3, Szkło × 1) + [Rusznikarstwo](../Umiejętności.md#rusznikarstwo) |
