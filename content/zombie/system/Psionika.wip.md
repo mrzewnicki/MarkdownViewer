@@ -13,3 +13,14 @@ Lista otwarta, czysto opisowa - nie wpływa na mechanikę, ułatwia tylko klasyf
 MG lub gracz mogą dopisać nowy kierunek, jeśli dana mutacja Psioniczna nie pasuje do żadnego z powyższych.
 
 `ToDo: rozbudzowanie psioniki. Konkretne przykłady zaklęć, ich rzucanie, i przeciwstawianie się im. Dorobić warstwe fabularną. Przeanalizować DeathNet i LiveCore`
+
+Każde zaklęcie psioniczne powinno określać:
+- Swoja nazwę
+- Opis fabularny
+- Efekt mechaniczny
+- Potrzebny test
+- Możliwe odpieranie
+
+
+## Zaklęcia
+
