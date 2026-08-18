@@ -1,5 +1,7 @@
 # Fauna
 
+![AnomalyLogo.png](../../images/AnomalyLogo.png)
+
 ## Wybuch epidemii
 
 Gdy `LiveCore` zaczął rozlewać się po miastach, świat zwierząt nie doświadczył tej samej zagłady co ludzie — przynajmniej nie w ten sam sposób. Wirus został zaprojektowany z chirurgiczną precyzją pod ludzki mózg: korę przedczołową, ciało migdałowate, układ limbiczny i pień mózgu w konfiguracji, jaką natura wykształciła tylko u człowieka. Zwierzęce umysły, choć bywają równie złożone, są zbudowane inaczej. Te same struktury albo nie istnieją, albo pełnią zupełnie inne funkcje, przez co wirus nie ma czego przejąć.

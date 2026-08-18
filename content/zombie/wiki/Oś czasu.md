@@ -27,14 +27,15 @@
 - [2028.08] Rozpoczyna się operacja GHOST PROTOCOL — formacja Phantomów przy wsparciu sił specjalnych USA i resztek NATO przystępuje do obławy na Alfy
 - [2028.09] Upadek Los Angeles — Alfa (Nevada) atakuje przez San Bernardino. Panika i przemoc cywilna przyspiesza upadek od wewnątrz.
 - [2028.10] Las Vegas — anomalia obronna — kasyna jako fortece i pustynna bariera spowalnia hordy. Początek 14-miesięcznej obrony.
-- [2029.02] Słoneczny Deszcz
+- [2029.02] Operacja: Słoneczny Deszcz
 	-  Seria bombardowań nuklearnych na południowe miasta i wschodni brzeg USA jako ostatnia próba ratowania się przed gromadzącymi się hordami
 	- Zombie, które przeżyły eksplozje niosą napromieniowanie przez rzeki i lasy skarzając naturę
 	-  Cała flora zaczyna się zmieniać
 - [2029.05] Upadek San Francisco — 18 mies. jako centrum dowodzenia cyfrowego. Alfa od Oakland, mosty Bay wysadzone. Miasto pada po 6 tygodniach krwawych walk.
 - [2029.06] Upadek Las Vegas — Alfa niszczy Hoover Dam. Brak zasilania kończy 14-miesięczną obronę.
-- [2030.01] Świat budzi się po wojnie
-	- [2030.01] Fauna i Flora jest przemutowana - unikając zombie ludzie próbuje poradzić sobie w tym świecie
+- [2030.01] Exodus
+- [2032.01] Świat budzi się po wojnie
+	- [2032.01] Fauna i Flora jest przemutowana - unikając zombie ludzie próbuje poradzić sobie w tym świecie
 - [2045.01] Zaczyna się nowy świat.
 ```
 
