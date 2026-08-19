@@ -218,7 +218,11 @@ Nim wszyscy opuścili szpital by wcielać w życię wolę Harona, Sullivan zszed
 
 `ToDo: Pierwszy Phantom - Numer 0`
 
+#### AVEN
 
+Awen to walijski termin związany z inspiracją, natchnieniem poetyckim i twórczym przepływem. Wizje, natchnienia, przeczucia i pełne zrozumienie. Haron za sprawą Exo stworzył sieć w którą wciąga swoich wyznawców. Niemal orgazmistyczne biologicznie uniesienie przenosi ich świadomość do alternatywnego iluzorycznego świata. Haron uważa, że ludzkość nie potrafi stworzyć dla siebie idealnego świata. Dlatego on bierze ich pod swoje skrzydła. Gdy są pod jego kontrolą ich ciało staje się niewolnikiem Harona, ciężko pracując fizycznie by wcielić jego wizje. Ludzkie ciało jest małym generatorem prądu i ciepła. Haron potrzebuje swoich wyznawców by Ci zasilili jego istnienie.
+
+`ToDo: dokładniej opisać`
 
 
 

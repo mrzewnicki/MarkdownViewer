@@ -72,3 +72,52 @@ Za przykład może posłużyć Phantom Ashen, który mógł wywoływać zapłon 
 Nikt nie wie, czym Exo naprawdę jest. Czy to pierwiastek, czy związek. Czy coś, co fizyka znana człowiekowi nie ma jeszcze słów opisać, bo nikt nigdy wcześniej nie dysponował narzędziami potrzebnymi do jego zbadania. A jeśli ktokolwiek kiedyś to rozgryzie, jedno będzie pewne zanim pozna odpowiedź:
 
 Exo przeniknęło ten świat na wskroś.
+
+## Śniący
+
+Phantomy były produktem DeathNet'u. Zombie przeklęte zostały przez LiveCore, a Haron zawładnął umysłami wyznawców "przebudzając" ich jak twierdzi. Każda ze stron konfliktu miała swojego autora. Śniący są skutkiem ewolucji człowieka, która dostrzegła nowe okoliczności.
+
+Kiedy Haron stworzył [AVEN](DeathNet.md#aven) ewolucja przez wrażliwość ludzi na Exo postanowiła sprawdzić ten kierunek rozwoju. Powstałe mutacje co raz bardziej uchylały wąskie przejście zacofania człowieka. Prawda jest taka, że gatunek ludzki żyjący od lat w dobrobycie i zawrotnym tempie utracił zdolność do tak skutecznej adaptacji jak u ich poprzedników. Organizmy były w pewnej formie uśpienia. Ludzie pozbawieni największego stężenia DeathNet'u i LiveCore'u musieli obrać cieższą ścieżkę dostosowania się do nowych realiów. W ten sposób zaczęli przekraczać swoje granice i powoli nabierać nowych zdolności niezaleznie od innych.
+
+Śniący są od siebie i innych niezależni. Nie mają struktur, hierarchii, władzy czy potęgi. Za nimi jednak stoi cała historia i rozwój gatunku. Poprzez swoje sny potrafią przemierzać czas przeszły, obecny i przyszły. Dzieci nie pamiętające starego świata niemal jak wieszcze opowiadają o tym jak strzeliste pomarańczowe wieże przenoszą na długim ramieniu obiektu. Nie rozumieją jak one to robią, jak je zbudować, czym dokładnie jest zasilanie, ale widzą te obrazy w snach swoich i innych ludzi. Potrafią wyciągać z zakątków umysły zdefragmentowane informacje o których mózg walczący tylko o przetrwanie chciał zapomnieć by nie torturować się myślą o utracie. One nie czują tej straty, bardziej zaciekawienie. 
+
+Jednym z podstawowych umiejętności śniących jest też komunikowanie się poprzez sny. Ich wadą jest otwarcie na interpretację, ale wyjątkowo uzdolniony Śniący umie być tak wyraźny w przekazie jakby stał tuż obok i mówił. W ten sposób nie rozumiejąc jeszcze swoich mocy Śniący porozumiewali się z bunkrów, podziemi metra i innych kryjówek gdy podczas Exodusu ludzkość musiała się schować. Wtedy jednak dla wszystkich to były tylko sny dzieci. Nie brano ich na poważnie. Nawet dziś wątpie się w ich faktyczne zdolności. Zrzuca się to na karby przypadku lub dedukcji jakoby byli szarlatanami ustawiającymi wszystko pod swoją tezę. Nie można ich przez to nazwać zaufanymi wszystkich ludzi. Niektóre osady dokonały mordów na nich po tym jak ludzi zaczęły nawiedzać koszmary i złe myśli, a myśl o lunatykowaniu tak przeraziła wielu, że natychmiast zrzucili na nich winę za największe głupstwa. Dlatego Śniący niekoniecznie chętnie rozpowiadają o wszystkim co potrafią.
+
+Kiedy organizm śni, jaźń i wola węduje przez AVEN. Co sprawia, że Śniący jest nie raz całkowicie bezbronny. Na jawie jego bronią może być iluzja i fortel albo groźba przekleństwa koszmarów. W snach na prawdę potrafią sprowadzić na człowieka koszmar, ale ten o wiele częściej chętnie dorwałby Śniącego niż zwykłego człowieka. Przejęty przez koszmar Śniący może stać się koszmarem na jawie, który spełni wszystkie obawy ludzi. Będzie kontrolował przywódców, doprowadzał do samobójstw ludzi, nie dając im odpocząć wymęczy ich fizycznie. Z czasem ludzie z dodatkiem iluzji przestaną odróżniać co jest snem, a co jawą.
+
+Koszmary są tworem ludzkich myśli i uczuć, tych pozytywnych i negatywnych. Haronowi nie podoba się to, że ktoś inny niż on korzysta z jego AVEN. Dlatego zaczął sam konstruować koszmary i wysyłać je jak łowców by polowały na Śniących, a każdy przejęty śniący może posłużyć do tego by przebudzić jeszcze więcej ludzi. Podobnie o tej kwestii myślałyby Zombie gdyby tylko mogły poznać czym są Śniący. Tylko to jest barierą między Śniącym, a zatarganiem go do jednostki, która zbada jego zdolności. Zdarzają się bestie, które także wkraczaja w AVEN, ale robią to intuicyjnie, one także chętnie pożrą Śniącego. Niczym rybka w oceanie mogą wabić go fałszywym posłuszeństwem by dorwać w swoje szpony i pochłonąć ludzką esencję. Jedyni, którzy nie polują aktywnie na Śniących to Phantomi. Sami nie rozumiejąc czym oni dokładnie są podchodzą z ostrożnością i oportunizmem. Ich współpraca mogłaby przynieść wiele korzyści rodzajowi ludzkiemu.
+
+
+
+```wip
+Śniący jak nazwa troche wskazuje są skutkiem ubocznym działania Harona. który nazwał swoich popleczników Przebudzonymi. I oni z nim konkurują o "jego domenę" on uznaje ją za swoją. Śniący i Alphy pewnie uważają inaczej
+Oni będą operowali iluzją, snem, wróżbą
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
