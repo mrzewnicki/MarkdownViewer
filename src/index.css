@@ -8,6 +8,10 @@
   --border: #263041;
   --accent: #7c3aed;
   --accent-soft: rgba(124, 58, 237, 0.16);
+  --rpg-mutation: #4ade80;
+  --rpg-mutation-livecore: #696441;
+  --rpg-mutation-deathnet: #9572e4;
+  --rpg-mutation-anomalie: #00aea9;
   --danger: #ef4444;
   --radius: 10px;
   --mono: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace;
@@ -1523,6 +1527,324 @@ button {
   border-radius: 50%;
   background: #475569;
   border: 1px solid #64748b;
+}
+
+/* ─── Mutation card (Option B) ───────────────────────────────────────────── */
+
+.rpg-mutation-card {
+  --mutation-accent: var(--rpg-mutation);
+  overflow: hidden;
+  margin: 14px 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  border-left: 4px solid var(--mutation-accent);
+  background: linear-gradient(180deg, #151a26, #10141c);
+}
+
+.rpg-mutation-card[data-origin='LiveCore'] {
+  --mutation-accent: var(--rpg-mutation-livecore);
+}
+
+.rpg-mutation-card[data-origin='DeathNet'] {
+  --mutation-accent: var(--rpg-mutation-deathnet);
+}
+
+.rpg-mutation-card[data-origin='Anomalie'] {
+  --mutation-accent: var(--rpg-mutation-anomalie);
+}
+
+.rpg-mutation-head {
+  padding: 8px 14px 10px;
+  border-bottom: 1px solid var(--border);
+  background: #1a2130;
+}
+
+.rpg-mutation-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.rpg-mutation-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 9px 2px 6px;
+  border: 1px solid #334155;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.85);
+  font-size: 12px;
+  line-height: 1.3;
+  color: #cbd5e1;
+}
+
+.rpg-mutation-chip-icon {
+  font-size: 13px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rpg-mutation-rank-dots {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.rpg-mutation-rank-dot {
+  box-sizing: border-box;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 1.5px solid color-mix(in srgb, var(--mutation-accent, var(--rpg-mutation)) 65%, #64748b);
+  background: transparent;
+}
+
+.rpg-mutation-rank-dot.is-filled {
+  border-color: transparent;
+  background: var(--mutation-accent, var(--rpg-mutation));
+}
+
+.rpg-mutation-origin-icon {
+  display: block;
+  width: 18px;
+  height: 18px;
+  max-width: 18px;
+  object-fit: contain;
+  border: 0 !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+  background: transparent;
+}
+
+.rpg-mutation-chip-label {
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.rpg-mutation-chip--origin {
+  border-color: color-mix(in srgb, var(--mutation-accent) 55%, #334155);
+  color: color-mix(in srgb, var(--mutation-accent) 80%, #e2e8f0);
+}
+
+.rpg-mutation-card .rpg-mutation-name {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-strong);
+  line-height: 1.3;
+}
+
+.rpg-mutation-body {
+  padding: 12px 14px 14px;
+}
+
+.rpg-mutation-opis {
+  margin: 0 0 12px;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.rpg-mutation-section-label {
+  display: inline-block;
+  margin: 0 0 6px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.rpg-mutation-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 720px) {
+  .rpg-mutation-split {
+    grid-template-columns: 1fr;
+  }
+}
+
+.rpg-mutation-col {
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: rgba(15, 23, 42, 0.45);
+}
+
+.rpg-mutation-col--pros {
+  border-color: color-mix(in srgb, #4ade80 35%, var(--border));
+}
+
+.rpg-mutation-col--cons {
+  border-color: color-mix(in srgb, #f87171 35%, var(--border));
+}
+
+.rpg-mutation-trait-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.rpg-mutation-trait {
+  margin: 0 0 8px;
+  font-size: 13px;
+  line-height: 1.45;
+  text-align: left;
+}
+
+.rpg-mutation-trait:last-child {
+  margin-bottom: 0;
+}
+
+.rpg-mutation-trait-title {
+  color: var(--text-strong);
+}
+
+.rpg-mutation-trait--pros .rpg-mutation-trait-title {
+  color: #86efac;
+}
+
+.rpg-mutation-trait--cons .rpg-mutation-trait-title {
+  color: #fca5a5;
+}
+
+.rpg-mutation-trait-desc {
+  color: var(--text);
+}
+
+.rpg-mutation-empty {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.rpg-mutation-cost {
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.rpg-mutation-cost .rpg-mutation-section-label {
+  display: block;
+  color: color-mix(in srgb, var(--mutation-accent) 70%, var(--muted));
+}
+
+.rpg-mutation-ranks-wrap .rpg-mutation-section-label {
+  color: color-mix(in srgb, var(--mutation-accent) 70%, var(--muted));
+}
+
+.rpg-mutation-benefit {
+  margin: 0 0 12px;
+  padding: 10px 12px;
+  border: 1px solid color-mix(in srgb, var(--mutation-accent) 40%, var(--border));
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--mutation-accent) 10%, rgba(15, 23, 42, 0.55));
+}
+
+.rpg-mutation-benefit-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.rpg-mutation-benefit-item {
+  display: grid;
+  grid-template-columns: minmax(7.5rem, auto) 1fr;
+  gap: 8px 12px;
+  margin: 0 0 8px;
+  font-size: 13px;
+  line-height: 1.45;
+  text-align: left;
+  opacity: 0.72;
+}
+
+.rpg-mutation-benefit-item:last-child {
+  margin-bottom: 0;
+}
+
+.rpg-mutation-benefit-item.is-current {
+  opacity: 1;
+}
+
+.rpg-mutation-benefit-rank {
+  font-weight: 700;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.rpg-mutation-benefit-item.is-current .rpg-mutation-benefit-rank {
+  color: var(--mutation-accent);
+}
+
+.rpg-mutation-benefit-effect {
+  color: var(--text);
+}
+
+.rpg-mutation-ranks-wrap {
+  margin: 0 0 12px;
+}
+
+.rpg-mutation-ranks {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.rpg-mutation-ranks th,
+.rpg-mutation-ranks td {
+  padding: 7px 10px;
+  border: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+
+.rpg-mutation-ranks thead th {
+  background: #1a2130;
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.rpg-mutation-rank-num {
+  width: 2.5rem;
+  font-family: var(--mono);
+  font-weight: 700;
+  color: var(--muted);
+  text-align: center !important;
+}
+
+.rpg-mutation-effect-parts {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+}
+
+.rpg-mutation-effect-part {
+  line-height: 1.45;
+}
+
+.rpg-mutation-rezonans {
+  margin: 10px 0 0;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--text);
+}
+
+.rpg-mutation-rezonans .rpg-mutation-section-label {
+  display: block;
+  color: color-mix(in srgb, var(--mutation-accent) 70%, var(--muted));
 }
 
 /* ─────────────────────────────────────────────────────────────────────────── */

@@ -177,20 +177,27 @@ Dokładną liczbę punktów w ramach "średniej" i "dużej" ilości ustala MG w 
 ```ai
   **Format mutacji**
 
+  Opakuj każdą mutację w kontener `:::mutation` … `:::`.
+
   ```markdown
+  :::mutation
   **Nazwa mutacji**
   - Pochodzenie: DeathNet / LiveCore / Anomalia
   - Rodzaj: Fizyczna / Mentalna / Psioniczna
   - Opis: [krótki, narracyjny opis tego, czym jest mutacja i jak się objawia]
   - Ranga: 1 (Zalążek) / 2 (Adaptacja) / 3 (Rozwinięta) / 4 (Dominacja)
   - Charakter: Pasywna / Aktywna
+  :::
   ```
 
-  Jeśli mutacja jest **Pasywna**, dodatkowo:
+  Jeśli mutacja jest **Pasywna**, dodatkowo (przed zamknięciem `:::`):
 
   ```markdown
-  - Atuty: Nazwa (wartość) - opis narracyjny [może być więcej niż jeden]
-  - Wady: Nazwa (wartość) - opis narracyjny [może być więcej niż jedna]
+  - Wpływ per Ranga:
+    - Ranga 1: Atut - opis; Wada - opis
+    - Ranga 2: Atut (2) - opis; Wada (2) - opis
+    - Ranga 3: Atut (3) - opis; Wada (3) - opis
+    - Ranga 4: Atut (4) - opis; Wada (4) - opis
   ```
 
   Jeśli mutacja jest **Aktywna**, dodatkowo:
@@ -210,6 +217,23 @@ Dokładną liczbę punktów w ramach "średniej" i "dużej" ilości ustala MG w 
   - Rezonans: [przykład fabularnego rezonansu tej mutacji]
   ```
 ```
+
+Przykład widoczny w podglądzie (karta):
+
+:::mutation
+**Kościane Szpony**
+- Pochodzenie: LiveCore
+- Rodzaj: Fizyczna
+- Opis: Kości dłoni i przedramion stopniowo gęstnieją, tworząc pod skórą twarde, kanciaste zgrubienia wyczuwalne przy każdym mocniejszym uścisku
+- Ranga: 1 (Zalążek)
+- Charakter: Pasywna
+- Wpływ per Ranga:
+  - Ranga 1: Wzmocnione pięści - kości dłoni stały się gęstsze i twardsze, uderzenia pięścią zadają odczuwalnie więcej bólu; Chłodne dłonie - skóra na rękach jest sztywna i mniej czuła, drobne czynności manualne (np. rozbrajanie zamka, opatrywanie ran) są utrudnione
+  - Ranga 2: Wzmocnione pięści (2) - uderzenia pięścią wyraźnie silniejsze; Chłodne dłonie (2) - drobne czynności manualne znacznie utrudnione
+  - Ranga 3: Wzmocnione pięści (3) - kości dłoni jak prowizoryczna broń; Chłodne dłonie (3) - precyzyjna praca dłoni wymaga dużego wysiłku
+  - Ranga 4: Wzmocnione pięści (4) - uderzenia łamią kości i pancerz lekkiego typu; Chłodne dłonie (4) - dłonie prawie nie czują detali, manipulacja drobnymi narzędziami jest skrajnie utrudniona
+- Rezonans: Kość porasta dalej wzdłuż ramienia, tworząc na krótki czas kostny pancerz na całej kończynie
+:::
 
 ### Aktywacja
 

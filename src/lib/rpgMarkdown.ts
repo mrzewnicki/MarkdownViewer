@@ -57,6 +57,15 @@ function isBareCloseAtIndent(line: string, indent: string): boolean {
   return Boolean(m && m[1] === indent)
 }
 
+/**
+ * Hidden AI notes as a CommonMark type-1 HTML block (`<pre>`).
+ * A `<div>` ends at the first blank line, leaving an open tag that hides the rest of the doc.
+ */
+function renderAiInstructionsHtml(content: string): string {
+  const safe = escapeHtml(content).replace(/<\/pre/gi, '&lt;/pre')
+  return `<pre class="ai-instructions" aria-hidden="true">${safe}</pre>`
+}
+
 /** Indent-aware ```ai / ```wip so nested fences do not close the block early. */
 function preprocessAiWipFences(src: string): string {
   const lines = src.split(/\r?\n/)
@@ -79,7 +88,7 @@ function preprocessAiWipFences(src: string): string {
     if (i < lines.length) i++
     const content = contentLines.join('\n')
     if (open.lang === 'wip') continue
-    out.push(`<div class="ai-instructions" aria-hidden="true">${escapeHtml(content)}</div>`)
+    out.push(renderAiInstructionsHtml(content))
   }
   return out.join('\n')
 }
@@ -355,6 +364,447 @@ function renderTimelineBlock(src: string, renderInline: (text: string) => string
   return parts.join('\n') + '\n'
 }
 
+// ─── Mutation card (Option B) ────────────────────────────────────────────────
+
+interface MutationTrait {
+  title: string
+  description: string
+}
+
+interface MutationRankEffect {
+  rank: number
+  effect: string
+}
+
+interface MutationFields {
+  name: string
+  pochodzenie: string
+  rodzaj: string
+  opis: string
+  ranga: string
+  charakter: string
+  /** Legacy snapshot (Atuty/Wady) — used only if `wplyw` is empty. */
+  atuty: MutationTrait[]
+  wady: MutationTrait[]
+  kosztAktywacji: string
+  /** Pasywna: Wpływ per Ranga */
+  wplyw: MutationRankEffect[]
+  /** Aktywna: Aktywacja per Ranga */
+  aktywacja: MutationRankEffect[]
+  rezonans: string
+}
+
+const MUTATION_OPEN_RE = /^([ \t]*):::mutation[ \t]*$/i
+const MUTATION_CLOSE_RE = /^([ \t]*):::[ \t]*$/
+const MUTATION_FIELD_RE = /^([ \t]*)([-*])\s+([^:]+):\s*(.*)$/
+const MUTATION_NAME_RE = /^\*\*([^*]+)\*\*\s*(.*)$/
+const RANK_LABELS: Record<number, string> = {
+  1: 'Zalążek',
+  2: 'Adaptacja',
+  3: 'Rozwinięta',
+  4: 'Dominacja',
+}
+
+function normalizeMutationOrigin(raw: string): string {
+  const t = raw.trim()
+  if (/^anomali/i.test(t)) return 'Anomalie'
+  if (/^livecore$/i.test(t)) return 'LiveCore'
+  if (/^deathnet$/i.test(t)) return 'DeathNet'
+  return t
+}
+
+function normalizeMutationCharacter(raw: string): string {
+  const t = raw.trim()
+  if (/^pasywn/i.test(t)) return 'Pasywna'
+  if (/^aktywn/i.test(t)) return 'Aktywna'
+  return t
+}
+
+function parseRankNumber(ranga: string): number | null {
+  const m = ranga.trim().match(/^(\d+)/)
+  if (!m) return null
+  const n = Number(m[1])
+  return Number.isFinite(n) ? n : null
+}
+
+function splitTraitLine(rest: string): MutationTrait {
+  const sep = rest.indexOf(' - ')
+  if (sep >= 0) {
+    return { title: rest.slice(0, sep).trim(), description: rest.slice(sep + 3).trim() }
+  }
+  const colon = rest.indexOf(': ')
+  if (colon >= 0) {
+    return { title: rest.slice(0, colon).trim(), description: rest.slice(colon + 2).trim() }
+  }
+  return { title: rest.trim(), description: '' }
+}
+
+const MUTATION_TOP_LEVEL_KEYS = new Set([
+  'pochodzenie',
+  'rodzaj',
+  'opis',
+  'ranga',
+  'charakter',
+  'koszt aktywacji',
+  'rezonans',
+  'atuty',
+  'wady',
+  'wpływ per ranga',
+  'wplyw per ranga',
+  'aktywacja per ranga',
+  'aktywacja',
+])
+
+function pushRankEffect(
+  target: MutationRankEffect[],
+  key: string,
+  value: string,
+): void {
+  const rankMatch = key.match(/^ranga\s+(\d+)$/i)
+  if (rankMatch) {
+    target.push({ rank: Number(rankMatch[1]), effect: value })
+  } else {
+    target.push({
+      rank: target.length + 1,
+      effect: `${key}${value ? `: ${value}` : ''}`,
+    })
+  }
+}
+
+function parseMutationFields(src: string): MutationFields {
+  const fields: MutationFields = {
+    name: '',
+    pochodzenie: '',
+    rodzaj: '',
+    opis: '',
+    ranga: '',
+    charakter: '',
+    atuty: [],
+    wady: [],
+    kosztAktywacji: '',
+    wplyw: [],
+    aktywacja: [],
+    rezonans: '',
+  }
+
+  type NestMode = null | 'atuty' | 'wady' | 'wplyw' | 'aktywacja'
+  let nest: NestMode = null
+  const lines = src.split(/\r?\n/)
+
+  const pushNestItem = (key: string, value: string): void => {
+    if (nest === 'atuty') {
+      fields.atuty.push(splitTraitLine(key + (value ? `: ${value}` : '')))
+    } else if (nest === 'wady') {
+      fields.wady.push(splitTraitLine(key + (value ? `: ${value}` : '')))
+    } else if (nest === 'wplyw') {
+      pushRankEffect(fields.wplyw, key, value)
+    } else if (nest === 'aktywacja') {
+      pushRankEffect(fields.aktywacja, key, value)
+    }
+  }
+
+  const pushNestRest = (rest: string): void => {
+    if (nest === 'atuty') fields.atuty.push(splitTraitLine(rest))
+    else if (nest === 'wady') fields.wady.push(splitTraitLine(rest))
+    else if (nest === 'wplyw' || nest === 'aktywacja') {
+      const rankMatch = rest.match(/^ranga\s+(\d+)\s*:\s*(.*)$/i)
+      const target = nest === 'wplyw' ? fields.wplyw : fields.aktywacja
+      if (rankMatch) {
+        target.push({ rank: Number(rankMatch[1]), effect: (rankMatch[2] ?? '').trim() })
+      } else {
+        target.push({ rank: target.length + 1, effect: rest })
+      }
+    }
+  }
+
+  for (const line of lines) {
+    if (!line.trim()) continue
+
+    const nameMatch = MUTATION_NAME_RE.exec(line.trim())
+    if (nameMatch && !fields.name) {
+      const base = (nameMatch[1] ?? '').trim()
+      const suffix = (nameMatch[2] ?? '').trim()
+      fields.name = suffix ? `${base} ${suffix}` : base
+      nest = null
+      continue
+    }
+
+    const fieldMatch = MUTATION_FIELD_RE.exec(line)
+    if (fieldMatch) {
+      const indent = fieldMatch[1] ?? ''
+      const key = (fieldMatch[3] ?? '').trim()
+      const value = (fieldMatch[4] ?? '').trim()
+      const keyLower = key.toLowerCase()
+      const isTopLevelKey = MUTATION_TOP_LEVEL_KEYS.has(keyLower)
+
+      if (indent.length > 0 || (nest && !isTopLevelKey)) {
+        pushNestItem(key, value)
+        continue
+      }
+
+      nest = null
+      if (keyLower === 'pochodzenie') fields.pochodzenie = value
+      else if (keyLower === 'rodzaj') fields.rodzaj = value
+      else if (keyLower === 'opis') fields.opis = value
+      else if (keyLower === 'ranga') fields.ranga = value
+      else if (keyLower === 'charakter') fields.charakter = value
+      else if (keyLower === 'koszt aktywacji') fields.kosztAktywacji = value
+      else if (keyLower === 'rezonans') fields.rezonans = value
+      else if (keyLower === 'atuty') {
+        nest = 'atuty'
+        if (value) fields.atuty.push(splitTraitLine(value))
+      } else if (keyLower === 'wady') {
+        nest = 'wady'
+        if (value) fields.wady.push(splitTraitLine(value))
+      } else if (keyLower === 'wpływ per ranga' || keyLower === 'wplyw per ranga') {
+        nest = 'wplyw'
+      } else if (keyLower === 'aktywacja per ranga' || keyLower === 'aktywacja') {
+        nest = 'aktywacja'
+      } else if (!fields.name) {
+        fields.name = key
+      }
+      continue
+    }
+
+    const bulletMatch = nest
+      ? /^([ \t]*)([-*])\s+(.*)$/.exec(line)
+      : /^([ \t]+)([-*])\s+(.*)$/.exec(line)
+    if (bulletMatch && nest) {
+      pushNestRest((bulletMatch[3] ?? '').trim())
+    }
+  }
+
+  return fields
+}
+
+function mutationOriginIcon(origin: string): string {
+  const o = normalizeMutationOrigin(origin)
+  const file =
+    o === 'LiveCore'
+      ? 'LiveCoreIconTransparent.png'
+      : o === 'DeathNet'
+        ? 'DeathNetIconTransparent.png'
+        : o === 'Anomalie'
+          ? 'AnomalyIconTransparent.png'
+          : null
+  if (!file) return '<span class="rpg-mutation-chip-icon-fallback" aria-hidden="true">🧬</span>'
+  // Project-root path (Viewer + Editor with projectRoot): /images/icons/...
+  return `<img class="rpg-mutation-origin-icon" src="/images/icons/${escapeAttr(file)}" alt="" width="18" height="18" loading="lazy" decoding="async" />`
+}
+
+function mutationKindIcon(rodzaj: string): string {
+  const r = rodzaj.trim().toLowerCase()
+  if (r.startsWith('fizyc')) return '💪'
+  if (r.startsWith('mental')) return '🧠'
+  if (r.startsWith('psion')) return '🌀'
+  return '•'
+}
+
+function mutationRankDots(rank: number | null): string {
+  const n = rank == null || rank < 1 ? 0 : Math.min(4, Math.max(1, rank))
+  const parts: string[] = ['<span class="rpg-mutation-rank-dots" aria-hidden="true">']
+  for (let i = 1; i <= 4; i += 1) {
+    const filled = i <= n
+    parts.push(
+      `<span class="rpg-mutation-rank-dot${filled ? ' is-filled' : ''}"></span>`,
+    )
+  }
+  parts.push('</span>')
+  return parts.join('')
+}
+
+function isMutationActive(fields: MutationFields): boolean {
+  const ch = normalizeMutationCharacter(fields.charakter)
+  if (ch === 'Aktywna') return true
+  if (ch === 'Pasywna') return false
+  if (fields.kosztAktywacji || fields.aktywacja.length > 0) return true
+  if (fields.wplyw.length > 0 || fields.atuty.length > 0 || fields.wady.length > 0) return false
+  return false
+}
+
+function renderMutationChip(icon: string, label: string, kind: string): string {
+  if (!label.trim()) return ''
+  const iconHtml = icon
+    ? `<span class="rpg-mutation-chip-icon" aria-hidden="true">${icon}</span>`
+    : ''
+  return `<span class="rpg-mutation-chip rpg-mutation-chip--${escapeAttr(kind)}">${iconHtml}<span class="rpg-mutation-chip-label">${escapeHtml(label.trim())}</span></span>`
+}
+
+function renderMutationTraitList(items: MutationTrait[], variant: 'pros' | 'cons', renderInline: (text: string) => string): string {
+  if (items.length === 0) return '<p class="rpg-mutation-empty">—</p>'
+  const parts = ['<ul class="rpg-mutation-trait-list">']
+  for (const item of items) {
+    const titleHtml = item.title ? `<strong class="rpg-mutation-trait-title">${renderInline(item.title)}</strong>` : ''
+    const descHtml = item.description ? `<span class="rpg-mutation-trait-desc">${renderInline(item.description)}</span>` : ''
+    const sep = item.title && item.description ? ' — ' : ''
+    parts.push(
+      `<li class="rpg-mutation-trait rpg-mutation-trait--${variant}">${titleHtml}${sep}${descHtml}</li>`,
+    )
+  }
+  parts.push('</ul>')
+  return parts.join('')
+}
+
+function rankEffectLabel(rank: number): string {
+  const name = RANK_LABELS[rank]
+  return name ? `Ranga ${rank} (${name})` : `Ranga ${rank}`
+}
+
+function formatTraitPlain(t: MutationTrait): string {
+  if (t.title && t.description) return `${t.title} - ${t.description}`
+  return t.title || t.description
+}
+
+/** Legacy Atuty/Wady → jeden wiersz Wpływu na bieżącej randze. */
+function legacyTraitsAsWplyw(fields: MutationFields): MutationRankEffect[] {
+  if (fields.wplyw.length > 0) return fields.wplyw
+  if (fields.atuty.length === 0 && fields.wady.length === 0) return []
+  const parts = [
+    ...fields.atuty.map(formatTraitPlain),
+    ...fields.wady.map(formatTraitPlain),
+  ].filter(Boolean)
+  const rank = parseRankNumber(fields.ranga) ?? 1
+  return [{ rank, effect: parts.join('; ') }]
+}
+
+function renderRankEffectCell(effect: string, renderInline: (text: string) => string): string {
+  const parts = effect
+    .split(';')
+    .map((p) => p.trim())
+    .filter(Boolean)
+  if (parts.length <= 1) return renderInline(effect)
+  return `<div class="rpg-mutation-effect-parts">${parts
+    .map((p) => `<div class="rpg-mutation-effect-part">${renderInline(p)}</div>`)
+    .join('')}</div>`
+}
+
+function renderMutationRanksTable(
+  rows: MutationRankEffect[],
+  label: string,
+  renderInline: (text: string) => string,
+): string {
+  if (rows.length === 0) return ''
+  const parts: string[] = [
+    '<div class="rpg-mutation-ranks-wrap">',
+    `<h4 class="rpg-mutation-section-label">${escapeHtml(label)}</h4>`,
+    '<table class="rpg-mutation-ranks"><thead><tr><th>Ranga</th><th>Efekt</th></tr></thead><tbody>',
+  ]
+  for (const row of [...rows].sort((a, b) => a.rank - b.rank)) {
+    parts.push(
+      `<tr><td class="rpg-mutation-rank-num" title="${escapeAttr(rankEffectLabel(row.rank))}">${escapeHtml(String(row.rank))}</td><td>${renderRankEffectCell(row.effect, renderInline)}</td></tr>`,
+    )
+  }
+  parts.push('</tbody></table></div>')
+  return parts.join('\n')
+}
+
+function renderMutationCard(src: string, renderInline: (text: string) => string): string {
+  const fields = parseMutationFields(src)
+  const origin = normalizeMutationOrigin(fields.pochodzenie)
+  const character = normalizeMutationCharacter(fields.charakter)
+  const rankNum = parseRankNumber(fields.ranga)
+  const active = isMutationActive(fields)
+  const rankLabel =
+    fields.ranga.trim() ||
+    (rankNum != null ? `${rankNum} (${RANK_LABELS[rankNum] ?? ''})` : '')
+
+  const chips = [
+    renderMutationChip(mutationOriginIcon(origin), origin || fields.pochodzenie, 'origin'),
+    renderMutationChip('', character || fields.charakter, 'character'),
+    renderMutationChip(mutationKindIcon(fields.rodzaj), fields.rodzaj, 'kind'),
+    renderMutationChip(mutationRankDots(rankNum), rankLabel, 'rank'),
+  ]
+    .filter(Boolean)
+    .join('')
+
+  const name = fields.name.trim() || 'Mutacja'
+  const parts: string[] = [
+    `<article class="rpg-mutation-card" data-block="mutation" data-origin="${escapeAttr(origin)}" data-character="${escapeAttr(character)}"${rankNum != null ? ` data-rank="${escapeAttr(String(rankNum))}"` : ''}${fields.rodzaj ? ` data-kind="${escapeAttr(fields.rodzaj)}"` : ''}>`,
+    '<header class="rpg-mutation-head">',
+    `<h3 class="rpg-mutation-name">${renderInline(name)}</h3>`,
+    `<div class="rpg-mutation-chips">${chips}</div>`,
+    '</header>',
+    '<div class="rpg-mutation-body">',
+  ]
+
+  if (fields.opis.trim()) {
+    parts.push(`<p class="rpg-mutation-opis">${renderInline(fields.opis.trim())}</p>`)
+  }
+
+  if (active) {
+    if (fields.kosztAktywacji.trim()) {
+      parts.push(
+        `<p class="rpg-mutation-cost"><span class="rpg-mutation-section-label">Koszt aktywacji</span> ${renderInline(fields.kosztAktywacji.trim())}</p>`,
+      )
+    }
+    parts.push(renderMutationRanksTable(fields.aktywacja, 'Aktywacja per Ranga', renderInline))
+  } else {
+    const wplywRows = legacyTraitsAsWplyw(fields)
+    if (wplywRows.length > 0) {
+      parts.push(renderMutationRanksTable(wplywRows, 'Wpływ per Ranga', renderInline))
+    } else if (fields.atuty.length > 0 || fields.wady.length > 0) {
+      parts.push('<div class="rpg-mutation-split">')
+      parts.push('<section class="rpg-mutation-col rpg-mutation-col--pros">')
+      parts.push('<h4 class="rpg-mutation-section-label">Atuty</h4>')
+      parts.push(renderMutationTraitList(fields.atuty, 'pros', renderInline))
+      parts.push('</section>')
+      parts.push('<section class="rpg-mutation-col rpg-mutation-col--cons">')
+      parts.push('<h4 class="rpg-mutation-section-label">Wady</h4>')
+      parts.push(renderMutationTraitList(fields.wady, 'cons', renderInline))
+      parts.push('</section>')
+      parts.push('</div>')
+    }
+  }
+
+  if (fields.rezonans.trim()) {
+    parts.push(
+      `<p class="rpg-mutation-rezonans"><span class="rpg-mutation-section-label">Rezonans</span> ${renderInline(fields.rezonans.trim())}</p>`,
+    )
+  }
+
+  parts.push('</div></article>')
+  return parts.join('\n') + '\n'
+}
+
+/** Convert `:::mutation` … `:::` into a ` ```mutation ` fence for custom rendering. */
+function preprocessMutationBlocksInText(text: string): string {
+  const lines = text.split(/\r?\n/)
+  const out: string[] = []
+  let i = 0
+  while (i < lines.length) {
+    const line = lines[i] ?? ''
+    const open = MUTATION_OPEN_RE.exec(line)
+    if (!open) {
+      out.push(line)
+      i += 1
+      continue
+    }
+    const indent = open[1] ?? ''
+    i += 1
+    const content: string[] = []
+    while (i < lines.length) {
+      const cur = lines[i] ?? ''
+      const close = MUTATION_CLOSE_RE.exec(cur)
+      if (close && (close[1] ?? '') === indent) {
+        i += 1
+        break
+      }
+      content.push(cur)
+      i += 1
+    }
+    out.push(`${indent}\`\`\`mutation`)
+    out.push(...content)
+    out.push(`${indent}\`\`\``)
+  }
+  return out.join('\n')
+}
+
+function preprocessMutationBlocks(src: string): string {
+  return splitCodeAware(src)
+    .map((chunk) => (chunk.code ? chunk.code : preprocessMutationBlocksInText(chunk.text)))
+    .join('')
+}
+
 // ─────────────────────────────────────────────────────────────────────────────
 
 function blockClass(type: string): string {
@@ -386,6 +836,7 @@ function buildMd(cfg: RpgRendererConfig): MarkdownIt {
   const installContainer = md.use.bind(md) as (plugin: unknown, ...args: unknown[]) => MarkdownIt
 
   for (const type of sortedKeys(cfg.entityTypes)) {
+    if (type === 'mutation') continue
     installContainer(container, type, {
       render(tokens: ContainerRenderToken[], idx: number) {
         const token = tokens[idx]
@@ -429,12 +880,17 @@ function buildMd(cfg: RpgRendererConfig): MarkdownIt {
     const token = tokens[idx]
     if (token?.info.trim() === 'wip') return ''
     if (token?.info.trim() === 'ai') {
-      return `<div class="ai-instructions" aria-hidden="true">${escapeHtml(token.content)}</div>\n`
+      return `${renderAiInstructionsHtml(token.content)}\n`
     }
     if (token?.info.trim() === 'timeline') {
       const renderInline = (text: string): string =>
         md.renderInline(applyInlineRpg(text, cfg, _currentRenderOptions))
       return renderTimelineBlock(token.content, renderInline)
+    }
+    if (token?.info.trim() === 'mutation') {
+      const renderInline = (text: string): string =>
+        md.renderInline(applyInlineRpg(text, cfg, _currentRenderOptions))
+      return renderMutationCard(token.content, renderInline)
     }
     if (origFence) return origFence(tokens, idx, options, env, self)
     return self.renderToken(tokens, idx, options)
@@ -481,7 +937,8 @@ export function extractHeadingsForToc(source: string, cfg: RpgRendererConfig): M
   const frontmatter = splitLeadingFrontmatter(source)
   const markdownBody = frontmatter ? frontmatter.body : source
   const withAiWip = preprocessAiWipFences(markdownBody)
-  const withCallouts = preprocessCallouts(withAiWip, cfg)
+  const withMutations = preprocessMutationBlocks(withAiWip)
+  const withCallouts = preprocessCallouts(withMutations, cfg)
   const withInline = preprocessInline(withCallouts, cfg)
   const md = getMd(cfg)
   const tokens = md.parse(fixMarkdownParenDestinationsWithWhitespace(withInline), {})
@@ -533,6 +990,10 @@ const PURIFY_PREVIEW: import('dompurify').Config = {
     'data-date',
     'data-timeline-expandable',
     'data-hover-info',
+    'data-origin',
+    'data-character',
+    'data-rank',
+    'data-kind',
     'id',
     'tabindex',
     'class',
@@ -540,7 +1001,7 @@ const PURIFY_PREVIEW: import('dompurify').Config = {
     'aria-label',
     'aria-hidden',
   ],
-  ADD_TAGS: ['aside', 'header', 'section'],
+  ADD_TAGS: ['aside', 'header', 'section', 'article'],
   ALLOWED_URI_REGEXP:
     /^(?:(?:(?:f|ht)tps?|mailto|tel|callto|sms|cid|xmpp|matrix):|#|\/|\.\/|\.\.\/|[^a-z]|[a-z+.-]+(?:[^a-z+.-:]|$))/i,
 }
@@ -550,7 +1011,8 @@ export function renderRpgMarkdown(source: string, cfg: RpgRendererConfig, option
   const markdownBody = frontmatter ? frontmatter.body : source
   const md = getMd(cfg)
   const withAiWip = preprocessAiWipFences(markdownBody)
-  const withCallouts = preprocessCallouts(withAiWip, cfg)
+  const withMutations = preprocessMutationBlocks(withAiWip)
+  const withCallouts = preprocessCallouts(withMutations, cfg)
   const withInline = preprocessInline(withCallouts, cfg, options)
   _currentRenderOptions = options
   const raw = md.render(fixMarkdownParenDestinationsWithWhitespace(withInline))

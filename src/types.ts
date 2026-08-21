@@ -81,6 +81,7 @@ export const DEFAULT_RPG_CONFIG: RpgRendererConfig = {
     rule: { label: 'Zasada', color: '#eab308', icon: 'scroll' },
     zombie: { label: 'Zombie', color: '#84cc16', icon: 'biohazard' },
     mutant: { label: 'Mutant', color: '#ec4899', icon: 'atom' },
+    mutation: { label: 'Mutacja', color: '#4ade80', icon: 'dna' },
   },
   icons: {
     user: '👤',
@@ -91,6 +92,7 @@ export const DEFAULT_RPG_CONFIG: RpgRendererConfig = {
     scroll: '📜',
     biohazard: '☣️',
     atom: '⚛️',
+    dna: '🧬',
     info: 'ℹ️',
     alert: '⚠️',
     flame: '🔥',
