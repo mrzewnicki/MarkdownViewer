@@ -174,39 +174,41 @@ Zużyte PM regenerują się z kilku źródeł. Regeneracja nigdy nie przekracza 
 
 Dokładną liczbę punktów w ramach "średniej" i "dużej" ilości ustala MG w zależności od sytuacji, jakości źródła i maksymalnej puli postaci.
 
-### Format mutacji
+```ai
+  **Format mutacji**
 
-```markdown
-**Nazwa mutacji**
-- Pochodzenie: DeathNet / LiveCore / Anomalia
-- Rodzaj: Fizyczna / Mentalna / Psioniczna
-- Opis: [krótki, narracyjny opis tego, czym jest mutacja i jak się objawia]
-- Ranga: 1 (Zalążek) / 2 (Adaptacja) / 3 (Rozwinięta) / 4 (Dominacja)
-- Charakter: Pasywna / Aktywna
-```
+  ```markdown
+  **Nazwa mutacji**
+  - Pochodzenie: DeathNet / LiveCore / Anomalia
+  - Rodzaj: Fizyczna / Mentalna / Psioniczna
+  - Opis: [krótki, narracyjny opis tego, czym jest mutacja i jak się objawia]
+  - Ranga: 1 (Zalążek) / 2 (Adaptacja) / 3 (Rozwinięta) / 4 (Dominacja)
+  - Charakter: Pasywna / Aktywna
+  ```
 
-Jeśli mutacja jest **Pasywna**, dodatkowo:
+  Jeśli mutacja jest **Pasywna**, dodatkowo:
 
-```markdown
-- Atuty: Nazwa (wartość) - opis narracyjny [może być więcej niż jeden]
-- Wady: Nazwa (wartość) - opis narracyjny [może być więcej niż jedna]
-```
+  ```markdown
+  - Atuty: Nazwa (wartość) - opis narracyjny [może być więcej niż jeden]
+  - Wady: Nazwa (wartość) - opis narracyjny [może być więcej niż jedna]
+  ```
 
-Jeśli mutacja jest **Aktywna**, dodatkowo:
+  Jeśli mutacja jest **Aktywna**, dodatkowo:
 
-```markdown
-- Koszt aktywacji: [Punkty Mutacji] lub Skażenie wg Rangi + ewentualny koszt dodatkowy (fabularny lub mechaniczny)
-- Aktywacja per Ranga:
-  - Ranga 1: opis efektu
-  - Ranga 2: opis efektu
-  - Ranga 3: opis efektu
-  - Ranga 4: opis efektu
-```
+  ```markdown
+  - Koszt aktywacji: [Punkty Mutacji] lub Skażenie wg Rangi + ewentualny koszt dodatkowy (fabularny lub mechaniczny)
+  - Aktywacja per Ranga:
+    - Ranga 1: opis efektu
+    - Ranga 2: opis efektu
+    - Ranga 3: opis efektu
+    - Ranga 4: opis efektu
+  ```
 
-Na końcu, niezależnie od Charakteru, dodatkowo:
+  Na końcu, niezależnie od Charakteru, dodatkowo:
 
-```markdown
-- Rezonans: [przykład fabularnego rezonansu tej mutacji]
+  ```markdown
+  - Rezonans: [przykład fabularnego rezonansu tej mutacji]
+  ```
 ```
 
 ### Aktywacja

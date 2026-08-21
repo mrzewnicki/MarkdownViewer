@@ -43,6 +43,47 @@ function sortedKeys(record: Record<string, unknown>): string[] {
   return Object.keys(record).sort()
 }
 
+const SPECIAL_OPEN_RE = /^([ \t]*)```(ai|wip)\b[^\n]*$/
+const BARE_CLOSE_RE = /^([ \t]*)```[ \t]*$/
+
+function isSpecialOpen(line: string): { indent: string; lang: 'ai' | 'wip' } | null {
+  const m = SPECIAL_OPEN_RE.exec(line)
+  if (!m) return null
+  return { indent: m[1] ?? '', lang: m[2] as 'ai' | 'wip' }
+}
+
+function isBareCloseAtIndent(line: string, indent: string): boolean {
+  const m = BARE_CLOSE_RE.exec(line)
+  return Boolean(m && m[1] === indent)
+}
+
+/** Indent-aware ```ai / ```wip so nested fences do not close the block early. */
+function preprocessAiWipFences(src: string): string {
+  const lines = src.split(/\r?\n/)
+  const out: string[] = []
+  let i = 0
+  while (i < lines.length) {
+    const line = lines[i] ?? ''
+    const open = isSpecialOpen(line)
+    if (!open) {
+      out.push(line)
+      i++
+      continue
+    }
+    i++
+    const contentLines: string[] = []
+    while (i < lines.length && !isBareCloseAtIndent(lines[i] ?? '', open.indent)) {
+      contentLines.push(lines[i] ?? '')
+      i++
+    }
+    if (i < lines.length) i++
+    const content = contentLines.join('\n')
+    if (open.lang === 'wip') continue
+    out.push(`<div class="ai-instructions" aria-hidden="true">${escapeHtml(content)}</div>`)
+  }
+  return out.join('\n')
+}
+
 function preprocessCallouts(src: string, cfg: RpgRendererConfig): string {
   const allowed = new Set(Object.keys(cfg.calloutTypes))
   const lines = src.split(/\n/)
@@ -439,7 +480,8 @@ export function extractHeadingsForLinkPicker(source: string, cfg: RpgRendererCon
 export function extractHeadingsForToc(source: string, cfg: RpgRendererConfig): MarkdownHeading[] {
   const frontmatter = splitLeadingFrontmatter(source)
   const markdownBody = frontmatter ? frontmatter.body : source
-  const withCallouts = preprocessCallouts(markdownBody, cfg)
+  const withAiWip = preprocessAiWipFences(markdownBody)
+  const withCallouts = preprocessCallouts(withAiWip, cfg)
   const withInline = preprocessInline(withCallouts, cfg)
   const md = getMd(cfg)
   const tokens = md.parse(fixMarkdownParenDestinationsWithWhitespace(withInline), {})
@@ -507,7 +549,8 @@ export function renderRpgMarkdown(source: string, cfg: RpgRendererConfig, option
   const frontmatter = splitLeadingFrontmatter(source)
   const markdownBody = frontmatter ? frontmatter.body : source
   const md = getMd(cfg)
-  const withCallouts = preprocessCallouts(markdownBody, cfg)
+  const withAiWip = preprocessAiWipFences(markdownBody)
+  const withCallouts = preprocessCallouts(withAiWip, cfg)
   const withInline = preprocessInline(withCallouts, cfg, options)
   _currentRenderOptions = options
   const raw = md.render(fixMarkdownParenDestinationsWithWhitespace(withInline))

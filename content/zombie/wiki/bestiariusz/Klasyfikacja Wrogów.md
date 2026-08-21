@@ -14,6 +14,8 @@
 | Z-9  | Zbyt niebezpieczny by się zbliżyć. Wymagany ostrzał balistyczny lub artyleryjski |
 | Z-10 | Alpha. Nie ma środków nieusprawiedliwonych. Poinformuj dowództwo za wszelką cenę  |
 
+---
+
 | Kolor | Typ zagrożenia |
 |----------|----------|
 | 🟥 | Natychmiastowe: toksyny chemiczne lub eksplozje  |
