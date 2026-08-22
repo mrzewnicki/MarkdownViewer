@@ -48,6 +48,20 @@
 
 ### Anomalie
 
+:::mutation
+**Śnienie**
+- Pochodzenie: Anomalie
+- Rodzaj: Mentalne
+- Opis: Kości dłoni i przedramion stopniowo gęstnieją…
+- Ranga: 1 (Zalążek)
+- Charakter: Pasywna
+- Wpływ per Ranga:
+    - Ranga 1: 
+    - Ranga 2: 
+    - Ranga 3: 
+    - Ranga 4: 
+- Rezonans:
+:::
 
 
 

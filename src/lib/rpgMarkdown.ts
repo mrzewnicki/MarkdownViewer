@@ -63,7 +63,8 @@ function isBareCloseAtIndent(line: string, indent: string): boolean {
  */
 function renderAiInstructionsHtml(content: string): string {
   const safe = escapeHtml(content).replace(/<\/pre/gi, '&lt;/pre')
-  return `<pre class="ai-instructions" aria-hidden="true">${safe}</pre>`
+  // Newlines keep a trailing `:::` from gluing to `</pre>` (that broke mutation closers).
+  return `<pre class="ai-instructions" aria-hidden="true">\n${safe}\n</pre>\n`
 }
 
 /** Indent-aware ```ai / ```wip so nested fences do not close the block early. */
@@ -440,6 +441,7 @@ function splitTraitLine(rest: string): MutationTrait {
 }
 
 const MUTATION_TOP_LEVEL_KEYS = new Set([
+  'nazwa',
   'pochodzenie',
   'rodzaj',
   'opis',
@@ -543,7 +545,8 @@ function parseMutationFields(src: string): MutationFields {
       }
 
       nest = null
-      if (keyLower === 'pochodzenie') fields.pochodzenie = value
+      if (keyLower === 'nazwa') fields.name = value
+      else if (keyLower === 'pochodzenie') fields.pochodzenie = value
       else if (keyLower === 'rodzaj') fields.rodzaj = value
       else if (keyLower === 'opis') fields.opis = value
       else if (keyLower === 'ranga') fields.ranga = value
@@ -560,8 +563,6 @@ function parseMutationFields(src: string): MutationFields {
         nest = 'wplyw'
       } else if (keyLower === 'aktywacja per ranga' || keyLower === 'aktywacja') {
         nest = 'aktywacja'
-      } else if (!fields.name) {
-        fields.name = key
       }
       continue
     }
@@ -799,9 +800,31 @@ function preprocessMutationBlocksInText(text: string): string {
   return out.join('\n')
 }
 
+/**
+ * Protect AI instruction `<pre>` blocks and markdown code spans/fences so
+ * `:::mutation` examples inside ```ai notes are not turned into real cards
+ * (and cannot swallow the rest of the document when `:::` is glued to `</pre>`).
+ */
+function splitMutationProtected(src: string): { text: string; protected: string }[] {
+  const re =
+    /(<pre\b[^>]*\bai-instructions\b[^>]*>[\s\S]*?<\/pre>|```[\s\S]*?```|`[^`\n]+`)/gi
+  const chunks: { text: string; protected: string }[] = []
+  let last = 0
+  let match: RegExpExecArray | null
+  while ((match = re.exec(src)) !== null) {
+    if (match.index > last) chunks.push({ text: src.slice(last, match.index), protected: '' })
+    chunks.push({ text: '', protected: match[0] })
+    last = match.index + match[0].length
+  }
+  if (last < src.length) chunks.push({ text: src.slice(last), protected: '' })
+  return chunks
+}
+
 function preprocessMutationBlocks(src: string): string {
-  return splitCodeAware(src)
-    .map((chunk) => (chunk.code ? chunk.code : preprocessMutationBlocksInText(chunk.text)))
+  return splitMutationProtected(src)
+    .map((chunk) =>
+      chunk.protected ? chunk.protected : preprocessMutationBlocksInText(chunk.text),
+    )
     .join('')
 }
 
