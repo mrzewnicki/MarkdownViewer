@@ -801,13 +801,16 @@ function preprocessMutationBlocksInText(text: string): string {
 }
 
 /**
- * Protect AI instruction `<pre>` blocks and markdown code spans/fences so
- * `:::mutation` examples inside ```ai notes are not turned into real cards
- * (and cannot swallow the rest of the document when `:::` is glued to `</pre>`).
+ * Protect AI `<pre class="ai-instructions">` and fenced ``` blocks so
+ * `:::mutation` examples inside them are not turned into cards.
+ *
+ * Do not protect inline `code` — splitting on it breaks blocks that use
+ * `` `ToDo: …` `` in field values (close `:::` ends up in another chunk;
+ * rejoining glues ``` + ` into ```` and the mutation fence never closes).
  */
 function splitMutationProtected(src: string): { text: string; protected: string }[] {
   const re =
-    /(<pre\b[^>]*\bai-instructions\b[^>]*>[\s\S]*?<\/pre>|```[\s\S]*?```|`[^`\n]+`)/gi
+    /(<pre\b[^>]*\bai-instructions\b[^>]*>[\s\S]*?<\/pre>|```[\s\S]*?```)/gi
   const chunks: { text: string; protected: string }[] = []
   let last = 0
   let match: RegExpExecArray | null
