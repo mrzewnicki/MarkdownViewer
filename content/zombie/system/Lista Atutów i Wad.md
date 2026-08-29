@@ -135,6 +135,7 @@ Rejestr wszystkich [Atutów i Wad](Właściwości.md) używanych w systemie - ż
 |---|---|---|---|
 | Aura niepokoju | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Feromony Grozy | Zwierzęta i cywile w pobliżu podświadomie unikają postaci, ułatwiając unikanie uwagi. |
 | Chłodna kalkulacja | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Zimny Obserwator | W chaosie walki postać zachowuje chłodny osąd; bonus do testów Opanowania pod presją. |
+| Echo snów | [Mutacje](Mutacje.wip.md) | Śnienie | Senne wizje przeszłości, teraźniejszości i przyszłości; z rangą także komunikacja przez sny i sięganie po zapomniane wspomnienia. |
 | Empatyczne echo | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Wspólny Puls | Postać wyczuwa emocje Stronnika (strach, czujność); bonus do Percepcji gdy Stronnik ostrzega. |
 | Mowa Watażki | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Instynkt Watażki | Naturalne odczytywanie mowy ciała zwierzęcego Stronnika; bonus do wspólnych akcji. |
 | Niechciana szczerość | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Czytanie z Twarzy | Postać podświadomie wyczuwa dominującą emocję rozmówcy; bonus do Wyczucia i Przekonywania. |
@@ -222,6 +223,7 @@ Rejestr wszystkich [Atutów i Wad](Właściwości.md) używanych w systemie - ż
 
 | Nazwa | Źródło | Kontekst | Opis |
 |---|---|---|---|
+| Bezbronna jaźń | [Mutacje](Mutacje.wip.md) | Śnienie | Ciało bezbronne podczas wędrówki jaźni przez AVEN; wizje mylące, ryzyko koszmarów i polowań w snach. |
 | Chłodne dłonie | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Kościane Szpony | Gęste kości obniżają precyzję manualną; testy drobnych ruchów rąk są utrudnione. |
 | Cudzy strach | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Wspólny Puls | Silne emocje Stronnika przenikają do własnych odczuć, utrudniając ocenę sytuacji. |
 | Emocjonalny dystans | [Mutacje i Skażenie](Mutacje%20i%20Skażenie.md) | Zimny Obserwator | Budowanie zaufania i bliskich relacji jest utrudnione przez brak widocznych emocji. |

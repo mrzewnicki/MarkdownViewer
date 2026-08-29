@@ -2,6 +2,9 @@
 
 > [!info] Ogólne informacje o mechanice mutacji są w [Mutacje i Skażenie](Mutacje%20i%20Ska%C5%BCenie.md)
 
+> [!warning] Wszystkie mutacje są w trakcie tworzenia i mogą się zmienić.
+
+
 ```ai
     Składnia w Edytorze:
 

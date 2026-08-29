@@ -8,7 +8,7 @@ Lista otwarta, czysto opisowa - nie wpływa na mechanikę, ułatwia tylko klasyf
 - **Mentalizm** - wpływanie na umysły, emocje i wolę innych ludzi
 - **Animalizm** - więź z naturą, zwierzętami i instynktem
 - **Somatyka** - kontrola i wpływ na ciała i biologię innych istot (leczenie, zniekształcanie, wzmacnianie lub osłabianie z zewnątrz)
-- **Widzenie** - odczytywanie ludzi, miejsc i sytuacji w sposób niemożliwy przy użyciu zwykłych zmysłów (przeczucia, prekognicja, wyczuwanie emocji lub intencji innych)
+- **Śnienie** - wędrówka jaźni przez AVEN podczas snu: echa przeszłości, teraźniejszości i przyszłości, most do innych umysłów oraz kształtowanie snów i koszmarów
 
 MG lub gracz mogą dopisać nowy kierunek, jeśli dana mutacja Psioniczna nie pasuje do żadnego z powyższych.
 

@@ -181,7 +181,7 @@ Dokładną liczbę punktów w ramach "średniej" i "dużej" ilości ustala MG w 
 
   ```markdown
   :::mutation
-  **Nazwa mutacji**
+  - Nazwa: Nazwa mutacji
   - Pochodzenie: DeathNet / LiveCore / Anomalia
   - Rodzaj: Fizyczna / Mentalna / Psioniczna
   - Opis: [krótki, narracyjny opis tego, czym jest mutacja i jak się objawia]
@@ -218,22 +218,6 @@ Dokładną liczbę punktów w ramach "średniej" i "dużej" ilości ustala MG w 
   ```
 ```
 
-Przykład widoczny w podglądzie (karta):
-
-:::mutation
-**Kościane Szpony**
-- Pochodzenie: LiveCore
-- Rodzaj: Fizyczna
-- Opis: Kości dłoni i przedramion stopniowo gęstnieją, tworząc pod skórą twarde, kanciaste zgrubienia wyczuwalne przy każdym mocniejszym uścisku
-- Ranga: 1 (Zalążek)
-- Charakter: Pasywna
-- Wpływ per Ranga:
-  - Ranga 1: Wzmocnione pięści - kości dłoni stały się gęstsze i twardsze, uderzenia pięścią zadają odczuwalnie więcej bólu; Chłodne dłonie - skóra na rękach jest sztywna i mniej czuła, drobne czynności manualne (np. rozbrajanie zamka, opatrywanie ran) są utrudnione
-  - Ranga 2: Wzmocnione pięści (2) - uderzenia pięścią wyraźnie silniejsze; Chłodne dłonie (2) - drobne czynności manualne znacznie utrudnione
-  - Ranga 3: Wzmocnione pięści (3) - kości dłoni jak prowizoryczna broń; Chłodne dłonie (3) - precyzyjna praca dłoni wymaga dużego wysiłku
-  - Ranga 4: Wzmocnione pięści (4) - uderzenia łamią kości i pancerz lekkiego typu; Chłodne dłonie (4) - dłonie prawie nie czują detali, manipulacja drobnymi narzędziami jest skrajnie utrudniona
-- Rezonans: Kość porasta dalej wzdłuż ramienia, tworząc na krótki czas kostny pancerz na całej kończynie
-:::
 
 ### Aktywacja
 
@@ -246,9 +230,9 @@ Krytyczna porażka podczas aktywacji płaconej Skażeniem dodaje, poza standardo
 
 ### Rezonans
 
-**Rezonans** to fabularna fuzja mutacji Aktywnej i Pasywnej. Rezonować mogą ze sobą tylko i wyłącznie mutacje o różnym Charakterze - dwie Aktywne lub dwie Pasywne nigdy nie rezonują ze sobą.
+**Rezonans** to fabularna fuzja mutacji Aktywnej i Pasywnej. Rezonować mogą ze sobą tylko i wyłącznie mutacje o różnym Charakterze - dwie Aktywne lub dwie Pasywne nigdy nie rezonują ze sobą. Każda mutacja przedstawiać musi istotny pozytywny wpły, który przynosi ze strony rezonansu. Ostateczny efekt Rezonansu dwóch mutacji jest fuzją efektów z dwóch mutacji, które można fabularnie modelować zależnie od sytuacji.
 
-Efekt Rezonansu jest zawsze taki sam, niezależnie od sposobu użycia: obie rezonujące mutacje przechodzą w stan **hibernacji**.
+Niezależnie od sposobu użycia obie rezonujące mutacje przechodzą w stan **hibernacji**.
 - W hibernacji mutacje nie zapewniają swoich Atutów i nie mogą być aktywowane.
 - Wady obu mutacji w hibernacji **wciąż działają**.
 - Sam Rezonans trwa krótki okres czasu (ustala MG zależnie od sytuacji), po czym obie mutacje pozostają w hibernacji aż do regeneracji.
@@ -261,6 +245,9 @@ Rezonans może zostawić trwały ślad wykraczający poza samą hibernację - np
 - Aktywacja mutacji (patrz [Aktywacja](#aktywacja)) - bez kosztu PM ani Skażenia.
 - Zniwelowanie wadliwych efektów - tymczasowe zignorowanie Wad jednej z rezonujących mutacji.
 - Duże wzmocnienie pozytywnych efektów - znaczące, tymczasowe podniesienie siły Atutu lub efektu Aktywacji jednej z rezonujących mutacji.
+
+> [!warning] Wymuszony Rezonans
+> Po przejęciu nad kimś kontroli nie można go zmusić do Rezonansu jego mutacji. Może wykorzystywać swoje mutacje, ale nie może zostać zmuszona do rezonansu póki natura istoty sama tego nie zapragnie. W tym celu można nią jedynie zmanipulować. Do tego jednak wcześniej trzeba poznać naturę istoty.
 
 ### Tworzenie mutacji
 
