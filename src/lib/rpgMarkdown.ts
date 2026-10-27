@@ -190,33 +190,38 @@ function formatInlineDisplayName(id: string): string {
   return id.replace(/-/g, ' ')
 }
 
-function parseOptionalRank(raw: string | undefined): number | null {
+type ProsConsRank = number | 'R'
+
+function parseOptionalRank(raw: string | undefined): ProsConsRank | null {
   if (raw == null || raw === '') return null
+  if (/^r$/i.test(raw.trim())) return 'R'
   const n = Number(raw)
   return Number.isFinite(n) ? n : null
 }
 
 function applyInlineRpg(src: string, cfg: RpgRendererConfig, options?: RenderRpgMarkdownOptions): string {
-  // Ranked @pros / @cons (rank optional) must run before generic @type:id.
+  // Ranked @pros / @cons (rank optional: digit or R) must run before generic @type:id.
   let output = src.replace(
-    /@(pros|cons):([\p{L}\p{N}_-]+)(?:\((\d+)\))?/giu,
+    /@(pros|cons):([\p{L}\p{N}_-]+)(?:\((\d+|R)\))?/giu,
     (_all, type: string, id: string, rankRaw: string | undefined) => {
       const variant = type.toLowerCase() === 'cons' ? 'cons' : 'pros'
       const displayName = formatInlineDisplayName(id)
       const rank = parseOptionalRank(rankRaw)
       const icon = variant === 'pros' ? '✚' : '−'
+      const rankLabel = rank == null ? null : rank === 'R' ? 'R' : String(rank)
       const tip =
-        rank == null
+        rankLabel == null
           ? variant === 'pros'
             ? `Zaleta · ${displayName}`
             : `Wada · ${displayName}`
           : variant === 'pros'
-            ? `Zaleta · ${displayName} (${rank})`
-            : `Wada · ${displayName} (${rank})`
+            ? `Zaleta · ${displayName} (${rankLabel})`
+            : `Wada · ${displayName} (${rankLabel})`
+      const aria = rank === 'R' ? 'Rezonans' : `ranga ${rankLabel}`
       const numHtml =
-        rank == null
+        rankLabel == null
           ? ''
-          : `<span class="pros-cons-badge-num" aria-label="ranga ${escapeAttr(String(rank))}">${escapeHtml(String(rank))}</span>`
+          : `<span class="pros-cons-badge-num" aria-label="${escapeAttr(aria)}">${escapeHtml(rankLabel)}</span>`
       return `<span class="pros-cons-badge pros-cons-badge--${variant}" data-hover-info="${escapeAttr(`${variant}:${id}`)}" title="${escapeAttr(tip)}"><span class="pros-cons-badge-icon" aria-hidden="true">${icon}</span><span class="pros-cons-badge-id">${escapeHtml(displayName)}</span>${numHtml}</span>`
     },
   )

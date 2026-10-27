@@ -75,7 +75,7 @@
       "pipeline": [
         "1. Strip YAML front matter → render as .markdown-frontmatter aside",
         "2. preprocessCallouts: > [!kind] blockquotes → ::: callout-kind containers",
-        "3. preprocessInline: @pros/@cons:id(n?) → .pros-cons-badge[data-hover-info]; @type:id → .rpg-inline-ref; [[wiki]] → <a class='rpg-wikilink'> or <span class='is-missing'>",
+        "3. preprocessInline: @pros/@cons:id(n|R?) → .pros-cons-badge[data-hover-info]; @type:id → .rpg-inline-ref; [[wiki]] → <a class='rpg-wikilink'> or <span class='is-missing'>",
         "4. fixMarkdownParenDestinationsWithWhitespace: wraps spaced link destinations in <>",
         "5. markdown-it render: one container plugin per entityType and calloutType",
         "6. rewriteLocalRefs: calls options.resolveAssetSrc and options.resolveDocumentHref on img/a",
