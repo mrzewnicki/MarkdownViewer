@@ -236,8 +236,13 @@ function resolveRangeStatus(modifier: number | null): RangeStatus {
   return 'bonus'
 }
 
-function formatRangeTip(kind: RangeKind, _modifier?: number | null): string {
-  return `Zasięg: ${RANGE_LABELS[kind].toLowerCase()}`
+function formatRangeTip(kind: RangeKind, modifier?: number | null): string {
+  const base = `Zasięg: ${RANGE_LABELS[kind].toLowerCase()}`
+  const status = resolveRangeStatus(modifier ?? null)
+  if (status === 'available') return base
+  if (status === 'malus') return `${base} - z utrudnieniem`
+  if (status === 'unavailable') return `${base} - niedostępny`
+  return `${base} - z bonusem`
 }
 
 function applyInlineRpg(src: string, cfg: RpgRendererConfig, options?: RenderRpgMarkdownOptions): string {
