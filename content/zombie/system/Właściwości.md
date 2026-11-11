@@ -1,8 +1,10 @@
 # Właściwości
 
-To narracyjne określenia z wartością liczbową umożliwiającą wpłynięcie na różne elementy gry dodając pozytywne lub negatywne modyfikatory. Każda właściwość pozytywna to `Atut`, a negatywna to `Wada`.
+To narracyjne określenia z wartością umożliwiającą wpłynięcie na różne elementy gry dodając pozytywne lub negatywne modyfikatory. Każda właściwość pozytywna to `Atut`, a negatywna to `Wada`.
 
-Każdy atut i wada ma domyślną wartość 1, którą można zwiększyć. W zapisie tagów wartość 1 pomija się (@pros:Cichy), a od 2 wzwyż podaje się w nawiasie (@pros:Cichy(2)). Skala wartości to **1–5**. MG może wyjść poza nią w wyjątkowych przypadkach (np. liczba sojuszników). Ostatecznie każdy atut i wada podlegają narracyjnej interpretacji.
+Każdy atut i wada ma domyślną wartość 1, którą można zwiększyć. W zapisie tagów wartość 1 pomija się (@pros:Cichy), a od 2 wzwyż podaje się w nawiasie (@pros:Cichy(2)). Skala wartości liczbowych to **1–5**. MG może wyjść poza nią w wyjątkowych przypadkach (np. liczba sojuszników). Ostatecznie każdy atut i wada podlegają narracyjnej interpretacji.
+
+Właściwość może też przyjąć wartość litery **R**. Oznacza to, że jej efektywna wartość równa się **randze mutacji**, w której właściwość się znajduje. `R` występuje wyłącznie przy Atutach i Wadach w mutacjach. W tagach: @pros:Nieustraszony(R).
 
 Właściwości może mieć niemal każdy element gry by opisać w tym świecie. Najczęściej spotyka się je przy postaciach i NPC, ekwipunktu, pojazdach, mutacjach i zaklęciach.
 

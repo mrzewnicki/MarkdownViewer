@@ -43,7 +43,7 @@ Właściwość @cons:Skomplikowany(0) oznacza, że konstrukcja wymaga specjalist
 | Nazwa | Złożoność | Czas | Materiały | Właściwości | Opis |
 |---|:---:|:---:|---|---|---|
 | Latryna | 1 | 2 | Drewno × 2, Spoiwa × 1 | @pros:Higieniczny | Prosta konstrukcja przeznaczona do bezpiecznego odprowadzania nieczystości. |
-| Namiot | 1 | 1 | Drewno × 1, Spoiwa × 1 | @pros:Przenośny | Lekkie, tymczasowe schronienie zapewniające podstawową ochronę przed warunkami atmosferycznymi. |
+| Namiot | 1 | 1 | Drewno × 1, Spoiwa × 1, Tkanina x 1 | @pros:Przenośny | Lekkie, tymczasowe schronienie zapewniające podstawową ochronę przed warunkami atmosferycznymi. |
 | Składowisko | 1 | 1 | Drewno × 2 | @pros:Pojemny | Wyznaczone i przygotowane miejsce do przechowywania dużych ilości materiałów. |
 | Szopa | 1 | 3 | Drewno × 6, Metal × 1, Spoiwa × 2 | - | Prosty zamknięty obiekt do przechowywania narzędzi, materiałów i sprzętu. |
 | Wiata | 1 | 2 | Drewno × 4, Spoiwa × 1 | - | Zadaszona, otwarta konstrukcja zapewniająca miejsce do pracy lub przechowywania wyposażenia. |

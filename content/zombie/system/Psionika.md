@@ -8,7 +8,8 @@ Lista otwarta, czysto opisowa - nie wpływa na mechanikę, ułatwia tylko klasyf
 - **Mentalizm** - wpływanie na umysły, emocje i wolę innych ludzi
 - **Animalizm** - więź z naturą, zwierzętami i instynktem
 - **Somatyka** - kontrola i wpływ na ciała i biologię innych istot (leczenie, zniekształcanie, wzmacnianie lub osłabianie z zewnątrz)
-- **Śnienie** - wędrówka jaźni przez AVEN podczas snu: echa przeszłości, teraźniejszości i przyszłości, most do innych umysłów oraz kształtowanie snów i koszmarów
+- **Śnienie** - wędrówka jaźni przez AVEN podczas snu: echa przeszłości, teraźniejszości i przyszłości, most rozmowy między umysłami oraz tworzenie snów i wizji
+- **Tkanie Koszmarów** - ofensywne kształtowanie AVEN: wypaczanie snów, tworzenie koszmarów, pochłanianie snów i stawanie się koszmarem (wymaga Śnienia)
 
 MG lub gracz mogą dopisać nowy kierunek, jeśli dana mutacja Psioniczna nie pasuje do żadnego z powyższych.
 

@@ -13,10 +13,10 @@ Zastosowanie materiałów w budowie jest opisane w [Konstrukcjach](Konstrukcje.m
 
 | Nazwa | Wartość | Właściwości | Opis |
 |---|:---:|---|---|
-| Drewno | 1 | @cons:Wrażliwy-na-wilgoć(1) @cons:Łatwopalny(1) | Deski, pale, belki, kantówki, sklejka i inne elementy drewniane możliwe do wykorzystania w konstrukcjach. |
+| Drewno | 1 | @pros:Wytrzymały(2) @cons:Wrażliwy-na-wilgoć(1) @cons:Łatwopalny(1) | Deski, pale, belki, kantówki, sklejka i inne elementy drewniane możliwe do wykorzystania w konstrukcjach. |
 | Spoiwa | 1 | - | Gwoździe, śruby, wkręty, kleje, taśmy, zipy, drut i inne materiały służące do łączenia elementów. |
-| Kamień | 2 | - | Kamienie, cegły, beton, gruz i inne ciężkie materiały mineralne wykorzystywane w budownictwie. |
-| Metal | 2 | - | Blachy, pręty, profile, podpory, kraty i inne metalowe elementy konstrukcyjne. |
+| Kamień | 2 | @pros:Wytrzymały(4) | Kamienie, cegły, beton, gruz i inne ciężkie materiały mineralne wykorzystywane w budownictwie. |
+| Metal | 2 | @pros:Wytrzymały(2) | Blachy, pręty, profile, podpory, kraty i inne metalowe elementy konstrukcyjne. |
 | Chemia | 3 | @pros:Wielofunkcyjny @cons:Łatwopalny(3) | Odczynniki, rozpuszczalniki, kwasy, utleniacze i inne substancje chemiczne. Z Metalem do produkcji amunicji; także do leków i paliwa. |
 | Elektryka | 3 | @cons:Wrażliwy-na-wilgoć(4) | Kable, przewody, przełączniki, gniazda i podstawowe elementy instalacji elektrycznych. |
 | Szkło | 3 | @cons:Kruchy(4) | Szyby, tafle i inne elementy szklane. Szczególnie przydatne przy oknach, szklarniach, laboratoriach i specjalistycznej aparaturze. |

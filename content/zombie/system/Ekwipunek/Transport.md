@@ -27,7 +27,7 @@ Każdy pojazd i element wyposażenia transportowego opisywany jest przez następ
 
 | Nazwa | Wartość | Właściwości | Opis |
 |---|:---:|---|---|
-| Koń | 3 | @pros:Niezależny(2) @pros:Szybki(2) @pros:Manewrowość @pros:Cichy @pros:Ładowność @cons:Konsumpcja(2) | Wierzchowiec. Szybki i cichy transport bez paliwa — wymaga paszy, wody i regularnej opieki. Może też ciągnąć [Wóz pociągowy](#pojazdy). |
+| Koń | 3 | @pros:Niezależny(2) @pros:Szybki(2) @pros:Manewrowość @pros:Cichy @pros:Ładowność @cons:Konsumpcja(2) | Wierzchowiec. Szybki i cichy transport bez paliwa — wymaga paszy, wody i regularnej opieki. Może też ciągnąć wóz pociągowy. |
 
 ## Wyposażenie
 

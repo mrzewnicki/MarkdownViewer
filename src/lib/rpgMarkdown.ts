@@ -199,6 +199,47 @@ function parseOptionalRank(raw: string | undefined): ProsConsRank | null {
   return Number.isFinite(n) ? n : null
 }
 
+type RangeKind = 'melee' | 'short' | 'medium' | 'long'
+type RangeStatus = 'unavailable' | 'malus' | 'available' | 'bonus'
+
+const RANGE_LABELS: Record<RangeKind, string> = {
+  melee: 'Zwarcie',
+  short: 'Bliski',
+  medium: 'Średni',
+  long: 'Daleki',
+}
+
+const RANGE_STATUS_LABELS: Record<RangeStatus, string> = {
+  unavailable: 'niedostępny',
+  malus: 'utrudnienie',
+  available: 'dostępny',
+  bonus: 'bonus',
+}
+
+function parseRangeKind(raw: string | undefined): RangeKind | null {
+  if (raw == null) return null
+  const kind = raw.toLowerCase()
+  if (kind === 'melee' || kind === 'short' || kind === 'medium' || kind === 'long') return kind
+  return null
+}
+
+function parseRangeModifier(raw: string | undefined): number | null {
+  if (raw == null || raw === '') return null
+  const n = Number(raw)
+  return Number.isFinite(n) ? n : null
+}
+
+function resolveRangeStatus(modifier: number | null): RangeStatus {
+  if (modifier == null || modifier === 0 || modifier === 1) return 'available'
+  if (modifier === -1) return 'malus'
+  if (modifier <= -2) return 'unavailable'
+  return 'bonus'
+}
+
+function formatRangeTip(kind: RangeKind, _modifier?: number | null): string {
+  return `Zasięg: ${RANGE_LABELS[kind].toLowerCase()}`
+}
+
 function applyInlineRpg(src: string, cfg: RpgRendererConfig, options?: RenderRpgMarkdownOptions): string {
   // Ranked @pros / @cons (rank optional: digit or R) must run before generic @type:id.
   let output = src.replace(
@@ -226,9 +267,24 @@ function applyInlineRpg(src: string, cfg: RpgRendererConfig, options?: RenderRpg
     },
   )
 
+  // @range:kind(modifier?) — before generic @type:id
+  output = output.replace(
+    /@range:(melee|short|medium|long)(?:\((-?\d+)\))?/giu,
+    (_all, kindRaw: string, modRaw: string | undefined) => {
+      const kind = parseRangeKind(kindRaw)
+      if (!kind) return _all
+      const modifier = parseRangeModifier(modRaw)
+      const status = resolveRangeStatus(modifier)
+      const tip = formatRangeTip(kind, modifier)
+      // Icon via CSS mask (`.range-badge--{kind} .range-badge-icon`) — inline SVG
+      // breaks under markdown-it (spaces in path `d` attrs get stripped).
+      return `<span class="range-badge range-badge--${kind} range-badge--${status}" title="${escapeAttr(tip)}"><span class="range-badge-icon" aria-hidden="true"></span></span>`
+    },
+  )
+
   output = output.replace(/@([a-z][a-z0-9-]*):([\p{L}\p{N}_-]+)/giu, (_all, type: string, id: string) => {
     const entityType = type.toLowerCase()
-    if (entityType === 'pros' || entityType === 'cons') return `@${type}:${id}`
+    if (entityType === 'pros' || entityType === 'cons' || entityType === 'range') return `@${type}:${id}`
     const label = resolveEntityLabel(entityType, cfg)
     const icon = resolveEntityIcon(entityType, cfg, '')
     return `<span class="rpg-inline rpg-inline-ref" data-entity="${escapeAttr(entityType)}" data-id="${escapeAttr(id)}"><span class="rpg-inline-icon">${icon}</span><span class="rpg-inline-label">${escapeHtml(label)}</span><span class="rpg-inline-id">${escapeHtml(id)}</span></span>`
@@ -1012,6 +1068,7 @@ function rewriteLocalRefs(html: string, options?: RenderRpgMarkdownOptions): str
 }
 
 const PURIFY_PREVIEW: import('dompurify').Config = {
+  USE_PROFILES: { html: true, svg: true },
   ADD_ATTR: [
     'data-entity',
     'data-id',
@@ -1031,8 +1088,21 @@ const PURIFY_PREVIEW: import('dompurify').Config = {
     'title',
     'aria-label',
     'aria-hidden',
+    'viewBox',
+    'xmlns',
+    'fill',
+    'stroke',
+    'stroke-width',
+    'stroke-linecap',
+    'stroke-linejoin',
+    'width',
+    'height',
+    'd',
+    'cx',
+    'cy',
+    'r',
   ],
-  ADD_TAGS: ['aside', 'header', 'section', 'article'],
+  ADD_TAGS: ['aside', 'header', 'section', 'article', 'svg', 'path', 'circle'],
   ALLOWED_URI_REGEXP:
     /^(?:(?:(?:f|ht)tps?|mailto|tel|callto|sms|cid|xmpp|matrix):|#|\/|\.\/|\.\.\/|[^a-z]|[a-z+.-]+(?:[^a-z+.-:]|$))/i,
 }

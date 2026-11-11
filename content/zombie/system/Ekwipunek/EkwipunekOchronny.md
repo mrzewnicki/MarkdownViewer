@@ -42,7 +42,7 @@ Choć istnieją ubrania zdolne zwiększyć ochronę przed atakami fizycznymi to 
 | Odzież przeciwdeszczowa | 0 | @pros:Wodoodporny | (Tkanina × 1, Chemia × 1) + [Krawiectwo](../Umiejętności.md#krawiectwo) |
 | Odzież termiczna | 0 | @pros:Ciepły(2) | (Tkanina × 2) + [Krawiectwo](../Umiejętności.md#krawiectwo) |
 | Zwykłe ubrania | 0 | @pros:Tamujący | (Tkanina × 1) + [Krawiectwo](../Umiejętności.md#krawiectwo) |
-| Odzież antyprzecięciowa | 1 | @pros:Antyprzecięciowy(2) | (Tkanina × 2, Metal × 1) + [Krawiectwo](../Umiejętności.md#krawiectwo) |
+| Odzież antyprzecięciowa | 1 | @pros:Ochrona-na-cięcia(2) | (Tkanina × 2, Metal × 1) + [Krawiectwo](../Umiejętności.md#krawiectwo) |
 | Odzież ognioodporna | 1 | @pros:Ognioodporny(2) @cons:Ciężki | (Tkanina × 2, Chemia × 1) + [Krawiectwo](../Umiejętności.md#krawiectwo) |
 | Odzież robocza | 1 | @pros:Wytrzymały | (Tkanina × 2) + [Krawiectwo](../Umiejętności.md#krawiectwo) |
 

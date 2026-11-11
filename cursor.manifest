@@ -75,7 +75,7 @@
       "pipeline": [
         "1. Strip YAML front matter → render as .markdown-frontmatter aside",
         "2. preprocessCallouts: > [!kind] blockquotes → ::: callout-kind containers",
-        "3. preprocessInline: @pros/@cons:id(n|R?) → .pros-cons-badge[data-hover-info]; @type:id → .rpg-inline-ref; [[wiki]] → <a class='rpg-wikilink'> or <span class='is-missing'>",
+        "3. preprocessInline: @pros/@cons:id(n|R?) → .pros-cons-badge[data-hover-info]; @range:kind(mod?) → .range-badge SVG; @type:id → .rpg-inline-ref; [[wiki]] → <a class='rpg-wikilink'> or <span class='is-missing'>",
         "4. fixMarkdownParenDestinationsWithWhitespace: wraps spaced link destinations in <>",
         "5. markdown-it render: one container plugin per entityType and calloutType",
         "6. rewriteLocalRefs: calls options.resolveAssetSrc and options.resolveDocumentHref on img/a",
@@ -159,6 +159,7 @@
     "rpgMutationCard": [".rpg-mutation-card", ".rpg-mutation-head", ".rpg-mutation-chips", ".rpg-mutation-chip", ".rpg-mutation-name", ".rpg-mutation-body", ".rpg-mutation-opis", ".rpg-mutation-split", ".rpg-mutation-ranks", ".rpg-mutation-rezonans"],
     "rpgInline": [".rpg-inline", ".rpg-inline-ref", ".rpg-inline-icon", ".rpg-inline-label", ".rpg-inline-id"],
     "rpgProsCons": [".pros-cons-badge", ".pros-cons-badge--pros", ".pros-cons-badge--cons", ".pros-cons-badge-icon", ".pros-cons-badge-id", ".pros-cons-badge-num"],
+    "rpgRange": [".range-badge", ".range-badge--melee", ".range-badge--short", ".range-badge--medium", ".range-badge--long", ".range-badge--available", ".range-badge--malus", ".range-badge--unavailable", ".range-badge--bonus", ".range-badge-icon"],
     "hoverInfo": [".hover-info-layer", ".hover-info-tooltip", ".hover-info-tooltip-title", ".hover-info-tooltip-body"],
     "rpgWikilinks": [".rpg-wikilink", ".rpg-wikilink.is-missing"]
   },
