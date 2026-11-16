@@ -8,9 +8,9 @@
 | [Pływanie i nurkowanie](Umiej%C4%99tno%C5%9Bci.md#pływanie-i-nurkowanie) | [Broń biała](Umiej%C4%99tno%C5%9Bci.md#broń-biała) | [Chemia](Umiej%C4%99tno%C5%9Bci.md#chemia) | [Kowalstwo](Umiej%C4%99tno%C5%9Bci.md#kowalstwo) | [Przekonywanie](Umiej%C4%99tno%C5%9Bci.md#przekonywanie) | [Tresura](Umiej%C4%99tno%C5%9Bci.md#tresura) | [Rytuały Przebudzonych](Umiej%C4%99tno%C5%9Bci.md#rytuały-przebudzonych) |
 | [Parkour](Umiej%C4%99tno%C5%9Bci.md#parkour) | [Broń palna](Umiej%C4%99tno%C5%9Bci.md#broń-palna) | [Fizyka](Umiej%C4%99tno%C5%9Bci.md#fizyka) | [Rusznikarstwo](Umiej%C4%99tno%C5%9Bci.md#rusznikarstwo) | [Oszustwo](Umiej%C4%99tno%C5%9Bci.md#oszustwo) | [Hodowla](Umiej%C4%99tno%C5%9Bci.md#hodowla) | [DeathNet](Umiej%C4%99tno%C5%9Bci.md#deathnet) |
 | [Ukrywanie](Umiej%C4%99tno%C5%9Bci.md#ukrywanie) | [Broń miotana](Umiej%C4%99tno%C5%9Bci.md#broń-miotana) | [Biologia](Umiej%C4%99tno%C5%9Bci.md#biologia) | [Budownictwo](Umiej%C4%99tno%C5%9Bci.md#budownictwo) | [Dowodzenie](Umiej%C4%99tno%C5%9Bci.md#dowodzenie) | [Jeździectwo](Umiej%C4%99tno%C5%9Bci.md#jeździectwo) | [Anomalie](Umiej%C4%99tno%C5%9Bci.md#anomalie) |
-| [Wyszukiwanie](Umiej%C4%99tno%C5%9Bci.md#wyszukiwanie) | [Strzelectwo](Umiej%C4%99tno%C5%9Bci.md#strzelectwo) | [Historia](Umiej%C4%99tno%C5%9Bci.md#historia) | [Krawiectwo](Umiej%C4%99tno%C5%9Bci.md#krawiectwo) | [Handel](Umiej%C4%99tno%C5%9Bci.md#handel) | [Pułapki](Umiej%C4%99tno%C5%9Bci.md#pułapki) | [Zombie](Umiej%C4%99tno%C5%9Bci.md#zombie) |
+| [Wyszukiwanie](Umiej%C4%99tno%C5%9Bci.md#wyszukiwanie) | [Uniki](Umiej%C4%99tno%C5%9Bci.md#uniki) | [Historia](Umiej%C4%99tno%C5%9Bci.md#historia) | [Krawiectwo](Umiej%C4%99tno%C5%9Bci.md#krawiectwo) | [Handel](Umiej%C4%99tno%C5%9Bci.md#handel) | [Pułapki](Umiej%C4%99tno%C5%9Bci.md#pułapki) | [Zombie](Umiej%C4%99tno%C5%9Bci.md#zombie) |
 | [Prowadzenie pojazdów](Umiej%C4%99tno%C5%9Bci.md#prowadzenie-pojazdów) | [Taktyka i strategia](Umiej%C4%99tno%C5%9Bci.md#taktyka-i-strategia) | [Szyfry](Umiej%C4%99tno%C5%9Bci.md#szyfry) | [Kucharstwo](Umiej%C4%99tno%C5%9Bci.md#kucharstwo) | [Wyczucie](Umiej%C4%99tno%C5%9Bci.md#wyczucie) | [Tropienie](Umiej%C4%99tno%C5%9Bci.md#tropienie) | [Mutacje](Umiej%C4%99tno%C5%9Bci.md#mutacje) |
-| [Nawigacja](Umiej%C4%99tno%C5%9Bci.md#nawigacja) | [Broń palna ciężka](Umiej%C4%99tno%C5%9Bci.md#broń-palna-ciężka) | [Weterynaria](Umiej%C4%99tno%C5%9Bci.md#weterynaria) | [Elektrotechnika](Umiej%C4%99tno%C5%9Bci.md#elektrotechnika) | [Hazard](Umiej%C4%99tno%C5%9Bci.md#hazard) | [Sztuka Przetrwania](Umiej%C4%99tno%C5%9Bci.md#sztuka-przetrwania) | [Śnienie](Umiej%C4%99tno%C5%9Bci.md#śnienie) |
+| [Nawigacja](Umiej%C4%99tno%C5%9Bci.md#nawigacja) | [Obsługa ciężkiego sprzętu](Umiej%C4%99tno%C5%9Bci.md#obsługa-ciężkiego-sprzętu) | [Weterynaria](Umiej%C4%99tno%C5%9Bci.md#weterynaria) | [Elektrotechnika](Umiej%C4%99tno%C5%9Bci.md#elektrotechnika) | [Hazard](Umiej%C4%99tno%C5%9Bci.md#hazard) | [Sztuka Przetrwania](Umiej%C4%99tno%C5%9Bci.md#sztuka-przetrwania) | [Śnienie](Umiej%C4%99tno%C5%9Bci.md#śnienie) |
 
 ## Eksploracja
 
@@ -62,19 +62,19 @@ Korzystanie z karabinów, strzelb i broni półautomatycznej na średnim i duży
 
 ### Broń miotana
 
-Rzucanie noży, włóczni, granatów i improwizowanej broni — atak z dystansu bez hałasu wystrzału. Obejmuje precyzyjne celowanie, ocenę siły i trajektorii oraz skuteczne użycie granatów odłamkowych, dymnych i ogłuszających. Szczególnie skuteczna w zasadzkach i eliminacji wartowników.
+Rzucanie noży, włóczni, granatów i improwizowanej broni oraz strzelanie z łuków, kusz i proc — atak z dystansu bez hałasu wystrzału prochowego. Obejmuje precyzyjne celowanie, ocenę siły i trajektorii, uwzględnianie opadania pocisku oraz skuteczne użycie granatów odłamkowych, dymnych i ogłuszających. Szczególnie skuteczna w zasadzkach, polowaniu i eliminacji wartowników; strzały można często odzyskiwać i produkować z prostych materiałów.
 
-### Strzelectwo
+### Uniki
 
-Walka bronią miotającą pociski bez prochu — łuki, kusze, proce. Cicha, śmiertelna na średnich dystansach; strzały można odzyskiwać i produkować z prostych materiałów. Obejmuje celowanie, uwzględnianie opadania pocisku, konserwację i polowanie.
+Unikanie nadlatujących pocisków, odłamków i innych zagrożeń z dystansu — zejście z linii ognia, rzut za osłonę, wyczucie momentu strzału. Obejmuje refleks, czytanie zamiarów strzelca i wykorzystanie terenu w ułamku sekundy. W walce dystansowej to umiejętność obronna: pozwala przeżyć ostrzał, gdy pancerz nie wystarczy albo nie ma gdzie się schować.
 
 ### Taktyka i strategia
 
 Myślenie o walce w szerszym kontekście — planowanie ataków, organizacja obrony, wykorzystanie terenu i koordynacja grupy. Obejmuje rozpoznanie, wyznaczanie dróg odwrotu, rozmieszczanie wojowników i utrzymywanie komunikacji w bitwie. Doświadczeni taktycy wiedzą, że czasem najlepszą strategią jest ucieczka.
 
-### Broń palna ciężka
+### Obsługa ciężkiego sprzętu
 
-Obsługa karabinów maszynowych, granatników, wyrzutni rakiet i broni przeciwpancernnej. Zadaje ogromne obrażenia grupom i konstrukcjom, wymaga jednak amunicji, wsparcia logistycznego i odpowiedniej pozycji. Rzadka, ale decydująca przy obronie baz i niszczeniu hord.
+Obsługa maszynerii bojowej i wsparcia — wieżyczki pokładowe, zamontowane stanowiska ogniowe, radary, dalmierze, dźwigi i podobny sprzęt. Obejmuje celowanie z systemów pokładowych, pracę przy konsolach i panelach, koordynację z załogą oraz utrzymanie sprawności urządzenia pod ogniem. Decyduje o skuteczności pojazdów bojowych, punktów obrony i ciężkiego sprzętu infrastrukturalnego, nie o strzelaniu z ręcznej broni palnej.
 
 ## Nauka i wiedza
 

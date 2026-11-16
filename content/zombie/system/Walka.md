@@ -30,7 +30,11 @@ Rozróżnia się cztery typy zasięgu, od najbliższego: `zwarcie`, `bliski`, `�
 By walczyć dystansowo należy mieć jakąkolwiek broń dystansową jak broń palna czy kamień do rzucenia. Typowy zasięg takiej broni to bliski, średni lub daleki.
 
 Domyślne cechy ataku: Opanowanie, Zręczność
-Domyślne umiejętności ataku: Broń palna, Broń miotana, Strzelectwo, Taktyka i strategia, Broń palna ciężka
+Domyślne umiejętności ataku: Broń palna, Broń miotana, Taktyka i strategia, Obsługa ciężkiego sprzętu
+Jeśli argumenty gracza przekonają MG może on dopuścić inne.
+
+Domyślne cechy obrony przed atakiem dystansowym: Zręczność, Opanowanie
+Domyślne umiejętności obrony przed atakiem dystansowym: Uniki
 Jeśli argumenty gracza przekonają MG może on dopuścić inne.
 
 ## Walka wręcz
