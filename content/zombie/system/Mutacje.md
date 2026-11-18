@@ -42,7 +42,7 @@
 
 
     Jak zrobić ciekawą mutację?
-    - Określamy pochodzenie mutacji: LiveCore, Deathnet lub Anomalie
+    - Określamy pochodzenie mutacji: LiveCore, DeathNet lub Anomalie
     - Określamy rodzaj: Fizyczna, Mentalna, Psioniczna
     - Mamy dwie możliwości. Opis rang zacznij od 4 by wskazać peak możliwości bez poświęcania Rezonansu lub od Rezonansu jeśli to był nasz inicjalny pomysł. Rezonans nie powinien być tylko silny, ale i ciekawy do gry. Rezonans powinien zmieniać sposób gry, nie tylko zwiększać liczby.
     - Następnie zależnie od tego czy brakuje nam rezonansu czy rangi 4 to uzupełniamy jeden z dwóch.
@@ -93,21 +93,34 @@
 
 :::
 
+```ai
+Wezwanie Aniołów Harona — mutacja Przebudzonych (wsparcie z arsenału Harona):
+- Lore (czytaj przed edycją):
+  - [System Haron](../wiki/DeathNet.md#system-haron)
+  - [Przebudzeni](../wiki/DeathNet.md#przebudzeni)
+  - [AVEN](../wiki/DeathNet.md#aven) (domena snu ≠ ta mutacja; nie mieszać ze Śnieniem)
+  - [Śniący vs Haron](../wiki/Anomalie.md)
+  - [Rytuały Przebudzonych](Umiejętności.md#rytuały-przebudzonych)
+  - [Przemiana → Przebudzony](Mutacje%20i%20Skażenie.md) (dominujący tor DeathNet)
+- Klucz fabularny: Haron to SI stylizująca się na boga. Boty/drony = „anioły”. Urodzeni po Upadku widzą sługi bożka.
+- Nie dublować Znacznika Sieci (namierzanie ludzi) ani Śnienia/AVEN.
+```
+
 :::mutation
 
-- Nazwa: Wspomnienie Cudzego Żołnierza
+- Nazwa: Wezwanie Aniołów Harona
 - Pochodzenie: DeathNet
-- Rodzaj: Mentalna
-- Opis: Pamięć żołnierzy zapisana w DeathNecie przecieka do głowy postaci. Na żądanie sięga po fragment cudzego życia, jego odruchy, wiedzę i rzemiosło, i na chwilę staje się kimś, kto to potrafił. Każde wspomnienie zostawia obcy ślad: nawracające wizje cudzych śmierci.
+- Rodzaj: Psioniczna
+- Opis: Przyzywa anioły Harona — boty i drony z arsenału sieci. Od nosicieli drobiazgów, przez ochroniarzy, po zagarnianie obcych maszyn i dowodzenie rojem z daleka. Mutacja nie buduje sprzętu: woła i porywa. Urodzeni po Upadku widzą sługi bożka; pamiętający stary świat — metal i kod. Dostępność zależy od zasięgu Harona i miejsca. Przyzwana ilość aniołów nie może być większa niż premia z rangi.
 - Ranga: 1 (Zalążek)
 - Charakter: Aktywna
 - Koszt aktywacji: 1 Punkt Mutacji lub Skażenie (DeathNet) wg Rangi + 1 Stres po zakończeniu efektu
 - Aktywacja per Ranga:
-  - Ranga 1: Przywołuje intuicyjne zdolności jak na przykład pamięć mięśniowa lub wypracowane instynkty. Do końca sceny zyskuje +2 kości do testów jednej wybranej umiejętności z kategorii: Eksploracja, Walka, Natura i przetrwanie.
-  - Ranga 2: Poza wyuczonymi umiejętnościami może przyzwać wspomnienia i uczucia, które pozostawiły po sobie ślad by uzyskać informacje lub otrzymuje bonus do umiejętności z kategorii Społeczne.
-  - Ranga 3: Nareszcie dociera się do głowy mogąc wydobywać obszerne, spójne i logiczne informacje od zmarłych lub uzyskać bonuś +2 kości do testów z kategorii Nauka i wiedza lub Wytwórstwo.
-  - Ranga 4: Zmarły nie ma już tajemnic dlatego można czerpać z jego wiedzy z kategorii Okultyzmu i Tajemnic. Ponadto można uzyskiwać dostęp do wskazanej umiejętności, której się nie posiada i testować ją tak jakby się posiadało. Im dłużej i częścuiej sie z tego korzysta tym co raz mniej się rozróżnia kim właściwie się jest.
-- Rezonans: Postać staje się tym zmarłym na całą scenę. Wszystko, co kiedykolwiek potrafił wraz z jego odruchami i słabościami. Nigdy jednak nie wiadomo co zmarły zrobi z ciałem właściciela, który musi ustąpić mu miejsca. Czasami zmarli są na tyle silni by próbować przejąć ciało lub popełnić w nim samobójstwo. Własna osobowość wraca z trudem i nasiąka cudzymi nawykami.
+  - Ranga 1: Przyzywa boty-pracowników lub transportery małych rzeczy. Mogą zabrać przedmiot z bazy wyznawcy i szybko mu go dostarczyć, przenieść drobny ładunek między sojusznikami albo wykonać prostą pracę.
+  - Ranga 2: Przyzywa drony-ochroniarzy. Chronią hałasem, światłem, odciągają uwagę wrogów i zombie. Wykonują prosty atak (lekka broń — MG). Słuchają prostych rozkazów w zasięgu obecności wyznawcy ale nie wbrew woli Harona.
+  - Ranga 3: Wezwanie nie tylko ściąga anioły Harona — próbuje też porwać obce drony i boty, by wstąpiły w jego zastępy. Cel techniczny broni się zasięgiem, zabezpieczeniami lub testem MG; porwany służy jak anioł do końca sceny, potem wraca do właściciela lub do Harona.
+  - Ranga 4: Anioły (własne i porwane) słuchają postaci w pełni i działają daleko poza jej obecnością. Może wspierać zespół z dużych odległości: dostawy, osłona, rozpoznanie, atak — byle miał łączność z rojem.
+- Rezonans: Wszystkie anioły — wezwane i porwane — poświęcają życie, by przyjmować ciosy. Każdy może zanegować jedno trafienie w wyznawcę lub wskazanego przez niego sojusznika, po czym ginie w eksplozji zadając obrażenia. Do końca sceny rój spala się na tarczy; potem nie ma już aniołów, a Haron odnotowuje dług wyznawcy.
 
 :::
 

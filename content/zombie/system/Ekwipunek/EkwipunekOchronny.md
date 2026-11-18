@@ -9,7 +9,12 @@ Rozróżnia się 3 kategorie odzieży ochronnej:
 
 Istnieją specjalne właściwości umożliwiający wpłynięcie na liczbę slotów w poszczególnych kategoriach.
 
-Wartość ochrony redukuje każdorazowo zadawane obrażenia, dopóki nie zostanie zniszczony. Jeśli obrażenia po redukcji wciąż są zbyt duże by je zaakceptować, można poświęcić punkty z wartości ochrony by zanegować uderzenie. Wtedy otrzyma wadę "Uszkodzony" z wartością numeryczną reprezentującą poświęcone punkty.
+Wartość ochrony pełni dwie role w walce (szczegóły w [Walka](../Walka.md) → Trafienia):
+
+1. **Trudność trafienia** — suma Punktów Zbroi celu to bazowa liczba sukcesów potrzebna, by w ogóle trafić (mogą dojść modyfikatory).
+2. **Redukcja obrażeń** — ochrona obniża zadawane obrażenia przy każdym trafieniu, dopóki nie zostanie zniszczona.
+
+Jeśli obrażenia po redukcji wciąż są zbyt duże by je zaakceptować, można poświęcić punkty z wartości ochrony by zanegować uderzenie. Wtedy ochrona spada (łatwiej trafić w kolejnych atakach) i przedmiot otrzymuje wadę "Uszkodzony" z wartością numeryczną reprezentującą poświęcone punkty.
 
 Każdy przedmiot ochrony opisywany jest przez następujące atrybuty:
 - Nazwa i opis

@@ -66,7 +66,7 @@ Rzucanie noży, włóczni, granatów i improwizowanej broni oraz strzelanie z ł
 
 ### Uniki
 
-Unikanie nadlatujących pocisków, odłamków i innych zagrożeń z dystansu — zejście z linii ognia, rzut za osłonę, wyczucie momentu strzału. Obejmuje refleks, czytanie zamiarów strzelca i wykorzystanie terenu w ułamku sekundy. W walce dystansowej to umiejętność obronna: pozwala przeżyć ostrzał, gdy pancerz nie wystarczy albo nie ma gdzie się schować.
+Unikanie ciosów i zagrożeń — zejście z linii ognia, odchylenie ciała przed ciosem, rzut za osłonę, wyczucie momentu ataku. Obejmuje refleks, czytanie zamiarów przeciwnika i wykorzystanie terenu w ułamku sekundy. W walce to typowa umiejętność **reakcji Uniku** (wręcz i dystans): pozwala przeżyć atak, gdy pancerz nie wystarczy albo nie ma gdzie się schować. Przed bronią dystansową Unik jest jedyną standardową reakcją obronną.
 
 ### Taktyka i strategia
 

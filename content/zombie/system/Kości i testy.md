@@ -11,7 +11,7 @@ Rzuty odbywa się za pomocą kości `k10` i interpretuje wyniki zgodnie z poniż
 
 ### Efekt
 
-Efekt to punkt umożliwiajacy narracyjne i mechaniczne wpłynięcie na rezultat swojej akcji w pozytywny sposób. Efekt może modyfikować stany celu lub sojusznika, otrzymywany rezulat lub całą scenę. Jeśli efektów jest więcej niż 1 można je sumować, ale nie jest to konieczne. Jeśli MG się zgodzi Efekt może znosić się wzajemnie 1:1 z Komplikacjami, sugeruje się jednak by robić to tylko jeśli efektów lub komplikacji jest dużo w puli. Efekty mogą być też formą rozwiązania skomplikowanych walk, więcej na ten temat
+Efekt to punkt umożliwiajacy narracyjne i mechaniczne wpłynięcie na rezultat swojej akcji w pozytywny sposób. Efekt może modyfikować stany celu lub sojusznika, otrzymywany rezulat lub całą scenę. Jeśli efektów jest więcej niż 1 można je sumować, ale nie jest to konieczne. Jeśli MG się zgodzi Efekt może znosić się wzajemnie 1:1 z Komplikacjami, sugeruje się jednak by robić to tylko jeśli efektów lub komplikacji jest dużo w puli. Efekty mogą być też formą rozwiązania skomplikowanych walk — katalog bojowy: [Walka](Walka.md#efekty-i-komplikacje-w-walce).
 
 Ma on jednak swoje ograniczenia:
 

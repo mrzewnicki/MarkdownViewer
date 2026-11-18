@@ -19,7 +19,7 @@ Rejestr wszystkich [Atutów i Wad](Właściwości.md) używanych w systemie - ż
 | --- | --- | --- | --- |
 | Bagnet | [Broń](Ekwipunek/Broń.md) | Karabinek szturmowy | Można zamontować bagnet i użyć broni jak broń białą w zwarciu. |
 | Ciernie | [Konstrukcje](Ekwipunek/Konstrukcje.md) | Kolczasta przeszkoda, Strefa pułapek | Ostre elementy ranią lub utrudniają forsowanie przy kontakcie. |
-| Krwawiący | [Broń](Ekwipunek/Broń.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Kij bejsbolowy z gwoździami, Piła łańcuchowa | Zadawane rany krwawią, utrudniając przeciwnikowi działanie w kolejnych rundach. |
+| Krwawiący | [Broń](Ekwipunek/Broń.md), [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Kij bejsbolowy z gwoździami, Piła łańcuchowa | Rany sącą się z rundy na rundę; pancerz nie zatrzymuje upływu krwi. Szczegóły: [Życie](Życie%20Zmęczenie%20i%20Stres.md#krwawienie). |
 | Łowiecki | [Broń](Ekwipunek/Broń.md) | Karabin myśliwski | Celownik i kaliber dopasowane do polowania; bonus do testów trafienia zwierząt (nie dotyczy zombie ani ludzi). |
 | Obszarowy | [Broń](Ekwipunek/Broń.md) | Granaty, Ładunek wybuchowy, Mina improwizowana, Koktajl Mołotowa, Miotacz ognia | Efekt obejmuje większy obszar, mogąc dosięgnąć wielu celów naraz. |
 | Ogłuszający | [Broń](Ekwipunek/Broń.md) | Pałka, Granat hukowy | Trafienie lub użycie może wywołać chwilowe ogłuszenie, dezorientację lub utratę możliwości działania. |
@@ -116,7 +116,7 @@ Rejestr wszystkich [Atutów i Wad](Właściwości.md) używanych w systemie - ż
 | Przeciwbólowy | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Tabletki przeciwbólowe, Leadplant | Zmniejsza ból, umożliwiając działanie mimo ran lub przywracając zdolność do testów. |
 | Regeneracyjny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Śpiwór | Pomaga szybciej regenerować zmęczenie fizyczne lub poprawia jakość odpoczynku. |
 | Relaksacyjny | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Piwo, Ciepły posiłek, Wino, Deser, Whisky, Papier toaletowy, Mocny alkohol, Radio korbowe | Poprawia samopoczucie psychiczne lub daje namiastkę luksusu; przy żywności/napojach: trochę (1), luksus (2), bardzo luksus (3). |
-| Tamujący | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Ekwipunek ochronny](Ekwipunek/EkwipunekOchronny.md) | Opatrunek kompresowy, Opaska uciskowa; Zwykłe ubrania | Zatrzymuje lub spowalnia krwawienie, redukując utratę HP w czasie. |
+| Tamujący | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md), [Ekwipunek ochronny](Ekwipunek/EkwipunekOchronny.md) | Opatrunek kompresowy, Opaska uciskowa; Zwykłe ubrania | Pomaga zatamować krew i ułatwia opatrzenie rannego. Szczegóły: [Życie](Życie%20Zmęczenie%20i%20Stres.md#krwawienie). |
 | Zdrowy | [Ekwipunek ogólny](Ekwipunek/EkwipunekOgólny.md) | Woda pitna, Mleko, Warzywa | Wspiera organizm; baza 1, wyraźnie zdrowsze (2). |
 
 ### Praca, craft i baza

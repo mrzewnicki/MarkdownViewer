@@ -209,13 +209,6 @@ const RANGE_LABELS: Record<RangeKind, string> = {
   long: 'Daleki',
 }
 
-const RANGE_STATUS_LABELS: Record<RangeStatus, string> = {
-  unavailable: 'niedostępny',
-  malus: 'utrudnienie',
-  available: 'dostępny',
-  bonus: 'bonus',
-}
-
 function parseRangeKind(raw: string | undefined): RangeKind | null {
   if (raw == null) return null
   const kind = raw.toLowerCase()
